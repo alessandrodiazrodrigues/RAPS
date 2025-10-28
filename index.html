@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal RAPS - Prevent Senior | Análise Completa</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Leaflet.js para mapas -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+        }
+
+        /* HEADER */
+        .header {
+            background: #1e293b;
+            padding: 20px 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header h1 {
+            color: #60a5fa;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge {
+            background: #10b981;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* NAVEGAÇÃO */
+        .nav {
+            background: #1e293b;
+            padding: 0 30px;
+            border-bottom: 2px solid rgba(96, 165, 250, 0.2);
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+        }
+
+        .nav-tab {
+            background: transparent;
+            border: none;
+            color: #94a3b8;
+            padding: 15px 25px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+            white-space: nowrap;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .nav-tab:hover {
+            color: #e2e8f0;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .nav-tab.active {
+            color: #60a5fa;
+            border-bottom-color: #60a5fa;
+        }
+
+        /* CONTEÚDO */
+        .content {
+            padding: 30px;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* CARDS ESTATÍSTICOS */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border-left: 4px solid #60a5fa;
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-label {
+            color: #94a3b8;
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .stat-value {
+            color: #e2e8f0;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .stat-subtitle {
+            color: #10b981;
+            font-size: 13px;
+        }
+
+        /* GRÁFICOS */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .chart-card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .chart-title {
+            color: #e2e8f0;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .chart-wrapper {
+            position: relative;
+            height: 300px;
+            width: 100%;
+        }
+
+        /* TABELA */
+        .table-container {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 25px;
+            overflow-x: auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: rgba(96, 165, 250, 0.1);
+            color: #60a5fa;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: #e2e8f0;
+            font-size: 14px;
+        }
+
+        tr:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        /* BADGES */
+        .zona-badge {
+            padding: 5px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .zona-leste { background: #3b82f6; color: white; }
+        .zona-sul { background: #10b981; color: white; }
+        .zona-norte { background: #f59e0b; color: white; }
+        .zona-oeste { background: #8b5cf6; color: white; }
+        .zona-abc { background: #ec4899; color: white; }
+
+        /* ALERTAS */
+        .alert {
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .alert-warning {
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid #f59e0b;
+            color: #fbbf24;
+        }
+
+        .alert-critical {
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 4px solid #ef4444;
+            color: #f87171;
+        }
+
+        .alert-success {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid #10b981;
+            color: #34d399;
+        }
+
+        /* SEÇÃO TÍTULO */
+        .section-title {
+            color: #60a5fa;
+            font-size: 24px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* MAPAS */
+        .map-container {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .real-map {
+            height: 600px;
+            border-radius: 8px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <h1>🏥 Portal RAPS - Prevent Senior</h1>
+        <span class="badge">✅ DADOS REAIS - Out/2025</span>
+    </div>
+
+    <!-- NAVEGAÇÃO -->
+    <div class="nav">
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="showSection('dashboard')">📊 Dashboard</button>
+            <button class="nav-tab" onclick="showSection('demografia')">👥 Demografia</button>
+            <button class="nav-tab" onclick="showSection('zonas')">🗺️ Por Zona</button>
+            <button class="nav-tab" onclick="showSection('hospitais')">🏥 Por Hospital</button>
+            <button class="nav-tab" onclick="showSection('gaps')">⚠️ Gaps</button>
+            <button class="nav-tab" onclick="showSection('mapa')">🗺️ Mapa</button>
+        </div>
+    </div>
+
+    <!-- CONTEÚDO -->
+    <div class="content">
+        
+        <!-- DASHBOARD EXECUTIVO -->
+        <div id="dashboard" class="section active">
+            <h2 class="section-title">📊 Visão Geral da Rede</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">👥 Total de Beneficiários</div>
+                    <div class="stat-value">416.795</div>
+                    <div class="stat-subtitle">100% mapeados</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-label">📍 Bairros Únicos</div>
+                    <div class="stat-value">1.290</div>
+                    <div class="stat-subtitle">5 zonas geográficas</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-label">🏥 Hospitais Parceiros</div>
+                    <div class="stat-value">9</div>
+                    <div class="stat-subtitle">Rede credenciada</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-label">📏 Distância Média</div>
+                    <div class="stat-value">8.19 km</div>
+                    <div class="stat-subtitle">Hospital mais próximo</div>
+                </div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <div class="chart-title">Distribuição por Distância</div>
+                    <div class="chart-wrapper">
+                        <canvas id="chartDistribuicao"></canvas>
+                    </div>
+                </div>
+                
+                <div class="chart-card">
+                    <div class="chart-title">Beneficiários por Zona</div>
+                    <div class="chart-wrapper">
+                        <canvas id="chartBeneficiariosZona"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ANÁLISE DEMOGRÁFICA -->
+        <div id="demografia" class="section">
+            <h2 class="section-title">👥 Análise Demográfica Completa</h2>
+            
+            <!-- Cards Demográficos -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">📅 Idade Média Geral</div>
+                    <div class="stat-value">58 anos</div>
+                    <div class="stat-subtitle">Todos os beneficiários</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-label">👩 Feminino</div>
+                    <div class="stat-value">55%</div>
+                    <div class="stat-subtitle">229.237 beneficiárias</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-label">👨 Masculino</div>
+                    <div class="stat-value">45%</div>
+                    <div class="stat-subtitle">187.558 beneficiários</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-label">👴 Idosos (>75 anos)</div>
+                    <div class="stat-value">20%</div>
+                    <div class="stat-subtitle">~85.000 pessoas</div>
+                </div>
+            </div>
+
+            <!-- Idade Média por Zona -->
+            <div class="chart-card">
+                <div class="chart-title">📊 Idade Média por Zona Geográfica</div>
+                <div class="chart-wrapper">
+                    <canvas id="chartIdadeZona"></canvas>
+                </div>
+            </div>
+
+            <!-- Idade Média por Hospital -->
+            <div class="chart-card" style="margin-top: 20px;">
+                <div class="chart-title">🏥 Idade Média por Hospital</div>
+                <div class="chart-wrapper">
+                    <canvas id="chartIdadeHospital"></canvas>
+                </div>
+            </div>
+
+            <!-- Distribuição por Gênero -->
+            <div class="charts-grid" style="margin-top: 30px;">
+                <div class="chart-card">
+                    <div class="chart-title">👫 Distribuição Geral por Gênero</div>
+                    <div class="chart-wrapper">
+                        <canvas id="chartGeneroGeral"></canvas>
+                    </div>
+                </div>
+                
+                <div class="chart-card">
+                    <div class="chart-title">🗺️ Gênero por Zona</div>
+                    <div class="chart-wrapper">
+                        <canvas id="chartGeneroZona"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pirâmide Etária -->
+            <div class="chart-card" style="margin-top: 30px;">
+                <div class="chart-title">📊 Distribuição por Faixa Etária</div>
+                <div class="chart-wrapper" style="height: 400px;">
+                    <canvas id="chartPiramide"></canvas>
+                </div>
+            </div>
+
+            <!-- Tabela Demográfica Detalhada -->
+            <div class="table-container" style="margin-top: 30px;">
+                <h3 style="color: #60a5fa; margin-bottom: 20px;">📋 Perfil Demográfico Detalhado por Zona</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Zona</th>
+                            <th>Beneficiários</th>
+                            <th>Idade Média</th>
+                            <th>Feminino</th>
+                            <th>Masculino</th>
+                            <th>>75 anos</th>
+                            <th>>80 anos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="zona-badge zona-sul">Centro-Sul</span></td>
+                            <td>141.413</td>
+                            <td>59 anos</td>
+                            <td>56%</td>
+                            <td>44%</td>
+                            <td>22%</td>
+                            <td>11%</td>
+                        </tr>
+                        <tr>
+                            <td><span class="zona-badge zona-leste">Leste</span></td>
+                            <td>100.140</td>
+                            <td>57 anos</td>
+                            <td>54%</td>
+                            <td>46%</td>
+                            <td>19%</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td><span class="zona-badge zona-oeste">Oeste</span></td>
+                            <td>72.125</td>
+                            <td>60 anos</td>
+                            <td>57%</td>
+                            <td>43%</td>
+                            <td>23%</td>
+                            <td>12%</td>
+                        </tr>
+                        <tr>
+                            <td><span class="zona-badge zona-norte">Norte</span></td>
+                            <td>62.584</td>
+                            <td>56 anos</td>
+                            <td>53%</td>
+                            <td>47%</td>
+                            <td>18%</td>
+                            <td>9%</td>
+                        </tr>
+                        <tr>
+                            <td><span class="zona-badge zona-abc">ABC</span></td>
+                            <td>40.533</td>
+                            <td>58 anos</td>
+                            <td>55%</td>
+                            <td>45%</td>
+                            <td>20%</td>
+                            <td>10%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ANÁLISE POR ZONA -->
+        <div id="zonas" class="section">
+            <h2 class="section-title">🗺️ Análise por Zona</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">🏆 Melhor Cobertura</div>
+                    <div class="stat-value">Leste</div>
+                    <div class="stat-subtitle">5.21 km médio</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-label">👥 Maior População</div>
+                    <div class="stat-value">Centro-Sul</div>
+                    <div class="stat-subtitle">141.413 benef.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ANÁLISE POR HOSPITAL -->
+        <div id="hospitais" class="section">
+            <h2 class="section-title">🏥 Análise por Hospital</h2>
+            
+            <div class="table-container">
+                <h3 style="color: #60a5fa; margin-bottom: 20px;">Ranking de Hospitais</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Hospital</th>
+                            <th>Zona</th>
+                            <th>Beneficiários</th>
+                            <th>% Rede</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>São Camilo Pompéia</td>
+                            <td><span class="zona-badge zona-oeste">Oeste</span></td>
+                            <td>89.709</td>
+                            <td>21.5%</td>
+                            <td>🔴 SOBRECARGA</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>São Camilo Ipiranga</td>
+                            <td><span class="zona-badge zona-sul">Centro-Sul</span></td>
+                            <td>78.056</td>
+                            <td>18.7%</td>
+                            <td>🟡 ALTA CARGA</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Neomater (SBC)</td>
+                            <td><span class="zona-badge zona-abc">ABC</span></td>
+                            <td>59.379</td>
+                            <td>14.2%</td>
+                            <td>🟢 BOA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- GAPS -->
+        <div id="gaps" class="section">
+            <h2 class="section-title">⚠️ Análise de Gaps</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">⚠️ Bairros Descobertos</div>
+                    <div class="stat-value">188</div>
+                    <div class="stat-subtitle">14.6% do total</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-label">👥 Benef. Afetados</div>
+                    <div class="stat-value">~23.000</div>
+                    <div class="stat-subtitle">5.5% da população</div>
+                </div>
+            </div>
+
+            <div class="alert alert-critical">
+                <span style="font-size: 28px;">🚨</span>
+                <div>
+                    <strong>CRÍTICO: 188 Bairros Descobertos (>15km)</strong><br>
+                    <span style="color: #94a3b8;">~23.000 beneficiários em áreas com cobertura inadequada.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAPA -->
+        <div id="mapa" class="section">
+            <h2 class="section-title">🗺️ Mapa Geográfico</h2>
+            
+            <div class="map-container">
+                <div id="map-real" class="real-map"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // NAVEGAÇÃO
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+            
+            document.getElementById(sectionId).classList.add('active');
+            event.target.classList.add('active');
+            
+            if (sectionId === 'mapa' && !window.mapInitialized) {
+                setTimeout(initMap, 100);
+                window.mapInitialized = true;
+            }
+        }
+
+        // CONFIGURAÇÃO GRÁFICOS
+        Chart.defaults.color = '#94a3b8';
+        Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.1)';
+
+        // GRÁFICO: Distribuição por Distância
+        new Chart(document.getElementById('chartDistribuicao'), {
+            type: 'bar',
+            data: {
+                labels: ['0-5km', '5-10km', '10-15km', '15-20km', '>20km'],
+                datasets: [{
+                    label: 'Bairros',
+                    data: [435, 473, 194, 146, 42],
+                    backgroundColor: ['#10b981', '#3b82f6', '#f59e0b', '#f97316', '#ef4444'],
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' } },
+                    x: { grid: { display: false } }
+                }
+            }
+        });
+
+        // GRÁFICO: Beneficiários por Zona
+        new Chart(document.getElementById('chartBeneficiariosZona'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Centro-Sul', 'Leste', 'Oeste', 'Norte', 'ABC'],
+                datasets: [{
+                    data: [141413, 100140, 72125, 62584, 40533],
+                    backgroundColor: ['#10b981', '#3b82f6', '#8b5cf6', '#f59e0b', '#ec4899'],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { position: 'bottom' } }
+            }
+        });
+
+        // GRÁFICO: Idade Média por Zona
+        new Chart(document.getElementById('chartIdadeZona'), {
+            type: 'bar',
+            data: {
+                labels: ['Centro-Sul', 'Leste', 'Oeste', 'Norte', 'ABC'],
+                datasets: [{
+                    label: 'Idade Média (anos)',
+                    data: [59, 57, 60, 56, 58],
+                    backgroundColor: ['#10b981', '#3b82f6', '#8b5cf6', '#f59e0b', '#ec4899'],
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: false, min: 50, max: 65, grid: { color: 'rgba(255,255,255,0.05)' } },
+                    x: { grid: { display: false } }
+                }
+            }
+        });
+
+        // GRÁFICO: Idade Média por Hospital
+        new Chart(document.getElementById('chartIdadeHospital'), {
+            type: 'bar',
+            data: {
+                labels: ['S.C.Pompéia', 'S.C.Ipiranga', 'Neomater', 'S.C.Santana', 'Adventista', 'Sta Clara', 'Sta Marcelina', 'Sta Virgínia', 'Cruz Azul'],
+                datasets: [{
+                    label: 'Idade Média (anos)',
+                    data: [60, 59, 58, 56, 59, 57, 57, 57, 59],
+                    backgroundColor: '#60a5fa',
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { beginAtZero: false, min: 50, max: 65, grid: { color: 'rgba(255,255,255,0.05)' } },
+                    y: { grid: { display: false } }
+                }
+            }
+        });
+
+        // GRÁFICO: Gênero Geral
+        new Chart(document.getElementById('chartGeneroGeral'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Feminino', 'Masculino'],
+                datasets: [{
+                    data: [55, 45],
+                    backgroundColor: ['#ec4899', '#3b82f6'],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { 
+                    legend: { position: 'bottom' },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (context.parsed) {
+                                    const total = context.parsed;
+                                    const benef = Math.round(416795 * total / 100);
+                                    label += ': ' + total + '% (' + benef.toLocaleString('pt-BR') + ')';
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // GRÁFICO: Gênero por Zona
+        new Chart(document.getElementById('chartGeneroZona'), {
+            type: 'bar',
+            data: {
+                labels: ['Centro-Sul', 'Leste', 'Oeste', 'Norte', 'ABC'],
+                datasets: [
+                    {
+                        label: 'Feminino',
+                        data: [56, 54, 57, 53, 55],
+                        backgroundColor: '#ec4899',
+                        borderRadius: 8
+                    },
+                    {
+                        label: 'Masculino',
+                        data: [44, 46, 43, 47, 45],
+                        backgroundColor: '#3b82f6',
+                        borderRadius: 8
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { position: 'bottom' } },
+                scales: {
+                    x: { stacked: true, grid: { display: false } },
+                    y: { stacked: true, max: 100, grid: { color: 'rgba(255,255,255,0.05)' } }
+                }
+            }
+        });
+
+        // GRÁFICO: Pirâmide Etária
+        new Chart(document.getElementById('chartPiramide'), {
+            type: 'bar',
+            data: {
+                labels: ['<50', '50-59', '60-69', '70-79', '80-89', '>90'],
+                datasets: [{
+                    label: 'Beneficiários',
+                    data: [83359, 125039, 116905, 70943, 18391, 2158],
+                    backgroundColor: ['#3b82f6', '#60a5fa', '#f59e0b', '#fbbf24', '#ef4444', '#dc2626'],
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { 
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const pct = (context.parsed.y / 416795 * 100).toFixed(1);
+                                return context.parsed.y.toLocaleString('pt-BR') + ' (' + pct + '%)';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' } },
+                    x: { grid: { display: false } }
+                }
+            }
+        });
+
+        // MAPA
+        function initMap() {
+            const mapInstance = L.map('map-real').setView([-23.5505, -46.6333], 10);
+            
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap'
+            }).addTo(mapInstance);
+            
+            const hospitais = [
+                { nome: 'Hospital Cruz Azul', lat: -23.565920, lng: -46.622154 },
+                { nome: 'Hospital Adventista', lat: -23.563566, lng: -46.633928 },
+                { nome: 'São Camilo Ipiranga', lat: -23.583081, lng: -46.612073 },
+                { nome: 'Santa Clara', lat: -23.532691, lng: -46.527272 },
+                { nome: 'Santa Virgínia', lat: -23.536880, lng: -46.589506 },
+                { nome: 'Santa Marcelina', lat: -23.555054, lng: -46.462603 },
+                { nome: 'São Camilo Pompéia', lat: -23.534065, lng: -46.688244 },
+                { nome: 'São Camilo Santana', lat: -23.487767, lng: -46.627247 },
+                { nome: 'Neomater (SBC)', lat: -23.669184, lng: -46.553716 }
+            ];
+            
+            hospitais.forEach(h => {
+                L.marker([h.lat, h.lng])
+                    .bindPopup(`<strong>${h.nome}</strong>`)
+                    .addTo(mapInstance);
+                
+                L.circle([h.lat, h.lng], { 
+                    color: '#10b981', 
+                    fillColor: '#10b981', 
+                    fillOpacity: 0.2, 
+                    radius: 5000 
+                }).addTo(mapInstance);
+            });
+        }
+    </script>
+</body>
+</html>
