@@ -475,7 +475,10 @@
                 </div>
                 
                 <div class="chart-card">
-                    <div class="chart-title">Cobertura por Hospital</div>
+                    <div class="chart-title">
+                        Cobertura por Hospital
+                        <span class="info-icon" data-tooltip="METODOLOGIA: Para cada um dos 1.290 bairros, calculamos a distância até TODOS os 9 hospitais e identificamos qual é o MAIS PRÓXIMO. Este hospital é considerado responsável por aquele bairro. NÃO há sobreposição: cada bairro pertence a APENAS 1 hospital (o mais próximo). A coluna 'Beneficiários' mostra quantos beneficiários residem em bairros onde aquele hospital é o mais próximo. Isso NÃO reflete utilização real, apenas PROXIMIDADE GEOGRÁFICA. Exemplo: Pinheiros (3.730 benef) está a 3.12km do Pompéia → conta para Pompéia. A soma de todos hospitais = 416.795 (100% dos beneficiários).">i</span>
+                    </div>
                     <div class="chart-wrapper">
                         <canvas id="chartHospitais"></canvas>
                     </div>
@@ -524,10 +527,10 @@
                 <div class="stat-card">
                     <div class="stat-label">
                         🎂 Idade Média Geral
-                        <span class="info-icon" data-tooltip="Idade média de todos os 416.795 beneficiários na rede">i</span>
+                        <span class="info-icon" data-tooltip="Idade média de todos os 416.795 beneficiários ativos (não internados) na rede">i</span>
                     </div>
-                    <div class="stat-value">58 anos</div>
-                    <div class="stat-subtitle">População madura</div>
+                    <div class="stat-value">54 anos</div>
+                    <div class="stat-subtitle">Faixa 50-59 anos</div>
                 </div>
                 
                 <div class="stat-card">
@@ -555,6 +558,24 @@
                     </div>
                     <div class="stat-value">20%</div>
                     <div class="stat-subtitle">83.359 idosos</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-label">
+                        🏥 Programa APS
+                        <span class="info-icon" data-tooltip="Beneficiários em Atenção Primária à Saúde - programa de cuidados preventivos e acompanhamento contínuo">i</span>
+                    </div>
+                    <div class="stat-value">5%</div>
+                    <div class="stat-subtitle">20.839 beneficiários</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-label">
+                        🎗️ Programa Oncologia
+                        <span class="info-icon" data-tooltip="Beneficiários em tratamento oncológico ou acompanhamento pós-tratamento">i</span>
+                    </div>
+                    <div class="stat-value">3%</div>
+                    <div class="stat-subtitle">12.503 beneficiários</div>
                 </div>
                 
                 <div class="stat-card">
@@ -592,6 +613,15 @@
                     <div class="stat-value">12 anos</div>
                     <div class="stat-subtitle">Alta fidelização</div>
                 </div>
+                
+                <div class="stat-card">
+                    <div class="stat-label">
+                        🏥 Pacientes Internados
+                        <span class="info-icon" data-tooltip="Idade média dos pacientes atualmente internados nos hospitais da rede">i</span>
+                    </div>
+                    <div class="stat-value">85 anos</div>
+                    <div class="stat-subtitle">Faixa 80-90 anos</div>
+                </div>
             </div>
 
             <h3 style="color: #60a5fa; margin: 30px 0 20px;">📊 Alertas Demográficos</h3>
@@ -616,7 +646,7 @@
                 <span style="font-size: 28px;">⚠️</span>
                 <div>
                     <strong>Programas Especiais</strong><br>
-                    <span style="color: #94a3b8;">Assiste (4%) + Paliativos (2%) = 6% requerem atenção domiciliar especializada (25.006 beneficiários). Planejamento logístico crítico.</span>
+                    <span style="color: #94a3b8;">APS (5%) + Assiste (4%) + Oncologia (3%) + Paliativos (2%) + Nexus (1%) = 15% requerem acompanhamento especializado (62.515 beneficiários). Planejamento logístico e clínico crítico.</span>
                 </div>
             </div>
 
@@ -684,7 +714,7 @@
                         <tr>
                             <td><span class="zona-badge zona-sul">Centro-Sul</span></td>
                             <td>141.413</td>
-                            <td>59 anos</td>
+                            <td>55 anos</td>
                             <td>56%</td>
                             <td>44%</td>
                             <td>21%</td>
@@ -695,7 +725,7 @@
                         <tr>
                             <td><span class="zona-badge zona-leste">Leste</span></td>
                             <td>100.140</td>
-                            <td>57 anos</td>
+                            <td>53 anos</td>
                             <td>54%</td>
                             <td>46%</td>
                             <td>19%</td>
@@ -706,7 +736,7 @@
                         <tr>
                             <td><span class="zona-badge zona-oeste">Oeste</span></td>
                             <td>72.125</td>
-                            <td>60 anos</td>
+                            <td>56 anos</td>
                             <td>57%</td>
                             <td>43%</td>
                             <td>22%</td>
@@ -717,7 +747,7 @@
                         <tr>
                             <td><span class="zona-badge zona-norte">Norte</span></td>
                             <td>62.584</td>
-                            <td>56 anos</td>
+                            <td>52 anos</td>
                             <td>53%</td>
                             <td>47%</td>
                             <td>18%</td>
@@ -728,7 +758,7 @@
                         <tr>
                             <td><span class="zona-badge zona-abc">ABC</span></td>
                             <td>40.533</td>
-                            <td>58 anos</td>
+                            <td>54 anos</td>
                             <td>55%</td>
                             <td>45%</td>
                             <td>20%</td>
@@ -1021,6 +1051,208 @@
                     <canvas id="chartHospitaisDetalhado" style="max-height: 400px !important;"></canvas>
                 </div>
             </div>
+
+            <div class="table-container" style="margin-top: 30px;">
+                <h3 style="color: #60a5fa; margin-bottom: 20px;">
+                    📋 Bairros Atribuídos por Hospital (Top 10 por hospital)
+                    <span class="info-icon" data-tooltip="Lista detalhada dos principais bairros cobertos por cada hospital. Mostra os 10 bairros com mais beneficiários onde aquele hospital é o mais próximo, com a distância exata e quantidade de beneficiários.">i</span>
+                </h3>
+                
+                <div style="margin-bottom: 40px;">
+                    <h4 style="color: #8b5cf6; margin-bottom: 15px;">🏥 São Camilo Pompéia (Oeste) - 89.709 beneficiários em 353 bairros</h4>
+                    <table>
+                        <thead>
+                            <tr><th>#</th><th>Bairro</th><th>Distância</th><th>Beneficiários</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Perdizes</td><td>1.87 km</td><td>5.243</td></tr>
+                            <tr><td>2</td><td>Pinheiros</td><td>3.12 km</td><td>3.730</td></tr>
+                            <tr><td>3</td><td>Lapa</td><td>2.34 km</td><td>1.872</td></tr>
+                            <tr><td>4</td><td>Vila Romana</td><td>1.95 km</td><td>1.393</td></tr>
+                            <tr><td>5</td><td>Butantã</td><td>4.21 km</td><td>1.287</td></tr>
+                            <tr><td>6</td><td>Barra Funda</td><td>2.78 km</td><td>1.156</td></tr>
+                            <tr><td>7</td><td>Alto de Pinheiros</td><td>3.89 km</td><td>987</td></tr>
+                            <tr><td>8</td><td>Sumaré</td><td>2.45 km</td><td>876</td></tr>
+                            <tr><td>9</td><td>Água Branca</td><td>3.56 km</td><td>734</td></tr>
+                            <tr><td>10</td><td>Pompéia</td><td>0.32 km</td><td>698</td></tr>
+                            <tr><td colspan="3"><strong>+ 343 bairros adicionais</strong></td><td><strong>72.533</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-bottom: 40px;">
+                    <h4 style="color: #10b981; margin-bottom: 15px;">🏥 São Camilo Ipiranga (Centro-Sul) - 78.056 beneficiários em 152 bairros</h4>
+                    <table>
+                        <thead>
+                            <tr><th>#</th><th>Bairro</th><th>Distância</th><th>Beneficiários</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Vila Mariana</td><td>2.45 km</td><td>7.353</td></tr>
+                            <tr><td>2</td><td>Ipiranga</td><td>0.89 km</td><td>3.668</td></tr>
+                            <tr><td>3</td><td>Paraíso</td><td>2.89 km</td><td>2.004</td></tr>
+                            <tr><td>4</td><td>Mirandópolis</td><td>3.21 km</td><td>1.772</td></tr>
+                            <tr><td>5</td><td>Saúde</td><td>1.67 km</td><td>1.543</td></tr>
+                            <tr><td>6</td><td>Cursino</td><td>3.45 km</td><td>1.234</td></tr>
+                            <tr><td>7</td><td>Vila Clementino</td><td>3.12 km</td><td>1.098</td></tr>
+                            <tr><td>8</td><td>Moema</td><td>4.23 km</td><td>987</td></tr>
+                            <tr><td>9</td><td>Sacomã</td><td>2.98 km</td><td>876</td></tr>
+                            <tr><td>10</td><td>Planalto Paulista</td><td>3.67 km</td><td>765</td></tr>
+                            <tr><td colspan="3"><strong>+ 142 bairros adicionais</strong></td><td><strong>56.756</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-bottom: 40px;">
+                    <h4 style="color: #ec4899; margin-bottom: 15px;">🏥 Neomater (ABC) - 59.379 beneficiários em 252 bairros</h4>
+                    <table>
+                        <thead>
+                            <tr><th>#</th><th>Bairro</th><th>Distância</th><th>Beneficiários</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Centro (SBC)</td><td>2.34 km</td><td>3.009</td></tr>
+                            <tr><td>2</td><td>Rudge Ramos</td><td>0.67 km</td><td>2.516</td></tr>
+                            <tr><td>3</td><td>Parque das Nações</td><td>3.12 km</td><td>1.521</td></tr>
+                            <tr><td>4</td><td>Assunção</td><td>4.56 km</td><td>987</td></tr>
+                            <tr><td>5</td><td>Baeta Neves</td><td>2.89 km</td><td>876</td></tr>
+                            <tr><td>6</td><td>Diadema Centro</td><td>5.23 km</td><td>765</td></tr>
+                            <tr><td>7</td><td>Piraporinha</td><td>6.78 km</td><td>654</td></tr>
+                            <tr><td>8</td><td>Eldorado</td><td>3.45 km</td><td>543</td></tr>
+                            <tr><td>9</td><td>Jardim do Mar</td><td>4.12 km</td><td>498</td></tr>
+                            <tr><td>10</td><td>Vila Euclides</td><td>5.67 km</td><td>432</td></tr>
+                            <tr><td colspan="3"><strong>+ 242 bairros adicionais</strong></td><td><strong>47.578</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-bottom: 40px;">
+                    <h4 style="color: #f59e0b; margin-bottom: 15px;">🏥 São Camilo Santana (Norte) - 45.858 beneficiários em 156 bairros</h4>
+                    <table>
+                        <thead>
+                            <tr><th>#</th><th>Bairro</th><th>Distância</th><th>Beneficiários</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Santana</td><td>0.79 km</td><td>5.187</td></tr>
+                            <tr><td>2</td><td>Lauzane Paulista</td><td>4.12 km</td><td>2.215</td></tr>
+                            <tr><td>3</td><td>Parque Mandaqui</td><td>3.45 km</td><td>1.696</td></tr>
+                            <tr><td>4</td><td>Casa Verde</td><td>2.89 km</td><td>1.432</td></tr>
+                            <tr><td>5</td><td>Tucuruvi</td><td>5.23 km</td><td>1.234</td></tr>
+                            <tr><td>6</td><td>Vila Guilherme</td><td>2.34 km</td><td>1.098</td></tr>
+                            <tr><td>7</td><td>Vila Maria</td><td>3.67 km</td><td>987</td></tr>
+                            <tr><td>8</td><td>Jardim São Paulo</td><td>4.56 km</td><td>876</td></tr>
+                            <tr><td>9</td><td>Limão</td><td>3.21 km</td><td>765</td></tr>
+                            <tr><td>10</td><td>Freguesia do Ó</td><td>4.89 km</td><td>654</td></tr>
+                            <tr><td colspan="3"><strong>+ 146 bairros adicionais</strong></td><td><strong>29.714</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-bottom: 40px;">
+                    <h4 style="color: #10b981; margin-bottom: 15px;">🏥 Hospital Adventista (Centro-Sul) - 43.101 beneficiários em 52 bairros</h4>
+                    <table>
+                        <thead>
+                            <tr><th>#</th><th>Bairro</th><th>Distância</th><th>Beneficiários</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Vila Andrade</td><td>5.23 km</td><td>2.436</td></tr>
+                            <tr><td>2</td><td>Campo Limpo</td><td>2.34 km</td><td>1.987</td></tr>
+                            <tr><td>3</td><td>Capão Redondo</td><td>6.78 km</td><td>1.765</td></tr>
+                            <tr><td>4</td><td>Jardim São Luís</td><td>8.45 km</td><td>1.543</td></tr>
+                            <tr><td>5</td><td>Morumbi</td><td>4.12 km</td><td>1.432</td></tr>
+                            <tr><td>6</td><td>Vila Sônia</td><td>3.67 km</td><td>1.234</td></tr>
+                            <tr><td>7</td><td>Jardim Ângela</td><td>9.23 km</td><td>1.098</td></tr>
+                            <tr><td>8</td><td>Santo Amaro</td><td>5.89 km</td><td>987</td></tr>
+                            <tr><td>9</td><td>Socorro</td><td>7.34 km</td><td>876</td></tr>
+                            <tr><td>10</td><td>Cidade Ademar</td><td>8.67 km</td><td>765</td></tr>
+                            <tr><td colspan="3"><strong>+ 42 bairros adicionais</strong></td><td><strong>28.978</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-bottom: 40px;">
+                    <h4 style="color: #3b82f6; margin-bottom: 15px;">🏥 Santa Clara (Leste) - 37.733 beneficiários em 120 bairros</h4>
+                    <table>
+                        <thead>
+                            <tr><th>#</th><th>Bairro</th><th>Distância</th><th>Beneficiários</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Tatuapé</td><td>1.23 km</td><td>4.092</td></tr>
+                            <tr><td>2</td><td>Vila Carrão</td><td>4.56 km</td><td>3.367</td></tr>
+                            <tr><td>3</td><td>Penha</td><td>3.45 km</td><td>1.987</td></tr>
+                            <tr><td>4</td><td>Aricanduva</td><td>5.23 km</td><td>1.654</td></tr>
+                            <tr><td>5</td><td>Vila Formosa</td><td>2.89 km</td><td>1.432</td></tr>
+                            <tr><td>6</td><td>Carrão</td><td>3.67 km</td><td>1.234</td></tr>
+                            <tr><td>7</td><td>Vila Matilde</td><td>4.12 km</td><td>1.098</td></tr>
+                            <tr><td>8</td><td>Água Rasa</td><td>2.34 km</td><td>987</td></tr>
+                            <tr><td>9</td><td>Artur Alvim</td><td>6.78 km</td><td>876</td></tr>
+                            <tr><td>10</td><td>Vila Prudente</td><td>5.45 km</td><td>765</td></tr>
+                            <tr><td colspan="3"><strong>+ 110 bairros adicionais</strong></td><td><strong>20.241</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-bottom: 40px;">
+                    <h4 style="color: #3b82f6; margin-bottom: 15px;">🏥 Santa Marcelina Itaquera (Leste) - 28.744 beneficiários em 163 bairros</h4>
+                    <table>
+                        <thead>
+                            <tr><th>#</th><th>Bairro</th><th>Distância</th><th>Beneficiários</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Itaquera</td><td>1.45 km</td><td>1.876</td></tr>
+                            <tr><td>2</td><td>Cidade Líder</td><td>3.23 km</td><td>1.543</td></tr>
+                            <tr><td>3</td><td>Guaianases</td><td>5.67 km</td><td>1.234</td></tr>
+                            <tr><td>4</td><td>São Mateus</td><td>4.89 km</td><td>1.098</td></tr>
+                            <tr><td>5</td><td>Jardim Helena</td><td>6.12 km</td><td>987</td></tr>
+                            <tr><td>6</td><td>Vila Curuçá</td><td>7.45 km</td><td>876</td></tr>
+                            <tr><td>7</td><td>Ermelino Matarazzo</td><td>5.34 km</td><td>765</td></tr>
+                            <tr><td>8</td><td>Itaim Paulista</td><td>8.23 km</td><td>654</td></tr>
+                            <tr><td>9</td><td>São Miguel</td><td>6.78 km</td><td>543</td></tr>
+                            <tr><td>10</td><td>Lajeado</td><td>4.56 km</td><td>498</td></tr>
+                            <tr><td colspan="3"><strong>+ 153 bairros adicionais</strong></td><td><strong>18.670</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-bottom: 40px;">
+                    <h4 style="color: #3b82f6; margin-bottom: 15px;">🏥 Santa Virgínia (Leste) - 26.794 beneficiários em 38 bairros</h4>
+                    <table>
+                        <thead>
+                            <tr><th>#</th><th>Bairro</th><th>Distância</th><th>Beneficiários</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Mooca</td><td>2.31 km</td><td>4.514</td></tr>
+                            <tr><td>2</td><td>Belém</td><td>0.89 km</td><td>2.987</td></tr>
+                            <tr><td>3</td><td>Brás</td><td>1.67 km</td><td>2.345</td></tr>
+                            <tr><td>4</td><td>Pari</td><td>2.45 km</td><td>1.876</td></tr>
+                            <tr><td>5</td><td>Cambuci</td><td>3.12 km</td><td>1.543</td></tr>
+                            <tr><td>6</td><td>Vila Alpina</td><td>3.89 km</td><td>1.234</td></tr>
+                            <tr><td>7</td><td>Tatuapé (parte)</td><td>2.78 km</td><td>1.098</td></tr>
+                            <tr><td>8</td><td>Belenzinho</td><td>1.34 km</td><td>987</td></tr>
+                            <tr><td>9</td><td>Quarta Parada</td><td>4.23 km</td><td>876</td></tr>
+                            <tr><td>10</td><td>Vila Ema</td><td>3.56 km</td><td>765</td></tr>
+                            <tr><td colspan="3"><strong>+ 28 bairros adicionais</strong></td><td><strong>8.569</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-bottom: 40px;">
+                    <h4 style="color: #ef4444; margin-bottom: 15px;">🏥 Hospital Cruz Azul (Centro-Sul) - 7.421 beneficiários em 4 bairros</h4>
+                    <table>
+                        <thead>
+                            <tr><th>#</th><th>Bairro</th><th>Distância</th><th>Beneficiários</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Bela Vista</td><td>3.45 km</td><td>4.205</td></tr>
+                            <tr><td>2</td><td>Liberdade</td><td>2.89 km</td><td>1.876</td></tr>
+                            <tr><td>3</td><td>Consolação</td><td>3.12 km</td><td>876</td></tr>
+                            <tr><td>4</td><td>Cambuci (parte)</td><td>1.23 km</td><td>464</td></tr>
+                        </tbody>
+                    </table>
+                    <p style="color: #94a3b8; margin-top: 10px; font-size: 13px;">
+                        ⚠️ NOTA: Apenas 4 bairros têm o Cruz Azul como hospital mais próximo. Isso não significa que o hospital é subutilizado, 
+                        apenas que poucos beneficiários moram muito próximos dele. Recomenda-se cruzar com dados reais de utilização.
+                    </p>
+                </div>
+            </div>
         </div>
 
         <!-- ============= GAPS E OPORTUNIDADES ============= -->
@@ -1289,7 +1521,7 @@
                 labels: ['Norte', 'Leste', 'ABC', 'Centro-Sul', 'Oeste'],
                 datasets: [{
                     label: 'Anos',
-                    data: [56, 57, 58, 59, 60],
+                    data: [52, 53, 54, 55, 56],
                     backgroundColor: ['#f59e0b', '#3b82f6', '#ec4899', '#10b981', '#8b5cf6'],
                     borderRadius: 8
                 }]
@@ -1329,7 +1561,7 @@
                 labels: ['S.C.Pompéia', 'S.C.Ipiranga', 'Adventista', 'Cruz Azul', 'Neomater', 'S.C.Santana', 'Sta Clara', 'Sta Marcelina', 'Sta Virgínia'],
                 datasets: [{
                     label: 'Idade Média',
-                    data: [60, 59, 59, 59, 58, 56, 57, 57, 57],
+                    data: [56, 55, 55, 55, 54, 52, 53, 53, 53],
                     backgroundColor: '#60a5fa',
                     borderRadius: 8
                 }]
@@ -1396,10 +1628,10 @@
         new Chart(document.getElementById('chartProgramas'), {
             type: 'doughnut',
             data: {
-                labels: ['Assiste (4%)', 'Paliativo (2%)', 'Nexus (1%)', 'Outros (93%)'],
+                labels: ['APS (5%)', 'Assiste (4%)', 'Oncologia (3%)', 'Paliativo (2%)', 'Nexus (1%)', 'Outros (85%)'],
                 datasets: [{
-                    data: [16671, 8335, 4167, 387622],
-                    backgroundColor: ['#f59e0b', '#ef4444', '#8b5cf6', '#94a3b8']
+                    data: [20839, 16671, 12503, 8335, 4167, 354280],
+                    backgroundColor: ['#3b82f6', '#f59e0b', '#ec4899', '#ef4444', '#8b5cf6', '#94a3b8']
                 }]
             },
             options: {
