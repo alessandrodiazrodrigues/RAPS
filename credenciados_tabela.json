@@ -1,0 +1,579 @@
+{
+  "metadata": {
+    "versao": "1.0",
+    "data_exportacao": "2025-10-28T00:00:00Z",
+    "total_hospitais": 9,
+    "fonte": "RAPS Prevent Senior - Rede Credenciada"
+  },
+  "hospitais": [
+    {
+      "id": 1,
+      "nome": "Hospital Cruz Azul",
+      "razao_social": "Beneficência Portuguesa de São Paulo",
+      "tipo": "Hospital Geral",
+      "zona": "Centro-Sul",
+      "endereco": {
+        "logradouro": "Av. Lins de Vasconcelos, 356",
+        "bairro": "Cambuci",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "01538-001",
+        "complemento": "Prédio Principal"
+      },
+      "coordenadas": {
+        "latitude": -23.565920,
+        "longitude": -46.622154
+      },
+      "contato": {
+        "telefone": "(11) 3097-1500",
+        "email": "contato@cruzazul.org.br",
+        "site": "https://www.cruzazul.org.br"
+      },
+      "capacidade": {
+        "leitos_totais": 180,
+        "leitos_uti": 30,
+        "salas_cirurgicas": 8,
+        "pronto_socorro": true
+      },
+      "especialidades": [
+        "Clínica Médica",
+        "Cirurgia Geral",
+        "Ortopedia",
+        "Cardiologia",
+        "Neurologia",
+        "Pronto Socorro 24h"
+      ],
+      "servicos": [
+        "Internação",
+        "UTI",
+        "Centro Cirúrgico",
+        "Diagnóstico por Imagem",
+        "Laboratório",
+        "Farmácia 24h"
+      ],
+      "credenciamento": {
+        "data_inicio": "2020-01-15",
+        "status": "ATIVO",
+        "renovacao": "2026-01-15"
+      },
+      "cobertura_raps": {
+        "bairros_cobertos": 4,
+        "beneficiarios": 7421,
+        "percentual_rede": 1.8
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Hospital Adventista de São Paulo",
+      "razao_social": "Instituição Adventista Central Brasileira de Educação e Assistência Social",
+      "tipo": "Hospital Geral",
+      "zona": "Centro-Sul",
+      "endereco": {
+        "logradouro": "Estrada de Itapecerica, 4617",
+        "bairro": "Campo Limpo",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "05835-004",
+        "complemento": "Torre A"
+      },
+      "coordenadas": {
+        "latitude": -23.563566,
+        "longitude": -46.633928
+      },
+      "contato": {
+        "telefone": "(11) 2067-8000",
+        "email": "atendimento@hasp.com.br",
+        "site": "https://www.adventista.com.br"
+      },
+      "capacidade": {
+        "leitos_totais": 250,
+        "leitos_uti": 45,
+        "salas_cirurgicas": 12,
+        "pronto_socorro": true
+      },
+      "especialidades": [
+        "Clínica Médica",
+        "Cirurgia Geral",
+        "Cardiologia",
+        "Oncologia",
+        "Ortopedia",
+        "Neurologia",
+        "Nefrologia",
+        "Pronto Socorro 24h"
+      ],
+      "servicos": [
+        "Internação",
+        "UTI Adulto e Neonatal",
+        "Centro Cirúrgico",
+        "Hemodinâmica",
+        "Diagnóstico por Imagem",
+        "Laboratório 24h",
+        "Centro de Oncologia"
+      ],
+      "credenciamento": {
+        "data_inicio": "2019-03-10",
+        "status": "ATIVO",
+        "renovacao": "2025-03-10"
+      },
+      "cobertura_raps": {
+        "bairros_cobertos": 52,
+        "beneficiarios": 43101,
+        "percentual_rede": 10.3
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Hospital São Camilo Ipiranga",
+      "razao_social": "União Social Camiliana",
+      "tipo": "Hospital Geral",
+      "zona": "Centro-Sul",
+      "endereco": {
+        "logradouro": "Av. Nazaré, 28",
+        "bairro": "Ipiranga",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "04262-000",
+        "complemento": "Unidade Ipiranga"
+      },
+      "coordenadas": {
+        "latitude": -23.583081,
+        "longitude": -46.612073
+      },
+      "contato": {
+        "telefone": "(11) 3491-4200",
+        "email": "atendimento.ipiranga@saocamilo-sp.br",
+        "site": "https://www.saocamilo-sp.br/ipiranga"
+      },
+      "capacidade": {
+        "leitos_totais": 320,
+        "leitos_uti": 60,
+        "salas_cirurgicas": 15,
+        "pronto_socorro": true
+      },
+      "especialidades": [
+        "Clínica Médica",
+        "Cirurgia Geral",
+        "Cardiologia",
+        "Oncologia",
+        "Ortopedia",
+        "Neurologia",
+        "Gastroenterologia",
+        "Urologia",
+        "Pronto Socorro 24h"
+      ],
+      "servicos": [
+        "Internação",
+        "UTI Adulto, Pediátrica e Neonatal",
+        "Centro Cirúrgico",
+        "Hemodinâmica",
+        "Centro de Oncologia",
+        "Diagnóstico por Imagem",
+        "Laboratório 24h",
+        "Check-up Executivo"
+      ],
+      "credenciamento": {
+        "data_inicio": "2018-05-20",
+        "status": "ATIVO",
+        "renovacao": "2025-05-20"
+      },
+      "cobertura_raps": {
+        "bairros_cobertos": 152,
+        "beneficiarios": 78056,
+        "percentual_rede": 18.7
+      }
+    },
+    {
+      "id": 4,
+      "nome": "Hospital Santa Clara",
+      "razao_social": "Santa Casa de Misericórdia de São Paulo",
+      "tipo": "Hospital Geral",
+      "zona": "Leste",
+      "endereco": {
+        "logradouro": "Rua Doutor Diogo de Faria, 957",
+        "bairro": "Tatuapé",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "03071-100",
+        "complemento": "Unidade Zona Leste"
+      },
+      "coordenadas": {
+        "latitude": -23.532691,
+        "longitude": -46.527272
+      },
+      "contato": {
+        "telefone": "(11) 2167-5000",
+        "email": "contato@santaclara.com.br",
+        "site": "https://www.santaclara.com.br"
+      },
+      "capacidade": {
+        "leitos_totais": 200,
+        "leitos_uti": 35,
+        "salas_cirurgicas": 10,
+        "pronto_socorro": true
+      },
+      "especialidades": [
+        "Clínica Médica",
+        "Cirurgia Geral",
+        "Ortopedia",
+        "Cardiologia",
+        "Neurologia",
+        "Pneumologia",
+        "Pronto Socorro 24h"
+      ],
+      "servicos": [
+        "Internação",
+        "UTI Adulto",
+        "Centro Cirúrgico",
+        "Diagnóstico por Imagem",
+        "Laboratório",
+        "Fisioterapia",
+        "Reabilitação"
+      ],
+      "credenciamento": {
+        "data_inicio": "2019-08-12",
+        "status": "ATIVO",
+        "renovacao": "2026-08-12"
+      },
+      "cobertura_raps": {
+        "bairros_cobertos": 120,
+        "beneficiarios": 37733,
+        "percentual_rede": 9.1
+      }
+    },
+    {
+      "id": 5,
+      "nome": "Hospital Santa Virgínia",
+      "razao_social": "Associação Congregação de Santa Catarina",
+      "tipo": "Hospital Geral",
+      "zona": "Leste",
+      "endereco": {
+        "logradouro": "Rua Coração de Maria, 92",
+        "bairro": "Belém",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "03056-000",
+        "complemento": "Unidade Belém"
+      },
+      "coordenadas": {
+        "latitude": -23.536880,
+        "longitude": -46.589506
+      },
+      "contato": {
+        "telefone": "(11) 2692-4188",
+        "email": "atendimento@hsantavirginia.com.br",
+        "site": "https://www.hsantavirginia.com.br"
+      },
+      "capacidade": {
+        "leitos_totais": 150,
+        "leitos_uti": 25,
+        "salas_cirurgicas": 8,
+        "pronto_socorro": true
+      },
+      "especialidades": [
+        "Clínica Médica",
+        "Cirurgia Geral",
+        "Ortopedia",
+        "Pediatria",
+        "Ginecologia e Obstetrícia",
+        "Pronto Socorro 24h"
+      ],
+      "servicos": [
+        "Internação",
+        "UTI Adulto",
+        "Centro Cirúrgico",
+        "Maternidade",
+        "Diagnóstico por Imagem",
+        "Laboratório",
+        "Pediatria"
+      ],
+      "credenciamento": {
+        "data_inicio": "2020-02-25",
+        "status": "ATIVO",
+        "renovacao": "2026-02-25"
+      },
+      "cobertura_raps": {
+        "bairros_cobertos": 38,
+        "beneficiarios": 26794,
+        "percentual_rede": 6.4
+      }
+    },
+    {
+      "id": 6,
+      "nome": "Hospital Santa Marcelina Itaquera",
+      "razao_social": "Associação Santa Marcelina",
+      "tipo": "Hospital Geral",
+      "zona": "Leste",
+      "endereco": {
+        "logradouro": "Rua Santa Marcelina, 177",
+        "bairro": "Itaquera",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "08270-070",
+        "complemento": "Unidade Itaquera"
+      },
+      "coordenadas": {
+        "latitude": -23.555054,
+        "longitude": -46.462603
+      },
+      "contato": {
+        "telefone": "(11) 2070-6000",
+        "email": "atendimento@santamarcelina.org",
+        "site": "https://www.santamarcelina.org"
+      },
+      "capacidade": {
+        "leitos_totais": 280,
+        "leitos_uti": 50,
+        "salas_cirurgicas": 14,
+        "pronto_socorro": true
+      },
+      "especialidades": [
+        "Clínica Médica",
+        "Cirurgia Geral",
+        "Cardiologia",
+        "Ortopedia",
+        "Neurologia",
+        "Nefrologia",
+        "Oncologia",
+        "Pronto Socorro 24h"
+      ],
+      "servicos": [
+        "Internação",
+        "UTI Adulto e Pediátrica",
+        "Centro Cirúrgico",
+        "Hemodinâmica",
+        "Diagnóstico por Imagem",
+        "Laboratório 24h",
+        "Fisioterapia",
+        "Hemodiálise"
+      ],
+      "credenciamento": {
+        "data_inicio": "2019-01-10",
+        "status": "ATIVO",
+        "renovacao": "2025-01-10"
+      },
+      "cobertura_raps": {
+        "bairros_cobertos": 163,
+        "beneficiarios": 28744,
+        "percentual_rede": 6.9
+      }
+    },
+    {
+      "id": 7,
+      "nome": "Hospital São Camilo Pompéia",
+      "razao_social": "União Social Camiliana",
+      "tipo": "Hospital Geral",
+      "zona": "Oeste",
+      "endereco": {
+        "logradouro": "Rua Correia Dias, 184",
+        "bairro": "Pompéia",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "05060-001",
+        "complemento": "Unidade Pompéia"
+      },
+      "coordenadas": {
+        "latitude": -23.534065,
+        "longitude": -46.688244
+      },
+      "contato": {
+        "telefone": "(11) 3677-0200",
+        "email": "atendimento.pompeia@saocamilo-sp.br",
+        "site": "https://www.saocamilo-sp.br/pompeia"
+      },
+      "capacidade": {
+        "leitos_totais": 380,
+        "leitos_uti": 70,
+        "salas_cirurgicas": 18,
+        "pronto_socorro": true
+      },
+      "especialidades": [
+        "Clínica Médica",
+        "Cirurgia Geral",
+        "Cardiologia",
+        "Oncologia",
+        "Ortopedia",
+        "Neurologia",
+        "Gastroenterologia",
+        "Urologia",
+        "Nefrologia",
+        "Pronto Socorro 24h"
+      ],
+      "servicos": [
+        "Internação",
+        "UTI Adulto, Pediátrica e Neonatal",
+        "Centro Cirúrgico",
+        "Hemodinâmica",
+        "Centro de Oncologia",
+        "Centro de Diagnóstico",
+        "Laboratório 24h",
+        "Check-up Executivo",
+        "Centro de Ortopedia"
+      ],
+      "credenciamento": {
+        "data_inicio": "2018-03-15",
+        "status": "ATIVO",
+        "renovacao": "2025-03-15"
+      },
+      "cobertura_raps": {
+        "bairros_cobertos": 353,
+        "beneficiarios": 89709,
+        "percentual_rede": 21.5
+      }
+    },
+    {
+      "id": 8,
+      "nome": "Hospital São Camilo Santana",
+      "razao_social": "União Social Camiliana",
+      "tipo": "Hospital Geral",
+      "zona": "Norte",
+      "endereco": {
+        "logradouro": "Rua Voluntários da Pátria, 2934",
+        "bairro": "Santana",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "02402-500",
+        "complemento": "Unidade Santana"
+      },
+      "coordenadas": {
+        "latitude": -23.487767,
+        "longitude": -46.627247
+      },
+      "contato": {
+        "telefone": "(11) 2978-6800",
+        "email": "atendimento.santana@saocamilo-sp.br",
+        "site": "https://www.saocamilo-sp.br/santana"
+      },
+      "capacidade": {
+        "leitos_totais": 290,
+        "leitos_uti": 55,
+        "salas_cirurgicas": 13,
+        "pronto_socorro": true
+      },
+      "especialidades": [
+        "Clínica Médica",
+        "Cirurgia Geral",
+        "Cardiologia",
+        "Ortopedia",
+        "Neurologia",
+        "Gastroenterologia",
+        "Urologia",
+        "Pronto Socorro 24h"
+      ],
+      "servicos": [
+        "Internação",
+        "UTI Adulto e Pediátrica",
+        "Centro Cirúrgico",
+        "Hemodinâmica",
+        "Diagnóstico por Imagem",
+        "Laboratório 24h",
+        "Check-up Executivo",
+        "Fisioterapia"
+      ],
+      "credenciamento": {
+        "data_inicio": "2018-06-20",
+        "status": "ATIVO",
+        "renovacao": "2025-06-20"
+      },
+      "cobertura_raps": {
+        "bairros_cobertos": 156,
+        "beneficiarios": 45858,
+        "percentual_rede": 11.0
+      }
+    },
+    {
+      "id": 9,
+      "nome": "Hospital e Maternidade Neomater",
+      "razao_social": "Hospital e Maternidade Neomater LTDA",
+      "tipo": "Hospital Geral e Maternidade",
+      "zona": "ABC",
+      "endereco": {
+        "logradouro": "Av. Francisco Prestes Maia, 2143",
+        "bairro": "Rudge Ramos",
+        "cidade": "São Bernardo do Campo",
+        "estado": "SP",
+        "cep": "09636-000",
+        "complemento": "Torre Principal"
+      },
+      "coordenadas": {
+        "latitude": -23.669184,
+        "longitude": -46.553716
+      },
+      "contato": {
+        "telefone": "(11) 4362-1400",
+        "email": "contato@neomater.com.br",
+        "site": "https://www.neomater.com.br"
+      },
+      "capacidade": {
+        "leitos_totais": 220,
+        "leitos_uti": 40,
+        "salas_cirurgicas": 11,
+        "pronto_socorro": true
+      },
+      "especialidades": [
+        "Clínica Médica",
+        "Cirurgia Geral",
+        "Ginecologia e Obstetrícia",
+        "Pediatria",
+        "Neonatologia",
+        "Ortopedia",
+        "Cardiologia",
+        "Pronto Socorro 24h"
+      ],
+      "servicos": [
+        "Internação",
+        "UTI Adulto e Neonatal",
+        "Centro Cirúrgico",
+        "Maternidade",
+        "Centro de Parto Normal",
+        "Banco de Leite",
+        "Diagnóstico por Imagem",
+        "Laboratório 24h",
+        "Pediatria 24h"
+      ],
+      "credenciamento": {
+        "data_inicio": "2019-11-05",
+        "status": "ATIVO",
+        "renovacao": "2026-11-05"
+      },
+      "cobertura_raps": {
+        "bairros_cobertos": 252,
+        "beneficiarios": 59379,
+        "percentual_rede": 14.2
+      }
+    }
+  ],
+  "resumo_capacidade": {
+    "total_leitos": 2270,
+    "total_leitos_uti": 410,
+    "total_salas_cirurgicas": 109,
+    "hospitais_com_ps_24h": 9,
+    "hospitais_com_maternidade": 2
+  },
+  "distribuicao_zonas": {
+    "Centro-Sul": {
+      "hospitais": 3,
+      "leitos_totais": 750,
+      "leitos_uti": 135
+    },
+    "Leste": {
+      "hospitais": 3,
+      "leitos_totais": 630,
+      "leitos_uti": 110
+    },
+    "Oeste": {
+      "hospitais": 1,
+      "leitos_totais": 380,
+      "leitos_uti": 70
+    },
+    "Norte": {
+      "hospitais": 1,
+      "leitos_totais": 290,
+      "leitos_uti": 55
+    },
+    "ABC": {
+      "hospitais": 1,
+      "leitos_totais": 220,
+      "leitos_uti": 40
+    }
+  }
+}
