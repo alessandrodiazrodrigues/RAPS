@@ -1,579 +1,587 @@
 {
   "metadata": {
-    "versao": "1.0",
-    "data_exportacao": "2025-10-28T00:00:00Z",
+    "versao": "2.0",
+    "data_exportacao": "2025-10-27T00:00:00Z",
     "total_hospitais": 9,
-    "fonte": "RAPS Prevent Senior - Rede Credenciada"
+    "total_bairros": 1290,
+    "total_beneficiarios": 416795
   },
+  "kpis_gerais": {
+    "total_beneficiarios": 416795,
+    "total_bairros": 1290,
+    "total_hospitais": 9,
+    "distancia_media_km": 8.19,
+    "cobertura_10km_pct": 71,
+    "cobertura_15km_pct": 86,
+    "bairros_descobertos": 188,
+    "beneficiarios_descobertos": 23000
+  },
+  "distribuicao_faixas": {
+    "0-5km": {
+      "bairros": 435,
+      "percentual": 34,
+      "status": "EXCELENTE"
+    },
+    "5-10km": {
+      "bairros": 473,
+      "percentual": 37,
+      "status": "BOM"
+    },
+    "10-15km": {
+      "bairros": 194,
+      "percentual": 15,
+      "status": "REGULAR"
+    },
+    "15-20km": {
+      "bairros": 146,
+      "percentual": 11,
+      "status": "ATENÇÃO"
+    },
+    ">20km": {
+      "bairros": 42,
+      "percentual": 3,
+      "status": "CRÍTICO"
+    }
+  },
+  "zonas": [
+    {
+      "nome": "Leste",
+      "bairros": 324,
+      "beneficiarios": 100140,
+      "percentual_rede": 24,
+      "distancia_media_km": 5.21,
+      "hospitais": 3,
+      "avaliacao": "EXCELENTE",
+      "estrelas": 5,
+      "cor": "#3b82f6"
+    },
+    {
+      "nome": "Norte",
+      "bairros": 232,
+      "beneficiarios": 62584,
+      "percentual_rede": 15,
+      "distancia_media_km": 5.59,
+      "hospitais": 1,
+      "avaliacao": "EXCELENTE",
+      "estrelas": 5,
+      "cor": "#f59e0b"
+    },
+    {
+      "nome": "ABC",
+      "bairros": 139,
+      "beneficiarios": 40533,
+      "percentual_rede": 10,
+      "distancia_media_km": 8.52,
+      "hospitais": 1,
+      "avaliacao": "MUITO BOM",
+      "estrelas": 4,
+      "cor": "#ec4899"
+    },
+    {
+      "nome": "Oeste",
+      "bairros": 268,
+      "beneficiarios": 72125,
+      "percentual_rede": 17,
+      "distancia_media_km": 10.54,
+      "hospitais": 1,
+      "avaliacao": "BOM",
+      "estrelas": 3,
+      "cor": "#8b5cf6"
+    },
+    {
+      "nome": "Centro-Sul",
+      "bairros": 327,
+      "beneficiarios": 141413,
+      "percentual_rede": 34,
+      "distancia_media_km": 10.94,
+      "hospitais": 3,
+      "avaliacao": "BOM",
+      "estrelas": 3,
+      "cor": "#10b981"
+    }
+  ],
   "hospitais": [
     {
       "id": 1,
-      "nome": "Hospital Cruz Azul",
-      "razao_social": "Beneficência Portuguesa de São Paulo",
-      "tipo": "Hospital Geral",
-      "zona": "Centro-Sul",
-      "endereco": {
-        "logradouro": "Av. Lins de Vasconcelos, 356",
-        "bairro": "Cambuci",
-        "cidade": "São Paulo",
-        "estado": "SP",
-        "cep": "01538-001",
-        "complemento": "Prédio Principal"
-      },
-      "coordenadas": {
-        "latitude": -23.565920,
-        "longitude": -46.622154
-      },
-      "contato": {
-        "telefone": "(11) 3097-1500",
-        "email": "contato@cruzazul.org.br",
-        "site": "https://www.cruzazul.org.br"
-      },
-      "capacidade": {
-        "leitos_totais": 180,
-        "leitos_uti": 30,
-        "salas_cirurgicas": 8,
-        "pronto_socorro": true
-      },
-      "especialidades": [
-        "Clínica Médica",
-        "Cirurgia Geral",
-        "Ortopedia",
-        "Cardiologia",
-        "Neurologia",
-        "Pronto Socorro 24h"
-      ],
-      "servicos": [
-        "Internação",
-        "UTI",
-        "Centro Cirúrgico",
-        "Diagnóstico por Imagem",
-        "Laboratório",
-        "Farmácia 24h"
-      ],
-      "credenciamento": {
-        "data_inicio": "2020-01-15",
-        "status": "ATIVO",
-        "renovacao": "2026-01-15"
-      },
-      "cobertura_raps": {
-        "bairros_cobertos": 4,
-        "beneficiarios": 7421,
-        "percentual_rede": 1.8
-      }
+      "nome": "São Camilo Pompéia",
+      "zona": "Oeste",
+      "bairros_cobertos": 353,
+      "beneficiarios": 89709,
+      "percentual_rede": 21.5,
+      "status": "SOBRECARGA",
+      "cor_status": "#ef4444",
+      "lat": -23.534065,
+      "lng": -46.688244
     },
     {
       "id": 2,
-      "nome": "Hospital Adventista de São Paulo",
-      "razao_social": "Instituição Adventista Central Brasileira de Educação e Assistência Social",
-      "tipo": "Hospital Geral",
+      "nome": "São Camilo Ipiranga",
       "zona": "Centro-Sul",
-      "endereco": {
-        "logradouro": "Estrada de Itapecerica, 4617",
-        "bairro": "Campo Limpo",
-        "cidade": "São Paulo",
-        "estado": "SP",
-        "cep": "05835-004",
-        "complemento": "Torre A"
-      },
-      "coordenadas": {
-        "latitude": -23.563566,
-        "longitude": -46.633928
-      },
-      "contato": {
-        "telefone": "(11) 2067-8000",
-        "email": "atendimento@hasp.com.br",
-        "site": "https://www.adventista.com.br"
-      },
-      "capacidade": {
-        "leitos_totais": 250,
-        "leitos_uti": 45,
-        "salas_cirurgicas": 12,
-        "pronto_socorro": true
-      },
-      "especialidades": [
-        "Clínica Médica",
-        "Cirurgia Geral",
-        "Cardiologia",
-        "Oncologia",
-        "Ortopedia",
-        "Neurologia",
-        "Nefrologia",
-        "Pronto Socorro 24h"
-      ],
-      "servicos": [
-        "Internação",
-        "UTI Adulto e Neonatal",
-        "Centro Cirúrgico",
-        "Hemodinâmica",
-        "Diagnóstico por Imagem",
-        "Laboratório 24h",
-        "Centro de Oncologia"
-      ],
-      "credenciamento": {
-        "data_inicio": "2019-03-10",
-        "status": "ATIVO",
-        "renovacao": "2025-03-10"
-      },
-      "cobertura_raps": {
-        "bairros_cobertos": 52,
-        "beneficiarios": 43101,
-        "percentual_rede": 10.3
-      }
+      "bairros_cobertos": 152,
+      "beneficiarios": 78056,
+      "percentual_rede": 18.7,
+      "status": "ALTA CARGA",
+      "cor_status": "#f59e0b",
+      "lat": -23.583081,
+      "lng": -46.612073
     },
     {
       "id": 3,
-      "nome": "Hospital São Camilo Ipiranga",
-      "razao_social": "União Social Camiliana",
-      "tipo": "Hospital Geral",
-      "zona": "Centro-Sul",
-      "endereco": {
-        "logradouro": "Av. Nazaré, 28",
-        "bairro": "Ipiranga",
-        "cidade": "São Paulo",
-        "estado": "SP",
-        "cep": "04262-000",
-        "complemento": "Unidade Ipiranga"
-      },
-      "coordenadas": {
-        "latitude": -23.583081,
-        "longitude": -46.612073
-      },
-      "contato": {
-        "telefone": "(11) 3491-4200",
-        "email": "atendimento.ipiranga@saocamilo-sp.br",
-        "site": "https://www.saocamilo-sp.br/ipiranga"
-      },
-      "capacidade": {
-        "leitos_totais": 320,
-        "leitos_uti": 60,
-        "salas_cirurgicas": 15,
-        "pronto_socorro": true
-      },
-      "especialidades": [
-        "Clínica Médica",
-        "Cirurgia Geral",
-        "Cardiologia",
-        "Oncologia",
-        "Ortopedia",
-        "Neurologia",
-        "Gastroenterologia",
-        "Urologia",
-        "Pronto Socorro 24h"
-      ],
-      "servicos": [
-        "Internação",
-        "UTI Adulto, Pediátrica e Neonatal",
-        "Centro Cirúrgico",
-        "Hemodinâmica",
-        "Centro de Oncologia",
-        "Diagnóstico por Imagem",
-        "Laboratório 24h",
-        "Check-up Executivo"
-      ],
-      "credenciamento": {
-        "data_inicio": "2018-05-20",
-        "status": "ATIVO",
-        "renovacao": "2025-05-20"
-      },
-      "cobertura_raps": {
-        "bairros_cobertos": 152,
-        "beneficiarios": 78056,
-        "percentual_rede": 18.7
-      }
+      "nome": "Neomater (SBC)",
+      "zona": "ABC",
+      "bairros_cobertos": 252,
+      "beneficiarios": 59379,
+      "percentual_rede": 14.2,
+      "status": "BOA",
+      "cor_status": "#10b981",
+      "lat": -23.669184,
+      "lng": -46.553716
     },
     {
       "id": 4,
-      "nome": "Hospital Santa Clara",
-      "razao_social": "Santa Casa de Misericórdia de São Paulo",
-      "tipo": "Hospital Geral",
-      "zona": "Leste",
-      "endereco": {
-        "logradouro": "Rua Doutor Diogo de Faria, 957",
-        "bairro": "Tatuapé",
-        "cidade": "São Paulo",
-        "estado": "SP",
-        "cep": "03071-100",
-        "complemento": "Unidade Zona Leste"
-      },
-      "coordenadas": {
-        "latitude": -23.532691,
-        "longitude": -46.527272
-      },
-      "contato": {
-        "telefone": "(11) 2167-5000",
-        "email": "contato@santaclara.com.br",
-        "site": "https://www.santaclara.com.br"
-      },
-      "capacidade": {
-        "leitos_totais": 200,
-        "leitos_uti": 35,
-        "salas_cirurgicas": 10,
-        "pronto_socorro": true
-      },
-      "especialidades": [
-        "Clínica Médica",
-        "Cirurgia Geral",
-        "Ortopedia",
-        "Cardiologia",
-        "Neurologia",
-        "Pneumologia",
-        "Pronto Socorro 24h"
-      ],
-      "servicos": [
-        "Internação",
-        "UTI Adulto",
-        "Centro Cirúrgico",
-        "Diagnóstico por Imagem",
-        "Laboratório",
-        "Fisioterapia",
-        "Reabilitação"
-      ],
-      "credenciamento": {
-        "data_inicio": "2019-08-12",
-        "status": "ATIVO",
-        "renovacao": "2026-08-12"
-      },
-      "cobertura_raps": {
-        "bairros_cobertos": 120,
-        "beneficiarios": 37733,
-        "percentual_rede": 9.1
-      }
+      "nome": "São Camilo Santana",
+      "zona": "Norte",
+      "bairros_cobertos": 156,
+      "beneficiarios": 45858,
+      "percentual_rede": 11.0,
+      "status": "EFICIENTE",
+      "cor_status": "#10b981",
+      "lat": -23.487767,
+      "lng": -46.627247
     },
     {
       "id": 5,
-      "nome": "Hospital Santa Virgínia",
-      "razao_social": "Associação Congregação de Santa Catarina",
-      "tipo": "Hospital Geral",
-      "zona": "Leste",
-      "endereco": {
-        "logradouro": "Rua Coração de Maria, 92",
-        "bairro": "Belém",
-        "cidade": "São Paulo",
-        "estado": "SP",
-        "cep": "03056-000",
-        "complemento": "Unidade Belém"
-      },
-      "coordenadas": {
-        "latitude": -23.536880,
-        "longitude": -46.589506
-      },
-      "contato": {
-        "telefone": "(11) 2692-4188",
-        "email": "atendimento@hsantavirginia.com.br",
-        "site": "https://www.hsantavirginia.com.br"
-      },
-      "capacidade": {
-        "leitos_totais": 150,
-        "leitos_uti": 25,
-        "salas_cirurgicas": 8,
-        "pronto_socorro": true
-      },
-      "especialidades": [
-        "Clínica Médica",
-        "Cirurgia Geral",
-        "Ortopedia",
-        "Pediatria",
-        "Ginecologia e Obstetrícia",
-        "Pronto Socorro 24h"
-      ],
-      "servicos": [
-        "Internação",
-        "UTI Adulto",
-        "Centro Cirúrgico",
-        "Maternidade",
-        "Diagnóstico por Imagem",
-        "Laboratório",
-        "Pediatria"
-      ],
-      "credenciamento": {
-        "data_inicio": "2020-02-25",
-        "status": "ATIVO",
-        "renovacao": "2026-02-25"
-      },
-      "cobertura_raps": {
-        "bairros_cobertos": 38,
-        "beneficiarios": 26794,
-        "percentual_rede": 6.4
-      }
+      "nome": "Hospital Adventista",
+      "zona": "Centro-Sul",
+      "bairros_cobertos": 52,
+      "beneficiarios": 43101,
+      "percentual_rede": 10.3,
+      "status": "BOA",
+      "cor_status": "#10b981",
+      "lat": -23.563566,
+      "lng": -46.633928
     },
     {
       "id": 6,
-      "nome": "Hospital Santa Marcelina Itaquera",
-      "razao_social": "Associação Santa Marcelina",
-      "tipo": "Hospital Geral",
+      "nome": "Santa Clara",
       "zona": "Leste",
-      "endereco": {
-        "logradouro": "Rua Santa Marcelina, 177",
-        "bairro": "Itaquera",
-        "cidade": "São Paulo",
-        "estado": "SP",
-        "cep": "08270-070",
-        "complemento": "Unidade Itaquera"
-      },
-      "coordenadas": {
-        "latitude": -23.555054,
-        "longitude": -46.462603
-      },
-      "contato": {
-        "telefone": "(11) 2070-6000",
-        "email": "atendimento@santamarcelina.org",
-        "site": "https://www.santamarcelina.org"
-      },
-      "capacidade": {
-        "leitos_totais": 280,
-        "leitos_uti": 50,
-        "salas_cirurgicas": 14,
-        "pronto_socorro": true
-      },
-      "especialidades": [
-        "Clínica Médica",
-        "Cirurgia Geral",
-        "Cardiologia",
-        "Ortopedia",
-        "Neurologia",
-        "Nefrologia",
-        "Oncologia",
-        "Pronto Socorro 24h"
-      ],
-      "servicos": [
-        "Internação",
-        "UTI Adulto e Pediátrica",
-        "Centro Cirúrgico",
-        "Hemodinâmica",
-        "Diagnóstico por Imagem",
-        "Laboratório 24h",
-        "Fisioterapia",
-        "Hemodiálise"
-      ],
-      "credenciamento": {
-        "data_inicio": "2019-01-10",
-        "status": "ATIVO",
-        "renovacao": "2025-01-10"
-      },
-      "cobertura_raps": {
-        "bairros_cobertos": 163,
-        "beneficiarios": 28744,
-        "percentual_rede": 6.9
-      }
+      "bairros_cobertos": 120,
+      "beneficiarios": 37733,
+      "percentual_rede": 9.1,
+      "status": "BOA",
+      "cor_status": "#10b981",
+      "lat": -23.532691,
+      "lng": -46.527272
     },
     {
       "id": 7,
-      "nome": "Hospital São Camilo Pompéia",
-      "razao_social": "União Social Camiliana",
-      "tipo": "Hospital Geral",
-      "zona": "Oeste",
-      "endereco": {
-        "logradouro": "Rua Correia Dias, 184",
-        "bairro": "Pompéia",
-        "cidade": "São Paulo",
-        "estado": "SP",
-        "cep": "05060-001",
-        "complemento": "Unidade Pompéia"
-      },
-      "coordenadas": {
-        "latitude": -23.534065,
-        "longitude": -46.688244
-      },
-      "contato": {
-        "telefone": "(11) 3677-0200",
-        "email": "atendimento.pompeia@saocamilo-sp.br",
-        "site": "https://www.saocamilo-sp.br/pompeia"
-      },
-      "capacidade": {
-        "leitos_totais": 380,
-        "leitos_uti": 70,
-        "salas_cirurgicas": 18,
-        "pronto_socorro": true
-      },
-      "especialidades": [
-        "Clínica Médica",
-        "Cirurgia Geral",
-        "Cardiologia",
-        "Oncologia",
-        "Ortopedia",
-        "Neurologia",
-        "Gastroenterologia",
-        "Urologia",
-        "Nefrologia",
-        "Pronto Socorro 24h"
-      ],
-      "servicos": [
-        "Internação",
-        "UTI Adulto, Pediátrica e Neonatal",
-        "Centro Cirúrgico",
-        "Hemodinâmica",
-        "Centro de Oncologia",
-        "Centro de Diagnóstico",
-        "Laboratório 24h",
-        "Check-up Executivo",
-        "Centro de Ortopedia"
-      ],
-      "credenciamento": {
-        "data_inicio": "2018-03-15",
-        "status": "ATIVO",
-        "renovacao": "2025-03-15"
-      },
-      "cobertura_raps": {
-        "bairros_cobertos": 353,
-        "beneficiarios": 89709,
-        "percentual_rede": 21.5
-      }
+      "nome": "Santa Marcelina Itaquera",
+      "zona": "Leste",
+      "bairros_cobertos": 163,
+      "beneficiarios": 28744,
+      "percentual_rede": 6.9,
+      "status": "BOA",
+      "cor_status": "#10b981",
+      "lat": -23.555054,
+      "lng": -46.462603
     },
     {
       "id": 8,
-      "nome": "Hospital São Camilo Santana",
-      "razao_social": "União Social Camiliana",
-      "tipo": "Hospital Geral",
-      "zona": "Norte",
-      "endereco": {
-        "logradouro": "Rua Voluntários da Pátria, 2934",
-        "bairro": "Santana",
-        "cidade": "São Paulo",
-        "estado": "SP",
-        "cep": "02402-500",
-        "complemento": "Unidade Santana"
-      },
-      "coordenadas": {
-        "latitude": -23.487767,
-        "longitude": -46.627247
-      },
-      "contato": {
-        "telefone": "(11) 2978-6800",
-        "email": "atendimento.santana@saocamilo-sp.br",
-        "site": "https://www.saocamilo-sp.br/santana"
-      },
-      "capacidade": {
-        "leitos_totais": 290,
-        "leitos_uti": 55,
-        "salas_cirurgicas": 13,
-        "pronto_socorro": true
-      },
-      "especialidades": [
-        "Clínica Médica",
-        "Cirurgia Geral",
-        "Cardiologia",
-        "Ortopedia",
-        "Neurologia",
-        "Gastroenterologia",
-        "Urologia",
-        "Pronto Socorro 24h"
-      ],
-      "servicos": [
-        "Internação",
-        "UTI Adulto e Pediátrica",
-        "Centro Cirúrgico",
-        "Hemodinâmica",
-        "Diagnóstico por Imagem",
-        "Laboratório 24h",
-        "Check-up Executivo",
-        "Fisioterapia"
-      ],
-      "credenciamento": {
-        "data_inicio": "2018-06-20",
-        "status": "ATIVO",
-        "renovacao": "2025-06-20"
-      },
-      "cobertura_raps": {
-        "bairros_cobertos": 156,
-        "beneficiarios": 45858,
-        "percentual_rede": 11.0
-      }
+      "nome": "Santa Virgínia",
+      "zona": "Leste",
+      "bairros_cobertos": 38,
+      "beneficiarios": 26794,
+      "percentual_rede": 6.4,
+      "status": "BOA",
+      "cor_status": "#10b981",
+      "lat": -23.536880,
+      "lng": -46.589506
     },
     {
       "id": 9,
-      "nome": "Hospital e Maternidade Neomater",
-      "razao_social": "Hospital e Maternidade Neomater LTDA",
-      "tipo": "Hospital Geral e Maternidade",
-      "zona": "ABC",
-      "endereco": {
-        "logradouro": "Av. Francisco Prestes Maia, 2143",
-        "bairro": "Rudge Ramos",
-        "cidade": "São Bernardo do Campo",
-        "estado": "SP",
-        "cep": "09636-000",
-        "complemento": "Torre Principal"
-      },
-      "coordenadas": {
-        "latitude": -23.669184,
-        "longitude": -46.553716
-      },
-      "contato": {
-        "telefone": "(11) 4362-1400",
-        "email": "contato@neomater.com.br",
-        "site": "https://www.neomater.com.br"
-      },
-      "capacidade": {
-        "leitos_totais": 220,
-        "leitos_uti": 40,
-        "salas_cirurgicas": 11,
-        "pronto_socorro": true
-      },
-      "especialidades": [
-        "Clínica Médica",
-        "Cirurgia Geral",
-        "Ginecologia e Obstetrícia",
-        "Pediatria",
-        "Neonatologia",
-        "Ortopedia",
-        "Cardiologia",
-        "Pronto Socorro 24h"
-      ],
-      "servicos": [
-        "Internação",
-        "UTI Adulto e Neonatal",
-        "Centro Cirúrgico",
-        "Maternidade",
-        "Centro de Parto Normal",
-        "Banco de Leite",
-        "Diagnóstico por Imagem",
-        "Laboratório 24h",
-        "Pediatria 24h"
-      ],
-      "credenciamento": {
-        "data_inicio": "2019-11-05",
-        "status": "ATIVO",
-        "renovacao": "2026-11-05"
-      },
-      "cobertura_raps": {
-        "bairros_cobertos": 252,
-        "beneficiarios": 59379,
-        "percentual_rede": 14.2
-      }
+      "nome": "Hospital Cruz Azul",
+      "zona": "Centro-Sul",
+      "bairros_cobertos": 4,
+      "beneficiarios": 7421,
+      "percentual_rede": 1.8,
+      "status": "SUBUTILIZADO",
+      "cor_status": "#ef4444",
+      "lat": -23.565920,
+      "lng": -46.622154
     }
   ],
-  "resumo_capacidade": {
-    "total_leitos": 2270,
-    "total_leitos_uti": 410,
-    "total_salas_cirurgicas": 109,
-    "hospitais_com_ps_24h": 9,
-    "hospitais_com_maternidade": 2
-  },
-  "distribuicao_zonas": {
-    "Centro-Sul": {
-      "hospitais": 3,
-      "leitos_totais": 750,
-      "leitos_uti": 135
+  "top_bairros": [
+    {
+      "rank": 1,
+      "bairro": "Vila Mariana",
+      "zona": "Centro-Sul",
+      "beneficiarios": 7353,
+      "hospital_proximo": "São Camilo Ipiranga",
+      "distancia_km": 2.45,
+      "lat": -23.589700,
+      "lng": -46.634600
     },
-    "Leste": {
-      "hospitais": 3,
-      "leitos_totais": 630,
-      "leitos_uti": 110
+    {
+      "rank": 2,
+      "bairro": "Perdizes",
+      "zona": "Oeste",
+      "beneficiarios": 5243,
+      "hospital_proximo": "São Camilo Pompéia",
+      "distancia_km": 1.87,
+      "lat": -23.536900,
+      "lng": -46.674300
     },
-    "Oeste": {
-      "hospitais": 1,
-      "leitos_totais": 380,
-      "leitos_uti": 70
+    {
+      "rank": 3,
+      "bairro": "Santana",
+      "zona": "Norte",
+      "beneficiarios": 5187,
+      "hospital_proximo": "São Camilo Santana",
+      "distancia_km": 0.79,
+      "lat": -23.506700,
+      "lng": -46.629400
     },
-    "Norte": {
-      "hospitais": 1,
-      "leitos_totais": 290,
-      "leitos_uti": 55
+    {
+      "rank": 4,
+      "bairro": "Mooca",
+      "zona": "Leste",
+      "beneficiarios": 4514,
+      "hospital_proximo": "Santa Virgínia",
+      "distancia_km": 2.31,
+      "lat": -23.560300,
+      "lng": -46.599600
     },
-    "ABC": {
-      "hospitais": 1,
-      "leitos_totais": 220,
-      "leitos_uti": 40
+    {
+      "rank": 5,
+      "bairro": "Bela Vista",
+      "zona": "Centro-Sul",
+      "beneficiarios": 4205,
+      "hospital_proximo": "Hospital Cruz Azul",
+      "distancia_km": 3.45,
+      "lat": -23.555400,
+      "lng": -46.645600
+    },
+    {
+      "rank": 6,
+      "bairro": "Tatuapé",
+      "zona": "Leste",
+      "beneficiarios": 4092,
+      "hospital_proximo": "Santa Clara",
+      "distancia_km": 1.23,
+      "lat": -23.535200,
+      "lng": -46.575500
+    },
+    {
+      "rank": 7,
+      "bairro": "Pinheiros",
+      "zona": "Oeste",
+      "beneficiarios": 3730,
+      "hospital_proximo": "São Camilo Pompéia",
+      "distancia_km": 3.12,
+      "lat": -23.563600,
+      "lng": -46.691600
+    },
+    {
+      "rank": 8,
+      "bairro": "Ipiranga",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3668,
+      "hospital_proximo": "São Camilo Ipiranga",
+      "distancia_km": 0.89,
+      "lat": -23.595900,
+      "lng": -46.609800
+    },
+    {
+      "rank": 9,
+      "bairro": "Vila Carrão",
+      "zona": "Leste",
+      "beneficiarios": 3367,
+      "hospital_proximo": "Santa Clara",
+      "distancia_km": 4.56,
+      "lat": -23.550600,
+      "lng": -46.538300
+    },
+    {
+      "rank": 10,
+      "bairro": "Centro (SBC)",
+      "zona": "ABC",
+      "beneficiarios": 3009,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 2.34,
+      "lat": -23.701600,
+      "lng": -46.552900
+    },
+    {
+      "rank": 11,
+      "bairro": "Rudge Ramos",
+      "zona": "ABC",
+      "beneficiarios": 2516,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 0.67,
+      "lat": -23.657700,
+      "lng": -46.568400
+    },
+    {
+      "rank": 12,
+      "bairro": "Vila Andrade",
+      "zona": "Oeste",
+      "beneficiarios": 2436,
+      "hospital_proximo": "Hospital Adventista",
+      "distancia_km": 5.23,
+      "lat": -23.631500,
+      "lng": -46.736700
+    },
+    {
+      "rank": 13,
+      "bairro": "Lauzane Paulista",
+      "zona": "Norte",
+      "beneficiarios": 2215,
+      "hospital_proximo": "São Camilo Santana",
+      "distancia_km": 4.12,
+      "lat": -23.478500,
+      "lng": -46.644200
+    },
+    {
+      "rank": 14,
+      "bairro": "Paraíso",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2004,
+      "hospital_proximo": "São Camilo Ipiranga",
+      "distancia_km": 2.89,
+      "lat": -23.572200,
+      "lng": -46.642200
+    },
+    {
+      "rank": 15,
+      "bairro": "Mirandópolis",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1772,
+      "hospital_proximo": "São Camilo Ipiranga",
+      "distancia_km": 3.21,
+      "lat": -23.596100,
+      "lng": -46.651100
     }
-  }
+  ],
+  "gaps_criticos": [
+    {
+      "rank": 1,
+      "bairro": "Sítio Canela Branca",
+      "zona": "Centro-Sul",
+      "beneficiarios": 28,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 31.26,
+      "tempo_min": 75
+    },
+    {
+      "rank": 2,
+      "bairro": "Emburá",
+      "zona": "Centro-Sul",
+      "beneficiarios": 30,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 31.05,
+      "tempo_min": 75
+    },
+    {
+      "rank": 3,
+      "bairro": "Chácara Santo Hubertus",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 30.27,
+      "tempo_min": 73
+    },
+    {
+      "rank": 4,
+      "bairro": "Eng. Marsilac",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 29.59,
+      "tempo_min": 71
+    },
+    {
+      "rank": 5,
+      "bairro": "Paranapiacaba",
+      "zona": "ABC",
+      "beneficiarios": 3,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 28.29,
+      "tempo_min": 68
+    },
+    {
+      "rank": 6,
+      "bairro": "Jd Marilu",
+      "zona": "Norte",
+      "beneficiarios": 1,
+      "hospital_proximo": "S. Camilo Pompéia",
+      "distancia_km": 26.89,
+      "tempo_min": 65
+    },
+    {
+      "rank": 7,
+      "bairro": "Colônia Zona Sul",
+      "zona": "Centro-Sul",
+      "beneficiarios": 16,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 26.49,
+      "tempo_min": 64
+    },
+    {
+      "rank": 8,
+      "bairro": "Cidade Nova America",
+      "zona": "Centro-Sul",
+      "beneficiarios": 6,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 25.70,
+      "tempo_min": 62
+    },
+    {
+      "rank": 9,
+      "bairro": "Parque Terceiro Lago",
+      "zona": "Centro-Sul",
+      "beneficiarios": 99,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 25.51,
+      "tempo_min": 61
+    },
+    {
+      "rank": 10,
+      "bairro": "Recanto Paraíso",
+      "zona": "Oeste",
+      "beneficiarios": 14,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 25.43,
+      "tempo_min": 61
+    },
+    {
+      "rank": 11,
+      "bairro": "Jardim Paranapanema",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 25.02,
+      "tempo_min": 60
+    },
+    {
+      "rank": 12,
+      "bairro": "Jardim Vista Alegre",
+      "zona": "Centro-Sul",
+      "beneficiarios": 8,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 24.89,
+      "tempo_min": 60
+    },
+    {
+      "rank": 13,
+      "bairro": "Jardim Lucélia",
+      "zona": "Centro-Sul",
+      "beneficiarios": 45,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 24.56,
+      "tempo_min": 59
+    },
+    {
+      "rank": 14,
+      "bairro": "Parque Res. Cocaia",
+      "zona": "Centro-Sul",
+      "beneficiarios": 234,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 24.12,
+      "tempo_min": 58
+    },
+    {
+      "rank": 15,
+      "bairro": "Jardim Orly",
+      "zona": "Centro-Sul",
+      "beneficiarios": 67,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 23.89,
+      "tempo_min": 57
+    },
+    {
+      "rank": 16,
+      "bairro": "Jardim Toca",
+      "zona": "Centro-Sul",
+      "beneficiarios": 12,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 23.67,
+      "tempo_min": 57
+    },
+    {
+      "rank": 17,
+      "bairro": "Parque Santo Antônio",
+      "zona": "Centro-Sul",
+      "beneficiarios": 156,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 23.45,
+      "tempo_min": 56
+    },
+    {
+      "rank": 18,
+      "bairro": "Jardim Gaivotas",
+      "zona": "Centro-Sul",
+      "beneficiarios": 89,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 23.23,
+      "tempo_min": 56
+    },
+    {
+      "rank": 19,
+      "bairro": "Balneário S. Francisco",
+      "zona": "Centro-Sul",
+      "beneficiarios": 34,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 23.01,
+      "tempo_min": 55
+    },
+    {
+      "rank": 20,
+      "bairro": "Jardim Prainha",
+      "zona": "Centro-Sul",
+      "beneficiarios": 78,
+      "hospital_proximo": "Neomater",
+      "distancia_km": 22.89,
+      "tempo_min": 55
+    }
+  ],
+  "alertas": [
+    {
+      "tipo": "CRITICO",
+      "titulo": "São Camilo Pompéia Sobrecarregado",
+      "descricao": "89.709 beneficiários (21.5% da rede total) cobertos por apenas 1 hospital na Zona Oeste. Recomenda-se expansão na região de Butantã/Osasco.",
+      "icone": "🔴"
+    },
+    {
+      "tipo": "ATENCAO",
+      "titulo": "188 Bairros Descobertos (>15km)",
+      "descricao": "~23.000 beneficiários em áreas com cobertura inadequada. Principal concentração: Zona Centro-Sul (Parelheiros, Grajaú, Marsilac).",
+      "icone": "⚠️"
+    },
+    {
+      "tipo": "SUCESSO",
+      "titulo": "Zona Leste e Norte - Modelos de Eficiência",
+      "descricao": "Distância média de 5.21km (Leste) e 5.59km (Norte) - melhores coberturas da rede. Usar como benchmark para expansão.",
+      "icone": "✅"
+    }
+  ],
+  "recomendacoes": [
+    {
+      "prioridade": "CRITICA",
+      "titulo": "Credenciar Hospital na Região de Parelheiros/Grajaú",
+      "descricao": "82 bairros descobertos na Zona Centro-Sul, concentrados no extremo sul. ~12.000 beneficiários afetados. Distância média atual: 24km. Impacto estimado: Reduzir para ~8km. ROI: Alto (redução de custos de remoção + satisfação).",
+      "impacto": "Alto"
+    },
+    {
+      "prioridade": "CRITICA",
+      "titulo": "Expandir Cobertura na Zona Oeste",
+      "descricao": "São Camilo Pompéia sobrecarregado com 89.709 beneficiários (21.5% da rede). Único hospital cobrindo toda Zona Oeste. Recomendação: Credenciar hospital na região de Butantã/Osasco. Impacto: Desafogar ~40.000 beneficiários.",
+      "impacto": "Alto"
+    },
+    {
+      "prioridade": "ALTA",
+      "titulo": "Investigar Subutilização do Hospital Cruz Azul",
+      "descricao": "Apenas 7.421 beneficiários (1.8% da rede) têm o Cruz Azul como hospital mais próximo, cobrindo apenas 4 bairros. Recomendação: Cruzar com dados reais de utilização (internações/consultas) para validar.",
+      "impacto": "Médio"
+    }
+  ]
 }
