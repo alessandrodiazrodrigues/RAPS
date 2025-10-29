@@ -519,18 +519,18 @@
             </div>
         </div>
 
-        <!-- ============= ANÁLISE DEMOGRÁFICA (NOVA!) ============= -->
+        <!-- ============= ANÁLISE DEMOGRÁFICA ============= -->
         <div id="demografia" class="section">
             <h2 class="section-title">👥 Análise Demográfica Completa</h2>
             
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-label">
-                        🎂 Idade Média Geral
-                        <span class="info-icon" data-tooltip="Idade média de todos os 416.795 beneficiários ativos (não internados) na rede">i</span>
+                        🎂 Idade Média (Adultos 18+)
+                        <span class="info-icon" data-tooltip="Idade média calculada apenas para beneficiários adultos (18 anos ou mais), excluindo pediatria">i</span>
                     </div>
-                    <div class="stat-value">54 anos</div>
-                    <div class="stat-subtitle">Faixa 50-59 anos</div>
+                    <div class="stat-value">69.6 anos</div>
+                    <div class="stat-subtitle">Apenas adultos</div>
                 </div>
                 
                 <div class="stat-card">
@@ -558,51 +558,6 @@
                     </div>
                     <div class="stat-value">20%</div>
                     <div class="stat-subtitle">83.359 idosos</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-label">
-                        🏥 Programa APS
-                        <span class="info-icon" data-tooltip="Beneficiários em Atenção Primária à Saúde - programa de cuidados preventivos e acompanhamento contínuo">i</span>
-                    </div>
-                    <div class="stat-value">5%</div>
-                    <div class="stat-subtitle">20.839 beneficiários</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-label">
-                        🎗️ Programa Oncologia
-                        <span class="info-icon" data-tooltip="Beneficiários em tratamento oncológico ou acompanhamento pós-tratamento">i</span>
-                    </div>
-                    <div class="stat-value">3%</div>
-                    <div class="stat-subtitle">12.503 beneficiários</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-label">
-                        🛏️ Programa Assiste
-                        <span class="info-icon" data-tooltip="Beneficiários acamados ou com mobilidade reduzida no programa de assistência domiciliar">i</span>
-                    </div>
-                    <div class="stat-value">4%</div>
-                    <div class="stat-subtitle">16.671 beneficiários</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-label">
-                        💊 Cuidados Paliativos
-                        <span class="info-icon" data-tooltip="Beneficiários em programa de cuidados paliativos">i</span>
-                    </div>
-                    <div class="stat-value">2%</div>
-                    <div class="stat-subtitle">8.335 beneficiários</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-label">
-                        🔬 Programa Nexus
-                        <span class="info-icon" data-tooltip="Beneficiários em programa especial de acompanhamento Nexus">i</span>
-                    </div>
-                    <div class="stat-value">1%</div>
-                    <div class="stat-subtitle">4.167 beneficiários</div>
                 </div>
                 
                 <div class="stat-card">
@@ -638,21 +593,13 @@
                 <span style="font-size: 28px;">⚠️</span>
                 <div>
                     <strong>População Envelhecida</strong><br>
-                    <span style="color: #94a3b8;">20% com mais de 75 anos (83.359 beneficiários) representa alta demanda por serviços especializados e maior complexidade de atendimento.</span>
-                </div>
-            </div>
-            
-            <div class="alert alert-warning">
-                <span style="font-size: 28px;">⚠️</span>
-                <div>
-                    <strong>Programas Especiais</strong><br>
-                    <span style="color: #94a3b8;">APS (5%) + Assiste (4%) + Oncologia (3%) + Paliativos (2%) + Nexus (1%) = 15% requerem acompanhamento especializado (62.515 beneficiários). Planejamento logístico e clínico crítico.</span>
+                    <span style="color: #94a3b8;">Idade média de 69.6 anos (adultos 18+) e 20% com mais de 75 anos (83.359 beneficiários) representa alta demanda por serviços especializados e maior complexidade de atendimento.</span>
                 </div>
             </div>
 
             <div class="charts-grid">
                 <div class="chart-card">
-                    <div class="chart-title">Idade Média por Zona</div>
+                    <div class="chart-title">Idade Média por Zona (Adultos 18+)</div>
                     <div class="chart-wrapper">
                         <canvas id="chartIdadeZona"></canvas>
                     </div>
@@ -666,7 +613,7 @@
                 </div>
                 
                 <div class="chart-card">
-                    <div class="chart-title">Idade Média por Hospital</div>
+                    <div class="chart-title">Idade Média por Hospital (Adultos 18+)</div>
                     <div class="chart-wrapper">
                         <canvas id="chartIdadeHospital"></canvas>
                     </div>
@@ -685,13 +632,6 @@
                         <canvas id="chartPiramideEtaria"></canvas>
                     </div>
                 </div>
-                
-                <div class="chart-card">
-                    <div class="chart-title">Programas Especiais</div>
-                    <div class="chart-wrapper">
-                        <canvas id="chartProgramas"></canvas>
-                    </div>
-                </div>
             </div>
 
             <div class="table-container">
@@ -701,70 +641,58 @@
                         <tr>
                             <th>Zona</th>
                             <th>Beneficiários</th>
-                            <th>Idade Média</th>
+                            <th>Idade Média (18+)</th>
                             <th>% Feminino</th>
                             <th>% Masculino</th>
                             <th>% >75 anos</th>
                             <th>% >80 anos</th>
-                            <th>% Assiste</th>
-                            <th>% Paliativo</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><span class="zona-badge zona-sul">Centro-Sul</span></td>
                             <td>141.413</td>
-                            <td>55 anos</td>
+                            <td>70.2 anos</td>
                             <td>56%</td>
                             <td>44%</td>
                             <td>21%</td>
                             <td>11%</td>
-                            <td>4%</td>
-                            <td>2%</td>
                         </tr>
                         <tr>
                             <td><span class="zona-badge zona-leste">Leste</span></td>
                             <td>100.140</td>
-                            <td>53 anos</td>
+                            <td>68.8 anos</td>
                             <td>54%</td>
                             <td>46%</td>
                             <td>19%</td>
                             <td>9%</td>
-                            <td>4%</td>
-                            <td>2%</td>
                         </tr>
                         <tr>
                             <td><span class="zona-badge zona-oeste">Oeste</span></td>
                             <td>72.125</td>
-                            <td>56 anos</td>
+                            <td>71.1 anos</td>
                             <td>57%</td>
                             <td>43%</td>
                             <td>22%</td>
                             <td>12%</td>
-                            <td>5%</td>
-                            <td>2%</td>
                         </tr>
                         <tr>
                             <td><span class="zona-badge zona-norte">Norte</span></td>
                             <td>62.584</td>
-                            <td>52 anos</td>
+                            <td>67.5 anos</td>
                             <td>53%</td>
                             <td>47%</td>
                             <td>18%</td>
                             <td>9%</td>
-                            <td>3%</td>
-                            <td>2%</td>
                         </tr>
                         <tr>
                             <td><span class="zona-badge zona-abc">ABC</span></td>
                             <td>40.533</td>
-                            <td>54 anos</td>
+                            <td>69.3 anos</td>
                             <td>55%</td>
                             <td>45%</td>
                             <td>20%</td>
                             <td>10%</td>
-                            <td>4%</td>
-                            <td>2%</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1514,14 +1442,14 @@
 
         // GRÁFICOS DEMOGRÁFICOS
         
-        // Idade Média por Zona
+        // Idade Média por Zona (Adultos 18+)
         new Chart(document.getElementById('chartIdadeZona'), {
             type: 'bar',
             data: {
                 labels: ['Norte', 'Leste', 'ABC', 'Centro-Sul', 'Oeste'],
                 datasets: [{
                     label: 'Anos',
-                    data: [52, 53, 54, 55, 56],
+                    data: [67.5, 68.8, 69.3, 70.2, 71.1],
                     backgroundColor: ['#f59e0b', '#3b82f6', '#ec4899', '#10b981', '#8b5cf6'],
                     borderRadius: 8
                 }]
@@ -1532,7 +1460,7 @@
                 maintainAspectRatio: false,
                 plugins: { legend: { display: false } },
                 scales: {
-                    x: { beginAtZero: true, max: 70 }
+                    x: { beginAtZero: true, max: 80 }
                 }
             }
         });
@@ -1554,14 +1482,14 @@
             }
         });
 
-        // Idade Média por Hospital
+        // Idade Média por Hospital (Adultos 18+)
         new Chart(document.getElementById('chartIdadeHospital'), {
             type: 'bar',
             data: {
                 labels: ['S.C.Pompéia', 'S.C.Ipiranga', 'Adventista', 'Cruz Azul', 'Neomater', 'S.C.Santana', 'Sta Clara', 'Sta Marcelina', 'Sta Virgínia'],
                 datasets: [{
-                    label: 'Idade Média',
-                    data: [56, 55, 55, 55, 54, 52, 53, 53, 53],
+                    label: 'Idade Média (18+)',
+                    data: [71.1, 70.2, 70.2, 70.2, 69.3, 67.5, 68.8, 68.8, 68.8],
                     backgroundColor: '#60a5fa',
                     borderRadius: 8
                 }]
@@ -1571,7 +1499,7 @@
                 maintainAspectRatio: false,
                 plugins: { legend: { display: false } },
                 scales: {
-                    y: { beginAtZero: true, max: 70 }
+                    y: { beginAtZero: true, max: 80 }
                 }
             }
         });
@@ -1621,23 +1549,6 @@
                 responsive: true,
                 maintainAspectRatio: false,
                 plugins: { legend: { display: false } }
-            }
-        });
-
-        // Programas Especiais
-        new Chart(document.getElementById('chartProgramas'), {
-            type: 'doughnut',
-            data: {
-                labels: ['APS (5%)', 'Assiste (4%)', 'Oncologia (3%)', 'Paliativo (2%)', 'Nexus (1%)', 'Outros (85%)'],
-                datasets: [{
-                    data: [20839, 16671, 12503, 8335, 4167, 354280],
-                    backgroundColor: ['#3b82f6', '#f59e0b', '#ec4899', '#ef4444', '#8b5cf6', '#94a3b8']
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: { legend: { position: 'bottom' } }
             }
         });
 
