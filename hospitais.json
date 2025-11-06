@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "versao": "5.0",
+    "data_exportacao": "2025-11-05T22:17:46.471Z"
+  },
+  "hospitais": [
+    {
+      "nome": "São Camilo Ipiranga",
+      "zona": "Centro-Sul",
+      "beneficiarios": 109805,
+      "bairros_cobertos": 339,
+      "percentual_rede": "26.6"
+    },
+    {
+      "nome": "Santa Marcelina",
+      "zona": "Leste",
+      "beneficiarios": 90369,
+      "bairros_cobertos": 331,
+      "percentual_rede": "21.9"
+    },
+    {
+      "nome": "São Camilo Pompéia",
+      "zona": "Oeste",
+      "beneficiarios": 71368,
+      "bairros_cobertos": 288,
+      "percentual_rede": "17.3"
+    },
+    {
+      "nome": "São Camilo Santana",
+      "zona": "Norte",
+      "beneficiarios": 61852,
+      "bairros_cobertos": 233,
+      "percentual_rede": "15.0"
+    },
+    {
+      "nome": "Neomater",
+      "zona": "ABC",
+      "beneficiarios": 40239,
+      "bairros_cobertos": 159,
+      "percentual_rede": "9.8"
+    },
+    {
+      "nome": "Hospital Adventista",
+      "zona": "Centro-Sul",
+      "beneficiarios": 30265,
+      "bairros_cobertos": 32,
+      "percentual_rede": "7.3"
+    },
+    {
+      "nome": "Hospital Cruz Azul",
+      "zona": "Centro-Sul",
+      "beneficiarios": 5055,
+      "bairros_cobertos": 1,
+      "percentual_rede": "1.2"
+    },
+    {
+      "nome": "Santa Virgínia",
+      "zona": "Leste",
+      "beneficiarios": 3698,
+      "bairros_cobertos": 2,
+      "percentual_rede": "0.9"
+    }
+  ]
+}

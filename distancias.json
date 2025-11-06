@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "versao": "5.0",
+    "data_exportacao": "2025-11-05T22:17:46.836Z"
+  },
+  "top_20_distantes": [
+    {
+      "bairro": "planalto paulista",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2173,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "parque grajaú",
+      "zona": "Centro-Sul",
+      "beneficiarios": 390,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "vila do encontro",
+      "zona": "Centro-Sul",
+      "beneficiarios": 510,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "jardim dom bosco",
+      "zona": "Centro-Sul",
+      "beneficiarios": 172,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "vila olímpia",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1311,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "jardim oriental",
+      "zona": "Centro-Sul",
+      "beneficiarios": 493,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "vila monte alegre",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1023,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "campo grande",
+      "zona": "Centro-Sul",
+      "beneficiarios": 342,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "vila brasilina",
+      "zona": "Centro-Sul",
+      "beneficiarios": 449,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "vila joaniza",
+      "zona": "Centro-Sul",
+      "beneficiarios": 94,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "vila firmiano pinto",
+      "zona": "Centro-Sul",
+      "beneficiarios": 832,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "vila santo estéfano",
+      "zona": "Centro-Sul",
+      "beneficiarios": 565,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "jabaquara",
+      "zona": "Centro-Sul",
+      "beneficiarios": 524,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "vila campestre",
+      "zona": "Centro-Sul",
+      "beneficiarios": 640,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "vila gumercindo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1444,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "jordanópolis",
+      "zona": "Centro-Sul",
+      "beneficiarios": 578,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "americanópolis",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1308,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "jardim prudência",
+      "zona": "Centro-Sul",
+      "beneficiarios": 792,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "vila moraes",
+      "zona": "Centro-Sul",
+      "beneficiarios": 922,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    },
+    {
+      "bairro": "paraíso",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2647,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19
+    }
+  ],
+  "distribuicao_por_faixa": {
+    "0-5km": {
+      "bairros": 731,
+      "beneficiarios": 250850
+    },
+    "5-10km": {
+      "bairros": 599,
+      "beneficiarios": 161801
+    },
+    "10-15km": {
+      "bairros": 0,
+      "beneficiarios": 0
+    },
+    "15-20km": {
+      "bairros": 0,
+      "beneficiarios": 0
+    },
+    ">20km": {
+      "bairros": 0,
+      "beneficiarios": 0
+    }
+  }
+}
