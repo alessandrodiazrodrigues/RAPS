@@ -1,25 +1,29 @@
 {
   "metadata": {
-    "versao": "5.0",
-    "data_exportacao": "2025-11-05T22:17:44.383Z",
+    "versao": "6.0",
+    "data_exportacao": "2025-11-06T19:19:16.334Z",
     "total_beneficiarios": 412651,
     "total_bairros": 1330,
-    "total_hospitais": 9
+    "total_hospitais": 9,
+    "total_zonas": 5
   },
   "kpis_gerais": {
     "total_beneficiarios": 412651,
     "total_bairros": 1330,
     "total_hospitais": 9,
+    "total_zonas": 5,
     "distancia_media_km": 4.48,
     "cobertura_10km_pct": 100,
-    "cobertura_15km_pct": 100
+    "cobertura_15km_pct": 100,
+    "cobertura_20km_pct": 100
   },
   "distribuicao_faixas": {
     "0-5km": 731,
     "5-10km": 599,
     "10-15km": 0,
     "15-20km": 0,
-    ">20km": 0
+    "20-30km": 0,
+    ">30km": 0
   },
   "top_bairros": [
     {
@@ -45,7 +49,7 @@
     },
     {
       "bairro": "centro",
-      "zona": "Centro",
+      "zona": "Centro-Sul",
       "beneficiarios": 4784,
       "hospital_proximo": "Neomater",
       "distancia_km": 2.94
@@ -59,7 +63,7 @@
     },
     {
       "bairro": "bela vista",
-      "zona": "Centro",
+      "zona": "Centro-Sul",
       "beneficiarios": 4205,
       "hospital_proximo": "Hospital Adventista",
       "distancia_km": 1.95
@@ -108,7 +112,7 @@
     },
     {
       "bairro": "jardim paulista",
-      "zona": "Centro",
+      "zona": "Centro-Sul",
       "beneficiarios": 3215,
       "hospital_proximo": "São Camilo Ipiranga",
       "distancia_km": 9.35
@@ -129,8 +133,7 @@
     }
   ],
   "zonas": {
-    "Centro": 30265,
-    "Centro-Sul": 109805,
+    "Centro-Sul": 140070,
     "Leste": 99122,
     "Norte": 61790,
     "Oeste": 71368,
@@ -307,5 +310,14 @@
       "distancia_km": 9.35,
       "tempo_min": 19
     }
-  ]
+  ],
+  "bairros_descobertos": {
+    "threshold_km": 15,
+    "total_bairros": 0,
+    "percentual_bairros": "0.0",
+    "total_beneficiarios": 0,
+    "percentual_beneficiarios": "0.0",
+    "distancia_maxima_km": 0,
+    "bairro_mais_distante": null
+  }
 }
