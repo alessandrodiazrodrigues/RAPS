@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal RAPS - Prevent Senior | Dashboard v6.0</title>
     
+    <!-- Google Fonts - Poppins Bold -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
     
@@ -20,10 +25,11 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             min-height: 100vh;
-            padding: 20px;
+            padding: 0;
+            color: #e2e8f0;
         }
 
         .container {
@@ -33,34 +39,51 @@
 
         /* ==================== HEADER ==================== */
         .header {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            margin-bottom: 30px;
+            background: #1e293b;
+            padding: 20px 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
-        .header h1 {
-            color: #2d3748;
-            font-size: 32px;
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .hamburger {
+            font-size: 24px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 6px;
+            transition: background 0.3s;
+            color: #e2e8f0;
+        }
+
+        .hamburger:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .header-left h1 {
+            margin: 0;
+            font-size: 22px;
+            color: #60a5fa;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header-right {
             display: flex;
             align-items: center;
             gap: 15px;
         }
 
         .badge {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 8px 20px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        .version {
             background: #48bb78;
             color: white;
             padding: 5px 12px;
@@ -69,48 +92,116 @@
             font-weight: 600;
         }
 
-        /* ==================== NAVEGAÇÃO ==================== */
-        .nav {
-            background: white;
-            padding: 15px 20px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .nav-tab {
-            background: #f7fafc;
-            color: #4a5568;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .nav-tab:hover {
-            background: #edf2f7;
-            transform: translateY(-2px);
-        }
-
-        .nav-tab.active {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .version {
+            background: #60a5fa;
             color: white;
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            padding: 5px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* ==================== MENU LATERAL ==================== */
+        .side-menu {
+            position: fixed;
+            left: -280px;
+            top: 0;
+            width: 280px;
+            height: 100vh;
+            background: #1e293b;
+            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+            transition: left 0.3s ease;
+            z-index: 2000;
+            overflow-y: auto;
+        }
+
+        .side-menu.open {
+            left: 0;
+        }
+
+        .menu-header {
+            padding: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-header h2 {
+            margin: 0;
+            color: #60a5fa;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        .menu-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+
+        .menu-close:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .menu-items {
+            padding: 20px 0;
+        }
+
+        .side-menu-item {
+            display: block;
+            padding: 12px 20px;
+            color: #e2e8f0;
+            text-decoration: none;
+            transition: all 0.3s;
+            border-left: 3px solid transparent;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        .side-menu-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-left-color: #60a5fa;
+        }
+
+        .side-menu-item.active {
+            background: rgba(96, 165, 250, 0.1);
+            border-left-color: #60a5fa;
+            color: #60a5fa;
+        }
+
+        .menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1500;
+        }
+
+        .side-menu.open ~ .menu-overlay {
+            display: block;
         }
 
         /* ==================== CONTEÚDO ==================== */
         .content {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            background: #0f172a;
+            border-radius: 0;
             padding: 30px;
-            min-height: 600px;
+            min-height: calc(100vh - 80px);
         }
 
         .section {
@@ -129,13 +220,14 @@
 
         .section-title {
             font-size: 28px;
-            color: #2d3748;
+            color: #e2e8f0;
             margin-bottom: 30px;
             padding-bottom: 15px;
-            border-bottom: 3px solid #667eea;
+            border-bottom: 3px solid #60a5fa;
             display: flex;
             align-items: center;
             gap: 10px;
+            font-weight: 700;
         }
 
         /* ==================== KPI CARDS ==================== */
@@ -147,38 +239,43 @@
         }
 
         .kpi-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #1e293b;
             color: white;
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+            border: 2px solid rgba(96, 165, 250, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease;
             position: relative;
         }
 
         .kpi-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 8px 20px rgba(96, 165, 250, 0.3);
+            border-color: #60a5fa;
         }
 
         .kpi-label {
             font-size: 14px;
-            opacity: 0.9;
+            color: #9ca3af;
             margin-bottom: 10px;
             display: flex;
             align-items: center;
             gap: 8px;
+            font-weight: 600;
         }
 
         .kpi-value {
             font-size: 36px;
             font-weight: 700;
             margin-bottom: 5px;
+            color: #60a5fa;
         }
 
         .kpi-subtitle {
             font-size: 13px;
-            opacity: 0.8;
+            color: #9ca3af;
+            font-weight: 400;
         }
 
         /* ==================== TOOLTIP ==================== */
@@ -188,11 +285,12 @@
             justify-content: center;
             width: 18px;
             height: 18px;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(96, 165, 250, 0.2);
             border-radius: 50%;
             font-size: 12px;
             cursor: help;
             position: relative;
+            color: #60a5fa;
         }
 
         .tooltip-icon:hover::after {
@@ -201,18 +299,19 @@
             bottom: 100%;
             left: 50%;
             transform: translateX(-50%);
-            background: #2d3748;
+            background: #1e293b;
             color: white;
             padding: 12px 16px;
             border-radius: 8px;
             font-size: 13px;
             white-space: normal;
             width: 280px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
             z-index: 1000;
             margin-bottom: 8px;
             line-height: 1.4;
             font-weight: normal;
+            border: 1px solid rgba(96, 165, 250, 0.3);
         }
 
         .tooltip-icon:hover::before {
@@ -222,7 +321,7 @@
             left: 50%;
             transform: translateX(-50%);
             border: 6px solid transparent;
-            border-top-color: #2d3748;
+            border-top-color: #1e293b;
             margin-bottom: 2px;
         }
 
@@ -235,16 +334,17 @@
         }
 
         .chart-container {
-            background: #f7fafc;
+            background: #1e293b;
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .chart-title {
             font-size: 18px;
             font-weight: 600;
-            color: #2d3748;
+            color: #e2e8f0;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
@@ -260,9 +360,10 @@
         .table-container {
             overflow-x: auto;
             margin-bottom: 30px;
-            background: #f7fafc;
+            background: #1e293b;
             padding: 20px;
             border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .table-header {
@@ -275,7 +376,7 @@
         .table-title {
             font-size: 20px;
             font-weight: 600;
-            color: #2d3748;
+            color: #e2e8f0;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -287,50 +388,56 @@
             align-items: center;
         }
 
-        .filter-input {
+        .filter-input, .filter-select {
             padding: 8px 12px;
-            border: 2px solid #e2e8f0;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            background: #0f172a;
             border-radius: 8px;
             font-size: 14px;
+            color: #e2e8f0;
+            font-family: 'Poppins', sans-serif;
             min-width: 200px;
         }
 
         .filter-select {
-            padding: 8px 12px;
-            border: 2px solid #e2e8f0;
-            border-radius: 8px;
-            font-size: 14px;
             min-width: 150px;
             cursor: pointer;
+        }
+
+        .filter-input:focus, .filter-select:focus {
+            outline: none;
+            border-color: #60a5fa;
+            box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2);
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            background: white;
+            background: #0f172a;
             border-radius: 8px;
             overflow: hidden;
         }
 
         thead {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #60a5fa;
             color: white;
         }
 
         th {
             padding: 15px;
             text-align: left;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 14px;
         }
 
         td {
             padding: 12px 15px;
-            border-bottom: 1px solid #e2e8f0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: #e2e8f0;
         }
 
         tbody tr:hover {
-            background: #f7fafc;
+            background: rgba(96, 165, 250, 0.05);
         }
 
         tbody tr:last-child td {
@@ -345,11 +452,30 @@
             font-weight: 600;
         }
 
-        .zona-centro-sul { background: #c3dafe; color: #2c5282; }
-        .zona-leste { background: #c6f6d5; color: #276749; }
-        .zona-norte { background: #fed7d7; color: #9b2c2c; }
-        .zona-oeste { background: #feebc8; color: #9c4221; }
-        .zona-abc { background: #e9d8fd; color: #553c9a; }
+        .zona-centro-sul { 
+            background: #60a5fa; 
+            color: #fff; 
+        }
+
+        .zona-leste { 
+            background: #10b981; 
+            color: #fff; 
+        }
+
+        .zona-norte { 
+            background: #f59e0b; 
+            color: #fff; 
+        }
+
+        .zona-oeste { 
+            background: #8b5cf6; 
+            color: #fff; 
+        }
+
+        .zona-abc { 
+            background: #ec4899; 
+            color: #fff; 
+        }
 
         /* ==================== ZONA CARDS ==================== */
         .zonas-grid {
@@ -360,16 +486,17 @@
         }
 
         .zona-card {
-            background: white;
-            border: 2px solid #e2e8f0;
+            background: #1e293b;
+            border: 2px solid rgba(96, 165, 250, 0.2);
             border-radius: 12px;
             padding: 25px;
             transition: all 0.3s ease;
         }
 
         .zona-card:hover {
-            border-color: #667eea;
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
+            border-color: #60a5fa;
+            box-shadow: 0 8px 20px rgba(96, 165, 250, 0.3);
+            transform: translateY(-5px);
         }
 
         .zona-card-header {
@@ -378,13 +505,13 @@
             align-items: center;
             margin-bottom: 20px;
             padding-bottom: 15px;
-            border-bottom: 2px solid #e2e8f0;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
         }
 
         .zona-card-title {
             font-size: 22px;
             font-weight: 700;
-            color: #2d3748;
+            color: #60a5fa;
         }
 
         .zona-stats {
@@ -395,33 +522,35 @@
         }
 
         .zona-stat {
-            background: #f7fafc;
+            background: #0f172a;
             padding: 12px;
             border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .zona-stat-label {
             font-size: 12px;
-            color: #718096;
+            color: #9ca3af;
             margin-bottom: 5px;
+            font-weight: 400;
         }
 
         .zona-stat-value {
             font-size: 18px;
             font-weight: 700;
-            color: #2d3748;
+            color: #60a5fa;
         }
 
         .zona-section {
             margin-top: 20px;
             padding-top: 15px;
-            border-top: 1px solid #e2e8f0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .zona-section-title {
             font-size: 14px;
             font-weight: 600;
-            color: #4a5568;
+            color: #9ca3af;
             margin-bottom: 12px;
         }
 
@@ -434,12 +563,12 @@
         }
 
         .faixa-etaria-label {
-            color: #4a5568;
+            color: #9ca3af;
         }
 
         .faixa-etaria-value {
             font-weight: 600;
-            color: #2d3748;
+            color: #e2e8f0;
         }
 
         .programa-item {
@@ -447,20 +576,20 @@
             justify-content: space-between;
             align-items: center;
             padding: 8px 12px;
-            background: #f7fafc;
+            background: #0f172a;
             border-radius: 6px;
             margin-bottom: 6px;
             font-size: 13px;
         }
 
         .programa-nome {
-            color: #4a5568;
+            color: #9ca3af;
             font-weight: 500;
         }
 
         .programa-total {
             font-weight: 700;
-            color: #667eea;
+            color: #60a5fa;
         }
 
         /* ==================== MAPA ==================== */
@@ -468,7 +597,7 @@
             height: 600px;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
         }
 
         /* ==================== LOADING ==================== */
@@ -478,14 +607,14 @@
             align-items: center;
             justify-content: center;
             padding: 60px;
-            color: #667eea;
+            color: #60a5fa;
         }
 
         .loading-spinner {
             width: 60px;
             height: 60px;
-            border: 4px solid #e2e8f0;
-            border-top-color: #667eea;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-top-color: #60a5fa;
             border-radius: 50%;
             animation: spin 1s linear infinite;
             margin-bottom: 20px;
@@ -503,18 +632,69 @@
             display: flex;
             align-items: center;
             gap: 12px;
+            font-weight: 400;
         }
 
         .alert-warning {
-            background: #fef5e7;
-            border-left: 4px solid #f39c12;
-            color: #9c4221;
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid #f59e0b;
+            color: #fbbf24;
         }
 
         .alert-info {
-            background: #ebf8ff;
-            border-left: 4px solid #3182ce;
-            color: #2c5282;
+            background: rgba(96, 165, 250, 0.1);
+            border-left: 4px solid #60a5fa;
+            color: #60a5fa;
+        }
+
+        /* ==================== BOTÕES ==================== */
+        button, .btn-primary {
+            background: #60a5fa;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover, .btn-primary:hover {
+            background: #3b82f6;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(96, 165, 250, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(156, 163, 175, 0.5);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(156, 163, 175, 0.7);
+        }
+
+        /* ==================== FOOTER ==================== */
+        .footer {
+            background: #1e293b;
+            padding: 20px;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 13px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-weight: 400;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        .footer strong {
+            color: #60a5fa;
+            font-weight: 700;
         }
 
         /* ==================== RESPONSIVE ==================== */
@@ -525,16 +705,8 @@
                 text-align: center;
             }
 
-            .header h1 {
-                font-size: 24px;
-            }
-
-            .nav {
-                flex-direction: column;
-            }
-
-            .nav-tab {
-                width: 100%;
+            .header-left h1 {
+                font-size: 18px;
             }
 
             .charts-grid {
@@ -552,30 +724,54 @@
     </style>
 </head>
 <body>
+    <!-- ==================== HEADER ==================== -->
+    <header id="mainHeader" class="header">
+        <div class="header-left">
+            <span class="hamburger" onclick="toggleMenu()">☰</span>
+            <h1>🏥 Portal RAPS - Prevent Senior</h1>
+        </div>
+        <div class="header-right">
+            <span class="badge" id="badge-status">⏳ Carregando...</span>
+            <span class="version">v6.0</span>
+        </div>
+    </header>
+
+    <!-- ==================== MENU LATERAL ==================== -->
+    <aside id="sideMenu" class="side-menu">
+        <div class="menu-header">
+            <h2>Menu</h2>
+            <button class="menu-close" onclick="toggleMenu()">×</button>
+        </div>
+        
+        <nav class="menu-items">
+            <a href="#" class="side-menu-item active" data-section="dashboard" onclick="selectTab('dashboard')">
+                📊 Dashboard
+            </a>
+            <a href="#" class="side-menu-item" data-section="demografia" onclick="selectTab('demografia')">
+                👥 Demografia
+            </a>
+            <a href="#" class="side-menu-item" data-section="programas" onclick="selectTab('programas')">
+                📋 Programas
+            </a>
+            <a href="#" class="side-menu-item" data-section="planos" onclick="selectTab('planos')">
+                💳 Planos
+            </a>
+            <a href="#" class="side-menu-item" data-section="zonas" onclick="selectTab('zonas')">
+                🗺️ Zonas
+            </a>
+            <a href="#" class="side-menu-item" data-section="hospitais" onclick="selectTab('hospitais')">
+                🏥 Hospitais
+            </a>
+            <a href="#" class="side-menu-item" data-section="perifericos" onclick="selectTab('perifericos')">
+                📍 Bairros Periféricos
+            </a>
+        </nav>
+    </aside>
+
+    <div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+
+    <!-- ==================== CONTEÚDO ==================== -->
     <div class="container">
-        <!-- ==================== HEADER ==================== -->
-        <div class="header">
-            <h1>
-                🏥 Portal RAPS - Prevent Senior
-                <span class="version">v6.0</span>
-            </h1>
-            <div>
-                <span class="badge" id="badge-status">⏳ Carregando...</span>
-            </div>
-        </div>
-
-        <!-- ==================== NAVEGAÇÃO ==================== -->
-        <div class="nav">
-            <button class="nav-tab active" data-section="dashboard">📊 Dashboard</button>
-            <button class="nav-tab" data-section="demografia">👥 Demografia</button>
-            <button class="nav-tab" data-section="programas">📋 Programas</button>
-            <button class="nav-tab" data-section="planos">💳 Planos</button>
-            <button class="nav-tab" data-section="zonas">🗺️ Zonas</button>
-            <button class="nav-tab" data-section="hospitais">🏥 Hospitais</button>
-            <button class="nav-tab" data-section="perifericos">📍 Bairros Periféricos</button>
-        </div>
-
-        <!-- ==================== CONTEÚDO ==================== -->
         <div class="content">
             <!-- ==================== LOADING ==================== -->
             <div id="loading" class="loading">
@@ -750,7 +946,7 @@
                 <h2 class="section-title">📍 Análise de Bairros Periféricos</h2>
                 
                 <div class="alert alert-warning">
-                    ⚠️ <strong>Critério:</strong> Bairros com mais de 20km de distância do hospital credenciado mais próximo (rota real de carro).
+                    ⚠️ <strong>Critério:</strong> Top 50 bairros mais distantes do hospital credenciado mais próximo (rota real de carro).
                 </div>
                 
                 <div class="kpis" id="perifericos-kpis"></div>
@@ -758,42 +954,27 @@
                 <div class="table-container">
                     <div class="table-header">
                         <div class="table-title">
-                            🔴 Top 10 Bairros Mais Distantes
+                            🔴 Top 50 Bairros Mais Distantes
                             <span class="tooltip-icon" data-tooltip="Bairros com maior distância do hospital mais próximo. Crítico para identificar gaps de cobertura e avaliar necessidade de parcerias regionais ou soluções de transporte.">ℹ️</span>
                         </div>
                         <div class="table-filters">
-                            <input type="text" id="filterTop10" class="filter-input" placeholder="🔍 Buscar bairro...">
-                            <select id="sortTop10" class="filter-select">
+                            <input type="text" id="filterTop50" class="filter-input" placeholder="🔍 Buscar bairro...">
+                            <select id="sortTop50" class="filter-select">
                                 <option value="distancia">Ordenar por: Distância</option>
                                 <option value="beneficiarios">Ordenar por: Beneficiários</option>
                                 <option value="bairro">Ordenar por: Bairro (A-Z)</option>
                             </select>
                         </div>
                     </div>
-                    <div id="tableTop10Distantes"></div>
-                </div>
-
-                <div class="table-container">
-                    <div class="table-header">
-                        <div class="table-title">
-                            📋 Todos os Bairros Periféricos
-                            <span class="tooltip-icon" data-tooltip="Lista completa de bairros com distância superior a 20km, incluindo os 3 hospitais mais próximos de cada um. Útil para planejamento de expansão e soluções logísticas.">ℹ️</span>
-                        </div>
-                        <div class="table-filters">
-                            <input type="text" id="filterTodos" class="filter-input" placeholder="🔍 Buscar bairro...">
-                            <select id="filterZona" class="filter-select">
-                                <option value="">Todas as zonas</option>
-                                <option value="Centro-Sul">Centro-Sul</option>
-                                <option value="Leste">Leste</option>
-                                <option value="Norte">Norte</option>
-                                <option value="Oeste">Oeste</option>
-                                <option value="ABC">ABC</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div id="tableTodosPerifricos"></div>
+                    <div id="tableTop50Distantes"></div>
                 </div>
             </div>
+        </div>
+
+        <!-- ==================== FOOTER ==================== -->
+        <div class="footer">
+            <p><strong>Portal RAPS v6.0</strong> | Prevent Senior | Dados atualizados em Novembro 2025</p>
+            <p>Desenvolvido por Alessandro Diaz Rodrigues</p>
         </div>
     </div>
 
@@ -808,12 +989,40 @@
         let dados = {};
         let charts = {};
 
+        // ==================== MENU LATERAL ====================
+        function toggleMenu() {
+            const menu = document.getElementById('sideMenu');
+            const overlay = document.getElementById('menuOverlay');
+            
+            menu.classList.toggle('open');
+            overlay.style.display = menu.classList.contains('open') ? 'block' : 'none';
+        }
+
+        function selectTab(sectionId) {
+            // Remover active de todos os itens
+            document.querySelectorAll('.side-menu-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Adicionar active no item clicado
+            document.querySelector(`[data-section="${sectionId}"]`).classList.add('active');
+            
+            // Fechar menu
+            toggleMenu();
+            
+            // Mudar aba
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
         // ==================== CARREGAR DADOS ====================
         async function carregarDados() {
             try {
                 console.log('🔄 Carregando dados...');
 
-                const [dashboard, demografico, programas, planos, zonas, hospitais, distancias, perifericos] = await Promise.all([
+                const [dashboard, demografico, programas, planos, zonas, hospitais, distancias, top50] = await Promise.all([
                     fetch(`${DATA_URL}/dashboard.json`).then(r => r.json()),
                     fetch(`${DATA_URL}/demografico.json`).then(r => r.json()),
                     fetch(`${DATA_URL}/programas.json`).then(r => r.json()),
@@ -821,8 +1030,15 @@
                     fetch(`${DATA_URL}/zonas.json`).then(r => r.json()),
                     fetch(`${DATA_URL}/hospitais.json`).then(r => r.json()),
                     fetch(`${DATA_URL}/distancias.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/bairros_perifericos.json`).then(r => r.json())
+                    fetch(`${DATA_URL}/top_50_mais_distantes.json`).then(r => r.json())
                 ]);
+
+                // Adaptar top_50_mais_distantes para formato de perifericos
+                const perifericos = {
+                    metadata: top50.metadata,
+                    top_10_mais_distantes: top50.bairros.slice(0, 10),
+                    todos_bairros: top50.bairros
+                };
 
                 dados = { dashboard, demografico, programas, planos, zonas, hospitais, distancias, perifericos };
 
@@ -831,7 +1047,7 @@
                 document.getElementById('loading').style.display = 'none';
                 document.getElementById('dashboard').classList.add('active');
                 document.getElementById('badge-status').textContent = '✅ DADOS REAIS';
-                document.getElementById('badge-status').style.background = 'linear-gradient(135deg, #48bb78 0%, #38a169 100%)';
+                document.getElementById('badge-status').style.background = '#48bb78';
 
                 renderizarTudo();
 
@@ -841,6 +1057,7 @@
                     <div class="loading-spinner"></div>
                     <h2 style="color: #e53e3e;">Erro ao carregar dados</h2>
                     <p>${error.message}</p>
+                    <p style="margin-top: 10px; font-size: 14px;">Verifique se os arquivos JSON estão no GitHub: ${DATA_URL}</p>
                 `;
             }
         }
@@ -917,12 +1134,11 @@
                         label: 'Número de Bairros',
                         data: Object.values(distribuicao_faixas),
                         backgroundColor: [
-                            '#48bb78',
-                            '#4299e1',
-                            '#ed8936',
-                            '#f56565',
-                            '#9f7aea',
-                            '#ed64a6'
+                            '#60a5fa',
+                            '#3b82f6',
+                            '#2563eb',
+                            '#1d4ed8',
+                            '#1e40af'
                         ]
                     }]
                 },
@@ -930,10 +1146,21 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                        legend: { display: false }
+                        legend: { 
+                            display: false,
+                            labels: { color: '#e2e8f0' }
+                        }
                     },
                     scales: {
-                        y: { beginAtZero: true }
+                        y: { 
+                            beginAtZero: true,
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        },
+                        x: {
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        }
                     }
                 }
             });
@@ -948,7 +1175,7 @@
                     datasets: [{
                         label: 'Beneficiários',
                         data: top_bairros.map(b => b.beneficiarios),
-                        backgroundColor: '#667eea'
+                        backgroundColor: '#60a5fa'
                     }]
                 },
                 options: {
@@ -956,10 +1183,21 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                        legend: { display: false }
+                        legend: { 
+                            display: false,
+                            labels: { color: '#e2e8f0' }
+                        }
                     },
                     scales: {
-                        x: { beginAtZero: true }
+                        x: { 
+                            beginAtZero: true,
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        },
+                        y: {
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        }
                     }
                 }
             });
@@ -982,7 +1220,7 @@
                             <tr>
                                 <td><strong>${i + 1}</strong></td>
                                 <td>${b.bairro}</td>
-                                <td><span class="zona-badge zona-${b.zona.toLowerCase().replace(' ', '-').replace('-sul', '-sul')}">${b.zona}</span></td>
+                                <td><span class="zona-badge zona-${b.zona.toLowerCase().replace(' ', '-')}">${b.zona}</span></td>
                                 <td><strong>${b.beneficiarios.toLocaleString('pt-BR')}</strong></td>
                                 <td>${b.hospital_proximo}</td>
                                 <td>${b.distancia_km} km</td>
@@ -1059,14 +1297,17 @@
                             faixas_etarias.perfil_80_menos.faixas['70_a_74'],
                             faixas_etarias.perfil_80_menos.faixas['75_a_79']
                         ],
-                        backgroundColor: ['#48bb78', '#4299e1', '#ed8936', '#f56565']
+                        backgroundColor: ['#60a5fa', '#3b82f6', '#2563eb', '#1d4ed8']
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                        legend: { position: 'bottom' }
+                        legend: { 
+                            position: 'bottom',
+                            labels: { color: '#e2e8f0' }
+                        }
                     }
                 }
             });
@@ -1085,14 +1326,17 @@
                             faixas_etarias.perfil_80_mais.faixas['95_a_99'],
                             faixas_etarias.perfil_80_mais.faixas['100_ou_mais']
                         ],
-                        backgroundColor: ['#9f7aea', '#ed64a6', '#fc8181', '#f687b3']
+                        backgroundColor: ['#8b5cf6', '#7c3aed', '#6d28d9', '#5b21b6']
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                        legend: { position: 'bottom' }
+                        legend: { 
+                            position: 'bottom',
+                            labels: { color: '#e2e8f0' }
+                        }
                     }
                 }
             });
@@ -1146,7 +1390,7 @@
                     datasets: [{
                         label: 'Beneficiários',
                         data: top_10.map(p => p.total),
-                        backgroundColor: '#667eea'
+                        backgroundColor: '#60a5fa'
                     }]
                 },
                 options: {
@@ -1154,10 +1398,21 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                        legend: { display: false }
+                        legend: { 
+                            display: false,
+                            labels: { color: '#e2e8f0' }
+                        }
                     },
                     scales: {
-                        x: { beginAtZero: true }
+                        x: { 
+                            beginAtZero: true,
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        },
+                        y: {
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        }
                     }
                 }
             });
@@ -1233,7 +1488,7 @@
                     datasets: [{
                         label: 'Beneficiários',
                         data: top_10_geral.map(p => p.total),
-                        backgroundColor: '#667eea'
+                        backgroundColor: '#60a5fa'
                     }]
                 },
                 options: {
@@ -1241,10 +1496,21 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                        legend: { display: false }
+                        legend: { 
+                            display: false,
+                            labels: { color: '#e2e8f0' }
+                        }
                     },
                     scales: {
-                        x: { beginAtZero: true }
+                        x: { 
+                            beginAtZero: true,
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        },
+                        y: {
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        }
                     }
                 }
             });
@@ -1456,15 +1722,15 @@
                 <div class="kpi-card">
                     <div class="kpi-label">
                         📍 Total de Bairros
-                        <span class="tooltip-icon" data-tooltip="Número de bairros com distância superior a 20km do hospital credenciado mais próximo.">ℹ️</span>
+                        <span class="tooltip-icon" data-tooltip="Número de bairros mais distantes (Top 50) do hospital credenciado mais próximo.">ℹ️</span>
                     </div>
                     <div class="kpi-value">${metadata.total_bairros}</div>
-                    <div class="kpi-subtitle">>20km do hospital</div>
+                    <div class="kpi-subtitle">mais distantes</div>
                 </div>
                 <div class="kpi-card">
                     <div class="kpi-label">
                         👥 Beneficiários Afetados
-                        <span class="tooltip-icon" data-tooltip="Total de beneficiários que residem em bairros periféricos (>20km). Representa apenas ${((metadata.total_beneficiarios / 412651) * 100).toFixed(1)}% da rede.">ℹ️</span>
+                        <span class="tooltip-icon" data-tooltip="Total de beneficiários que residem nos bairros mais distantes. Representa apenas ${((metadata.total_beneficiarios / 412651) * 100).toFixed(1)}% da rede.">ℹ️</span>
                     </div>
                     <div class="kpi-value">${metadata.total_beneficiarios.toLocaleString('pt-BR')}</div>
                     <div class="kpi-subtitle">${((metadata.total_beneficiarios / 412651) * 100).toFixed(1)}% da rede</div>
@@ -1489,19 +1755,19 @@
 
             document.getElementById('perifericos-kpis').innerHTML = kpisHTML;
 
-            // Tabela: Top 10 (com filtros)
-            renderizarTabelaTop10(top_10_mais_distantes);
+            // Tabela: Top 50 (com filtros)
+            renderizarTabelaTop50(todos_bairros);
 
             // Event listeners para filtros
-            document.getElementById('filterTop10').addEventListener('input', (e) => {
+            document.getElementById('filterTop50').addEventListener('input', (e) => {
                 const termo = e.target.value.toLowerCase();
-                const filtrados = top_10_mais_distantes.filter(b => b.bairro.toLowerCase().includes(termo));
-                renderizarTabelaTop10(filtrados);
+                const filtrados = todos_bairros.filter(b => b.bairro.toLowerCase().includes(termo));
+                renderizarTabelaTop50(filtrados);
             });
 
-            document.getElementById('sortTop10').addEventListener('change', (e) => {
+            document.getElementById('sortTop50').addEventListener('change', (e) => {
                 const criterio = e.target.value;
-                let ordenados = [...top_10_mais_distantes];
+                let ordenados = [...todos_bairros];
                 
                 if (criterio === 'distancia') {
                     ordenados.sort((a, b) => b.distancia_km - a.distancia_km);
@@ -1511,79 +1777,18 @@
                     ordenados.sort((a, b) => a.bairro.localeCompare(b.bairro));
                 }
                 
-                renderizarTabelaTop10(ordenados);
-            });
-
-            // Tabela: Todos (com filtros)
-            renderizarTabelaTodos(todos_bairros);
-
-            // Event listeners para filtros
-            document.getElementById('filterTodos').addEventListener('input', (e) => {
-                const termo = e.target.value.toLowerCase();
-                const zona = document.getElementById('filterZona').value;
-                
-                let filtrados = todos_bairros.filter(b => b.bairro.toLowerCase().includes(termo));
-                if (zona) filtrados = filtrados.filter(b => b.zona === zona);
-                
-                renderizarTabelaTodos(filtrados);
-            });
-
-            document.getElementById('filterZona').addEventListener('change', (e) => {
-                const zona = e.target.value;
-                const termo = document.getElementById('filterTodos').value.toLowerCase();
-                
-                let filtrados = todos_bairros.filter(b => b.bairro.toLowerCase().includes(termo));
-                if (zona) filtrados = filtrados.filter(b => b.zona === zona);
-                
-                renderizarTabelaTodos(filtrados);
+                renderizarTabelaTop50(ordenados);
             });
         }
 
-        function renderizarTabelaTop10(bairros) {
+        function renderizarTabelaTop50(bairros) {
             const tableHTML = `
                 <table>
                     <thead>
                         <tr>
                             <th>#</th>
                             <th>Bairro</th>
-                            <th>Zona</th>
-                            <th>Benef.</th>
-                            <th>1º Hospital</th>
-                            <th>Dist.</th>
-                            <th>2º Hospital</th>
-                            <th>Dist.</th>
-                            <th>3º Hospital</th>
-                            <th>Dist.</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        ${bairros.map((b, i) => `
-                            <tr>
-                                <td><strong>${i + 1}</strong></td>
-                                <td>${b.bairro}</td>
-                                <td><span class="zona-badge zona-${b.zona.toLowerCase().replace(' ', '-')}">${b.zona}</span></td>
-                                <td>${b.beneficiarios}</td>
-                                <td>${b.hospitais_proximos[0].hospital}</td>
-                                <td><strong>${b.hospitais_proximos[0].distancia_km} km</strong></td>
-                                <td>${b.hospitais_proximos[1].hospital}</td>
-                                <td>${b.hospitais_proximos[1].distancia_km} km</td>
-                                <td>${b.hospitais_proximos[2].hospital}</td>
-                                <td>${b.hospitais_proximos[2].distancia_km} km</td>
-                            </tr>
-                        `).join('')}
-                    </tbody>
-                </table>
-            `;
-
-            document.getElementById('tableTop10Distantes').innerHTML = tableHTML;
-        }
-
-        function renderizarTabelaTodos(bairros) {
-            const tableHTML = `
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Bairro</th>
+                            <th>Cidade</th>
                             <th>Zona</th>
                             <th>Benef.</th>
                             <th>Hospital Mais Próximo</th>
@@ -1592,36 +1797,24 @@
                         </tr>
                     </thead>
                     <tbody>
-                        ${bairros.map(b => `
+                        ${bairros.map((b, i) => `
                             <tr>
-                                <td><strong>${b.bairro}</strong></td>
+                                <td><strong>${i + 1}</strong></td>
+                                <td>${b.bairro}</td>
+                                <td>${b.cidade || 'São Paulo'}</td>
                                 <td><span class="zona-badge zona-${b.zona.toLowerCase().replace(' ', '-')}">${b.zona}</span></td>
                                 <td>${b.beneficiarios}</td>
                                 <td>${b.hospital_mais_proximo}</td>
                                 <td><strong>${b.distancia_km} km</strong></td>
-                                <td>${b.tempo_min} min</td>
+                                <td>${b.tempo_formatado || b.tempo_min + ' min'}</td>
                             </tr>
                         `).join('')}
                     </tbody>
                 </table>
             `;
 
-            document.getElementById('tableTodosPerifricos').innerHTML = tableHTML;
+            document.getElementById('tableTop50Distantes').innerHTML = tableHTML;
         }
-
-        // ==================== NAVEGAÇÃO ====================
-        document.querySelectorAll('.nav-tab').forEach(tab => {
-            tab.addEventListener('click', () => {
-                // Remover active de todos
-                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-                document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-                
-                // Adicionar active ao clicado
-                tab.classList.add('active');
-                const sectionId = tab.getAttribute('data-section');
-                document.getElementById(sectionId).classList.add('active');
-            });
-        });
 
         // ==================== INICIALIZAR ====================
         window.addEventListener('DOMContentLoaded', carregarDados);
