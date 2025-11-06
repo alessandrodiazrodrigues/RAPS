@@ -321,6 +321,47 @@
             font-weight: 600;
             font-size: 14px;
         }
+
+        .kpis {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .kpi-card {
+            background: rgba(96, 165, 250, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(96, 165, 250, 0.2);
+        }
+
+        .kpi-value {
+            color: #60a5fa;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .kpi-label {
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        .card {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h3 {
+            color: #60a5fa;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
@@ -342,6 +383,7 @@
             <button class="nav-tab" onclick="showSection('zonas')">🗺️ Zonas</button>
             <button class="nav-tab" onclick="showSection('hospitais')">🏥 Hospitais</button>
             <button class="nav-tab" onclick="showSection('gaps')">⚠️ Gaps</button>
+            <button class="nav-tab" onclick="showSection('extremo-sul')">🌍 Extremo Sul</button>
             <button class="nav-tab" onclick="showSection('mapa')">🗺 Mapa</button>
         </div>
     </div>
@@ -390,6 +432,122 @@
             <h2 class="section-title">⚠️ Gaps e Oportunidades</h2>
             <div class="stats-grid" id="gapsStats"></div>
             <div class="table-container" id="gapsTabela"></div>
+            
+            <div class="card">
+                <h3>⚠️ Top 50 Bairros Mais Distantes (Diagnóstico Crítico)</h3>
+                
+                <div class="kpis">
+                    <div class="kpi-card">
+                        <div class="kpi-value">50</div>
+                        <div class="kpi-label">Bairros Críticos</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-value" id="top50-beneficiarios">-</div>
+                        <div class="kpi-label">Beneficiários (0.4%)</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-value" id="top50-distancia">-</div>
+                        <div class="kpi-label">Distância Média</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-value" id="top50-tempo">-</div>
+                        <div class="kpi-label">Tempo Médio</div>
+                    </div>
+                </div>
+
+                <div style="height: 300px; margin-bottom: 2rem;">
+                    <canvas id="chartTop50Zonas"></canvas>
+                </div>
+
+                <div class="table-container" style="background: transparent; padding: 0;">
+                    <table id="tabela-top50">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Bairro</th>
+                                <th>Cidade</th>
+                                <th>Zona</th>
+                                <th>Beneficiários</th>
+                                <th>Hospital</th>
+                                <th>Distância</th>
+                                <th>Tempo</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-top50"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- 🆕 NOVA FUNCIONALIDADE: ABA EXTREMO SUL -->
+        <div id="extremo-sul" class="section">
+            <h2 class="section-title">🌍 Análise do Extremo Sul</h2>
+            
+            <div class="kpis">
+                <div class="kpi-card">
+                    <div class="kpi-value" id="extremo-sul-bairros">-</div>
+                    <div class="kpi-label">Bairros</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-value" id="extremo-sul-beneficiarios">-</div>
+                    <div class="kpi-label">Beneficiários (4.6%)</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-value" id="extremo-sul-distancia">-</div>
+                    <div class="kpi-label">Distância Média</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-value" id="extremo-sul-tempo">-</div>
+                    <div class="kpi-label">Tempo Médio</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🏥 Hospitais Mais Próximos</h3>
+                <div style="height: 300px;">
+                    <canvas id="chartExtremoSulHospitais"></canvas>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>⚠️ Top 10 Bairros Mais Distantes</h3>
+                <div class="table-container" style="background: transparent; padding: 0;">
+                    <table id="tabela-extremo-sul-distantes">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Bairro</th>
+                                <th>Cidade</th>
+                                <th>Beneficiários</th>
+                                <th>Hospital</th>
+                                <th>Distância</th>
+                                <th>Tempo</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-extremo-sul-distantes"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📋 Todos os Bairros do Extremo Sul</h3>
+                <div class="table-container" style="background: transparent; padding: 0; max-height: 600px; overflow-y: auto;">
+                    <table id="tabela-extremo-sul-todos">
+                        <thead>
+                            <tr>
+                                <th>Bairro</th>
+                                <th>Cidade</th>
+                                <th>Zona</th>
+                                <th>Beneficiários</th>
+                                <th>Hospital Mais Próximo</th>
+                                <th>Distância</th>
+                                <th>Tempo</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-extremo-sul-todos"></tbody>
+                    </table>
+                </div>
+            </div>
         </div>
 
         <!-- MAPA GEOGRÁFICO -->
@@ -417,13 +575,15 @@
             zonas: null,
             hospitais: null,
             distancias: null,
-            bairros: []
+            bairros: [],
+            extremoSul: null,
+            top50Distantes: null
         };
 
         let mapInstance = null;
         let chartInstances = {};
 
-        // CARREGAR DADOS
+        // 🆕 NOVA FUNCIONALIDADE: Carregar dados atualizados
         async function carregarDados() {
             try {
                 console.log('🔄 Carregando dados...');
@@ -436,12 +596,13 @@
                     zonas,
                     hospitais,
                     distancias,
-                    bairrosCentro,
                     bairrosCentroSul,
+                    bairrosABC,
                     bairrosLeste,
                     bairrosNorte,
                     bairrosOeste,
-                    bairrosABC
+                    extremoSul,
+                    top50Distantes
                 ] = await Promise.all([
                     fetch(`${DATA_URL}/dashboard.json`).then(r => r.json()),
                     fetch(`${DATA_URL}/demografico.json`).then(r => r.json()),
@@ -450,12 +611,13 @@
                     fetch(`${DATA_URL}/zonas.json`).then(r => r.json()),
                     fetch(`${DATA_URL}/hospitais.json`).then(r => r.json()),
                     fetch(`${DATA_URL}/distancias.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/bairros_centro.json`).then(r => r.json()),
                     fetch(`${DATA_URL}/bairros_centro_sul.json`).then(r => r.json()),
+                    fetch(`${DATA_URL}/bairros_abc.json`).then(r => r.json()),
                     fetch(`${DATA_URL}/bairros_leste.json`).then(r => r.json()),
                     fetch(`${DATA_URL}/bairros_norte.json`).then(r => r.json()),
                     fetch(`${DATA_URL}/bairros_oeste.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/bairros_abc.json`).then(r => r.json())
+                    fetch(`${DATA_URL}/analise_extremo_sul.json`).then(r => r.json()),
+                    fetch(`${DATA_URL}/top_50_mais_distantes.json`).then(r => r.json())
                 ]);
 
                 dados.dashboard = dashboard;
@@ -465,14 +627,15 @@
                 dados.zonas = zonas;
                 dados.hospitais = hospitais;
                 dados.distancias = distancias;
+                dados.extremoSul = extremoSul;
+                dados.top50Distantes = top50Distantes;
 
                 dados.bairros = [
-                    ...bairrosCentro.bairros,
                     ...bairrosCentroSul.bairros,
+                    ...bairrosABC.bairros,
                     ...bairrosLeste.bairros,
                     ...bairrosNorte.bairros,
-                    ...bairrosOeste.bairros,
-                    ...bairrosABC.bairros
+                    ...bairrosOeste.bairros
                 ];
 
                 console.log('✅ Dados carregados');
@@ -488,7 +651,7 @@
             }
         }
 
-        // RENDERIZAR TUDO
+        // 🆕 NOVA FUNCIONALIDADE: Atualizar renderizarTudo
         function renderizarTudo() {
             renderizarDashboard();
             renderizarDemografia();
@@ -496,6 +659,8 @@
             renderizarZonas();
             renderizarHospitais();
             renderizarGaps();
+            renderizarTop50Distantes();
+            renderizarExtremoSul();
         }
 
         // DASHBOARD
@@ -538,7 +703,7 @@
                 </div>
             `;
 
-            // Gráfico Faixas - CORRIGIDO: valores diretos
+            // Gráfico Faixas
             new Chart(document.getElementById('chartFaixas'), {
                 type: 'bar',
                 data: {
@@ -568,7 +733,7 @@
                 }
             });
 
-            // Gráfico Zonas - CORRIGIDO: campo "nome"
+            // Gráfico Zonas
             const zonasData = dados.zonas.zonas;
             new Chart(document.getElementById('chartBenefZona'), {
                 type: 'doughnut',
@@ -591,7 +756,7 @@
                 }
             });
 
-            // Tabela Top Bairros - CORRIGIDO: campo "hospital_proximo"
+            // Tabela Top Bairros
             document.getElementById('topBairros').innerHTML = `
                 <h3 style="color: #60a5fa; margin-bottom: 20px;">📍 Top 15 Bairros</h3>
                 <table>
@@ -668,7 +833,7 @@
                 </div>
             `;
 
-            // Gráfico COMPLETO com todas as faixas - CORRIGIDO: valores diretos
+            // Gráfico Completo
             const perfil80Menos = faixas_etarias.perfil_80_menos.faixas;
             const perfil80Mais = faixas_etarias.perfil_80_mais.faixas;
             
@@ -845,7 +1010,7 @@
             `;
         }
 
-        // ZONAS - CORRIGIDO: campo "nome" e "idade_media_adultos"
+        // ZONAS
         function renderizarZonas() {
             const zonasData = dados.zonas.zonas;
             
@@ -961,7 +1126,7 @@
             });
         }
 
-        // HOSPITAIS - CORRIGIDO: campo "nome"
+        // HOSPITAIS
         function renderizarHospitais() {
             const hospsData = dados.hospitais.hospitais;
             
@@ -1088,6 +1253,118 @@
                     </tbody>
                 </table>
             `;
+        }
+
+        // 🆕 NOVA FUNCIONALIDADE: Renderizar Top 50 Distantes
+        function renderizarTop50Distantes() {
+            const top50 = dados.top50Distantes;
+            
+            document.getElementById('top50-beneficiarios').textContent = top50.metadata.total_beneficiarios.toLocaleString('pt-BR');
+            document.getElementById('top50-distancia').textContent = `${top50.metadata.distancia_media_km} km`;
+            document.getElementById('top50-tempo').textContent = `${top50.metadata.tempo_medio_min} min`;
+            
+            const ctx = document.getElementById('chartTop50Zonas').getContext('2d');
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: top50.distribuicao_zonas.map(z => z.zona),
+                    datasets: [{
+                        data: top50.distribuicao_zonas.map(z => z.bairros),
+                        backgroundColor: ['#ef4444', '#f59e0b', '#3b82f6', '#10b981', '#8b5cf6']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { 
+                        legend: { 
+                            position: 'right',
+                            labels: { color: '#94a3b8' }
+                        } 
+                    }
+                }
+            });
+            
+            const tbody = document.getElementById('tbody-top50');
+            tbody.innerHTML = top50.bairros.map((b, i) => `
+                <tr>
+                    <td>${i + 1}</td>
+                    <td><strong>${b.bairro}</strong></td>
+                    <td>${b.cidade}</td>
+                    <td><span class="zona-badge zona-${normalizeZona(b.zona)}">${b.zona}</span></td>
+                    <td>${b.beneficiarios.toLocaleString('pt-BR')}</td>
+                    <td>${b.hospital_mais_proximo}</td>
+                    <td>${b.distancia_km} km</td>
+                    <td>${b.tempo_formatado}</td>
+                </tr>
+            `).join('');
+        }
+
+        // 🆕 NOVA FUNCIONALIDADE: Renderizar Extremo Sul
+        function renderizarExtremoSul() {
+            const extremoSul = dados.extremoSul;
+            
+            document.getElementById('extremo-sul-bairros').textContent = extremoSul.metadata.total_bairros.toLocaleString('pt-BR');
+            document.getElementById('extremo-sul-beneficiarios').textContent = extremoSul.metadata.total_beneficiarios.toLocaleString('pt-BR');
+            document.getElementById('extremo-sul-distancia').textContent = `${extremoSul.metadata.distancia_media_km} km`;
+            document.getElementById('extremo-sul-tempo').textContent = `${extremoSul.metadata.tempo_medio_min} min`;
+            
+            const ctx = document.getElementById('chartExtremoSulHospitais').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: extremoSul.hospitais_mais_proximos.map(h => h.hospital),
+                    datasets: [{
+                        label: 'Número de Bairros',
+                        data: extremoSul.hospitais_mais_proximos.map(h => h.bairros),
+                        backgroundColor: ['#3b82f6', '#ef4444', '#10b981'],
+                        borderRadius: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { 
+                            beginAtZero: true,
+                            ticks: { color: '#94a3b8' },
+                            grid: { color: 'rgba(255,255,255,0.05)' }
+                        },
+                        x: { 
+                            ticks: { color: '#94a3b8' },
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+            
+            const top10 = extremoSul.bairros.slice(0, 10);
+            const tbody = document.getElementById('tbody-extremo-sul-distantes');
+            tbody.innerHTML = top10.map((b, i) => `
+                <tr>
+                    <td>${i + 1}</td>
+                    <td><strong>${b.bairro}</strong></td>
+                    <td>${b.cidade}</td>
+                    <td>${b.beneficiarios.toLocaleString('pt-BR')}</td>
+                    <td>${b.hospital_mais_proximo}</td>
+                    <td>${b.distancia_km} km</td>
+                    <td>${b.tempo_formatado}</td>
+                </tr>
+            `).join('');
+            
+            const tbodyTodos = document.getElementById('tbody-extremo-sul-todos');
+            tbodyTodos.innerHTML = extremoSul.bairros.map(b => `
+                <tr>
+                    <td>${b.bairro}</td>
+                    <td>${b.cidade}</td>
+                    <td><span class="zona-badge zona-${normalizeZona(b.zona)}">${b.zona}</span></td>
+                    <td>${b.beneficiarios.toLocaleString('pt-BR')}</td>
+                    <td>${b.hospital_mais_proximo}</td>
+                    <td>${b.distancia_km} km</td>
+                    <td>${b.tempo_formatado}</td>
+                </tr>
+            `).join('');
         }
 
         // MAPA
