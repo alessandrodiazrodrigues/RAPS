@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "versao": "5.0",
-    "data_exportacao": "2025-11-05T22:17:46.080Z",
+    "versao": "6.0",
+    "data_exportacao": "2025-11-06T19:19:17.888Z",
     "total_planos_unicos": 61,
     "observacao": "Análise completa dos 61 planos por zona e faixa etária"
   },
@@ -9,7 +9,8 @@
     "total_beneficiarios": 412651,
     "total_planos_unicos": 61,
     "plano_mais_comum": "pvs 500 enf",
-    "pct_plano_mais_comum": "14.83"
+    "pct_plano_mais_comum": "14.83",
+    "total_top_5": 224256
   },
   "todos_planos": [
     {
@@ -371,2152 +372,301 @@
     }
   ],
   "por_zona": {
-    "Centro": {
-      "total_beneficiarios": 30265,
-      "total_planos_unicos": 53,
+    "Centro-Sul": {
+      "total_beneficiarios": 140070,
+      "total_planos_unicos": 61,
       "top_10_planos": [
         {
-          "nome": "pvs 500 apto",
-          "total": 4631,
-          "percentual": "15.30"
-        },
-        {
           "nome": "pvs 500 enf",
-          "total": 4270,
-          "percentual": "14.11"
+          "total": 19422,
+          "percentual": "13.87"
         },
         {
-          "nome": "pvs premium 1002 enf",
-          "total": 2661,
-          "percentual": "8.79"
-        },
-        {
-          "nome": "cristal brasil apto",
-          "total": 2651,
-          "percentual": "8.76"
+          "nome": "pvs 500 apto",
+          "total": 17318,
+          "percentual": "12.36"
         },
         {
           "nome": "pvs esmeralda enf",
-          "total": 2162,
-          "percentual": "7.14"
+          "total": 13377,
+          "percentual": "9.55"
         },
         {
-          "nome": "pvs premium 1002 apto",
-          "total": 1996,
-          "percentual": "6.60"
+          "nome": "pvs premium 1002 enf",
+          "total": 12783,
+          "percentual": "9.13"
+        },
+        {
+          "nome": "cristal brasil apto",
+          "total": 11802,
+          "percentual": "8.43"
         },
         {
           "nome": "cristal brasil enf",
-          "total": 1851,
-          "percentual": "6.12"
+          "total": 11148,
+          "percentual": "7.96"
         },
         {
           "nome": "pvs esmeralda apto",
-          "total": 1776,
-          "percentual": "5.87"
+          "total": 8620,
+          "percentual": "6.15"
         },
         {
-          "nome": "pvs 1000 apto",
-          "total": 1702,
-          "percentual": "5.62"
+          "nome": "pvs premium 1002 apto",
+          "total": 7621,
+          "percentual": "5.44"
         },
         {
           "nome": "pvs 1000 enf",
-          "total": 1702,
-          "percentual": "5.62"
+          "total": 7363,
+          "percentual": "5.26"
+        },
+        {
+          "nome": "pvs 1000 apto",
+          "total": 6238,
+          "percentual": "4.45"
         }
       ],
       "todos_planos": [
         {
-          "nome": "pvs 500 apto",
-          "total": 4631,
-          "percentual": "15.30"
-        },
-        {
           "nome": "pvs 500 enf",
-          "total": 4270,
-          "percentual": "14.11"
+          "total": 19422,
+          "percentual": "13.87"
         },
         {
-          "nome": "pvs premium 1002 enf",
-          "total": 2661,
-          "percentual": "8.79"
-        },
-        {
-          "nome": "cristal brasil apto",
-          "total": 2651,
-          "percentual": "8.76"
+          "nome": "pvs 500 apto",
+          "total": 17318,
+          "percentual": "12.36"
         },
         {
           "nome": "pvs esmeralda enf",
-          "total": 2162,
-          "percentual": "7.14"
+          "total": 13377,
+          "percentual": "9.55"
         },
         {
-          "nome": "pvs premium 1002 apto",
-          "total": 1996,
-          "percentual": "6.60"
+          "nome": "pvs premium 1002 enf",
+          "total": 12783,
+          "percentual": "9.13"
+        },
+        {
+          "nome": "cristal brasil apto",
+          "total": 11802,
+          "percentual": "8.43"
         },
         {
           "nome": "cristal brasil enf",
-          "total": 1851,
-          "percentual": "6.12"
+          "total": 11148,
+          "percentual": "7.96"
         },
         {
           "nome": "pvs esmeralda apto",
-          "total": 1776,
-          "percentual": "5.87"
+          "total": 8620,
+          "percentual": "6.15"
         },
         {
-          "nome": "pvs 1000 apto",
-          "total": 1702,
-          "percentual": "5.62"
+          "nome": "pvs premium 1002 apto",
+          "total": 7621,
+          "percentual": "5.44"
         },
         {
           "nome": "pvs 1000 enf",
-          "total": 1702,
-          "percentual": "5.62"
+          "total": 7363,
+          "percentual": "5.26"
+        },
+        {
+          "nome": "pvs 1000 apto",
+          "total": 6238,
+          "percentual": "4.45"
         },
         {
           "nome": "plano pvs corporate 1001 apto",
-          "total": 605,
-          "percentual": "2.00"
+          "total": 5616,
+          "percentual": "4.01"
         },
         {
           "nome": "pvs premium 1001 enf",
-          "total": 524,
-          "percentual": "1.73"
+          "total": 2286,
+          "percentual": "1.63"
         },
         {
           "nome": "pvs master enf",
-          "total": 457,
-          "percentual": "1.51"
+          "total": 1965,
+          "percentual": "1.40"
         },
         {
           "nome": "pvs master apto",
-          "total": 435,
-          "percentual": "1.44"
+          "total": 1670,
+          "percentual": "1.19"
         },
         {
           "nome": "pvs premium 1003 enf",
-          "total": 374,
-          "percentual": "1.24"
+          "total": 1546,
+          "percentual": "1.10"
         },
         {
           "nome": "pvs premium 1001 apto",
-          "total": 345,
-          "percentual": "1.14"
-        },
-        {
-          "nome": "pvs premium 1003 apto",
-          "total": 331,
-          "percentual": "1.09"
+          "total": 1430,
+          "percentual": "1.02"
         },
         {
           "nome": "pvs topázio",
-          "total": 248,
-          "percentual": "0.82"
+          "total": 1415,
+          "percentual": "1.01"
         },
         {
-          "nome": "pvs rubi enf",
-          "total": 239,
-          "percentual": "0.79"
-        },
-        {
-          "nome": "pvs 0525 apto",
-          "total": 217,
-          "percentual": "0.72"
+          "nome": "pvs premium 1003 apto",
+          "total": 1365,
+          "percentual": "0.97"
         },
         {
           "nome": "plano pvs são paulo 1000 enf",
-          "total": 211,
+          "total": 987,
           "percentual": "0.70"
         },
         {
-          "nome": "pvs 0525 enf",
-          "total": 193,
-          "percentual": "0.64"
-        },
-        {
-          "nome": "plano pvs são paulo 1000 apto",
-          "total": 159,
-          "percentual": "0.53"
-        },
-        {
-          "nome": "pvs",
-          "total": 153,
-          "percentual": "0.51"
-        },
-        {
-          "nome": "prevent ma+s apto",
-          "total": 106,
-          "percentual": "0.35"
-        },
-        {
-          "nome": "prevent ma+s enf",
-          "total": 47,
-          "percentual": "0.16"
-        },
-        {
-          "nome": "pvs corporate apto",
-          "total": 29,
-          "percentual": "0.10"
-        },
-        {
-          "nome": "indiv/plusi/obst",
-          "total": 21,
-          "percentual": "0.07"
-        },
-        {
-          "nome": "pvs 1025 apto",
-          "total": 20,
-          "percentual": "0.07"
-        },
-        {
-          "nome": "pvs 1025 enf",
-          "total": 19,
-          "percentual": "0.06"
-        },
-        {
-          "nome": "pvs rubi apto",
-          "total": 17,
-          "percentual": "0.06"
-        },
-        {
-          "nome": "ind/atu/exe/ren",
-          "total": 13,
-          "percentual": "0.04"
-        },
-        {
-          "nome": "ind/atu/std",
-          "total": 13,
-          "percentual": "0.04"
-        },
-        {
-          "nome": "empresarial pme plus i",
-          "total": 10,
-          "percentual": "0.03"
-        },
-        {
-          "nome": "plano pvs premium 1000 apto",
-          "total": 10,
-          "percentual": "0.03"
-        },
-        {
-          "nome": "ind cop plus",
-          "total": 8,
-          "percentual": "0.03"
-        },
-        {
-          "nome": "pvs corporate enf",
-          "total": 6,
-          "percentual": "0.02"
-        },
-        {
-          "nome": "ind/verde/std",
-          "total": 6,
-          "percentual": "0.02"
-        },
-        {
-          "nome": "empresarial pme master i",
-          "total": 6,
-          "percentual": "0.02"
-        },
-        {
-          "nome": "ind/atual/std",
-          "total": 6,
-          "percentual": "0.02"
-        },
-        {
-          "nome": "ind cop master",
-          "total": 5,
-          "percentual": "0.02"
-        },
-        {
-          "nome": "pme cop plus",
-          "total": 4,
-          "percentual": "0.01"
-        },
-        {
-          "nome": "indiv/plus/sem obst",
-          "total": 4,
-          "percentual": "0.01"
-        },
-        {
-          "nome": "newon adesão premium apto",
-          "total": 3,
-          "percentual": "0.01"
-        },
-        {
-          "nome": "ind/verde/exe",
-          "total": 3,
-          "percentual": "0.01"
-        },
-        {
-          "nome": "col/empr/master i",
-          "total": 3,
-          "percentual": "0.01"
-        },
-        {
-          "nome": "pme cop master",
-          "total": 3,
-          "percentual": "0.01"
-        },
-        {
-          "nome": "ind/atu/std/ren plus",
-          "total": 3,
-          "percentual": "0.01"
-        },
-        {
-          "nome": "ind/novo/std plus",
-          "total": 2,
-          "percentual": "0.01"
-        },
-        {
-          "nome": "indiv/master i/obst",
-          "total": 2,
-          "percentual": "0.01"
-        },
-        {
-          "nome": "ind/novo/std",
-          "total": 1,
-          "percentual": "0.00"
-        },
-        {
-          "nome": "assist.médica nove de julho - (inclusão: intern.apartmtº.)",
-          "total": 1,
-          "percentual": "0.00"
-        },
-        {
-          "nome": "plano pvs premium 1000 enf",
-          "total": 1,
-          "percentual": "0.00"
-        }
-      ],
-      "por_faixa_etaria": {
-        "18_a_49": {
-          "total_beneficiarios": 2606,
-          "top_5_planos": [
-            {
-              "nome": "pvs premium 1002 enf",
-              "total": 360,
-              "percentual": "13.81"
-            },
-            {
-              "nome": "pvs premium 1002 apto",
-              "total": 335,
-              "percentual": "12.85"
-            },
-            {
-              "nome": "plano pvs corporate 1001 apto",
-              "total": 328,
-              "percentual": "12.59"
-            },
-            {
-              "nome": "pvs master apto",
-              "total": 307,
-              "percentual": "11.78"
-            },
-            {
-              "nome": "pvs master enf",
-              "total": 287,
-              "percentual": "11.01"
-            }
-          ],
-          "todos_planos": [
-            {
-              "nome": "pvs premium 1002 enf",
-              "total": 360,
-              "percentual": "13.81"
-            },
-            {
-              "nome": "pvs premium 1002 apto",
-              "total": 335,
-              "percentual": "12.85"
-            },
-            {
-              "nome": "plano pvs corporate 1001 apto",
-              "total": 328,
-              "percentual": "12.59"
-            },
-            {
-              "nome": "pvs master apto",
-              "total": 307,
-              "percentual": "11.78"
-            },
-            {
-              "nome": "pvs master enf",
-              "total": 287,
-              "percentual": "11.01"
-            },
-            {
-              "nome": "pvs 1000 apto",
-              "total": 251,
-              "percentual": "9.63"
-            },
-            {
-              "nome": "pvs 1000 enf",
-              "total": 224,
-              "percentual": "8.60"
-            },
-            {
-              "nome": "pvs premium 1003 enf",
-              "total": 109,
-              "percentual": "4.18"
-            },
-            {
-              "nome": "pvs premium 1001 enf",
-              "total": 75,
-              "percentual": "2.88"
-            },
-            {
-              "nome": "pvs premium 1001 apto",
-              "total": 66,
-              "percentual": "2.53"
-            },
-            {
-              "nome": "pvs premium 1003 apto",
-              "total": 48,
-              "percentual": "1.84"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 enf",
-              "total": 38,
-              "percentual": "1.46"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 apto",
-              "total": 30,
-              "percentual": "1.15"
-            },
-            {
-              "nome": "pvs 0525 enf",
-              "total": 26,
-              "percentual": "1.00"
-            },
-            {
-              "nome": "pvs 0525 apto",
-              "total": 21,
-              "percentual": "0.81"
-            },
-            {
-              "nome": "prevent ma+s apto",
-              "total": 14,
-              "percentual": "0.54"
-            },
-            {
-              "nome": "pvs 500 apto",
-              "total": 13,
-              "percentual": "0.50"
-            },
-            {
-              "nome": "pvs corporate apto",
-              "total": 10,
-              "percentual": "0.38"
-            },
-            {
-              "nome": "prevent ma+s enf",
-              "total": 7,
-              "percentual": "0.27"
-            },
-            {
-              "nome": "indiv/plusi/obst",
-              "total": 6,
-              "percentual": "0.23"
-            },
-            {
-              "nome": "empresarial pme plus i",
-              "total": 5,
-              "percentual": "0.19"
-            },
-            {
-              "nome": "pvs 500 enf",
-              "total": 5,
-              "percentual": "0.19"
-            },
-            {
-              "nome": "ind cop plus",
-              "total": 5,
-              "percentual": "0.19"
-            },
-            {
-              "nome": "pvs corporate enf",
-              "total": 4,
-              "percentual": "0.15"
-            },
-            {
-              "nome": "empresarial pme master i",
-              "total": 4,
-              "percentual": "0.15"
-            },
-            {
-              "nome": "newon adesão premium apto",
-              "total": 3,
-              "percentual": "0.12"
-            },
-            {
-              "nome": "pvs 1025 enf",
-              "total": 3,
-              "percentual": "0.12"
-            },
-            {
-              "nome": "ind/atu/exe/ren",
-              "total": 3,
-              "percentual": "0.12"
-            },
-            {
-              "nome": "ind/atu/std",
-              "total": 3,
-              "percentual": "0.12"
-            },
-            {
-              "nome": "ind cop master",
-              "total": 3,
-              "percentual": "0.12"
-            },
-            {
-              "nome": "pme cop master",
-              "total": 2,
-              "percentual": "0.08"
-            },
-            {
-              "nome": "pme cop plus",
-              "total": 2,
-              "percentual": "0.08"
-            },
-            {
-              "nome": "pvs 1025 apto",
-              "total": 1,
-              "percentual": "0.04"
-            },
-            {
-              "nome": "pvs esmeralda apto",
-              "total": 1,
-              "percentual": "0.04"
-            },
-            {
-              "nome": "ind/verde/exe",
-              "total": 1,
-              "percentual": "0.04"
-            },
-            {
-              "nome": "ind/verde/std",
-              "total": 1,
-              "percentual": "0.04"
-            },
-            {
-              "nome": "ind/atu/std/ren plus",
-              "total": 1,
-              "percentual": "0.04"
-            },
-            {
-              "nome": "ind/atual/std",
-              "total": 1,
-              "percentual": "0.04"
-            },
-            {
-              "nome": "ind/novo/std plus",
-              "total": 1,
-              "percentual": "0.04"
-            },
-            {
-              "nome": "indiv/master i/obst",
-              "total": 1,
-              "percentual": "0.04"
-            },
-            {
-              "nome": "plano pvs premium 1000 apto",
-              "total": 1,
-              "percentual": "0.04"
-            }
-          ]
-        },
-        "50_a_69": {
-          "total_beneficiarios": 10247,
-          "top_5_planos": [
-            {
-              "nome": "pvs 500 enf",
-              "total": 2067,
-              "percentual": "20.17"
-            },
-            {
-              "nome": "pvs 500 apto",
-              "total": 1500,
-              "percentual": "14.64"
-            },
-            {
-              "nome": "pvs premium 1002 enf",
-              "total": 1333,
-              "percentual": "13.01"
-            },
-            {
-              "nome": "pvs 1000 enf",
-              "total": 831,
-              "percentual": "8.11"
-            },
-            {
-              "nome": "pvs premium 1002 apto",
-              "total": 679,
-              "percentual": "6.63"
-            }
-          ],
-          "todos_planos": [
-            {
-              "nome": "pvs 500 enf",
-              "total": 2067,
-              "percentual": "20.17"
-            },
-            {
-              "nome": "pvs 500 apto",
-              "total": 1500,
-              "percentual": "14.64"
-            },
-            {
-              "nome": "pvs premium 1002 enf",
-              "total": 1333,
-              "percentual": "13.01"
-            },
-            {
-              "nome": "pvs 1000 enf",
-              "total": 831,
-              "percentual": "8.11"
-            },
-            {
-              "nome": "pvs premium 1002 apto",
-              "total": 679,
-              "percentual": "6.63"
-            },
-            {
-              "nome": "cristal brasil enf",
-              "total": 659,
-              "percentual": "6.43"
-            },
-            {
-              "nome": "pvs 1000 apto",
-              "total": 653,
-              "percentual": "6.37"
-            },
-            {
-              "nome": "cristal brasil apto",
-              "total": 569,
-              "percentual": "5.55"
-            },
-            {
-              "nome": "pvs esmeralda enf",
-              "total": 224,
-              "percentual": "2.19"
-            },
-            {
-              "nome": "pvs premium 1001 enf",
-              "total": 220,
-              "percentual": "2.15"
-            },
-            {
-              "nome": "pvs esmeralda apto",
-              "total": 219,
-              "percentual": "2.14"
-            },
-            {
-              "nome": "plano pvs corporate 1001 apto",
-              "total": 163,
-              "percentual": "1.59"
-            },
-            {
-              "nome": "pvs master enf",
-              "total": 157,
-              "percentual": "1.53"
-            },
-            {
-              "nome": "pvs premium 1003 enf",
-              "total": 149,
-              "percentual": "1.45"
-            },
-            {
-              "nome": "pvs premium 1001 apto",
-              "total": 126,
-              "percentual": "1.23"
-            },
-            {
-              "nome": "pvs premium 1003 apto",
-              "total": 119,
-              "percentual": "1.16"
-            },
-            {
-              "nome": "pvs master apto",
-              "total": 110,
-              "percentual": "1.07"
-            },
-            {
-              "nome": "pvs 0525 apto",
-              "total": 97,
-              "percentual": "0.95"
-            },
-            {
-              "nome": "pvs 0525 enf",
-              "total": 89,
-              "percentual": "0.87"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 enf",
-              "total": 88,
-              "percentual": "0.86"
-            },
-            {
-              "nome": "prevent ma+s apto",
-              "total": 37,
-              "percentual": "0.36"
-            },
-            {
-              "nome": "pvs topázio",
-              "total": 31,
-              "percentual": "0.30"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 apto",
-              "total": 31,
-              "percentual": "0.30"
-            },
-            {
-              "nome": "prevent ma+s enf",
-              "total": 23,
-              "percentual": "0.22"
-            },
-            {
-              "nome": "pvs corporate apto",
-              "total": 15,
-              "percentual": "0.15"
-            },
-            {
-              "nome": "pvs rubi enf",
-              "total": 13,
-              "percentual": "0.13"
-            },
-            {
-              "nome": "pvs 1025 enf",
-              "total": 11,
-              "percentual": "0.11"
-            },
-            {
-              "nome": "pvs 1025 apto",
-              "total": 7,
-              "percentual": "0.07"
-            },
-            {
-              "nome": "ind/atu/exe/ren",
-              "total": 3,
-              "percentual": "0.03"
-            },
-            {
-              "nome": "plano pvs premium 1000 apto",
-              "total": 3,
-              "percentual": "0.03"
-            },
-            {
-              "nome": "pvs corporate enf",
-              "total": 2,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "ind/verde/std",
-              "total": 2,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "empresarial pme plus i",
-              "total": 2,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "ind/atu/std",
-              "total": 2,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "empresarial pme master i",
-              "total": 2,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "ind/atu/std/ren plus",
-              "total": 2,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "indiv/plusi/obst",
-              "total": 2,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "ind/verde/exe",
-              "total": 1,
-              "percentual": "0.01"
-            },
-            {
-              "nome": "ind cop plus",
-              "total": 1,
-              "percentual": "0.01"
-            },
-            {
-              "nome": "pme cop master",
-              "total": 1,
-              "percentual": "0.01"
-            },
-            {
-              "nome": "pme cop plus",
-              "total": 1,
-              "percentual": "0.01"
-            },
-            {
-              "nome": "ind/atual/std",
-              "total": 1,
-              "percentual": "0.01"
-            },
-            {
-              "nome": "indiv/plus/sem obst",
-              "total": 1,
-              "percentual": "0.01"
-            },
-            {
-              "nome": "plano pvs premium 1000 enf",
-              "total": 1,
-              "percentual": "0.01"
-            }
-          ]
-        },
-        "70_a_74": {
-          "total_beneficiarios": 4835,
-          "top_5_planos": [
-            {
-              "nome": "pvs 500 enf",
-              "total": 814,
-              "percentual": "16.84"
-            },
-            {
-              "nome": "pvs 500 apto",
-              "total": 714,
-              "percentual": "14.77"
-            },
-            {
-              "nome": "cristal brasil apto",
-              "total": 542,
-              "percentual": "11.21"
-            },
-            {
-              "nome": "pvs esmeralda enf",
-              "total": 496,
-              "percentual": "10.26"
-            },
-            {
-              "nome": "cristal brasil enf",
-              "total": 457,
-              "percentual": "9.45"
-            }
-          ],
-          "todos_planos": [
-            {
-              "nome": "pvs 500 enf",
-              "total": 814,
-              "percentual": "16.84"
-            },
-            {
-              "nome": "pvs 500 apto",
-              "total": 714,
-              "percentual": "14.77"
-            },
-            {
-              "nome": "cristal brasil apto",
-              "total": 542,
-              "percentual": "11.21"
-            },
-            {
-              "nome": "pvs esmeralda enf",
-              "total": 496,
-              "percentual": "10.26"
-            },
-            {
-              "nome": "cristal brasil enf",
-              "total": 457,
-              "percentual": "9.45"
-            },
-            {
-              "nome": "pvs premium 1002 enf",
-              "total": 342,
-              "percentual": "7.07"
-            },
-            {
-              "nome": "pvs esmeralda apto",
-              "total": 331,
-              "percentual": "6.85"
-            },
-            {
-              "nome": "pvs premium 1002 apto",
-              "total": 249,
-              "percentual": "5.15"
-            },
-            {
-              "nome": "pvs 1000 enf",
-              "total": 248,
-              "percentual": "5.13"
-            },
-            {
-              "nome": "pvs 1000 apto",
-              "total": 169,
-              "percentual": "3.50"
-            },
-            {
-              "nome": "pvs premium 1001 enf",
-              "total": 76,
-              "percentual": "1.57"
-            },
-            {
-              "nome": "pvs rubi enf",
-              "total": 53,
-              "percentual": "1.10"
-            },
-            {
-              "nome": "pvs topázio",
-              "total": 45,
-              "percentual": "0.93"
-            },
-            {
-              "nome": "pvs premium 1003 apto",
-              "total": 42,
-              "percentual": "0.87"
-            },
-            {
-              "nome": "pvs premium 1003 enf",
-              "total": 38,
-              "percentual": "0.79"
-            },
-            {
-              "nome": "pvs premium 1001 apto",
-              "total": 38,
-              "percentual": "0.79"
-            },
-            {
-              "nome": "pvs 0525 enf",
-              "total": 29,
-              "percentual": "0.60"
-            },
-            {
-              "nome": "plano pvs corporate 1001 apto",
-              "total": 28,
-              "percentual": "0.58"
-            },
-            {
-              "nome": "pvs 0525 apto",
-              "total": 28,
-              "percentual": "0.58"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 enf",
-              "total": 25,
-              "percentual": "0.52"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 apto",
-              "total": 15,
-              "percentual": "0.31"
-            },
-            {
-              "nome": "prevent ma+s apto",
-              "total": 14,
-              "percentual": "0.29"
-            },
-            {
-              "nome": "pvs",
-              "total": 12,
-              "percentual": "0.25"
-            },
-            {
-              "nome": "prevent ma+s enf",
-              "total": 6,
-              "percentual": "0.12"
-            },
-            {
-              "nome": "pvs 1025 apto",
-              "total": 5,
-              "percentual": "0.10"
-            },
-            {
-              "nome": "pvs rubi apto",
-              "total": 4,
-              "percentual": "0.08"
-            },
-            {
-              "nome": "pvs 1025 enf",
-              "total": 3,
-              "percentual": "0.06"
-            },
-            {
-              "nome": "col/empr/master i",
-              "total": 3,
-              "percentual": "0.06"
-            },
-            {
-              "nome": "pvs master enf",
-              "total": 1,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "ind/verde/exe",
-              "total": 1,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "ind cop plus",
-              "total": 1,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "ind/atu/std",
-              "total": 1,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "ind/atu/exe/ren",
-              "total": 1,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "pme cop plus",
-              "total": 1,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "ind/atual/std",
-              "total": 1,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "indiv/plus/sem obst",
-              "total": 1,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "plano pvs premium 1000 apto",
-              "total": 1,
-              "percentual": "0.02"
-            }
-          ]
-        },
-        "75_a_79": {
-          "total_beneficiarios": 4494,
-          "top_5_planos": [
-            {
-              "nome": "pvs 500 apto",
-              "total": 841,
-              "percentual": "18.71"
-            },
-            {
-              "nome": "pvs 500 enf",
-              "total": 645,
-              "percentual": "14.35"
-            },
-            {
-              "nome": "cristal brasil apto",
-              "total": 514,
-              "percentual": "11.44"
-            },
-            {
-              "nome": "pvs esmeralda enf",
-              "total": 511,
-              "percentual": "11.37"
-            },
-            {
-              "nome": "pvs esmeralda apto",
-              "total": 374,
-              "percentual": "8.32"
-            }
-          ],
-          "todos_planos": [
-            {
-              "nome": "pvs 500 apto",
-              "total": 841,
-              "percentual": "18.71"
-            },
-            {
-              "nome": "pvs 500 enf",
-              "total": 645,
-              "percentual": "14.35"
-            },
-            {
-              "nome": "cristal brasil apto",
-              "total": 514,
-              "percentual": "11.44"
-            },
-            {
-              "nome": "pvs esmeralda enf",
-              "total": 511,
-              "percentual": "11.37"
-            },
-            {
-              "nome": "pvs esmeralda apto",
-              "total": 374,
-              "percentual": "8.32"
-            },
-            {
-              "nome": "cristal brasil enf",
-              "total": 317,
-              "percentual": "7.05"
-            },
-            {
-              "nome": "pvs premium 1002 enf",
-              "total": 236,
-              "percentual": "5.25"
-            },
-            {
-              "nome": "pvs premium 1002 apto",
-              "total": 219,
-              "percentual": "4.87"
-            },
-            {
-              "nome": "pvs 1000 apto",
-              "total": 190,
-              "percentual": "4.23"
-            },
-            {
-              "nome": "pvs 1000 enf",
-              "total": 186,
-              "percentual": "4.14"
-            },
-            {
-              "nome": "pvs topázio",
-              "total": 81,
-              "percentual": "1.80"
-            },
-            {
-              "nome": "pvs premium 1001 enf",
-              "total": 51,
-              "percentual": "1.13"
-            },
-            {
-              "nome": "pvs rubi enf",
-              "total": 48,
-              "percentual": "1.07"
-            },
-            {
-              "nome": "pvs premium 1003 apto",
-              "total": 39,
-              "percentual": "0.87"
-            },
-            {
-              "nome": "pvs",
-              "total": 37,
-              "percentual": "0.82"
-            },
-            {
-              "nome": "pvs premium 1001 apto",
-              "total": 32,
-              "percentual": "0.71"
-            },
-            {
-              "nome": "pvs 0525 enf",
-              "total": 26,
-              "percentual": "0.58"
-            },
-            {
-              "nome": "pvs 0525 apto",
-              "total": 23,
-              "percentual": "0.51"
-            },
-            {
-              "nome": "pvs premium 1003 enf",
-              "total": 23,
-              "percentual": "0.51"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 enf",
-              "total": 22,
-              "percentual": "0.49"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 apto",
-              "total": 22,
-              "percentual": "0.49"
-            },
-            {
-              "nome": "prevent ma+s apto",
-              "total": 19,
-              "percentual": "0.42"
-            },
-            {
-              "nome": "plano pvs corporate 1001 apto",
-              "total": 16,
-              "percentual": "0.36"
-            },
-            {
-              "nome": "prevent ma+s enf",
-              "total": 6,
-              "percentual": "0.13"
-            },
-            {
-              "nome": "pvs 1025 apto",
-              "total": 6,
-              "percentual": "0.13"
-            },
-            {
-              "nome": "pvs rubi apto",
-              "total": 3,
-              "percentual": "0.07"
-            },
-            {
-              "nome": "ind/atu/std",
-              "total": 2,
-              "percentual": "0.04"
-            },
-            {
-              "nome": "pvs master apto",
-              "total": 1,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "ind/atu/exe/ren",
-              "total": 1,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "ind/novo/std",
-              "total": 1,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "indiv/plus/sem obst",
-              "total": 1,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "indiv/plusi/obst",
-              "total": 1,
-              "percentual": "0.02"
-            }
-          ]
-        },
-        "80_a_89": {
-          "total_beneficiarios": 5870,
-          "top_5_planos": [
-            {
-              "nome": "pvs 500 apto",
-              "total": 1134,
-              "percentual": "19.32"
-            },
-            {
-              "nome": "pvs esmeralda enf",
-              "total": 736,
-              "percentual": "12.54"
-            },
-            {
-              "nome": "cristal brasil apto",
-              "total": 724,
-              "percentual": "12.33"
-            },
-            {
-              "nome": "pvs 500 enf",
-              "total": 603,
-              "percentual": "10.27"
-            },
-            {
-              "nome": "pvs esmeralda apto",
-              "total": 602,
-              "percentual": "10.26"
-            }
-          ],
-          "todos_planos": [
-            {
-              "nome": "pvs 500 apto",
-              "total": 1134,
-              "percentual": "19.32"
-            },
-            {
-              "nome": "pvs esmeralda enf",
-              "total": 736,
-              "percentual": "12.54"
-            },
-            {
-              "nome": "cristal brasil apto",
-              "total": 724,
-              "percentual": "12.33"
-            },
-            {
-              "nome": "pvs 500 enf",
-              "total": 603,
-              "percentual": "10.27"
-            },
-            {
-              "nome": "pvs esmeralda apto",
-              "total": 602,
-              "percentual": "10.26"
-            },
-            {
-              "nome": "cristal brasil enf",
-              "total": 350,
-              "percentual": "5.96"
-            },
-            {
-              "nome": "pvs premium 1002 apto",
-              "total": 337,
-              "percentual": "5.74"
-            },
-            {
-              "nome": "pvs 1000 apto",
-              "total": 301,
-              "percentual": "5.13"
-            },
-            {
-              "nome": "pvs premium 1002 enf",
-              "total": 269,
-              "percentual": "4.58"
-            },
-            {
-              "nome": "pvs 1000 enf",
-              "total": 147,
-              "percentual": "2.50"
-            },
-            {
-              "nome": "pvs rubi enf",
-              "total": 100,
-              "percentual": "1.70"
-            },
-            {
-              "nome": "pvs",
-              "total": 81,
-              "percentual": "1.38"
-            },
-            {
-              "nome": "pvs premium 1001 enf",
-              "total": 72,
-              "percentual": "1.23"
-            },
-            {
-              "nome": "pvs topázio",
-              "total": 65,
-              "percentual": "1.11"
-            },
-            {
-              "nome": "pvs premium 1001 apto",
-              "total": 61,
-              "percentual": "1.04"
-            },
-            {
-              "nome": "pvs premium 1003 apto",
-              "total": 56,
-              "percentual": "0.95"
-            },
-            {
-              "nome": "pvs 0525 apto",
-              "total": 39,
-              "percentual": "0.66"
-            },
-            {
-              "nome": "pvs premium 1003 enf",
-              "total": 39,
-              "percentual": "0.66"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 apto",
-              "total": 37,
-              "percentual": "0.63"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 enf",
-              "total": 23,
-              "percentual": "0.39"
-            },
-            {
-              "nome": "pvs 0525 enf",
-              "total": 21,
-              "percentual": "0.36"
-            },
-            {
-              "nome": "plano pvs corporate 1001 apto",
-              "total": 17,
-              "percentual": "0.29"
-            },
-            {
-              "nome": "prevent ma+s apto",
-              "total": 15,
-              "percentual": "0.26"
-            },
-            {
-              "nome": "pvs rubi apto",
-              "total": 8,
-              "percentual": "0.14"
-            },
-            {
-              "nome": "indiv/plusi/obst",
-              "total": 7,
-              "percentual": "0.12"
-            },
-            {
-              "nome": "prevent ma+s enf",
-              "total": 5,
-              "percentual": "0.09"
-            },
-            {
-              "nome": "ind/atu/std",
-              "total": 5,
-              "percentual": "0.09"
-            },
-            {
-              "nome": "ind/atu/exe/ren",
-              "total": 5,
-              "percentual": "0.09"
-            },
-            {
-              "nome": "ind/atual/std",
-              "total": 3,
-              "percentual": "0.05"
-            },
-            {
-              "nome": "pvs 1025 enf",
-              "total": 2,
-              "percentual": "0.03"
-            },
-            {
-              "nome": "ind/verde/std",
-              "total": 2,
-              "percentual": "0.03"
-            },
-            {
-              "nome": "empresarial pme plus i",
-              "total": 1,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "ind cop master",
-              "total": 1,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "ind/novo/std plus",
-              "total": 1,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "indiv/plus/sem obst",
-              "total": 1,
-              "percentual": "0.02"
-            }
-          ]
-        },
-        "90_a_94": {
-          "total_beneficiarios": 1334,
-          "top_5_planos": [
-            {
-              "nome": "pvs 500 apto",
-              "total": 306,
-              "percentual": "22.94"
-            },
-            {
-              "nome": "cristal brasil apto",
-              "total": 208,
-              "percentual": "15.59"
-            },
-            {
-              "nome": "pvs esmeralda apto",
-              "total": 171,
-              "percentual": "12.82"
-            },
-            {
-              "nome": "pvs esmeralda enf",
-              "total": 145,
-              "percentual": "10.87"
-            },
-            {
-              "nome": "pvs 500 enf",
-              "total": 106,
-              "percentual": "7.95"
-            }
-          ],
-          "todos_planos": [
-            {
-              "nome": "pvs 500 apto",
-              "total": 306,
-              "percentual": "22.94"
-            },
-            {
-              "nome": "cristal brasil apto",
-              "total": 208,
-              "percentual": "15.59"
-            },
-            {
-              "nome": "pvs esmeralda apto",
-              "total": 171,
-              "percentual": "12.82"
-            },
-            {
-              "nome": "pvs esmeralda enf",
-              "total": 145,
-              "percentual": "10.87"
-            },
-            {
-              "nome": "pvs 500 enf",
-              "total": 106,
-              "percentual": "7.95"
-            },
-            {
-              "nome": "pvs 1000 apto",
-              "total": 81,
-              "percentual": "6.07"
-            },
-            {
-              "nome": "pvs premium 1002 apto",
-              "total": 71,
-              "percentual": "5.32"
-            },
-            {
-              "nome": "cristal brasil enf",
-              "total": 49,
-              "percentual": "3.67"
-            },
-            {
-              "nome": "pvs premium 1002 enf",
-              "total": 42,
-              "percentual": "3.15"
-            },
-            {
-              "nome": "pvs 1000 enf",
-              "total": 30,
-              "percentual": "2.25"
-            },
-            {
-              "nome": "pvs topázio",
-              "total": 23,
-              "percentual": "1.72"
-            },
-            {
-              "nome": "pvs",
-              "total": 21,
-              "percentual": "1.57"
-            },
-            {
-              "nome": "pvs rubi enf",
-              "total": 19,
-              "percentual": "1.42"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 apto",
-              "total": 14,
-              "percentual": "1.05"
-            },
-            {
-              "nome": "pvs premium 1003 apto",
-              "total": 10,
-              "percentual": "0.75"
-            },
-            {
-              "nome": "pvs premium 1001 enf",
-              "total": 10,
-              "percentual": "0.75"
-            },
-            {
-              "nome": "pvs premium 1001 apto",
-              "total": 9,
-              "percentual": "0.67"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 enf",
-              "total": 4,
-              "percentual": "0.30"
-            },
-            {
-              "nome": "prevent ma+s apto",
-              "total": 3,
-              "percentual": "0.22"
-            },
-            {
-              "nome": "pvs rubi apto",
-              "total": 2,
-              "percentual": "0.15"
-            },
-            {
-              "nome": "pvs premium 1003 enf",
-              "total": 2,
-              "percentual": "0.15"
-            },
-            {
-              "nome": "pvs 0525 apto",
-              "total": 2,
-              "percentual": "0.15"
-            },
-            {
-              "nome": "plano pvs premium 1000 apto",
-              "total": 2,
-              "percentual": "0.15"
-            },
-            {
-              "nome": "pvs 0525 enf",
-              "total": 1,
-              "percentual": "0.07"
-            },
-            {
-              "nome": "ind/verde/std",
-              "total": 1,
-              "percentual": "0.07"
-            },
-            {
-              "nome": "indiv/master i/obst",
-              "total": 1,
-              "percentual": "0.07"
-            },
-            {
-              "nome": "indiv/plusi/obst",
-              "total": 1,
-              "percentual": "0.07"
-            }
-          ]
-        },
-        "95_a_99": {
-          "total_beneficiarios": 464,
-          "top_5_planos": [
-            {
-              "nome": "pvs 500 apto",
-              "total": 109,
-              "percentual": "23.49"
-            },
-            {
-              "nome": "cristal brasil apto",
-              "total": 79,
-              "percentual": "17.03"
-            },
-            {
-              "nome": "pvs esmeralda apto",
-              "total": 69,
-              "percentual": "14.87"
-            },
-            {
-              "nome": "pvs esmeralda enf",
-              "total": 43,
-              "percentual": "9.27"
-            },
-            {
-              "nome": "pvs premium 1002 apto",
-              "total": 36,
-              "percentual": "7.76"
-            }
-          ],
-          "todos_planos": [
-            {
-              "nome": "pvs 500 apto",
-              "total": 109,
-              "percentual": "23.49"
-            },
-            {
-              "nome": "cristal brasil apto",
-              "total": 79,
-              "percentual": "17.03"
-            },
-            {
-              "nome": "pvs esmeralda apto",
-              "total": 69,
-              "percentual": "14.87"
-            },
-            {
-              "nome": "pvs esmeralda enf",
-              "total": 43,
-              "percentual": "9.27"
-            },
-            {
-              "nome": "pvs premium 1002 apto",
-              "total": 36,
-              "percentual": "7.76"
-            },
-            {
-              "nome": "pvs 500 enf",
-              "total": 28,
-              "percentual": "6.03"
-            },
-            {
-              "nome": "cristal brasil enf",
-              "total": 19,
-              "percentual": "4.09"
-            },
-            {
-              "nome": "pvs 1000 apto",
-              "total": 19,
-              "percentual": "4.09"
-            },
-            {
-              "nome": "pvs 1000 enf",
-              "total": 12,
-              "percentual": "2.59"
-            },
-            {
-              "nome": "pvs premium 1003 apto",
-              "total": 8,
-              "percentual": "1.72"
-            },
-            {
-              "nome": "pvs rubi enf",
-              "total": 6,
-              "percentual": "1.29"
-            },
-            {
-              "nome": "pvs premium 1002 enf",
-              "total": 6,
-              "percentual": "1.29"
-            },
-            {
-              "nome": "pvs 0525 apto",
-              "total": 6,
-              "percentual": "1.29"
-            },
-            {
-              "nome": "pvs premium 1001 apto",
-              "total": 6,
-              "percentual": "1.29"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 apto",
-              "total": 4,
-              "percentual": "0.86"
-            },
-            {
-              "nome": "pvs topázio",
-              "total": 3,
-              "percentual": "0.65"
-            },
-            {
-              "nome": "prevent ma+s apto",
-              "total": 3,
-              "percentual": "0.65"
-            },
-            {
-              "nome": "pvs premium 1001 enf",
-              "total": 2,
-              "percentual": "0.43"
-            },
-            {
-              "nome": "pvs",
-              "total": 1,
-              "percentual": "0.22"
-            },
-            {
-              "nome": "pvs 1025 apto",
-              "total": 1,
-              "percentual": "0.22"
-            },
-            {
-              "nome": "indiv/plusi/obst",
-              "total": 1,
-              "percentual": "0.22"
-            },
-            {
-              "nome": "assist.médica nove de julho - (inclusão: intern.apartmtº.)",
-              "total": 1,
-              "percentual": "0.22"
-            },
-            {
-              "nome": "plano pvs premium 1000 apto",
-              "total": 1,
-              "percentual": "0.22"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 enf",
-              "total": 1,
-              "percentual": "0.22"
-            }
-          ]
-        },
-        "100_ou_mais": {
-          "total_beneficiarios": 74,
-          "top_5_planos": [
-            {
-              "nome": "cristal brasil apto",
-              "total": 15,
-              "percentual": "20.27"
-            },
-            {
-              "nome": "pvs 500 apto",
-              "total": 14,
-              "percentual": "18.92"
-            },
-            {
-              "nome": "pvs esmeralda apto",
-              "total": 9,
-              "percentual": "12.16"
-            },
-            {
-              "nome": "pvs premium 1002 apto",
-              "total": 9,
-              "percentual": "12.16"
-            },
-            {
-              "nome": "pvs esmeralda enf",
-              "total": 7,
-              "percentual": "9.46"
-            }
-          ],
-          "todos_planos": [
-            {
-              "nome": "cristal brasil apto",
-              "total": 15,
-              "percentual": "20.27"
-            },
-            {
-              "nome": "pvs 500 apto",
-              "total": 14,
-              "percentual": "18.92"
-            },
-            {
-              "nome": "pvs esmeralda apto",
-              "total": 9,
-              "percentual": "12.16"
-            },
-            {
-              "nome": "pvs premium 1002 apto",
-              "total": 9,
-              "percentual": "12.16"
-            },
-            {
-              "nome": "pvs esmeralda enf",
-              "total": 7,
-              "percentual": "9.46"
-            },
-            {
-              "nome": "pvs 1000 apto",
-              "total": 7,
-              "percentual": "9.46"
-            },
-            {
-              "nome": "pvs premium 1002 enf",
-              "total": 2,
-              "percentual": "2.70"
-            },
-            {
-              "nome": "pvs 1000 enf",
-              "total": 2,
-              "percentual": "2.70"
-            },
-            {
-              "nome": "pvs premium 1001 enf",
-              "total": 2,
-              "percentual": "2.70"
-            },
-            {
-              "nome": "pvs",
-              "total": 1,
-              "percentual": "1.35"
-            },
-            {
-              "nome": "prevent ma+s apto",
-              "total": 1,
-              "percentual": "1.35"
-            },
-            {
-              "nome": "pvs 500 enf",
-              "total": 1,
-              "percentual": "1.35"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 enf",
-              "total": 1,
-              "percentual": "1.35"
-            },
-            {
-              "nome": "plano pvs premium 1000 apto",
-              "total": 1,
-              "percentual": "1.35"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 apto",
-              "total": 1,
-              "percentual": "1.35"
-            },
-            {
-              "nome": "pvs premium 1001 apto",
-              "total": 1,
-              "percentual": "1.35"
-            }
-          ]
-        }
-      }
-    },
-    "Centro-Sul": {
-      "total_beneficiarios": 109805,
-      "total_planos_unicos": 59,
-      "top_10_planos": [
-        {
-          "nome": "pvs 500 enf",
-          "total": 15152,
-          "percentual": "13.80"
-        },
-        {
-          "nome": "pvs 500 apto",
-          "total": 12687,
-          "percentual": "11.55"
-        },
-        {
-          "nome": "pvs esmeralda enf",
-          "total": 11215,
-          "percentual": "10.21"
-        },
-        {
-          "nome": "pvs premium 1002 enf",
-          "total": 10122,
-          "percentual": "9.22"
-        },
-        {
-          "nome": "cristal brasil enf",
-          "total": 9297,
-          "percentual": "8.47"
-        },
-        {
-          "nome": "cristal brasil apto",
-          "total": 9151,
-          "percentual": "8.33"
-        },
-        {
-          "nome": "pvs esmeralda apto",
-          "total": 6844,
-          "percentual": "6.23"
-        },
-        {
-          "nome": "pvs 1000 enf",
-          "total": 5661,
-          "percentual": "5.16"
-        },
-        {
-          "nome": "pvs premium 1002 apto",
-          "total": 5625,
-          "percentual": "5.12"
-        },
-        {
-          "nome": "plano pvs corporate 1001 apto",
-          "total": 5011,
-          "percentual": "4.56"
-        }
-      ],
-      "todos_planos": [
-        {
-          "nome": "pvs 500 enf",
-          "total": 15152,
-          "percentual": "13.80"
-        },
-        {
-          "nome": "pvs 500 apto",
-          "total": 12687,
-          "percentual": "11.55"
-        },
-        {
-          "nome": "pvs esmeralda enf",
-          "total": 11215,
-          "percentual": "10.21"
-        },
-        {
-          "nome": "pvs premium 1002 enf",
-          "total": 10122,
-          "percentual": "9.22"
-        },
-        {
-          "nome": "cristal brasil enf",
-          "total": 9297,
-          "percentual": "8.47"
-        },
-        {
-          "nome": "cristal brasil apto",
-          "total": 9151,
-          "percentual": "8.33"
-        },
-        {
-          "nome": "pvs esmeralda apto",
-          "total": 6844,
-          "percentual": "6.23"
-        },
-        {
-          "nome": "pvs 1000 enf",
-          "total": 5661,
-          "percentual": "5.16"
-        },
-        {
-          "nome": "pvs premium 1002 apto",
-          "total": 5625,
-          "percentual": "5.12"
-        },
-        {
-          "nome": "plano pvs corporate 1001 apto",
-          "total": 5011,
-          "percentual": "4.56"
-        },
-        {
-          "nome": "pvs 1000 apto",
-          "total": 4536,
-          "percentual": "4.13"
-        },
-        {
-          "nome": "pvs premium 1001 enf",
-          "total": 1762,
-          "percentual": "1.60"
-        },
-        {
-          "nome": "pvs master enf",
-          "total": 1508,
-          "percentual": "1.37"
-        },
-        {
-          "nome": "pvs master apto",
-          "total": 1235,
-          "percentual": "1.12"
-        },
-        {
-          "nome": "pvs premium 1003 enf",
-          "total": 1172,
-          "percentual": "1.07"
-        },
-        {
-          "nome": "pvs topázio",
-          "total": 1167,
-          "percentual": "1.06"
-        },
-        {
-          "nome": "pvs premium 1001 apto",
-          "total": 1085,
-          "percentual": "0.99"
-        },
-        {
-          "nome": "pvs premium 1003 apto",
-          "total": 1034,
-          "percentual": "0.94"
-        },
-        {
-          "nome": "plano pvs são paulo 1000 enf",
-          "total": 776,
-          "percentual": "0.71"
-        },
-        {
           "nome": "pvs 0525 apto",
-          "total": 669,
-          "percentual": "0.61"
+          "total": 886,
+          "percentual": "0.63"
         },
         {
           "nome": "pvs 0525 enf",
-          "total": 623,
+          "total": 816,
+          "percentual": "0.58"
+        },
+        {
+          "nome": "pvs rubi enf",
+          "total": 803,
           "percentual": "0.57"
         },
         {
           "nome": "pvs",
-          "total": 585,
+          "total": 738,
           "percentual": "0.53"
         },
         {
-          "nome": "pvs rubi enf",
-          "total": 564,
-          "percentual": "0.51"
-        },
-        {
           "nome": "plano pvs são paulo 1000 apto",
-          "total": 385,
-          "percentual": "0.35"
+          "total": 544,
+          "percentual": "0.39"
         },
         {
           "nome": "prevent ma+s apto",
-          "total": 315,
-          "percentual": "0.29"
+          "total": 421,
+          "percentual": "0.30"
         },
         {
           "nome": "prevent ma+s enf",
-          "total": 269,
-          "percentual": "0.24"
+          "total": 316,
+          "percentual": "0.23"
         },
         {
           "nome": "ind/atu/exe/ren",
-          "total": 227,
-          "percentual": "0.21"
+          "total": 240,
+          "percentual": "0.17"
         },
         {
           "nome": "ind cop plus",
-          "total": 143,
-          "percentual": "0.13"
+          "total": 151,
+          "percentual": "0.11"
         },
         {
           "nome": "empresarial pme plus i",
-          "total": 108,
-          "percentual": "0.10"
-        },
-        {
-          "nome": "ind/atu/std",
-          "total": 104,
-          "percentual": "0.09"
-        },
-        {
-          "nome": "pvs 1025 apto",
-          "total": 84,
+          "total": 118,
           "percentual": "0.08"
         },
         {
+          "nome": "ind/atu/std",
+          "total": 117,
+          "percentual": "0.08"
+        },
+        {
+          "nome": "pvs 1025 apto",
+          "total": 104,
+          "percentual": "0.07"
+        },
+        {
           "nome": "indiv/plusi/obst",
-          "total": 68,
+          "total": 89,
           "percentual": "0.06"
         },
         {
           "nome": "pvs 1025 enf",
-          "total": 65,
+          "total": 84,
           "percentual": "0.06"
-        },
-        {
-          "nome": "ind/verde/exe",
-          "total": 62,
-          "percentual": "0.06"
-        },
-        {
-          "nome": "ind/atual/std",
-          "total": 51,
-          "percentual": "0.05"
         },
         {
           "nome": "pvs corporate apto",
-          "total": 43,
-          "percentual": "0.04"
+          "total": 72,
+          "percentual": "0.05"
         },
         {
-          "nome": "col/empr/plus i",
-          "total": 43,
-          "percentual": "0.04"
+          "nome": "ind/verde/exe",
+          "total": 65,
+          "percentual": "0.05"
         },
         {
-          "nome": "ind cop master",
-          "total": 41,
+          "nome": "ind/atual/std",
+          "total": 57,
           "percentual": "0.04"
         },
         {
           "nome": "pvs rubi apto",
-          "total": 37,
+          "total": 54,
+          "percentual": "0.04"
+        },
+        {
+          "nome": "ind cop master",
+          "total": 46,
           "percentual": "0.03"
         },
         {
-          "nome": "empresarial pme master i",
-          "total": 34,
+          "nome": "col/empr/plus i",
+          "total": 43,
           "percentual": "0.03"
         },
         {
           "nome": "plano pvs premium 1000 apto",
-          "total": 31,
+          "total": 41,
           "percentual": "0.03"
+        },
+        {
+          "nome": "empresarial pme master i",
+          "total": 40,
+          "percentual": "0.03"
+        },
+        {
+          "nome": "ind/verde/std",
+          "total": 29,
+          "percentual": "0.02"
         },
         {
           "nome": "ind/atual/exec",
           "total": 29,
-          "percentual": "0.03"
-        },
-        {
-          "nome": "indiv/plus/sem obst",
-          "total": 24,
           "percentual": "0.02"
         },
         {
-          "nome": "ind/verde/std",
-          "total": 23,
+          "nome": "indiv/plus/sem obst",
+          "total": 28,
           "percentual": "0.02"
         },
         {
           "nome": "indiv/master i/obst",
-          "total": 22,
+          "total": 24,
           "percentual": "0.02"
         },
         {
           "nome": "ind/novo/std",
-          "total": 21,
+          "total": 22,
           "percentual": "0.02"
+        },
+        {
+          "nome": "pme cop master",
+          "total": 19,
+          "percentual": "0.01"
+        },
+        {
+          "nome": "pme cop plus",
+          "total": 16,
+          "percentual": "0.01"
         },
         {
           "nome": "col/adesao/plus i",
@@ -2524,37 +674,37 @@
           "percentual": "0.01"
         },
         {
-          "nome": "pme cop master",
-          "total": 16,
-          "percentual": "0.01"
-        },
-        {
-          "nome": "pme cop plus",
-          "total": 12,
-          "percentual": "0.01"
-        },
-        {
-          "nome": "plano pvs premium 1000 enf",
-          "total": 12,
+          "nome": "newon adesão premium apto",
+          "total": 13,
           "percentual": "0.01"
         },
         {
           "nome": "ind/novo/std plus",
-          "total": 11,
+          "total": 13,
           "percentual": "0.01"
         },
         {
-          "nome": "newon adesão premium apto",
-          "total": 10,
+          "nome": "plano pvs premium 1000 enf",
+          "total": 13,
           "percentual": "0.01"
         },
         {
           "nome": "col/empr/master i",
-          "total": 7,
+          "total": 10,
           "percentual": "0.01"
         },
         {
+          "nome": "pvs corporate enf",
+          "total": 6,
+          "percentual": "0.00"
+        },
+        {
           "nome": "assist.médica nove de julho - (inclusão: intern.apartmtº.)",
+          "total": 4,
+          "percentual": "0.00"
+        },
+        {
+          "nome": "ind/atu/std/ren plus",
           "total": 3,
           "percentual": "0.00"
         },
@@ -2586,254 +736,264 @@
       ],
       "por_faixa_etaria": {
         "18_a_49": {
-          "total_beneficiarios": 9700,
+          "total_beneficiarios": 12306,
           "top_5_planos": [
             {
               "nome": "plano pvs corporate 1001 apto",
-              "total": 2753,
-              "percentual": "28.38"
+              "total": 3081,
+              "percentual": "25.04"
             },
             {
               "nome": "pvs premium 1002 enf",
-              "total": 1255,
-              "percentual": "12.94"
+              "total": 1615,
+              "percentual": "13.12"
             },
             {
               "nome": "pvs premium 1002 apto",
-              "total": 961,
-              "percentual": "9.91"
+              "total": 1296,
+              "percentual": "10.53"
             },
             {
               "nome": "pvs master enf",
-              "total": 900,
-              "percentual": "9.28"
+              "total": 1187,
+              "percentual": "9.65"
             },
             {
               "nome": "pvs master apto",
-              "total": 769,
-              "percentual": "7.93"
+              "total": 1076,
+              "percentual": "8.74"
             }
           ],
           "todos_planos": [
             {
               "nome": "plano pvs corporate 1001 apto",
-              "total": 2753,
-              "percentual": "28.38"
+              "total": 3081,
+              "percentual": "25.04"
             },
             {
               "nome": "pvs premium 1002 enf",
-              "total": 1255,
-              "percentual": "12.94"
+              "total": 1615,
+              "percentual": "13.12"
             },
             {
               "nome": "pvs premium 1002 apto",
-              "total": 961,
-              "percentual": "9.91"
+              "total": 1296,
+              "percentual": "10.53"
             },
             {
               "nome": "pvs master enf",
-              "total": 900,
-              "percentual": "9.28"
+              "total": 1187,
+              "percentual": "9.65"
             },
             {
               "nome": "pvs master apto",
-              "total": 769,
-              "percentual": "7.93"
+              "total": 1076,
+              "percentual": "8.74"
             },
             {
               "nome": "pvs 1000 enf",
-              "total": 762,
-              "percentual": "7.86"
+              "total": 986,
+              "percentual": "8.01"
             },
             {
               "nome": "pvs 1000 apto",
-              "total": 677,
-              "percentual": "6.98"
+              "total": 928,
+              "percentual": "7.54"
             },
             {
               "nome": "pvs premium 1003 enf",
-              "total": 262,
-              "percentual": "2.70"
+              "total": 371,
+              "percentual": "3.01"
             },
             {
               "nome": "pvs premium 1001 enf",
-              "total": 248,
-              "percentual": "2.56"
+              "total": 323,
+              "percentual": "2.62"
             },
             {
               "nome": "pvs premium 1001 apto",
-              "total": 173,
-              "percentual": "1.78"
+              "total": 239,
+              "percentual": "1.94"
             },
             {
               "nome": "pvs premium 1003 apto",
-              "total": 149,
-              "percentual": "1.54"
+              "total": 197,
+              "percentual": "1.60"
             },
             {
               "nome": "plano pvs são paulo 1000 enf",
-              "total": 101,
-              "percentual": "1.04"
+              "total": 139,
+              "percentual": "1.13"
             },
             {
               "nome": "pvs 0525 enf",
-              "total": 75,
-              "percentual": "0.77"
-            },
-            {
-              "nome": "ind cop plus",
-              "total": 69,
-              "percentual": "0.71"
+              "total": 101,
+              "percentual": "0.82"
             },
             {
               "nome": "pvs 0525 apto",
-              "total": 68,
-              "percentual": "0.70"
+              "total": 89,
+              "percentual": "0.72"
             },
             {
-              "nome": "ind/atu/exe/ren",
-              "total": 55,
-              "percentual": "0.57"
-            },
-            {
-              "nome": "empresarial pme plus i",
-              "total": 45,
-              "percentual": "0.46"
-            },
-            {
-              "nome": "pvs 500 apto",
-              "total": 43,
-              "percentual": "0.44"
-            },
-            {
-              "nome": "prevent ma+s enf",
-              "total": 40,
-              "percentual": "0.41"
-            },
-            {
-              "nome": "prevent ma+s apto",
-              "total": 39,
-              "percentual": "0.40"
+              "nome": "ind cop plus",
+              "total": 74,
+              "percentual": "0.60"
             },
             {
               "nome": "plano pvs são paulo 1000 apto",
-              "total": 37,
+              "total": 67,
+              "percentual": "0.54"
+            },
+            {
+              "nome": "ind/atu/exe/ren",
+              "total": 58,
+              "percentual": "0.47"
+            },
+            {
+              "nome": "pvs 500 apto",
+              "total": 56,
+              "percentual": "0.46"
+            },
+            {
+              "nome": "prevent ma+s apto",
+              "total": 53,
+              "percentual": "0.43"
+            },
+            {
+              "nome": "empresarial pme plus i",
+              "total": 50,
+              "percentual": "0.41"
+            },
+            {
+              "nome": "prevent ma+s enf",
+              "total": 47,
               "percentual": "0.38"
             },
             {
               "nome": "pvs corporate apto",
-              "total": 29,
-              "percentual": "0.30"
+              "total": 39,
+              "percentual": "0.32"
             },
             {
               "nome": "ind cop master",
-              "total": 24,
-              "percentual": "0.25"
-            },
-            {
-              "nome": "pvs 500 enf",
-              "total": 21,
+              "total": 27,
               "percentual": "0.22"
             },
             {
-              "nome": "ind/atu/std",
-              "total": 19,
-              "percentual": "0.20"
+              "nome": "pvs 500 enf",
+              "total": 26,
+              "percentual": "0.21"
             },
             {
               "nome": "indiv/plusi/obst",
-              "total": 19,
+              "total": 25,
               "percentual": "0.20"
             },
             {
+              "nome": "ind/atu/std",
+              "total": 22,
+              "percentual": "0.18"
+            },
+            {
               "nome": "empresarial pme master i",
-              "total": 12,
-              "percentual": "0.12"
+              "total": 16,
+              "percentual": "0.13"
+            },
+            {
+              "nome": "pvs 1025 enf",
+              "total": 10,
+              "percentual": "0.08"
+            },
+            {
+              "nome": "newon adesão premium apto",
+              "total": 9,
+              "percentual": "0.07"
+            },
+            {
+              "nome": "plano pvs premium 1000 apto",
+              "total": 9,
+              "percentual": "0.07"
             },
             {
               "nome": "col/empr/plus i",
               "total": 9,
-              "percentual": "0.09"
+              "percentual": "0.07"
             },
             {
               "nome": "ind/atual/exec",
               "total": 9,
-              "percentual": "0.09"
-            },
-            {
-              "nome": "plano pvs premium 1000 apto",
-              "total": 8,
-              "percentual": "0.08"
-            },
-            {
-              "nome": "pvs 1025 enf",
-              "total": 7,
               "percentual": "0.07"
             },
             {
-              "nome": "newon adesão premium apto",
-              "total": 6,
+              "nome": "ind/verde/exe",
+              "total": 7,
               "percentual": "0.06"
             },
             {
-              "nome": "ind/verde/exe",
-              "total": 6,
+              "nome": "pme cop master",
+              "total": 7,
+              "percentual": "0.06"
+            },
+            {
+              "nome": "pme cop plus",
+              "total": 7,
               "percentual": "0.06"
             },
             {
               "nome": "pvs 1025 apto",
-              "total": 5,
-              "percentual": "0.05"
-            },
-            {
-              "nome": "col/adesao/plus i",
-              "total": 5,
-              "percentual": "0.05"
-            },
-            {
-              "nome": "pme cop master",
-              "total": 5,
-              "percentual": "0.05"
-            },
-            {
-              "nome": "pme cop plus",
-              "total": 5,
+              "total": 6,
               "percentual": "0.05"
             },
             {
               "nome": "ind/atual/std",
-              "total": 5,
+              "total": 6,
               "percentual": "0.05"
             },
             {
               "nome": "ind/verde/std",
-              "total": 4,
+              "total": 5,
               "percentual": "0.04"
             },
             {
-              "nome": "indiv/plus/sem obst",
-              "total": 4,
+              "nome": "col/adesao/plus i",
+              "total": 5,
               "percentual": "0.04"
             },
             {
               "nome": "pvs esmeralda apto",
-              "total": 3,
+              "total": 4,
               "percentual": "0.03"
             },
             {
-              "nome": "cristal brasil enf",
-              "total": 3,
-              "percentual": "0.03"
-            },
-            {
-              "nome": "cristal brasil apto",
-              "total": 3,
+              "nome": "pvs corporate enf",
+              "total": 4,
               "percentual": "0.03"
             },
             {
               "nome": "ind/novo/std plus",
-              "total": 3,
+              "total": 4,
               "percentual": "0.03"
+            },
+            {
+              "nome": "indiv/plus/sem obst",
+              "total": 4,
+              "percentual": "0.03"
+            },
+            {
+              "nome": "indiv/master i/obst",
+              "total": 3,
+              "percentual": "0.02"
+            },
+            {
+              "nome": "cristal brasil enf",
+              "total": 3,
+              "percentual": "0.02"
+            },
+            {
+              "nome": "cristal brasil apto",
+              "total": 3,
+              "percentual": "0.02"
             },
             {
               "nome": "pvs esmeralda enf",
@@ -2841,9 +1001,9 @@
               "percentual": "0.02"
             },
             {
-              "nome": "indiv/master i/obst",
-              "total": 2,
-              "percentual": "0.02"
+              "nome": "ind/atu/std/ren plus",
+              "total": 1,
+              "percentual": "0.01"
             },
             {
               "nome": "plano pvs premium 1000 enf",
@@ -2853,263 +1013,263 @@
           ]
         },
         "50_a_69": {
-          "total_beneficiarios": 37628,
+          "total_beneficiarios": 47875,
           "top_5_planos": [
             {
               "nome": "pvs 500 enf",
-              "total": 7566,
-              "percentual": "20.11"
+              "total": 9633,
+              "percentual": "20.12"
             },
             {
               "nome": "pvs premium 1002 enf",
-              "total": 5044,
-              "percentual": "13.40"
+              "total": 6377,
+              "percentual": "13.32"
             },
             {
               "nome": "pvs 500 apto",
-              "total": 4707,
-              "percentual": "12.51"
+              "total": 6207,
+              "percentual": "12.97"
             },
             {
               "nome": "cristal brasil enf",
-              "total": 3381,
-              "percentual": "8.99"
+              "total": 4040,
+              "percentual": "8.44"
             },
             {
               "nome": "pvs 1000 enf",
-              "total": 2754,
-              "percentual": "7.32"
+              "total": 3585,
+              "percentual": "7.49"
             }
           ],
           "todos_planos": [
             {
               "nome": "pvs 500 enf",
-              "total": 7566,
-              "percentual": "20.11"
+              "total": 9633,
+              "percentual": "20.12"
             },
             {
               "nome": "pvs premium 1002 enf",
-              "total": 5044,
-              "percentual": "13.40"
+              "total": 6377,
+              "percentual": "13.32"
             },
             {
               "nome": "pvs 500 apto",
-              "total": 4707,
-              "percentual": "12.51"
+              "total": 6207,
+              "percentual": "12.97"
             },
             {
               "nome": "cristal brasil enf",
-              "total": 3381,
-              "percentual": "8.99"
+              "total": 4040,
+              "percentual": "8.44"
             },
             {
               "nome": "pvs 1000 enf",
-              "total": 2754,
-              "percentual": "7.32"
+              "total": 3585,
+              "percentual": "7.49"
             },
             {
               "nome": "cristal brasil apto",
-              "total": 2318,
-              "percentual": "6.16"
+              "total": 2887,
+              "percentual": "6.03"
             },
             {
               "nome": "pvs premium 1002 apto",
-              "total": 2019,
-              "percentual": "5.37"
+              "total": 2698,
+              "percentual": "5.64"
             },
             {
               "nome": "pvs 1000 apto",
-              "total": 1742,
-              "percentual": "4.63"
+              "total": 2395,
+              "percentual": "5.00"
             },
             {
               "nome": "pvs esmeralda enf",
-              "total": 1256,
-              "percentual": "3.34"
+              "total": 1480,
+              "percentual": "3.09"
             },
             {
               "nome": "plano pvs corporate 1001 apto",
-              "total": 1189,
-              "percentual": "3.16"
+              "total": 1352,
+              "percentual": "2.82"
             },
             {
               "nome": "pvs esmeralda apto",
-              "total": 898,
-              "percentual": "2.39"
+              "total": 1117,
+              "percentual": "2.33"
             },
             {
               "nome": "pvs premium 1001 enf",
-              "total": 762,
-              "percentual": "2.03"
+              "total": 982,
+              "percentual": "2.05"
             },
             {
               "nome": "pvs master enf",
-              "total": 543,
-              "percentual": "1.44"
+              "total": 700,
+              "percentual": "1.46"
             },
             {
               "nome": "pvs premium 1003 enf",
-              "total": 520,
-              "percentual": "1.38"
+              "total": 669,
+              "percentual": "1.40"
             },
             {
               "nome": "pvs master apto",
-              "total": 364,
-              "percentual": "0.97"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 enf",
-              "total": 361,
-              "percentual": "0.96"
-            },
-            {
-              "nome": "pvs premium 1003 apto",
-              "total": 350,
-              "percentual": "0.93"
+              "total": 474,
+              "percentual": "0.99"
             },
             {
               "nome": "pvs premium 1001 apto",
-              "total": 347,
-              "percentual": "0.92"
+              "total": 473,
+              "percentual": "0.99"
+            },
+            {
+              "nome": "pvs premium 1003 apto",
+              "total": 469,
+              "percentual": "0.98"
+            },
+            {
+              "nome": "plano pvs são paulo 1000 enf",
+              "total": 449,
+              "percentual": "0.94"
             },
             {
               "nome": "pvs 0525 enf",
-              "total": 321,
-              "percentual": "0.85"
+              "total": 410,
+              "percentual": "0.86"
             },
             {
               "nome": "pvs 0525 apto",
-              "total": 263,
-              "percentual": "0.70"
-            },
-            {
-              "nome": "prevent ma+s enf",
-              "total": 140,
-              "percentual": "0.37"
+              "total": 360,
+              "percentual": "0.75"
             },
             {
               "nome": "prevent ma+s apto",
-              "total": 138,
+              "total": 175,
               "percentual": "0.37"
             },
             {
               "nome": "pvs topázio",
-              "total": 135,
-              "percentual": "0.36"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 apto",
-              "total": 130,
+              "total": 166,
               "percentual": "0.35"
             },
             {
-              "nome": "empresarial pme plus i",
-              "total": 46,
-              "percentual": "0.12"
+              "nome": "prevent ma+s enf",
+              "total": 163,
+              "percentual": "0.34"
+            },
+            {
+              "nome": "plano pvs são paulo 1000 apto",
+              "total": 161,
+              "percentual": "0.34"
             },
             {
               "nome": "ind/atu/exe/ren",
-              "total": 45,
-              "percentual": "0.12"
-            },
-            {
-              "nome": "pvs 1025 apto",
-              "total": 36,
+              "total": 48,
               "percentual": "0.10"
             },
             {
-              "nome": "pvs 1025 enf",
-              "total": 31,
-              "percentual": "0.08"
+              "nome": "empresarial pme plus i",
+              "total": 48,
+              "percentual": "0.10"
+            },
+            {
+              "nome": "pvs 1025 apto",
+              "total": 43,
+              "percentual": "0.09"
             },
             {
               "nome": "pvs rubi enf",
-              "total": 29,
-              "percentual": "0.08"
+              "total": 42,
+              "percentual": "0.09"
+            },
+            {
+              "nome": "pvs 1025 enf",
+              "total": 42,
+              "percentual": "0.09"
             },
             {
               "nome": "ind cop plus",
-              "total": 25,
-              "percentual": "0.07"
+              "total": 26,
+              "percentual": "0.05"
+            },
+            {
+              "nome": "pvs corporate apto",
+              "total": 22,
+              "percentual": "0.05"
             },
             {
               "nome": "empresarial pme master i",
-              "total": 17,
-              "percentual": "0.05"
+              "total": 19,
+              "percentual": "0.04"
             },
             {
               "nome": "indiv/plusi/obst",
-              "total": 17,
-              "percentual": "0.05"
+              "total": 19,
+              "percentual": "0.04"
             },
             {
               "nome": "ind/atu/std",
-              "total": 15,
+              "total": 17,
               "percentual": "0.04"
             },
             {
               "nome": "ind/verde/exe",
-              "total": 15,
-              "percentual": "0.04"
+              "total": 16,
+              "percentual": "0.03"
             },
             {
               "nome": "ind/atual/std",
-              "total": 12,
+              "total": 13,
+              "percentual": "0.03"
+            },
+            {
+              "nome": "plano pvs premium 1000 apto",
+              "total": 13,
               "percentual": "0.03"
             },
             {
               "nome": "col/empr/plus i",
               "total": 11,
-              "percentual": "0.03"
-            },
-            {
-              "nome": "plano pvs premium 1000 apto",
-              "total": 10,
-              "percentual": "0.03"
-            },
-            {
-              "nome": "pme cop plus",
-              "total": 7,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "pvs corporate apto",
-              "total": 7,
               "percentual": "0.02"
             },
             {
               "nome": "pme cop master",
-              "total": 7,
+              "total": 8,
               "percentual": "0.02"
             },
             {
-              "nome": "col/adesao/plus i",
-              "total": 6,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "ind/atual/exec",
-              "total": 6,
+              "nome": "pme cop plus",
+              "total": 8,
               "percentual": "0.02"
             },
             {
               "nome": "indiv/plus/sem obst",
-              "total": 6,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "ind cop master",
-              "total": 5,
-              "percentual": "0.01"
-            },
-            {
-              "nome": "plano pvs premium 1000 enf",
-              "total": 4,
+              "total": 7,
               "percentual": "0.01"
             },
             {
               "nome": "ind/verde/std",
-              "total": 4,
+              "total": 6,
+              "percentual": "0.01"
+            },
+            {
+              "nome": "col/adesao/plus i",
+              "total": 6,
+              "percentual": "0.01"
+            },
+            {
+              "nome": "ind/atual/exec",
+              "total": 6,
+              "percentual": "0.01"
+            },
+            {
+              "nome": "plano pvs premium 1000 enf",
+              "total": 5,
+              "percentual": "0.01"
+            },
+            {
+              "nome": "ind cop master",
+              "total": 5,
               "percentual": "0.01"
             },
             {
@@ -3133,19 +1293,29 @@
               "percentual": "0.01"
             },
             {
+              "nome": "pvs corporate enf",
+              "total": 2,
+              "percentual": "0.00"
+            },
+            {
+              "nome": "ind/atu/std/ren plus",
+              "total": 2,
+              "percentual": "0.00"
+            },
+            {
               "nome": "newon adesão premium apto",
               "total": 2,
-              "percentual": "0.01"
+              "percentual": "0.00"
             },
             {
               "nome": "ind/novo/std",
               "total": 2,
-              "percentual": "0.01"
+              "percentual": "0.00"
             },
             {
               "nome": "ind/novo/std plus",
               "total": 2,
-              "percentual": "0.01"
+              "percentual": "0.00"
             },
             {
               "nome": "plano pvs rio de janeiro 1000 apto",
@@ -3155,199 +1325,219 @@
           ]
         },
         "70_a_74": {
-          "total_beneficiarios": 17666,
+          "total_beneficiarios": 22501,
           "top_5_planos": [
             {
               "nome": "pvs 500 enf",
-              "total": 2755,
-              "percentual": "15.59"
+              "total": 3569,
+              "percentual": "15.86"
             },
             {
               "nome": "pvs esmeralda enf",
-              "total": 2428,
-              "percentual": "13.74"
+              "total": 2924,
+              "percentual": "12.99"
             },
             {
               "nome": "cristal brasil enf",
-              "total": 2275,
-              "percentual": "12.88"
-            },
-            {
-              "nome": "cristal brasil apto",
-              "total": 2008,
-              "percentual": "11.37"
+              "total": 2732,
+              "percentual": "12.14"
             },
             {
               "nome": "pvs 500 apto",
-              "total": 1963,
-              "percentual": "11.11"
+              "total": 2677,
+              "percentual": "11.90"
+            },
+            {
+              "nome": "cristal brasil apto",
+              "total": 2550,
+              "percentual": "11.33"
             }
           ],
           "todos_planos": [
             {
               "nome": "pvs 500 enf",
-              "total": 2755,
-              "percentual": "15.59"
+              "total": 3569,
+              "percentual": "15.86"
             },
             {
               "nome": "pvs esmeralda enf",
-              "total": 2428,
-              "percentual": "13.74"
+              "total": 2924,
+              "percentual": "12.99"
             },
             {
               "nome": "cristal brasil enf",
-              "total": 2275,
-              "percentual": "12.88"
-            },
-            {
-              "nome": "cristal brasil apto",
-              "total": 2008,
-              "percentual": "11.37"
+              "total": 2732,
+              "percentual": "12.14"
             },
             {
               "nome": "pvs 500 apto",
-              "total": 1963,
-              "percentual": "11.11"
+              "total": 2677,
+              "percentual": "11.90"
+            },
+            {
+              "nome": "cristal brasil apto",
+              "total": 2550,
+              "percentual": "11.33"
             },
             {
               "nome": "pvs premium 1002 enf",
-              "total": 1254,
-              "percentual": "7.10"
+              "total": 1596,
+              "percentual": "7.09"
             },
             {
               "nome": "pvs esmeralda apto",
-              "total": 1240,
-              "percentual": "7.02"
+              "total": 1571,
+              "percentual": "6.98"
             },
             {
               "nome": "pvs 1000 enf",
-              "total": 796,
-              "percentual": "4.51"
+              "total": 1044,
+              "percentual": "4.64"
             },
             {
               "nome": "pvs premium 1002 apto",
-              "total": 675,
-              "percentual": "3.82"
+              "total": 924,
+              "percentual": "4.11"
             },
             {
               "nome": "pvs 1000 apto",
-              "total": 553,
-              "percentual": "3.13"
+              "total": 722,
+              "percentual": "3.21"
             },
             {
               "nome": "pvs premium 1001 enf",
-              "total": 239,
-              "percentual": "1.35"
+              "total": 315,
+              "percentual": "1.40"
             },
             {
               "nome": "pvs topázio",
-              "total": 210,
-              "percentual": "1.19"
+              "total": 255,
+              "percentual": "1.13"
             },
             {
               "nome": "plano pvs corporate 1001 apto",
-              "total": 209,
-              "percentual": "1.18"
+              "total": 237,
+              "percentual": "1.05"
             },
             {
               "nome": "pvs premium 1003 apto",
-              "total": 145,
-              "percentual": "0.82"
+              "total": 187,
+              "percentual": "0.83"
             },
             {
               "nome": "pvs rubi enf",
-              "total": 118,
-              "percentual": "0.67"
+              "total": 171,
+              "percentual": "0.76"
             },
             {
               "nome": "pvs premium 1001 apto",
-              "total": 117,
-              "percentual": "0.66"
-            },
-            {
-              "nome": "pvs 0525 apto",
-              "total": 106,
-              "percentual": "0.60"
+              "total": 155,
+              "percentual": "0.69"
             },
             {
               "nome": "pvs premium 1003 enf",
-              "total": 101,
-              "percentual": "0.57"
+              "total": 139,
+              "percentual": "0.62"
+            },
+            {
+              "nome": "pvs 0525 apto",
+              "total": 134,
+              "percentual": "0.60"
             },
             {
               "nome": "plano pvs são paulo 1000 enf",
-              "total": 99,
-              "percentual": "0.56"
+              "total": 124,
+              "percentual": "0.55"
             },
             {
               "nome": "pvs 0525 enf",
-              "total": 77,
-              "percentual": "0.44"
+              "total": 106,
+              "percentual": "0.47"
             },
             {
               "nome": "plano pvs são paulo 1000 apto",
-              "total": 40,
-              "percentual": "0.23"
+              "total": 55,
+              "percentual": "0.24"
             },
             {
               "nome": "prevent ma+s apto",
-              "total": 39,
-              "percentual": "0.22"
+              "total": 53,
+              "percentual": "0.24"
             },
             {
               "nome": "pvs",
-              "total": 38,
+              "total": 50,
               "percentual": "0.22"
             },
             {
               "nome": "prevent ma+s enf",
-              "total": 33,
-              "percentual": "0.19"
-            },
-            {
-              "nome": "ind/atu/exe/ren",
-              "total": 22,
-              "percentual": "0.12"
+              "total": 39,
+              "percentual": "0.17"
             },
             {
               "nome": "ind cop plus",
-              "total": 22,
-              "percentual": "0.12"
+              "total": 23,
+              "percentual": "0.10"
+            },
+            {
+              "nome": "ind/atu/exe/ren",
+              "total": 23,
+              "percentual": "0.10"
             },
             {
               "nome": "pvs 1025 apto",
-              "total": 16,
+              "total": 21,
               "percentual": "0.09"
             },
             {
               "nome": "ind/atu/std",
-              "total": 14,
-              "percentual": "0.08"
+              "total": 15,
+              "percentual": "0.07"
             },
             {
               "nome": "pvs 1025 enf",
-              "total": 9,
+              "total": 12,
               "percentual": "0.05"
             },
             {
               "nome": "ind/verde/exe",
-              "total": 9,
-              "percentual": "0.05"
+              "total": 10,
+              "percentual": "0.04"
+            },
+            {
+              "nome": "pvs master enf",
+              "total": 8,
+              "percentual": "0.04"
             },
             {
               "nome": "col/empr/plus i",
               "total": 8,
-              "percentual": "0.05"
-            },
-            {
-              "nome": "pvs master enf",
-              "total": 7,
               "percentual": "0.04"
             },
             {
-              "nome": "plano pvs premium 1000 apto",
-              "total": 6,
+              "nome": "pvs rubi apto",
+              "total": 7,
               "percentual": "0.03"
+            },
+            {
+              "nome": "plano pvs premium 1000 apto",
+              "total": 7,
+              "percentual": "0.03"
+            },
+            {
+              "nome": "indiv/plus/sem obst",
+              "total": 5,
+              "percentual": "0.02"
+            },
+            {
+              "nome": "col/empr/master i",
+              "total": 4,
+              "percentual": "0.02"
+            },
+            {
+              "nome": "ind/atual/std",
+              "total": 4,
+              "percentual": "0.02"
             },
             {
               "nome": "ind cop master",
@@ -3355,29 +1545,14 @@
               "percentual": "0.02"
             },
             {
-              "nome": "indiv/plus/sem obst",
-              "total": 4,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "pvs rubi apto",
-              "total": 3,
-              "percentual": "0.02"
-            },
-            {
-              "nome": "ind/atual/std",
-              "total": 3,
-              "percentual": "0.02"
-            },
-            {
               "nome": "ind/atual/exec",
               "total": 3,
-              "percentual": "0.02"
+              "percentual": "0.01"
             },
             {
               "nome": "indiv/master i/obst",
               "total": 3,
-              "percentual": "0.02"
+              "percentual": "0.01"
             },
             {
               "nome": "pvs corporate apto",
@@ -3405,254 +1580,259 @@
               "percentual": "0.01"
             },
             {
+              "nome": "pme cop plus",
+              "total": 1,
+              "percentual": "0.00"
+            },
+            {
               "nome": "newon adesão premium apto",
               "total": 1,
-              "percentual": "0.01"
+              "percentual": "0.00"
             },
             {
               "nome": "pvs master apto",
               "total": 1,
-              "percentual": "0.01"
-            },
-            {
-              "nome": "col/empr/master i",
-              "total": 1,
-              "percentual": "0.01"
+              "percentual": "0.00"
             },
             {
               "nome": "ind/verde/std",
               "total": 1,
-              "percentual": "0.01"
+              "percentual": "0.00"
             },
             {
               "nome": "empresarial pme master i",
               "total": 1,
-              "percentual": "0.01"
+              "percentual": "0.00"
             }
           ]
         },
         "75_a_79": {
-          "total_beneficiarios": 15949,
+          "total_beneficiarios": 20443,
           "top_5_planos": [
             {
               "nome": "pvs esmeralda enf",
-              "total": 2790,
-              "percentual": "17.49"
+              "total": 3301,
+              "percentual": "16.15"
             },
             {
               "nome": "pvs 500 apto",
-              "total": 2049,
-              "percentual": "12.85"
+              "total": 2890,
+              "percentual": "14.14"
             },
             {
               "nome": "pvs 500 enf",
-              "total": 2018,
-              "percentual": "12.65"
-            },
-            {
-              "nome": "cristal brasil enf",
-              "total": 1614,
-              "percentual": "10.12"
+              "total": 2663,
+              "percentual": "13.03"
             },
             {
               "nome": "cristal brasil apto",
-              "total": 1582,
-              "percentual": "9.92"
+              "total": 2096,
+              "percentual": "10.25"
+            },
+            {
+              "nome": "cristal brasil enf",
+              "total": 1931,
+              "percentual": "9.45"
             }
           ],
           "todos_planos": [
             {
               "nome": "pvs esmeralda enf",
-              "total": 2790,
-              "percentual": "17.49"
+              "total": 3301,
+              "percentual": "16.15"
             },
             {
               "nome": "pvs 500 apto",
-              "total": 2049,
-              "percentual": "12.85"
+              "total": 2890,
+              "percentual": "14.14"
             },
             {
               "nome": "pvs 500 enf",
-              "total": 2018,
-              "percentual": "12.65"
-            },
-            {
-              "nome": "cristal brasil enf",
-              "total": 1614,
-              "percentual": "10.12"
+              "total": 2663,
+              "percentual": "13.03"
             },
             {
               "nome": "cristal brasil apto",
-              "total": 1582,
-              "percentual": "9.92"
+              "total": 2096,
+              "percentual": "10.25"
+            },
+            {
+              "nome": "cristal brasil enf",
+              "total": 1931,
+              "percentual": "9.45"
             },
             {
               "nome": "pvs esmeralda apto",
-              "total": 1435,
-              "percentual": "9.00"
+              "total": 1809,
+              "percentual": "8.85"
             },
             {
               "nome": "pvs premium 1002 enf",
-              "total": 930,
-              "percentual": "5.83"
+              "total": 1166,
+              "percentual": "5.70"
             },
             {
               "nome": "pvs premium 1002 apto",
-              "total": 604,
-              "percentual": "3.79"
+              "total": 823,
+              "percentual": "4.03"
             },
             {
               "nome": "pvs 1000 enf",
-              "total": 580,
-              "percentual": "3.64"
+              "total": 766,
+              "percentual": "3.75"
             },
             {
               "nome": "pvs 1000 apto",
-              "total": 569,
-              "percentual": "3.57"
+              "total": 759,
+              "percentual": "3.71"
             },
             {
               "nome": "pvs topázio",
-              "total": 333,
-              "percentual": "2.09"
+              "total": 414,
+              "percentual": "2.03"
             },
             {
               "nome": "pvs premium 1001 enf",
-              "total": 196,
-              "percentual": "1.23"
+              "total": 247,
+              "percentual": "1.21"
             },
             {
               "nome": "pvs premium 1003 apto",
-              "total": 158,
-              "percentual": "0.99"
+              "total": 197,
+              "percentual": "0.96"
             },
             {
               "nome": "plano pvs corporate 1001 apto",
-              "total": 157,
-              "percentual": "0.98"
+              "total": 173,
+              "percentual": "0.85"
             },
             {
               "nome": "pvs premium 1001 apto",
-              "total": 138,
-              "percentual": "0.87"
-            },
-            {
-              "nome": "pvs",
-              "total": 121,
-              "percentual": "0.76"
+              "total": 170,
+              "percentual": "0.83"
             },
             {
               "nome": "pvs rubi enf",
-              "total": 119,
-              "percentual": "0.75"
+              "total": 167,
+              "percentual": "0.82"
+            },
+            {
+              "nome": "pvs",
+              "total": 158,
+              "percentual": "0.77"
             },
             {
               "nome": "pvs premium 1003 enf",
-              "total": 97,
-              "percentual": "0.61"
+              "total": 120,
+              "percentual": "0.59"
             },
             {
               "nome": "pvs 0525 apto",
-              "total": 89,
-              "percentual": "0.56"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 enf",
-              "total": 65,
-              "percentual": "0.41"
+              "total": 112,
+              "percentual": "0.55"
             },
             {
               "nome": "pvs 0525 enf",
-              "total": 62,
-              "percentual": "0.39"
+              "total": 88,
+              "percentual": "0.43"
+            },
+            {
+              "nome": "plano pvs são paulo 1000 enf",
+              "total": 87,
+              "percentual": "0.43"
             },
             {
               "nome": "plano pvs são paulo 1000 apto",
-              "total": 50,
-              "percentual": "0.31"
+              "total": 72,
+              "percentual": "0.35"
             },
             {
               "nome": "prevent ma+s apto",
-              "total": 41,
-              "percentual": "0.26"
-            },
-            {
-              "nome": "ind/atu/exe/ren",
-              "total": 26,
-              "percentual": "0.16"
+              "total": 60,
+              "percentual": "0.29"
             },
             {
               "nome": "prevent ma+s enf",
-              "total": 25,
-              "percentual": "0.16"
+              "total": 31,
+              "percentual": "0.15"
+            },
+            {
+              "nome": "ind/atu/exe/ren",
+              "total": 27,
+              "percentual": "0.13"
             },
             {
               "nome": "ind/atu/std",
-              "total": 19,
-              "percentual": "0.12"
+              "total": 21,
+              "percentual": "0.10"
+            },
+            {
+              "nome": "pvs 1025 apto",
+              "total": 15,
+              "percentual": "0.07"
+            },
+            {
+              "nome": "pvs rubi apto",
+              "total": 10,
+              "percentual": "0.05"
             },
             {
               "nome": "ind cop plus",
               "total": 10,
-              "percentual": "0.06"
+              "percentual": "0.05"
             },
             {
               "nome": "col/empr/plus i",
               "total": 10,
-              "percentual": "0.06"
-            },
-            {
-              "nome": "pvs 1025 apto",
-              "total": 9,
-              "percentual": "0.06"
+              "percentual": "0.05"
             },
             {
               "nome": "ind/verde/exe",
               "total": 8,
-              "percentual": "0.05"
-            },
-            {
-              "nome": "pvs rubi apto",
-              "total": 7,
               "percentual": "0.04"
             },
             {
               "nome": "pvs 1025 enf",
               "total": 7,
-              "percentual": "0.04"
-            },
-            {
-              "nome": "ind/atual/std",
-              "total": 5,
-              "percentual": "0.03"
-            },
-            {
-              "nome": "ind/verde/std",
-              "total": 4,
-              "percentual": "0.03"
-            },
-            {
-              "nome": "ind/atual/exec",
-              "total": 4,
               "percentual": "0.03"
             },
             {
               "nome": "ind/novo/std",
+              "total": 5,
+              "percentual": "0.02"
+            },
+            {
+              "nome": "ind/atual/std",
+              "total": 5,
+              "percentual": "0.02"
+            },
+            {
+              "nome": "ind/verde/std",
               "total": 4,
-              "percentual": "0.03"
+              "percentual": "0.02"
+            },
+            {
+              "nome": "ind/atual/exec",
+              "total": 4,
+              "percentual": "0.02"
+            },
+            {
+              "nome": "pvs master apto",
+              "total": 3,
+              "percentual": "0.01"
             },
             {
               "nome": "ind cop master",
               "total": 3,
-              "percentual": "0.02"
+              "percentual": "0.01"
             },
             {
-              "nome": "plano pvs premium 1000 apto",
+              "nome": "indiv/plus/sem obst",
               "total": 2,
               "percentual": "0.01"
             },
             {
-              "nome": "pvs master apto",
+              "nome": "plano pvs premium 1000 apto",
               "total": 2,
               "percentual": "0.01"
             },
@@ -3662,246 +1842,251 @@
               "percentual": "0.01"
             },
             {
+              "nome": "indiv/plusi/obst",
+              "total": 1,
+              "percentual": "0.00"
+            },
+            {
               "nome": "ind/novo/exe/ind",
               "total": 1,
-              "percentual": "0.01"
+              "percentual": "0.00"
             },
             {
               "nome": "ind/novo/std plus",
               "total": 1,
-              "percentual": "0.01"
-            },
-            {
-              "nome": "indiv/plus/sem obst",
-              "total": 1,
-              "percentual": "0.01"
+              "percentual": "0.00"
             },
             {
               "nome": "assist.médica nove de julho - (inclusão: intern.apartmtº.)",
               "total": 1,
-              "percentual": "0.01"
+              "percentual": "0.00"
             },
             {
               "nome": "plano pvs premium 1000 enf",
               "total": 1,
-              "percentual": "0.01"
+              "percentual": "0.00"
             }
           ]
         },
         "80_a_89": {
-          "total_beneficiarios": 20773,
+          "total_beneficiarios": 26643,
           "top_5_planos": [
             {
               "nome": "pvs esmeralda enf",
-              "total": 3772,
-              "percentual": "18.16"
+              "total": 4508,
+              "percentual": "16.92"
             },
             {
               "nome": "pvs 500 apto",
-              "total": 2920,
-              "percentual": "14.06"
+              "total": 4054,
+              "percentual": "15.22"
             },
             {
               "nome": "cristal brasil apto",
-              "total": 2453,
-              "percentual": "11.81"
+              "total": 3177,
+              "percentual": "11.92"
             },
             {
               "nome": "pvs esmeralda apto",
-              "total": 2312,
-              "percentual": "11.13"
+              "total": 2914,
+              "percentual": "10.94"
             },
             {
               "nome": "pvs 500 enf",
-              "total": 2246,
-              "percentual": "10.81"
+              "total": 2849,
+              "percentual": "10.69"
             }
           ],
           "todos_planos": [
             {
               "nome": "pvs esmeralda enf",
-              "total": 3772,
-              "percentual": "18.16"
+              "total": 4508,
+              "percentual": "16.92"
             },
             {
               "nome": "pvs 500 apto",
-              "total": 2920,
-              "percentual": "14.06"
+              "total": 4054,
+              "percentual": "15.22"
             },
             {
               "nome": "cristal brasil apto",
-              "total": 2453,
-              "percentual": "11.81"
+              "total": 3177,
+              "percentual": "11.92"
             },
             {
               "nome": "pvs esmeralda apto",
-              "total": 2312,
-              "percentual": "11.13"
+              "total": 2914,
+              "percentual": "10.94"
             },
             {
               "nome": "pvs 500 enf",
-              "total": 2246,
-              "percentual": "10.81"
+              "total": 2849,
+              "percentual": "10.69"
             },
             {
               "nome": "cristal brasil enf",
-              "total": 1675,
-              "percentual": "8.06"
+              "total": 2025,
+              "percentual": "7.60"
             },
             {
               "nome": "pvs premium 1002 enf",
-              "total": 978,
-              "percentual": "4.71"
+              "total": 1247,
+              "percentual": "4.68"
             },
             {
               "nome": "pvs premium 1002 apto",
-              "total": 843,
-              "percentual": "4.06"
+              "total": 1180,
+              "percentual": "4.43"
             },
             {
               "nome": "pvs 1000 apto",
-              "total": 656,
-              "percentual": "3.16"
+              "total": 957,
+              "percentual": "3.59"
             },
             {
               "nome": "pvs 1000 enf",
-              "total": 527,
-              "percentual": "2.54"
+              "total": 674,
+              "percentual": "2.53"
             },
             {
               "nome": "pvs topázio",
-              "total": 413,
-              "percentual": "1.99"
+              "total": 478,
+              "percentual": "1.79"
             },
             {
               "nome": "pvs",
-              "total": 328,
-              "percentual": "1.58"
+              "total": 409,
+              "percentual": "1.54"
             },
             {
               "nome": "pvs rubi enf",
-              "total": 244,
-              "percentual": "1.17"
+              "total": 344,
+              "percentual": "1.29"
             },
             {
               "nome": "pvs premium 1001 enf",
-              "total": 188,
-              "percentual": "0.91"
+              "total": 260,
+              "percentual": "0.98"
             },
             {
               "nome": "pvs premium 1001 apto",
-              "total": 183,
-              "percentual": "0.88"
+              "total": 244,
+              "percentual": "0.92"
             },
             {
               "nome": "pvs premium 1003 apto",
-              "total": 166,
-              "percentual": "0.80"
-            },
-            {
-              "nome": "plano pvs corporate 1001 apto",
-              "total": 118,
-              "percentual": "0.57"
+              "total": 222,
+              "percentual": "0.83"
             },
             {
               "nome": "pvs 0525 apto",
-              "total": 112,
-              "percentual": "0.54"
+              "total": 151,
+              "percentual": "0.57"
+            },
+            {
+              "nome": "plano pvs corporate 1001 apto",
+              "total": 135,
+              "percentual": "0.51"
             },
             {
               "nome": "plano pvs são paulo 1000 apto",
-              "total": 93,
-              "percentual": "0.45"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 enf",
-              "total": 92,
-              "percentual": "0.44"
+              "total": 130,
+              "percentual": "0.49"
             },
             {
               "nome": "pvs premium 1003 enf",
-              "total": 88,
-              "percentual": "0.42"
+              "total": 127,
+              "percentual": "0.48"
+            },
+            {
+              "nome": "plano pvs são paulo 1000 enf",
+              "total": 115,
+              "percentual": "0.43"
             },
             {
               "nome": "pvs 0525 enf",
-              "total": 59,
-              "percentual": "0.28"
+              "total": 80,
+              "percentual": "0.30"
             },
             {
               "nome": "ind/atu/exe/ren",
-              "total": 58,
-              "percentual": "0.28"
+              "total": 63,
+              "percentual": "0.24"
             },
             {
               "nome": "prevent ma+s apto",
-              "total": 37,
-              "percentual": "0.18"
+              "total": 52,
+              "percentual": "0.20"
             },
             {
               "nome": "ind/atu/std",
-              "total": 26,
-              "percentual": "0.13"
+              "total": 31,
+              "percentual": "0.12"
             },
             {
               "nome": "pvs rubi apto",
-              "total": 21,
-              "percentual": "0.10"
+              "total": 29,
+              "percentual": "0.11"
             },
             {
               "nome": "indiv/plusi/obst",
-              "total": 21,
-              "percentual": "0.10"
+              "total": 28,
+              "percentual": "0.11"
             },
             {
               "nome": "prevent ma+s enf",
-              "total": 19,
+              "total": 24,
               "percentual": "0.09"
             },
             {
               "nome": "ind/verde/exe",
               "total": 19,
-              "percentual": "0.09"
+              "percentual": "0.07"
             },
             {
               "nome": "ind/atual/std",
-              "total": 14,
-              "percentual": "0.07"
+              "total": 17,
+              "percentual": "0.06"
             },
             {
               "nome": "pvs 1025 apto",
               "total": 13,
-              "percentual": "0.06"
-            },
-            {
-              "nome": "indiv/master i/obst",
-              "total": 10,
               "percentual": "0.05"
             },
             {
-              "nome": "ind/novo/std",
-              "total": 9,
+              "nome": "pvs 1025 enf",
+              "total": 10,
               "percentual": "0.04"
             },
             {
               "nome": "indiv/plus/sem obst",
-              "total": 9,
+              "total": 10,
               "percentual": "0.04"
             },
             {
-              "nome": "pvs 1025 enf",
-              "total": 8,
+              "nome": "indiv/master i/obst",
+              "total": 10,
               "percentual": "0.04"
             },
             {
               "nome": "ind/verde/std",
-              "total": 7,
+              "total": 9,
+              "percentual": "0.03"
+            },
+            {
+              "nome": "ind/novo/std",
+              "total": 9,
               "percentual": "0.03"
             },
             {
               "nome": "ind/atual/exec",
               "total": 6,
-              "percentual": "0.03"
+              "percentual": "0.02"
+            },
+            {
+              "nome": "empresarial pme plus i",
+              "total": 5,
+              "percentual": "0.02"
             },
             {
               "nome": "pvs master apto",
@@ -3909,7 +2094,7 @@
               "percentual": "0.02"
             },
             {
-              "nome": "empresarial pme plus i",
+              "nome": "ind/novo/std plus",
               "total": 4,
               "percentual": "0.02"
             },
@@ -3919,8 +2104,8 @@
               "percentual": "0.01"
             },
             {
-              "nome": "ind/novo/std plus",
-              "total": 3,
+              "nome": "ind cop master",
+              "total": 2,
               "percentual": "0.01"
             },
             {
@@ -3964,11 +2149,6 @@
               "percentual": "0.00"
             },
             {
-              "nome": "ind cop master",
-              "total": 1,
-              "percentual": "0.00"
-            },
-            {
               "nome": "assist.médica nove de julho - (inclusão: intern.apartmtº.)",
               "total": 1,
               "percentual": "0.00"
@@ -3981,229 +2161,234 @@
           ]
         },
         "90_a_94": {
-          "total_beneficiarios": 4314,
+          "total_beneficiarios": 5648,
           "top_5_planos": [
             {
-              "nome": "pvs esmeralda enf",
-              "total": 715,
-              "percentual": "16.57"
+              "nome": "pvs 500 apto",
+              "total": 999,
+              "percentual": "17.69"
             },
             {
-              "nome": "pvs 500 apto",
-              "total": 693,
-              "percentual": "16.06"
+              "nome": "pvs esmeralda enf",
+              "total": 860,
+              "percentual": "15.23"
             },
             {
               "nome": "pvs esmeralda apto",
-              "total": 666,
-              "percentual": "15.44"
+              "total": 837,
+              "percentual": "14.82"
             },
             {
               "nome": "cristal brasil apto",
-              "total": 535,
-              "percentual": "12.40"
+              "total": 743,
+              "percentual": "13.16"
             },
             {
               "nome": "pvs 500 enf",
-              "total": 396,
-              "percentual": "9.18"
+              "total": 502,
+              "percentual": "8.89"
             }
           ],
           "todos_planos": [
             {
-              "nome": "pvs esmeralda enf",
-              "total": 715,
-              "percentual": "16.57"
+              "nome": "pvs 500 apto",
+              "total": 999,
+              "percentual": "17.69"
             },
             {
-              "nome": "pvs 500 apto",
-              "total": 693,
-              "percentual": "16.06"
+              "nome": "pvs esmeralda enf",
+              "total": 860,
+              "percentual": "15.23"
             },
             {
               "nome": "pvs esmeralda apto",
-              "total": 666,
-              "percentual": "15.44"
+              "total": 837,
+              "percentual": "14.82"
             },
             {
               "nome": "cristal brasil apto",
-              "total": 535,
-              "percentual": "12.40"
+              "total": 743,
+              "percentual": "13.16"
             },
             {
               "nome": "pvs 500 enf",
-              "total": 396,
-              "percentual": "9.18"
+              "total": 502,
+              "percentual": "8.89"
             },
             {
               "nome": "cristal brasil enf",
-              "total": 270,
-              "percentual": "6.26"
+              "total": 319,
+              "percentual": "5.65"
             },
             {
               "nome": "pvs premium 1002 apto",
-              "total": 172,
-              "percentual": "3.99"
-            },
-            {
-              "nome": "pvs premium 1002 enf",
-              "total": 146,
-              "percentual": "3.38"
+              "total": 243,
+              "percentual": "4.30"
             },
             {
               "nome": "pvs 1000 apto",
-              "total": 145,
-              "percentual": "3.36"
+              "total": 226,
+              "percentual": "4.00"
+            },
+            {
+              "nome": "pvs premium 1002 enf",
+              "total": 188,
+              "percentual": "3.33"
             },
             {
               "nome": "pvs 1000 enf",
-              "total": 112,
-              "percentual": "2.60"
+              "total": 142,
+              "percentual": "2.51"
             },
             {
               "nome": "pvs",
-              "total": 65,
-              "percentual": "1.51"
+              "total": 86,
+              "percentual": "1.52"
             },
             {
               "nome": "pvs topázio",
-              "total": 53,
-              "percentual": "1.23"
-            },
-            {
-              "nome": "pvs premium 1001 apto",
-              "total": 45,
-              "percentual": "1.04"
-            },
-            {
-              "nome": "pvs premium 1001 enf",
-              "total": 44,
-              "percentual": "1.02"
+              "total": 76,
+              "percentual": "1.35"
             },
             {
               "nome": "pvs rubi enf",
-              "total": 41,
-              "percentual": "0.95"
+              "total": 60,
+              "percentual": "1.06"
+            },
+            {
+              "nome": "pvs premium 1001 enf",
+              "total": 54,
+              "percentual": "0.96"
+            },
+            {
+              "nome": "pvs premium 1001 apto",
+              "total": 54,
+              "percentual": "0.96"
             },
             {
               "nome": "pvs premium 1003 apto",
-              "total": 31,
-              "percentual": "0.72"
+              "total": 41,
+              "percentual": "0.73"
             },
             {
               "nome": "plano pvs são paulo 1000 enf",
-              "total": 23,
-              "percentual": "0.53"
+              "total": 27,
+              "percentual": "0.48"
+            },
+            {
+              "nome": "plano pvs são paulo 1000 apto",
+              "total": 24,
+              "percentual": "0.42"
+            },
+            {
+              "nome": "pvs 0525 apto",
+              "total": 19,
+              "percentual": "0.34"
+            },
+            {
+              "nome": "prevent ma+s apto",
+              "total": 19,
+              "percentual": "0.34"
             },
             {
               "nome": "plano pvs corporate 1001 apto",
               "total": 19,
-              "percentual": "0.44"
+              "percentual": "0.34"
             },
             {
-              "nome": "pvs 0525 apto",
-              "total": 17,
-              "percentual": "0.39"
-            },
-            {
-              "nome": "prevent ma+s apto",
+              "nome": "pvs premium 1003 enf",
               "total": 16,
-              "percentual": "0.37"
+              "percentual": "0.28"
             },
             {
               "nome": "ind/atu/exe/ren",
               "total": 16,
-              "percentual": "0.37"
-            },
-            {
-              "nome": "pvs premium 1003 enf",
-              "total": 14,
-              "percentual": "0.32"
+              "percentual": "0.28"
             },
             {
               "nome": "indiv/plusi/obst",
-              "total": 10,
-              "percentual": "0.23"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 apto",
-              "total": 10,
-              "percentual": "0.23"
+              "total": 11,
+              "percentual": "0.19"
             },
             {
               "nome": "pvs 0525 enf",
-              "total": 9,
-              "percentual": "0.21"
+              "total": 10,
+              "percentual": "0.18"
             },
             {
               "nome": "prevent ma+s enf",
               "total": 7,
-              "percentual": "0.16"
+              "percentual": "0.12"
             },
             {
               "nome": "ind/atual/std",
               "total": 7,
-              "percentual": "0.16"
+              "percentual": "0.12"
             },
             {
               "nome": "ind/atu/std",
               "total": 6,
-              "percentual": "0.14"
+              "percentual": "0.11"
             },
             {
               "nome": "pvs 1025 apto",
               "total": 5,
-              "percentual": "0.12"
-            },
-            {
-              "nome": "ind/verde/exe",
-              "total": 3,
-              "percentual": "0.07"
-            },
-            {
-              "nome": "ind cop master",
-              "total": 3,
-              "percentual": "0.07"
-            },
-            {
-              "nome": "ind/novo/std",
-              "total": 3,
-              "percentual": "0.07"
+              "percentual": "0.09"
             },
             {
               "nome": "pvs rubi apto",
-              "total": 2,
-              "percentual": "0.05"
-            },
-            {
-              "nome": "pvs 1025 enf",
-              "total": 2,
-              "percentual": "0.05"
-            },
-            {
-              "nome": "pvs master enf",
-              "total": 2,
-              "percentual": "0.05"
+              "total": 4,
+              "percentual": "0.07"
             },
             {
               "nome": "ind/verde/std",
-              "total": 2,
-              "percentual": "0.05"
-            },
-            {
-              "nome": "col/empr/plus i",
-              "total": 2,
+              "total": 3,
               "percentual": "0.05"
             },
             {
               "nome": "indiv/master i/obst",
-              "total": 2,
+              "total": 3,
               "percentual": "0.05"
+            },
+            {
+              "nome": "ind/verde/exe",
+              "total": 3,
+              "percentual": "0.05"
+            },
+            {
+              "nome": "ind cop master",
+              "total": 3,
+              "percentual": "0.05"
+            },
+            {
+              "nome": "ind/novo/std",
+              "total": 3,
+              "percentual": "0.05"
+            },
+            {
+              "nome": "plano pvs premium 1000 apto",
+              "total": 2,
+              "percentual": "0.04"
+            },
+            {
+              "nome": "pvs 1025 enf",
+              "total": 2,
+              "percentual": "0.04"
+            },
+            {
+              "nome": "pvs master enf",
+              "total": 2,
+              "percentual": "0.04"
+            },
+            {
+              "nome": "col/empr/plus i",
+              "total": 2,
+              "percentual": "0.04"
             },
             {
               "nome": "plano pvs premium 1000 enf",
               "total": 2,
-              "percentual": "0.05"
+              "percentual": "0.04"
             },
             {
               "nome": "col/empr/master i",
@@ -4223,346 +2408,376 @@
           ]
         },
         "95_a_99": {
-          "total_beneficiarios": 1515,
+          "total_beneficiarios": 1979,
           "top_5_planos": [
             {
               "nome": "pvs 500 apto",
-              "total": 272,
-              "percentual": "17.95"
+              "total": 381,
+              "percentual": "19.25"
             },
             {
               "nome": "pvs esmeralda apto",
-              "total": 245,
-              "percentual": "16.17"
-            },
-            {
-              "nome": "pvs esmeralda enf",
-              "total": 218,
-              "percentual": "14.39"
+              "total": 314,
+              "percentual": "15.87"
             },
             {
               "nome": "cristal brasil apto",
-              "total": 218,
-              "percentual": "14.39"
+              "total": 297,
+              "percentual": "15.01"
+            },
+            {
+              "nome": "pvs esmeralda enf",
+              "total": 261,
+              "percentual": "13.19"
             },
             {
               "nome": "pvs 500 enf",
-              "total": 127,
-              "percentual": "8.38"
+              "total": 155,
+              "percentual": "7.83"
             }
           ],
           "todos_planos": [
             {
               "nome": "pvs 500 apto",
-              "total": 272,
-              "percentual": "17.95"
+              "total": 381,
+              "percentual": "19.25"
             },
             {
               "nome": "pvs esmeralda apto",
-              "total": 245,
-              "percentual": "16.17"
-            },
-            {
-              "nome": "pvs esmeralda enf",
-              "total": 218,
-              "percentual": "14.39"
+              "total": 314,
+              "percentual": "15.87"
             },
             {
               "nome": "cristal brasil apto",
-              "total": 218,
-              "percentual": "14.39"
+              "total": 297,
+              "percentual": "15.01"
+            },
+            {
+              "nome": "pvs esmeralda enf",
+              "total": 261,
+              "percentual": "13.19"
             },
             {
               "nome": "pvs 500 enf",
-              "total": 127,
-              "percentual": "8.38"
-            },
-            {
-              "nome": "cristal brasil enf",
-              "total": 70,
-              "percentual": "4.62"
+              "total": 155,
+              "percentual": "7.83"
             },
             {
               "nome": "pvs premium 1002 apto",
-              "total": 66,
-              "percentual": "4.36"
+              "total": 102,
+              "percentual": "5.15"
+            },
+            {
+              "nome": "cristal brasil enf",
+              "total": 89,
+              "percentual": "4.50"
             },
             {
               "nome": "pvs 1000 apto",
-              "total": 52,
-              "percentual": "3.43"
+              "total": 71,
+              "percentual": "3.59"
             },
             {
               "nome": "pvs premium 1002 enf",
-              "total": 51,
-              "percentual": "3.37"
+              "total": 57,
+              "percentual": "2.88"
             },
             {
               "nome": "pvs 1000 enf",
-              "total": 35,
-              "percentual": "2.31"
+              "total": 47,
+              "percentual": "2.37"
             },
             {
               "nome": "pvs premium 1001 apto",
-              "total": 28,
-              "percentual": "1.85"
+              "total": 34,
+              "percentual": "1.72"
             },
             {
               "nome": "pvs",
-              "total": 27,
-              "percentual": "1.78"
+              "total": 28,
+              "percentual": "1.41"
             },
             {
               "nome": "pvs topázio",
-              "total": 21,
-              "percentual": "1.39"
+              "total": 24,
+              "percentual": "1.21"
             },
             {
               "nome": "pvs rubi enf",
-              "total": 12,
-              "percentual": "0.79"
-            },
-            {
-              "nome": "pvs premium 1001 enf",
-              "total": 12,
-              "percentual": "0.79"
+              "total": 18,
+              "percentual": "0.91"
             },
             {
               "nome": "pvs premium 1003 apto",
-              "total": 9,
-              "percentual": "0.59"
+              "total": 17,
+              "percentual": "0.86"
+            },
+            {
+              "nome": "pvs premium 1001 enf",
+              "total": 14,
+              "percentual": "0.71"
+            },
+            {
+              "nome": "pvs 0525 apto",
+              "total": 12,
+              "percentual": "0.61"
+            },
+            {
+              "nome": "plano pvs são paulo 1000 apto",
+              "total": 11,
+              "percentual": "0.56"
             },
             {
               "nome": "pvs premium 1003 enf",
               "total": 8,
-              "percentual": "0.53"
-            },
-            {
-              "nome": "plano pvs são paulo 1000 apto",
-              "total": 7,
-              "percentual": "0.46"
-            },
-            {
-              "nome": "pvs 0525 apto",
-              "total": 6,
-              "percentual": "0.40"
-            },
-            {
-              "nome": "pvs 0525 enf",
-              "total": 6,
               "percentual": "0.40"
             },
             {
               "nome": "plano pvs são paulo 1000 enf",
+              "total": 6,
+              "percentual": "0.30"
+            },
+            {
+              "nome": "pvs 0525 enf",
+              "total": 6,
+              "percentual": "0.30"
+            },
+            {
+              "nome": "prevent ma+s apto",
               "total": 5,
-              "percentual": "0.33"
+              "percentual": "0.25"
             },
             {
               "nome": "plano pvs corporate 1001 apto",
               "total": 3,
-              "percentual": "0.20"
+              "percentual": "0.15"
             },
             {
               "nome": "ind/atu/exe/ren",
               "total": 3,
-              "percentual": "0.20"
+              "percentual": "0.15"
             },
             {
               "nome": "ind/atual/std",
               "total": 3,
-              "percentual": "0.20"
-            },
-            {
-              "nome": "prevent ma+s apto",
-              "total": 2,
-              "percentual": "0.13"
+              "percentual": "0.15"
             },
             {
               "nome": "ind/verde/exe",
               "total": 2,
-              "percentual": "0.13"
+              "percentual": "0.10"
             },
             {
               "nome": "ind cop plus",
               "total": 2,
-              "percentual": "0.13"
+              "percentual": "0.10"
+            },
+            {
+              "nome": "pvs 1025 apto",
+              "total": 1,
+              "percentual": "0.05"
+            },
+            {
+              "nome": "indiv/plusi/obst",
+              "total": 1,
+              "percentual": "0.05"
+            },
+            {
+              "nome": "assist.médica nove de julho - (inclusão: intern.apartmtº.)",
+              "total": 1,
+              "percentual": "0.05"
+            },
+            {
+              "nome": "plano pvs premium 1000 apto",
+              "total": 1,
+              "percentual": "0.05"
             },
             {
               "nome": "pvs rubi apto",
               "total": 1,
-              "percentual": "0.07"
+              "percentual": "0.05"
             },
             {
               "nome": "pvs 1025 enf",
               "total": 1,
-              "percentual": "0.07"
+              "percentual": "0.05"
             },
             {
               "nome": "ind/atu/std",
               "total": 1,
-              "percentual": "0.07"
+              "percentual": "0.05"
             },
             {
               "nome": "col/adesao/plus i",
               "total": 1,
-              "percentual": "0.07"
+              "percentual": "0.05"
             },
             {
               "nome": "ind/novo/std",
               "total": 1,
-              "percentual": "0.07"
+              "percentual": "0.05"
             }
           ]
         },
         "100_ou_mais": {
-          "total_beneficiarios": 242,
+          "total_beneficiarios": 316,
           "top_5_planos": [
             {
-              "nome": "pvs esmeralda apto",
-              "total": 44,
-              "percentual": "18.18"
-            },
-            {
               "nome": "pvs 500 apto",
-              "total": 40,
-              "percentual": "16.53"
+              "total": 54,
+              "percentual": "17.09"
             },
             {
-              "nome": "pvs esmeralda enf",
-              "total": 34,
-              "percentual": "14.05"
+              "nome": "pvs esmeralda apto",
+              "total": 53,
+              "percentual": "16.77"
             },
             {
               "nome": "cristal brasil apto",
-              "total": 34,
-              "percentual": "14.05"
+              "total": 49,
+              "percentual": "15.51"
+            },
+            {
+              "nome": "pvs esmeralda enf",
+              "total": 41,
+              "percentual": "12.97"
             },
             {
               "nome": "pvs 500 enf",
-              "total": 23,
-              "percentual": "9.50"
+              "total": 24,
+              "percentual": "7.59"
             }
           ],
           "todos_planos": [
             {
-              "nome": "pvs esmeralda apto",
-              "total": 44,
-              "percentual": "18.18"
-            },
-            {
               "nome": "pvs 500 apto",
-              "total": 40,
-              "percentual": "16.53"
+              "total": 54,
+              "percentual": "17.09"
             },
             {
-              "nome": "pvs esmeralda enf",
-              "total": 34,
-              "percentual": "14.05"
+              "nome": "pvs esmeralda apto",
+              "total": 53,
+              "percentual": "16.77"
             },
             {
               "nome": "cristal brasil apto",
-              "total": 34,
-              "percentual": "14.05"
+              "total": 49,
+              "percentual": "15.51"
+            },
+            {
+              "nome": "pvs esmeralda enf",
+              "total": 41,
+              "percentual": "12.97"
             },
             {
               "nome": "pvs 500 enf",
-              "total": 23,
-              "percentual": "9.50"
+              "total": 24,
+              "percentual": "7.59"
             },
             {
               "nome": "pvs premium 1002 apto",
-              "total": 11,
-              "percentual": "4.55"
+              "total": 20,
+              "percentual": "6.33"
+            },
+            {
+              "nome": "pvs 1000 apto",
+              "total": 14,
+              "percentual": "4.43"
+            },
+            {
+              "nome": "pvs premium 1002 enf",
+              "total": 10,
+              "percentual": "3.16"
             },
             {
               "nome": "cristal brasil enf",
               "total": 9,
-              "percentual": "3.72"
+              "percentual": "2.85"
             },
             {
-              "nome": "pvs premium 1002 enf",
-              "total": 8,
-              "percentual": "3.31"
-            },
-            {
-              "nome": "pvs 1000 apto",
-              "total": 7,
-              "percentual": "2.89"
+              "nome": "pvs 1000 enf",
+              "total": 6,
+              "percentual": "1.90"
             },
             {
               "nome": "pvs premium 1003 apto",
               "total": 6,
-              "percentual": "2.48"
+              "percentual": "1.90"
             },
             {
-              "nome": "pvs 1000 enf",
-              "total": 4,
-              "percentual": "1.65"
+              "nome": "pvs premium 1001 enf",
+              "total": 5,
+              "percentual": "1.58"
             },
             {
               "nome": "pvs",
+              "total": 4,
+              "percentual": "1.27"
+            },
+            {
+              "nome": "plano pvs são paulo 1000 apto",
               "total": 3,
-              "percentual": "1.24"
+              "percentual": "0.95"
             },
             {
               "nome": "pvs 0525 apto",
               "total": 3,
-              "percentual": "1.24"
+              "percentual": "0.95"
             },
             {
-              "nome": "pvs premium 1001 enf",
-              "total": 3,
-              "percentual": "1.24"
+              "nome": "prevent ma+s apto",
+              "total": 2,
+              "percentual": "0.63"
+            },
+            {
+              "nome": "pvs premium 1001 apto",
+              "total": 2,
+              "percentual": "0.63"
             },
             {
               "nome": "pvs topázio",
               "total": 2,
-              "percentual": "0.83"
+              "percentual": "0.63"
             },
             {
               "nome": "indiv/master i/obst",
               "total": 2,
-              "percentual": "0.83"
+              "percentual": "0.63"
             },
             {
-              "nome": "plano pvs são paulo 1000 apto",
-              "total": 2,
-              "percentual": "0.83"
+              "nome": "plano pvs são paulo 1000 enf",
+              "total": 1,
+              "percentual": "0.32"
+            },
+            {
+              "nome": "plano pvs premium 1000 apto",
+              "total": 1,
+              "percentual": "0.32"
             },
             {
               "nome": "pvs rubi enf",
               "total": 1,
-              "percentual": "0.41"
+              "percentual": "0.32"
             },
             {
               "nome": "pvs 0525 enf",
               "total": 1,
-              "percentual": "0.41"
-            },
-            {
-              "nome": "prevent ma+s apto",
-              "total": 1,
-              "percentual": "0.41"
+              "percentual": "0.32"
             },
             {
               "nome": "ind/verde/std",
               "total": 1,
-              "percentual": "0.41"
+              "percentual": "0.32"
             },
             {
               "nome": "ind/atu/std",
               "total": 1,
-              "percentual": "0.41"
+              "percentual": "0.32"
             },
             {
               "nome": "ind/atual/std",
               "total": 1,
-              "percentual": "0.41"
-            },
-            {
-              "nome": "pvs premium 1001 apto",
-              "total": 1,
-              "percentual": "0.41"
+              "percentual": "0.32"
             }
           ]
         }
