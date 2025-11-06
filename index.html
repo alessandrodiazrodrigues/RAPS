@@ -423,6 +423,35 @@
             font-size: 14px;
         }
 
+        th.sortable {
+            cursor: pointer;
+            user-select: none;
+            position: relative;
+            padding-right: 25px;
+        }
+
+        th.sortable:hover {
+            background: #4a91e8;
+        }
+
+        th.sortable::after {
+            content: '⇅';
+            position: absolute;
+            right: 8px;
+            opacity: 0.5;
+            font-size: 12px;
+        }
+
+        th.sortable.asc::after {
+            content: '▲';
+            opacity: 1;
+        }
+
+        th.sortable.desc::after {
+            content: '▼';
+            opacity: 1;
+        }
+
         td {
             padding: 12px 15px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -739,14 +768,16 @@
                 <h2 class="section-title">Análise Demográfica</h2>
                 <div class="kpis" id="demografia-kpis"></div>
                 <div class="charts-grid">
-                    <div class="chart-container">
-                        <div class="chart-title">Distribuição por Faixas Etárias (Perfil 80-)</div>
-                        <div class="chart-canvas"><canvas id="chartFaixas80menos"></canvas></div>
+                    <div class="chart-container" style="grid-column: 1 / -1;">
+                        <div class="chart-title">Distribuição por Faixas Etárias (8 categorias)</div>
+                        <div class="chart-canvas"><canvas id="chartFaixas8"></canvas></div>
                     </div>
-                    <div class="chart-container">
-                        <div class="chart-title">Distribuição por Faixas Etárias (Perfil 80+)</div>
-                        <div class="chart-canvas"><canvas id="chartFaixas80mais"></canvas></div>
+                </div>
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="table-title">Detalhamento por Faixa Etária</div>
                     </div>
+                    <div id="tableFaixasEtarias"></div>
                 </div>
             </div>
 
@@ -819,16 +850,13 @@
                     <div class="table-header">
                         <div class="table-title">Top 50 Bairros Mais Distantes</div>
                         <div class="table-filters">
-                            <input type="text" id="filterTop50" class="filter-input" placeholder="Buscar bairro...">
-                            <select id="sortTop50" class="filter-select">
-                                <option value="distancia">Ordenar: Distância ↓</option>
-                                <option value="beneficiarios">Ordenar: Beneficiários ↓</option>
-                                <option value="bairro-asc">Ordenar: Bairro A→Z</option>
-                                <option value="bairro-desc">Ordenar: Bairro Z→A</option>
-                            </select>
+                            <input type="text" id="filterTop50" class="filter-input" placeholder="Buscar bairro ou cidade...">
                         </div>
                     </div>
                     <div id="tableTop50Distantes"></div>
+                    <div class="alert alert-info" style="margin-top: 15px;">
+                        💡 <strong>Dica:</strong> Clique nos títulos das colunas para ordenar
+                    </div>
                 </div>
             </div>
         </div>
@@ -849,6 +877,7 @@
         let charts = {};
         let planosOriginais = [];
         let top50Original = [];
+        let top50SortState = { column: 'distancia_km', direction: 'desc' };
 
         function toggleMenu() {
             const menu = document.getElementById('sideMenu');
@@ -867,7 +896,7 @@
 
         async function carregarDados() {
             try {
-                console.log('Carregando dados...');
+                console.log('🚀 Carregando dados...');
                 
                 // Carregar dados básicos (obrigatórios)
                 const [dashboard, demografico, zonas, hospitais, distancias, top50] = await Promise.all([
@@ -879,20 +908,40 @@
                     fetch(`${DATA_URL}/top_50_mais_distantes.json`).then(r => r.ok ? r.json() : null)
                 ]);
 
-                // Carregar dados opcionais (podem não existir)
+                // 🔍 DEBUG - Carregar dados opcionais com LOGS DETALHADOS
                 let programas = null;
                 let planos = null;
 
+                console.log('📂 Tentando carregar programas.json...');
                 try {
-                    programas = await fetch(`${DATA_URL}/programas.json`).then(r => r.ok ? r.json() : null);
+                    const programasUrl = `${DATA_URL}/programas.json`;
+                    console.log('URL:', programasUrl);
+                    const response = await fetch(programasUrl);
+                    console.log('Response status:', response.status, response.ok);
+                    if (response.ok) {
+                        programas = await response.json();
+                        console.log('✅ programas.json carregado:', programas);
+                    } else {
+                        console.error('❌ programas.json - Status:', response.status);
+                    }
                 } catch (e) {
-                    console.warn('programas.json não encontrado');
+                    console.error('❌ Erro ao carregar programas.json:', e);
                 }
 
+                console.log('📂 Tentando carregar planos.json...');
                 try {
-                    planos = await fetch(`${DATA_URL}/planos.json`).then(r => r.ok ? r.json() : null);
+                    const planosUrl = `${DATA_URL}/planos.json`;
+                    console.log('URL:', planosUrl);
+                    const response = await fetch(planosUrl);
+                    console.log('Response status:', response.status, response.ok);
+                    if (response.ok) {
+                        planos = await response.json();
+                        console.log('✅ planos.json carregado:', planos);
+                    } else {
+                        console.error('❌ planos.json - Status:', response.status);
+                    }
                 } catch (e) {
-                    console.warn('planos.json não encontrado');
+                    console.error('❌ Erro ao carregar planos.json:', e);
                 }
 
                 const perifericos = top50 ? {
@@ -1051,63 +1100,100 @@
                 <div class="kpi-card"><div class="kpi-label">Idosos 80+</div><div class="kpi-value">${kpis.total_idosos_80plus.toLocaleString('pt-BR')}</div><div class="kpi-subtitle">${((kpis.total_idosos_80plus / dados.dashboard.kpis_gerais.total_beneficiarios) * 100).toFixed(1)}% do total</div></div>
             `;
 
-            // Gráfico 80-
-            const ctx80menos = document.getElementById('chartFaixas80menos').getContext('2d');
-            if (charts.faixas80menos) charts.faixas80menos.destroy();
-            charts.faixas80menos = new Chart(ctx80menos, {
-                type: 'doughnut',
+            // Preparar dados das 8 faixas
+            const faixas8 = [
+                { label: '18-49 anos', key: '18_a_49', perfil: 'perfil_80_menos', cor: '#60a5fa' },
+                { label: '50-69 anos', key: '50_a_69', perfil: 'perfil_80_menos', cor: '#3b82f6' },
+                { label: '70-74 anos', key: '70_a_74', perfil: 'perfil_80_menos', cor: '#2563eb' },
+                { label: '75-79 anos', key: '75_a_79', perfil: 'perfil_80_menos', cor: '#1d4ed8' },
+                { label: '80-89 anos', key: '80_a_89', perfil: 'perfil_80_mais', cor: '#8b5cf6' },
+                { label: '90-94 anos', key: '90_a_94', perfil: 'perfil_80_mais', cor: '#7c3aed' },
+                { label: '95-99 anos', key: '95_a_99', perfil: 'perfil_80_mais', cor: '#6d28d9' },
+                { label: '100+ anos', key: '100_ou_mais', perfil: 'perfil_80_mais', cor: '#5b21b6' }
+            ];
+
+            const labels = [];
+            const valores = [];
+            const cores = [];
+            const dadosTabela = [];
+            const totalBeneficiarios = dados.dashboard.kpis_gerais.total_beneficiarios;
+
+            faixas8.forEach(faixa => {
+                const valor = faixas_etarias[faixa.perfil].faixas[faixa.key];
+                const percentual = ((valor / totalBeneficiarios) * 100).toFixed(1);
+                
+                labels.push(faixa.label);
+                valores.push(valor);
+                cores.push(faixa.cor);
+                
+                dadosTabela.push({
+                    faixa: faixa.label,
+                    quantidade: valor,
+                    percentual: percentual
+                });
+            });
+
+            // Gráfico de Barras com 8 faixas
+            const ctx8 = document.getElementById('chartFaixas8').getContext('2d');
+            if (charts.faixas8) charts.faixas8.destroy();
+            charts.faixas8 = new Chart(ctx8, {
+                type: 'bar',
                 data: {
-                    labels: ['18-49 anos', '50-69 anos', '70-74 anos', '75-79 anos'],
+                    labels: labels,
                     datasets: [{
-                        data: [
-                            faixas_etarias.perfil_80_menos.faixas['18_a_49'],
-                            faixas_etarias.perfil_80_menos.faixas['50_a_69'],
-                            faixas_etarias.perfil_80_menos.faixas['70_a_74'],
-                            faixas_etarias.perfil_80_menos.faixas['75_a_79']
-                        ],
-                        backgroundColor: ['#60a5fa', '#3b82f6', '#2563eb', '#1d4ed8']
+                        label: 'Beneficiários',
+                        data: valores,
+                        backgroundColor: cores
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                        legend: {
-                            position: 'bottom',
-                            labels: { color: '#e2e8f0' }
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        },
+                        x: {
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
                         }
                     }
                 }
             });
 
-            // Gráfico 80+
-            const ctx80mais = document.getElementById('chartFaixas80mais').getContext('2d');
-            if (charts.faixas80mais) charts.faixas80mais.destroy();
-            charts.faixas80mais = new Chart(ctx80mais, {
-                type: 'doughnut',
-                data: {
-                    labels: ['80-89 anos', '90-94 anos', '95-99 anos', '100+ anos'],
-                    datasets: [{
-                        data: [
-                            faixas_etarias.perfil_80_mais.faixas['80_a_89'],
-                            faixas_etarias.perfil_80_mais.faixas['90_a_94'],
-                            faixas_etarias.perfil_80_mais.faixas['95_a_99'],
-                            faixas_etarias.perfil_80_mais.faixas['100_ou_mais']
-                        ],
-                        backgroundColor: ['#8b5cf6', '#7c3aed', '#6d28d9', '#5b21b6']
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            position: 'bottom',
-                            labels: { color: '#e2e8f0' }
-                        }
-                    }
-                }
-            });
+            // Tabela de Faixas Etárias
+            document.getElementById('tableFaixasEtarias').innerHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Faixa Etária</th>
+                            <th>Quantidade</th>
+                            <th>Percentual</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${dadosTabela.map((d, i) => `
+                            <tr>
+                                <td><strong>${i + 1}</strong></td>
+                                <td><strong>${d.faixa}</strong></td>
+                                <td>${d.quantidade.toLocaleString('pt-BR')}</td>
+                                <td>${d.percentual}%</td>
+                            </tr>
+                        `).join('')}
+                        <tr style="background: rgba(96, 165, 250, 0.1); font-weight: 700;">
+                            <td colspan="2"><strong>TOTAL</strong></td>
+                            <td><strong>${totalBeneficiarios.toLocaleString('pt-BR')}</strong></td>
+                            <td><strong>100%</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            `;
         }
 
         function renderizarProgramas() {
@@ -1403,6 +1489,7 @@
             if (!dados.perifericos || !dados.perifericos.metadata) return;
             const { metadata, todos_bairros } = dados.perifericos;
             top50Original = [...todos_bairros]; // Guardar cópia original
+            top50SortState = { column: 'distancia_km', direction: 'desc' }; // Reset
 
             document.getElementById('perifericos-kpis').innerHTML = `
                 <div class="kpi-card"><div class="kpi-label">Total de Bairros</div><div class="kpi-value">${metadata.total_bairros}</div><div class="kpi-subtitle">mais distantes</div></div>
@@ -1411,17 +1498,15 @@
                 <div class="kpi-card"><div class="kpi-label">Tempo Médio</div><div class="kpi-value">${metadata.tempo_medio_min} min</div><div class="kpi-subtitle">deslocamento</div></div>
             `;
 
-            // Renderizar tabela inicial
-            renderizarTabelaTop50(top50Original, 'distancia');
+            // Renderizar tabela inicial (ordenado por distância desc)
+            renderizarTabelaTop50(top50Original);
 
-            // Event listeners para filtros
+            // Event listener apenas para filtro de texto
             document.getElementById('filterTop50').addEventListener('input', aplicarFiltrosTop50);
-            document.getElementById('sortTop50').addEventListener('change', aplicarFiltrosTop50);
         }
 
         function aplicarFiltrosTop50() {
             const filtroTexto = document.getElementById('filterTop50').value.toLowerCase();
-            const ordenacao = document.getElementById('sortTop50').value;
 
             // Filtrar por texto
             let bairrosFiltrados = top50Original.filter(b => 
@@ -1429,41 +1514,99 @@
                 (b.cidade && b.cidade.toLowerCase().includes(filtroTexto))
             );
 
-            // Ordenar
-            renderizarTabelaTop50(bairrosFiltrados, ordenacao);
+            // Renderizar mantendo ordenação atual
+            renderizarTabelaTop50(bairrosFiltrados);
         }
 
-        function renderizarTabelaTop50(bairros, ordenacao) {
-            // Ordenar conforme seleção
-            let bairrosOrdenados = [...bairros];
-            
-            switch(ordenacao) {
-                case 'distancia':
-                    bairrosOrdenados.sort((a, b) => b.distancia_km - a.distancia_km);
-                    break;
-                case 'beneficiarios':
-                    bairrosOrdenados.sort((a, b) => b.beneficiarios - a.beneficiarios);
-                    break;
-                case 'bairro-asc':
-                    bairrosOrdenados.sort((a, b) => a.bairro.localeCompare(b.bairro));
-                    break;
-                case 'bairro-desc':
-                    bairrosOrdenados.sort((a, b) => b.bairro.localeCompare(a.bairro));
-                    break;
+        function renderizarTabelaTop50(bairros, forcarColuna = null, forcarDirecao = null) {
+            // Se forçou coluna/direção, atualizar estado
+            if (forcarColuna) {
+                if (top50SortState.column === forcarColuna) {
+                    // Mesma coluna - inverter direção
+                    top50SortState.direction = top50SortState.direction === 'asc' ? 'desc' : 'asc';
+                } else {
+                    // Nova coluna - começar desc
+                    top50SortState.column = forcarColuna;
+                    top50SortState.direction = forcarDirecao || 'desc';
+                }
             }
+
+            // Ordenar conforme estado atual
+            let bairrosOrdenados = [...bairros];
+            const { column, direction } = top50SortState;
+            
+            bairrosOrdenados.sort((a, b) => {
+                let valA, valB;
+                
+                switch(column) {
+                    case 'bairro':
+                        valA = a.bairro.toLowerCase();
+                        valB = b.bairro.toLowerCase();
+                        return direction === 'asc' 
+                            ? valA.localeCompare(valB)
+                            : valB.localeCompare(valA);
+                    
+                    case 'cidade':
+                        valA = (a.cidade || 'são paulo').toLowerCase();
+                        valB = (b.cidade || 'são paulo').toLowerCase();
+                        return direction === 'asc'
+                            ? valA.localeCompare(valB)
+                            : valB.localeCompare(valA);
+                    
+                    case 'zona':
+                        valA = a.zona.toLowerCase();
+                        valB = b.zona.toLowerCase();
+                        return direction === 'asc'
+                            ? valA.localeCompare(valB)
+                            : valB.localeCompare(valA);
+                    
+                    case 'beneficiarios':
+                        return direction === 'asc'
+                            ? a.beneficiarios - b.beneficiarios
+                            : b.beneficiarios - a.beneficiarios;
+                    
+                    case 'hospital_mais_proximo':
+                        valA = a.hospital_mais_proximo.toLowerCase();
+                        valB = b.hospital_mais_proximo.toLowerCase();
+                        return direction === 'asc'
+                            ? valA.localeCompare(valB)
+                            : valB.localeCompare(valA);
+                    
+                    case 'distancia_km':
+                        return direction === 'asc'
+                            ? a.distancia_km - b.distancia_km
+                            : b.distancia_km - a.distancia_km;
+                    
+                    case 'tempo_min':
+                        return direction === 'asc'
+                            ? a.tempo_min - b.tempo_min
+                            : b.tempo_min - a.tempo_min;
+                    
+                    default:
+                        return 0;
+                }
+            });
+
+            // Gerar classes CSS para indicar coluna ordenada
+            const sortClass = (col) => {
+                if (col === column) {
+                    return `sortable ${direction}`;
+                }
+                return 'sortable';
+            };
 
             document.getElementById('tableTop50Distantes').innerHTML = `
                 <table>
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Bairro</th>
-                            <th>Cidade</th>
-                            <th>Zona</th>
-                            <th>Benef.</th>
-                            <th>Hospital</th>
-                            <th>Distância</th>
-                            <th>Tempo</th>
+                            <th class="${sortClass('bairro')}" onclick="ordenarTop50('bairro')">Bairro</th>
+                            <th class="${sortClass('cidade')}" onclick="ordenarTop50('cidade')">Cidade</th>
+                            <th class="${sortClass('zona')}" onclick="ordenarTop50('zona')">Zona</th>
+                            <th class="${sortClass('beneficiarios')}" onclick="ordenarTop50('beneficiarios')">Benef.</th>
+                            <th class="${sortClass('hospital_mais_proximo')}" onclick="ordenarTop50('hospital_mais_proximo')">Hospital</th>
+                            <th class="${sortClass('distancia_km')}" onclick="ordenarTop50('distancia_km')">Distância</th>
+                            <th class="${sortClass('tempo_min')}" onclick="ordenarTop50('tempo_min')">Tempo</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1482,6 +1625,20 @@
                     </tbody>
                 </table>
             `;
+        }
+
+        // Função auxiliar para ordenar por clique
+        function ordenarTop50(coluna) {
+            const filtroTexto = document.getElementById('filterTop50').value.toLowerCase();
+            
+            // Filtrar por texto
+            let bairrosFiltrados = top50Original.filter(b => 
+                b.bairro.toLowerCase().includes(filtroTexto) ||
+                (b.cidade && b.cidade.toLowerCase().includes(filtroTexto))
+            );
+            
+            // Renderizar com nova ordenação
+            renderizarTabelaTop50(bairrosFiltrados, coluna);
         }
 
         window.addEventListener('DOMContentLoaded', carregarDados);
