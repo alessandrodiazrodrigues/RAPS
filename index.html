@@ -516,22 +516,22 @@
             document.getElementById('dashboardStats').innerHTML = `
                 <div class="stat-card">
                     <div class="stat-label">👥 Total Beneficiários</div>
-                    <div class="stat-value">${kpis_gerais.total_beneficiarios.toLocaleString('pt-BR')}</div>
+                    <div class="stat-value">${parseInt(kpis_gerais.total_beneficiarios).toLocaleString('pt-BR')}</div>
                     <div class="stat-subtitle">100% mapeados</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">📍 Bairros Únicos</div>
-                    <div class="stat-value">${kpis_gerais.total_bairros.toLocaleString('pt-BR')}</div>
+                    <div class="stat-value">${parseInt(kpis_gerais.total_bairros).toLocaleString('pt-BR')}</div>
                     <div class="stat-subtitle">6 zonas</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">🏥 Hospitais</div>
-                    <div class="stat-value">${kpis_gerais.total_hospitais}</div>
+                    <div class="stat-value">${parseInt(kpis_gerais.total_hospitais)}</div>
                     <div class="stat-subtitle">Rede credenciada</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">📏 Distância Média</div>
-                    <div class="stat-value">${kpis_gerais.distancia_media_km.toFixed(2)} km</div>
+                    <div class="stat-value">${parseFloat(kpis_gerais.distancia_media_km).toFixed(2)} km</div>
                     <div class="stat-subtitle">Hospital mais próximo</div>
                 </div>
             `;
@@ -555,7 +555,7 @@
                     labels: Object.keys(distribuicao_faixas),
                     datasets: [{
                         label: 'Bairros',
-                        data: Object.values(distribuicao_faixas).map(f => f.bairros),
+                        data: Object.values(distribuicao_faixas).map(f => parseInt(f.bairros)),
                         backgroundColor: ['#10b981', '#3b82f6', '#f59e0b', '#f97316', '#ef4444'],
                         borderRadius: 8
                     }]
@@ -587,7 +587,7 @@
                 data: {
                     labels: zonasData.map(z => z.zona),
                     datasets: [{
-                        data: zonasData.map(z => z.beneficiarios),
+                        data: zonasData.map(z => parseInt(z.beneficiarios)),
                         backgroundColor: ['#6366f1', '#10b981', '#3b82f6', '#f59e0b', '#8b5cf6', '#ec4899']
                     }]
                 },
@@ -623,9 +623,9 @@
                                 <td>${i + 1}</td>
                                 <td>${b.bairro}</td>
                                 <td><span class="zona-badge zona-${normalizeZona(b.zona)}">${b.zona}</span></td>
-                                <td>${b.beneficiarios.toLocaleString('pt-BR')}</td>
+                                <td>${parseInt(b.beneficiarios).toLocaleString('pt-BR')}</td>
                                 <td>${b.hospital_mais_proximo}</td>
-                                <td>${b.distancia_km.toFixed(2)} km</td>
+                                <td>${parseFloat(b.distancia_km).toFixed(2)} km</td>
                             </tr>
                         `).join('')}
                     </tbody>
@@ -637,27 +637,35 @@
         function renderizarDemografia() {
             const { kpis, faixas_etarias } = dados.demografico;
             
+            // Converter valores para número (caso venham como string)
+            const idadeMedia = parseFloat(kpis.idade_media_adultos_18plus);
+            const pctFem = parseFloat(kpis.pct_feminino);
+            const pctMasc = parseFloat(kpis.pct_masculino);
+            const totalFem = parseInt(kpis.total_feminino);
+            const totalMasc = parseInt(kpis.total_masculino);
+            const totalIdosos = parseInt(kpis.total_idosos_80plus);
+            
             // Stats
             document.getElementById('demografiaStats').innerHTML = `
                 <div class="stat-card">
                     <div class="stat-label">🎂 Idade Média (18+)</div>
-                    <div class="stat-value">${kpis.idade_media_adultos_18plus.toFixed(1)} anos</div>
+                    <div class="stat-value">${idadeMedia.toFixed(1)} anos</div>
                     <div class="stat-subtitle">Apenas adultos</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">👩 Feminino</div>
-                    <div class="stat-value">${kpis.pct_feminino.toFixed(1)}%</div>
-                    <div class="stat-subtitle">${kpis.total_feminino.toLocaleString('pt-BR')} mulheres</div>
+                    <div class="stat-value">${pctFem.toFixed(1)}%</div>
+                    <div class="stat-subtitle">${totalFem.toLocaleString('pt-BR')} mulheres</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">👨 Masculino</div>
-                    <div class="stat-value">${kpis.pct_masculino.toFixed(1)}%</div>
-                    <div class="stat-subtitle">${kpis.total_masculino.toLocaleString('pt-BR')} homens</div>
+                    <div class="stat-value">${pctMasc.toFixed(1)}%</div>
+                    <div class="stat-subtitle">${totalMasc.toLocaleString('pt-BR')} homens</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">👴 Idosos (≥80)</div>
-                    <div class="stat-value">${kpis.total_idosos_80plus.toLocaleString('pt-BR')}</div>
-                    <div class="stat-subtitle">${((kpis.total_idosos_80plus/dados.dashboard.kpis_gerais.total_beneficiarios)*100).toFixed(1)}% do total</div>
+                    <div class="stat-value">${totalIdosos.toLocaleString('pt-BR')}</div>
+                    <div class="stat-subtitle">${((totalIdosos/dados.dashboard.kpis_gerais.total_beneficiarios)*100).toFixed(1)}% do total</div>
                 </div>
             `;
 
@@ -685,7 +693,7 @@
                     labels: Object.keys(perfil80Menos.faixas).map(k => perfil80Menos.faixas[k].label),
                     datasets: [{
                         label: 'Beneficiários',
-                        data: Object.keys(perfil80Menos.faixas).map(k => perfil80Menos.faixas[k].total),
+                        data: Object.keys(perfil80Menos.faixas).map(k => parseInt(perfil80Menos.faixas[k].total)),
                         backgroundColor: '#3b82f6',
                         borderRadius: 8
                     }]
@@ -718,7 +726,7 @@
                     labels: Object.keys(perfil80Mais.faixas).map(k => perfil80Mais.faixas[k].label),
                     datasets: [{
                         label: 'Beneficiários',
-                        data: Object.keys(perfil80Mais.faixas).map(k => perfil80Mais.faixas[k].total),
+                        data: Object.keys(perfil80Mais.faixas).map(k => parseInt(perfil80Mais.faixas[k].total)),
                         backgroundColor: '#f59e0b',
                         borderRadius: 8
                     }]
@@ -747,9 +755,9 @@
             new Chart(document.getElementById('chartGenero'), {
                 type: 'pie',
                 data: {
-                    labels: [`Feminino (${kpis.pct_feminino.toFixed(1)}%)`, `Masculino (${kpis.pct_masculino.toFixed(1)}%)`],
+                    labels: [`Feminino (${pctFem.toFixed(1)}%)`, `Masculino (${pctMasc.toFixed(1)}%)`],
                     datasets: [{
-                        data: [kpis.total_feminino, kpis.total_masculino],
+                        data: [totalFem, totalMasc],
                         backgroundColor: ['#ec4899', '#3b82f6']
                     }]
                 },
@@ -769,11 +777,11 @@
         // PROGRAMAS
         function renderizarProgramas() {
             const { programas: progs, top_10 } = dados.programas;
-            const totalBenef = dados.dashboard.kpis_gerais.total_beneficiarios;
+            const totalBenef = parseInt(dados.dashboard.kpis_gerais.total_beneficiarios);
             
             // Filtrar "SEM PROGRAMA"
             const comPrograma = progs.find(p => p.nome === "SEM PROGRAMA");
-            const semPrograma = comPrograma ? comPrograma.total : 0;
+            const semPrograma = comPrograma ? parseInt(comPrograma.total) : 0;
             const totalComPrograma = totalBenef - semPrograma;
             
             // Stats
@@ -811,7 +819,7 @@
                     labels: top10Ativos.map(p => p.nome),
                     datasets: [{
                         label: 'Beneficiários',
-                        data: top10Ativos.map(p => p.total),
+                        data: top10Ativos.map(p => parseInt(p.total)),
                         backgroundColor: '#60a5fa',
                         borderRadius: 8
                     }]
@@ -854,8 +862,8 @@
                             <tr>
                                 <td>${i + 1}</td>
                                 <td>${p.nome}</td>
-                                <td>${p.total.toLocaleString('pt-BR')}</td>
-                                <td>${p.percentual}%</td>
+                                <td>${parseInt(p.total).toLocaleString('pt-BR')}</td>
+                                <td>${parseFloat(p.percentual).toFixed(1)}%</td>
                             </tr>
                         `).join('')}
                     </tbody>
@@ -874,27 +882,27 @@
                     <div class="hospital-stats">
                         <div class="hospital-stat">
                             <span class="hospital-stat-label">👥 Beneficiários</span>
-                            <span class="hospital-stat-value">${z.beneficiarios.toLocaleString('pt-BR')}</span>
+                            <span class="hospital-stat-value">${parseInt(z.beneficiarios).toLocaleString('pt-BR')}</span>
                         </div>
                         <div class="hospital-stat">
                             <span class="hospital-stat-label">🏘️ Bairros</span>
-                            <span class="hospital-stat-value">${z.bairros}</span>
+                            <span class="hospital-stat-value">${parseInt(z.bairros)}</span>
                         </div>
                         <div class="hospital-stat">
                             <span class="hospital-stat-label">🎂 Idade Média (18+)</span>
-                            <span class="hospital-stat-value">${z.idade_media_adultos_18plus.toFixed(1)} anos</span>
+                            <span class="hospital-stat-value">${parseFloat(z.idade_media_adultos_18plus).toFixed(1)} anos</span>
                         </div>
                         <div class="hospital-stat">
                             <span class="hospital-stat-label">👩 Feminino</span>
-                            <span class="hospital-stat-value">${z.pct_feminino.toFixed(1)}%</span>
+                            <span class="hospital-stat-value">${parseFloat(z.pct_feminino).toFixed(1)}%</span>
                         </div>
                         <div class="hospital-stat">
                             <span class="hospital-stat-label">👨 Masculino</span>
-                            <span class="hospital-stat-value">${z.pct_masculino.toFixed(1)}%</span>
+                            <span class="hospital-stat-value">${parseFloat(z.pct_masculino).toFixed(1)}%</span>
                         </div>
                         <div class="hospital-stat">
                             <span class="hospital-stat-label">📏 Distância Média</span>
-                            <span class="hospital-stat-value">${z.distancia_media_km.toFixed(2)} km</span>
+                            <span class="hospital-stat-value">${parseFloat(z.distancia_media_km).toFixed(2)} km</span>
                         </div>
                     </div>
                 </div>
@@ -919,7 +927,7 @@
                     labels: zonasData.map(z => z.zona),
                     datasets: [{
                         label: 'km',
-                        data: zonasData.map(z => z.distancia_media_km),
+                        data: zonasData.map(z => parseFloat(z.distancia_media_km)),
                         backgroundColor: zonasData.map(z => getZonaColor(z.zona)),
                         borderRadius: 8
                     }]
@@ -950,7 +958,7 @@
                     labels: zonasData.map(z => z.zona),
                     datasets: [{
                         label: 'Anos',
-                        data: zonasData.map(z => z.idade_media_adultos_18plus),
+                        data: zonasData.map(z => parseFloat(z.idade_media_adultos_18plus)),
                         backgroundColor: zonasData.map(z => getZonaColor(z.zona)),
                         borderRadius: 8
                     }]
@@ -999,9 +1007,9 @@
                                 <td>${i + 1}</td>
                                 <td><strong>${h.hospital}</strong></td>
                                 <td><span class="zona-badge zona-${normalizeZona(h.zona)}">${h.zona}</span></td>
-                                <td>${h.bairros_cobertos.toLocaleString('pt-BR')}</td>
-                                <td>${h.beneficiarios.toLocaleString('pt-BR')}</td>
-                                <td>${h.percentual_rede}%</td>
+                                <td>${parseInt(h.bairros_cobertos).toLocaleString('pt-BR')}</td>
+                                <td>${parseInt(h.beneficiarios).toLocaleString('pt-BR')}</td>
+                                <td>${parseFloat(h.percentual_rede).toFixed(1)}%</td>
                             </tr>
                         `).join('')}
                     </tbody>
@@ -1022,7 +1030,7 @@
                     labels: hospsData.map(h => h.hospital),
                     datasets: [{
                         label: 'Beneficiários',
-                        data: hospsData.map(h => h.beneficiarios),
+                        data: hospsData.map(h => parseInt(h.beneficiarios)),
                         backgroundColor: '#60a5fa',
                         borderRadius: 8
                     }]
@@ -1050,12 +1058,12 @@
         // GAPS
         function renderizarGaps() {
             const { top_20_distantes, distribuicao_por_faixa } = dados.distancias;
-            const totalBairros = dados.dashboard.kpis_gerais.total_bairros;
+            const totalBairros = parseInt(dados.dashboard.kpis_gerais.total_bairros);
             
             // Calcular bairros descobertos (>15km)
-            const bairrosDescobertos = distribuicao_por_faixa["15-20km"].bairros + distribuicao_por_faixa[">20km"].bairros;
-            const benef15_20 = distribuicao_por_faixa["15-20km"].beneficiarios;
-            const benefMais20 = distribuicao_por_faixa[">20km"].beneficiarios;
+            const bairrosDescobertos = parseInt(distribuicao_por_faixa["15-20km"].bairros) + parseInt(distribuicao_por_faixa[">20km"].bairros);
+            const benef15_20 = parseInt(distribuicao_por_faixa["15-20km"].beneficiarios);
+            const benefMais20 = parseInt(distribuicao_por_faixa[">20km"].beneficiarios);
             const benefDescobertos = benef15_20 + benefMais20;
             
             // Stats
@@ -1068,11 +1076,11 @@
                 <div class="stat-card">
                     <div class="stat-label">👥 Benef. Afetados</div>
                     <div class="stat-value">${benefDescobertos.toLocaleString('pt-BR')}</div>
-                    <div class="stat-subtitle">${((benefDescobertos/dados.dashboard.kpis_gerais.total_beneficiarios)*100).toFixed(1)}%</div>
+                    <div class="stat-subtitle">${((benefDescobertos/parseInt(dados.dashboard.kpis_gerais.total_beneficiarios))*100).toFixed(1)}%</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">📏 Distância Máxima</div>
-                    <div class="stat-value">${top_20_distantes[0].distancia_km.toFixed(2)} km</div>
+                    <div class="stat-value">${parseFloat(top_20_distantes[0].distancia_km).toFixed(2)} km</div>
                     <div class="stat-subtitle">${top_20_distantes[0].bairro}</div>
                 </div>
             `;
@@ -1098,10 +1106,10 @@
                                 <td>${i + 1}</td>
                                 <td>${b.bairro}</td>
                                 <td><span class="zona-badge zona-${normalizeZona(b.zona)}">${b.zona}</span></td>
-                                <td>${b.beneficiarios}</td>
+                                <td>${parseInt(b.beneficiarios)}</td>
                                 <td>${b.hospital}</td>
-                                <td>${b.distancia_km.toFixed(2)} km</td>
-                                <td>${b.tempo_min} min</td>
+                                <td>${parseFloat(b.distancia_km).toFixed(2)} km</td>
+                                <td>${parseInt(b.tempo_min)} min</td>
                             </tr>
                         `).join('')}
                     </tbody>
