@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal RAPS - Prevent Senior | Dashboard v6.0</title>
+    <title>Portal RAPS - Prevent Senior | Dashboard v6.1</title>
     
     <!-- Google Fonts - Poppins Bold -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -610,6 +610,12 @@
             color: #60a5fa;
         }
 
+        .alert-error {
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 4px solid #ef4444;
+            color: #f87171;
+        }
+
         button, .btn-primary {
             background: #60a5fa;
             color: white;
@@ -678,7 +684,7 @@
         </div>
         <div class="header-right">
             <span class="badge" id="badge-status">Carregando...</span>
-            <span class="version">v6.0</span>
+            <span class="version">v6.1</span>
         </div>
     </header>
 
@@ -776,6 +782,12 @@
                         <div class="table-title">Todos os Planos (61 tipos)</div>
                         <div class="table-filters">
                             <input type="text" id="filterPlanos" class="filter-input" placeholder="Buscar plano...">
+                            <select id="sortPlanos" class="filter-select">
+                                <option value="beneficiarios">Ordenar: Beneficiários ↓</option>
+                                <option value="percentual">Ordenar: Percentual ↓</option>
+                                <option value="nome-asc">Ordenar: Nome A→Z</option>
+                                <option value="nome-desc">Ordenar: Nome Z→A</option>
+                            </select>
                         </div>
                     </div>
                     <div id="tablePlanos"></div>
@@ -809,9 +821,10 @@
                         <div class="table-filters">
                             <input type="text" id="filterTop50" class="filter-input" placeholder="Buscar bairro...">
                             <select id="sortTop50" class="filter-select">
-                                <option value="distancia">Ordenar por: Distância</option>
-                                <option value="beneficiarios">Ordenar por: Beneficiários</option>
-                                <option value="bairro">Ordenar por: Bairro (A-Z)</option>
+                                <option value="distancia">Ordenar: Distância ↓</option>
+                                <option value="beneficiarios">Ordenar: Beneficiários ↓</option>
+                                <option value="bairro-asc">Ordenar: Bairro A→Z</option>
+                                <option value="bairro-desc">Ordenar: Bairro Z→A</option>
                             </select>
                         </div>
                     </div>
@@ -821,7 +834,7 @@
         </div>
 
         <div class="footer">
-            <p><strong>Portal RAPS v6.0</strong> | Prevent Senior | Dados atualizados em Novembro 2025</p>
+            <p><strong>Portal RAPS v6.1</strong> | Prevent Senior | Dados atualizados em Novembro 2025</p>
             <p>Desenvolvido por Alessandro Diaz Rodrigues</p>
         </div>
     </div>
@@ -834,6 +847,8 @@
 
         let dados = {};
         let charts = {};
+        let planosOriginais = [];
+        let top50Original = [];
 
         function toggleMenu() {
             const menu = document.getElementById('sideMenu');
@@ -853,22 +868,38 @@
         async function carregarDados() {
             try {
                 console.log('Carregando dados...');
-                const [dashboard, demografico, programas, planos, zonas, hospitais, distancias, top50] = await Promise.all([
-                    fetch(`${DATA_URL}/dashboard.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/demografico.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/programas.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/planos.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/zonas.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/hospitais.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/distancias.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/top_50_mais_distantes.json`).then(r => r.json())
+                
+                // Carregar dados básicos (obrigatórios)
+                const [dashboard, demografico, zonas, hospitais, distancias, top50] = await Promise.all([
+                    fetch(`${DATA_URL}/dashboard.json`).then(r => r.ok ? r.json() : null),
+                    fetch(`${DATA_URL}/demografico.json`).then(r => r.ok ? r.json() : null),
+                    fetch(`${DATA_URL}/zonas.json`).then(r => r.ok ? r.json() : null),
+                    fetch(`${DATA_URL}/hospitais.json`).then(r => r.ok ? r.json() : null),
+                    fetch(`${DATA_URL}/distancias.json`).then(r => r.ok ? r.json() : null),
+                    fetch(`${DATA_URL}/top_50_mais_distantes.json`).then(r => r.ok ? r.json() : null)
                 ]);
 
-                const perifericos = {
+                // Carregar dados opcionais (podem não existir)
+                let programas = null;
+                let planos = null;
+
+                try {
+                    programas = await fetch(`${DATA_URL}/programas.json`).then(r => r.ok ? r.json() : null);
+                } catch (e) {
+                    console.warn('programas.json não encontrado');
+                }
+
+                try {
+                    planos = await fetch(`${DATA_URL}/planos.json`).then(r => r.ok ? r.json() : null);
+                } catch (e) {
+                    console.warn('planos.json não encontrado');
+                }
+
+                const perifericos = top50 ? {
                     metadata: top50.metadata,
-                    top_10_mais_distantes: top50.bairros.slice(0, 10),
-                    todos_bairros: top50.bairros
-                };
+                    top_10_mais_distantes: top50.bairros ? top50.bairros.slice(0, 10) : [],
+                    todos_bairros: top50.bairros || []
+                } : null;
 
                 dados = { dashboard, demografico, programas, planos, zonas, hospitais, distancias, perifericos };
                 console.log('Dados carregados:', dados);
@@ -880,23 +911,30 @@
 
                 renderizarTudo();
             } catch (error) {
-                console.error('Erro:', error);
-                document.getElementById('loading').innerHTML = `<div class="loading-spinner"></div><h2 style="color: #e53e3e;">Erro ao carregar dados</h2><p>${error.message}</p>`;
+                console.error('Erro ao carregar dados:', error);
+                document.getElementById('loading').innerHTML = `
+                    <div class="loading-spinner"></div>
+                    <h2 style="color: #ef4444;">Erro ao carregar dados</h2>
+                    <p style="color: #f87171;">${error.message}</p>
+                    <p style="color: #9ca3af; margin-top: 20px;">Verifique se os arquivos JSON estão no GitHub</p>
+                `;
             }
         }
 
         function renderizarTudo() {
-            try { renderizarDashboard(); console.log('Dashboard OK'); } catch (e) { console.error('Erro Dashboard:', e); }
-            try { renderizarDemografia(); console.log('Demografia OK'); } catch (e) { console.error('Erro Demografia:', e); }
-            try { renderizarProgramas(); console.log('Programas OK'); } catch (e) { console.error('Erro Programas:', e); }
-            try { renderizarPlanos(); console.log('Planos OK'); } catch (e) { console.error('Erro Planos:', e); }
-            try { renderizarZonas(); console.log('Zonas OK'); } catch (e) { console.error('Erro Zonas:', e); }
-            try { renderizarHospitais(); console.log('Hospitais OK'); } catch (e) { console.error('Erro Hospitais:', e); }
-            try { renderizarPerifericos(); console.log('Perifericos OK'); } catch (e) { console.error('Erro Perifericos:', e); }
+            try { renderizarDashboard(); console.log('✅ Dashboard OK'); } catch (e) { console.error('❌ Erro Dashboard:', e); }
+            try { renderizarDemografia(); console.log('✅ Demografia OK'); } catch (e) { console.error('❌ Erro Demografia:', e); }
+            try { renderizarProgramas(); console.log('✅ Programas OK'); } catch (e) { console.error('❌ Erro Programas:', e); }
+            try { renderizarPlanos(); console.log('✅ Planos OK'); } catch (e) { console.error('❌ Erro Planos:', e); }
+            try { renderizarZonas(); console.log('✅ Zonas OK'); } catch (e) { console.error('❌ Erro Zonas:', e); }
+            try { renderizarHospitais(); console.log('✅ Hospitais OK'); } catch (e) { console.error('❌ Erro Hospitais:', e); }
+            try { renderizarPerifericos(); console.log('✅ Perifericos OK'); } catch (e) { console.error('❌ Erro Perifericos:', e); }
         }
 
         function renderizarDashboard() {
+            if (!dados.dashboard) return;
             const { kpis_gerais, distribuicao_faixas, top_bairros, bairros_descobertos } = dados.dashboard;
+            
             document.getElementById('dashboard-kpis').innerHTML = `
                 <div class="kpi-card"><div class="kpi-label">Total de Beneficiários</div><div class="kpi-value">${kpis_gerais.total_beneficiarios.toLocaleString('pt-BR')}</div><div class="kpi-subtitle">em 5 zonas</div></div>
                 <div class="kpi-card"><div class="kpi-label">Total de Bairros</div><div class="kpi-value">${kpis_gerais.total_bairros.toLocaleString('pt-BR')}</div><div class="kpi-subtitle">normalizados</div></div>
@@ -905,33 +943,106 @@
                 <div class="kpi-card"><div class="kpi-label">Cobertura 15km</div><div class="kpi-value">${kpis_gerais.cobertura_15km_pct}%</div><div class="kpi-subtitle">${bairros_descobertos ? bairros_descobertos.total_beneficiarios.toLocaleString('pt-BR') : '0'} fora</div></div>
             `;
 
+            // Gráfico de Faixas
             const ctxFaixas = document.getElementById('chartFaixas').getContext('2d');
             if (charts.faixas) charts.faixas.destroy();
             charts.faixas = new Chart(ctxFaixas, {
                 type: 'bar',
                 data: {
                     labels: Object.keys(distribuicao_faixas),
-                    datasets: [{ label: 'Bairros', data: Object.values(distribuicao_faixas), backgroundColor: ['#60a5fa', '#3b82f6', '#2563eb', '#1d4ed8', '#1e40af'] }]
+                    datasets: [{
+                        label: 'Bairros',
+                        data: Object.values(distribuicao_faixas),
+                        backgroundColor: ['#60a5fa', '#3b82f6', '#2563eb', '#1d4ed8', '#1e40af']
+                    }]
                 },
-                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false, labels: { color: '#e2e8f0' } } }, scales: { y: { beginAtZero: true, ticks: { color: '#e2e8f0' }, grid: { color: 'rgba(255, 255, 255, 0.1)' } }, x: { ticks: { color: '#e2e8f0' }, grid: { color: 'rgba(255, 255, 255, 0.1)' } } } }
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        },
+                        x: {
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        }
+                    }
+                }
             });
 
+            // Gráfico Top Bairros
             const ctxTopBairros = document.getElementById('chartTopBairros').getContext('2d');
             if (charts.topBairros) charts.topBairros.destroy();
             charts.topBairros = new Chart(ctxTopBairros, {
                 type: 'bar',
                 data: {
                     labels: top_bairros.map(b => b.bairro),
-                    datasets: [{ label: 'Beneficiários', data: top_bairros.map(b => b.beneficiarios), backgroundColor: '#60a5fa' }]
+                    datasets: [{
+                        label: 'Beneficiários',
+                        data: top_bairros.map(b => b.beneficiarios),
+                        backgroundColor: '#60a5fa'
+                    }]
                 },
-                options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false, labels: { color: '#e2e8f0' } } }, scales: { x: { beginAtZero: true, ticks: { color: '#e2e8f0' }, grid: { color: 'rgba(255, 255, 255, 0.1)' } }, y: { ticks: { color: '#e2e8f0' }, grid: { color: 'rgba(255, 255, 255, 0.1)' } } } }
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        },
+                        y: {
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        }
+                    }
+                }
             });
 
-            document.getElementById('tableTopBairros').innerHTML = `<table><thead><tr><th>#</th><th>Bairro</th><th>Zona</th><th>Beneficiários</th><th>Hospital</th><th>Distância</th></tr></thead><tbody>${top_bairros.map((b, i) => `<tr><td><strong>${i + 1}</strong></td><td>${b.bairro}</td><td><span class="zona-badge zona-${b.zona.toLowerCase().replace(' ', '-')}">${b.zona}</span></td><td><strong>${b.beneficiarios.toLocaleString('pt-BR')}</strong></td><td>${b.hospital_proximo}</td><td>${b.distancia_km} km</td></tr>`).join('')}</tbody></table>`;
+            // Tabela Top Bairros
+            document.getElementById('tableTopBairros').innerHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Bairro</th>
+                            <th>Zona</th>
+                            <th>Beneficiários</th>
+                            <th>Hospital</th>
+                            <th>Distância</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${top_bairros.map((b, i) => `
+                            <tr>
+                                <td><strong>${i + 1}</strong></td>
+                                <td>${b.bairro}</td>
+                                <td><span class="zona-badge zona-${b.zona.toLowerCase().replace(' ', '-')}">${b.zona}</span></td>
+                                <td><strong>${b.beneficiarios.toLocaleString('pt-BR')}</strong></td>
+                                <td>${b.hospital_proximo}</td>
+                                <td>${b.distancia_km} km</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
         }
 
         function renderizarDemografia() {
+            if (!dados.demografico) return;
             const { kpis, faixas_etarias } = dados.demografico;
+            
             document.getElementById('demografia-kpis').innerHTML = `
                 <div class="kpi-card"><div class="kpi-label">Idade Média (18+)</div><div class="kpi-value">${kpis.idade_media_adultos_18plus}</div><div class="kpi-subtitle">anos</div></div>
                 <div class="kpi-card"><div class="kpi-label">Feminino</div><div class="kpi-value">${kpis.pct_feminino}%</div><div class="kpi-subtitle">${Math.round(dados.dashboard.kpis_gerais.total_beneficiarios * parseFloat(kpis.pct_feminino) / 100).toLocaleString('pt-BR')} benef.</div></div>
@@ -940,31 +1051,79 @@
                 <div class="kpi-card"><div class="kpi-label">Idosos 80+</div><div class="kpi-value">${kpis.total_idosos_80plus.toLocaleString('pt-BR')}</div><div class="kpi-subtitle">${((kpis.total_idosos_80plus / dados.dashboard.kpis_gerais.total_beneficiarios) * 100).toFixed(1)}% do total</div></div>
             `;
 
+            // Gráfico 80-
             const ctx80menos = document.getElementById('chartFaixas80menos').getContext('2d');
             if (charts.faixas80menos) charts.faixas80menos.destroy();
             charts.faixas80menos = new Chart(ctx80menos, {
                 type: 'doughnut',
                 data: {
                     labels: ['18-49 anos', '50-69 anos', '70-74 anos', '75-79 anos'],
-                    datasets: [{ data: [faixas_etarias.perfil_80_menos.faixas['18_a_49'], faixas_etarias.perfil_80_menos.faixas['50_a_69'], faixas_etarias.perfil_80_menos.faixas['70_a_74'], faixas_etarias.perfil_80_menos.faixas['75_a_79']], backgroundColor: ['#60a5fa', '#3b82f6', '#2563eb', '#1d4ed8'] }]
+                    datasets: [{
+                        data: [
+                            faixas_etarias.perfil_80_menos.faixas['18_a_49'],
+                            faixas_etarias.perfil_80_menos.faixas['50_a_69'],
+                            faixas_etarias.perfil_80_menos.faixas['70_a_74'],
+                            faixas_etarias.perfil_80_menos.faixas['75_a_79']
+                        ],
+                        backgroundColor: ['#60a5fa', '#3b82f6', '#2563eb', '#1d4ed8']
+                    }]
                 },
-                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { color: '#e2e8f0' } } } }
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { color: '#e2e8f0' }
+                        }
+                    }
+                }
             });
 
+            // Gráfico 80+
             const ctx80mais = document.getElementById('chartFaixas80mais').getContext('2d');
             if (charts.faixas80mais) charts.faixas80mais.destroy();
             charts.faixas80mais = new Chart(ctx80mais, {
                 type: 'doughnut',
                 data: {
                     labels: ['80-89 anos', '90-94 anos', '95-99 anos', '100+ anos'],
-                    datasets: [{ data: [faixas_etarias.perfil_80_mais.faixas['80_a_89'], faixas_etarias.perfil_80_mais.faixas['90_a_94'], faixas_etarias.perfil_80_mais.faixas['95_a_99'], faixas_etarias.perfil_80_mais.faixas['100_ou_mais']], backgroundColor: ['#8b5cf6', '#7c3aed', '#6d28d9', '#5b21b6'] }]
+                    datasets: [{
+                        data: [
+                            faixas_etarias.perfil_80_mais.faixas['80_a_89'],
+                            faixas_etarias.perfil_80_mais.faixas['90_a_94'],
+                            faixas_etarias.perfil_80_mais.faixas['95_a_99'],
+                            faixas_etarias.perfil_80_mais.faixas['100_ou_mais']
+                        ],
+                        backgroundColor: ['#8b5cf6', '#7c3aed', '#6d28d9', '#5b21b6']
+                    }]
                 },
-                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { color: '#e2e8f0' } } } }
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { color: '#e2e8f0' }
+                        }
+                    }
+                }
             });
         }
 
         function renderizarProgramas() {
-            if (!dados.programas?.programas) return;
+            const programasSection = document.getElementById('programas');
+            
+            if (!dados.programas || !dados.programas.programas) {
+                console.warn('Dados de programas não disponíveis');
+                programasSection.innerHTML = `
+                    <h2 class="section-title">Análise de Programas de Saúde</h2>
+                    <div class="alert alert-error">
+                        ⚠️ Dados de programas não disponíveis. O arquivo programas.json não foi encontrado.
+                    </div>
+                `;
+                return;
+            }
+
             const { programas, top_10 } = dados.programas;
             const semPrograma = programas.find(p => p.nome === 'SEM PROGRAMA');
             const comPrograma = dados.dashboard.kpis_gerais.total_beneficiarios - (semPrograma ? semPrograma.total : 0);
@@ -975,20 +1134,81 @@
                 <div class="kpi-card"><div class="kpi-label">Com Programa</div><div class="kpi-value">${comPrograma.toLocaleString('pt-BR')}</div><div class="kpi-subtitle">${((comPrograma / dados.dashboard.kpis_gerais.total_beneficiarios) * 100).toFixed(1)}% total</div></div>
             `;
 
+            // Gráfico Top 10 Programas
             const ctxTopProgramas = document.getElementById('chartTopProgramas').getContext('2d');
             if (charts.topProgramas) charts.topProgramas.destroy();
             charts.topProgramas = new Chart(ctxTopProgramas, {
                 type: 'bar',
-                data: { labels: top_10.map(p => p.nome), datasets: [{ label: 'Beneficiários', data: top_10.map(p => p.total), backgroundColor: '#60a5fa' }] },
-                options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false, labels: { color: '#e2e8f0' } } }, scales: { x: { beginAtZero: true, ticks: { color: '#e2e8f0' }, grid: { color: 'rgba(255, 255, 255, 0.1)' } }, y: { ticks: { color: '#e2e8f0' }, grid: { color: 'rgba(255, 255, 255, 0.1)' } } } }
+                data: {
+                    labels: top_10.map(p => p.nome),
+                    datasets: [{
+                        label: 'Beneficiários',
+                        data: top_10.map(p => p.total),
+                        backgroundColor: '#60a5fa'
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        },
+                        y: {
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        }
+                    }
+                }
             });
 
-            document.getElementById('tableProgramas').innerHTML = `<table><thead><tr><th>#</th><th>Programa</th><th>Beneficiários</th><th>%</th></tr></thead><tbody>${programas.map((p, i) => `<tr><td>${i + 1}</td><td><strong>${p.nome}</strong></td><td>${p.total.toLocaleString('pt-BR')}</td><td>${p.percentual}%</td></tr>`).join('')}</tbody></table>`;
+            // Tabela de Programas
+            document.getElementById('tableProgramas').innerHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Programa</th>
+                            <th>Beneficiários</th>
+                            <th>%</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${programas.map((p, i) => `
+                            <tr>
+                                <td>${i + 1}</td>
+                                <td><strong>${p.nome}</strong></td>
+                                <td>${p.total.toLocaleString('pt-BR')}</td>
+                                <td>${p.percentual}%</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
         }
 
         function renderizarPlanos() {
-            if (!dados.planos?.kpis) return;
+            const planosSection = document.getElementById('planos');
+            
+            if (!dados.planos || !dados.planos.kpis) {
+                console.warn('Dados de planos não disponíveis');
+                planosSection.innerHTML = `
+                    <h2 class="section-title">Análise de Planos de Saúde</h2>
+                    <div class="alert alert-error">
+                        ⚠️ Dados de planos não disponíveis. O arquivo planos.json não foi encontrado.
+                    </div>
+                `;
+                return;
+            }
+
             const { kpis, todos_planos, top_10_geral } = dados.planos;
+            planosOriginais = [...todos_planos]; // Guardar cópia original
 
             document.getElementById('planos-kpis').innerHTML = `
                 <div class="kpi-card"><div class="kpi-label">Total de Planos</div><div class="kpi-value">${kpis.total_planos_unicos}</div><div class="kpi-subtitle">tipos diferentes</div></div>
@@ -996,60 +1216,153 @@
                 <div class="kpi-card"><div class="kpi-label">Top 5 Planos</div><div class="kpi-value">${kpis.total_top_5.toLocaleString('pt-BR')}</div><div class="kpi-subtitle">${((kpis.total_top_5 / kpis.total_beneficiarios) * 100).toFixed(1)}% total</div></div>
             `;
 
+            // Gráfico Top 10 Planos
             const ctxTopPlanos = document.getElementById('chartTopPlanos').getContext('2d');
             if (charts.topPlanos) charts.topPlanos.destroy();
             charts.topPlanos = new Chart(ctxTopPlanos, {
                 type: 'bar',
-                data: { labels: top_10_geral.map(p => p.nome), datasets: [{ label: 'Beneficiários', data: top_10_geral.map(p => p.total), backgroundColor: '#60a5fa' }] },
-                options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false, labels: { color: '#e2e8f0' } } }, scales: { x: { beginAtZero: true, ticks: { color: '#e2e8f0' }, grid: { color: 'rgba(255, 255, 255, 0.1)' } }, y: { ticks: { color: '#e2e8f0' }, grid: { color: 'rgba(255, 255, 255, 0.1)' } } } }
+                data: {
+                    labels: top_10_geral.map(p => p.nome),
+                    datasets: [{
+                        label: 'Beneficiários',
+                        data: top_10_geral.map(p => p.total),
+                        backgroundColor: '#60a5fa'
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        },
+                        y: {
+                            ticks: { color: '#e2e8f0' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        }
+                    }
+                }
             });
 
-            renderizarTabelaPlanos(todos_planos);
-            document.getElementById('filterPlanos').addEventListener('input', (e) => {
-                const filtrados = todos_planos.filter(p => p.nome.toLowerCase().includes(e.target.value.toLowerCase()));
-                renderizarTabelaPlanos(filtrados);
-            });
+            // Renderizar tabela inicial
+            renderizarTabelaPlanos(planosOriginais, 'beneficiarios');
+
+            // Event listeners para filtros
+            document.getElementById('filterPlanos').addEventListener('input', aplicarFiltrosPlanos);
+            document.getElementById('sortPlanos').addEventListener('change', aplicarFiltrosPlanos);
         }
 
-        function renderizarTabelaPlanos(planos) {
-            document.getElementById('tablePlanos').innerHTML = `<table><thead><tr><th>#</th><th>Plano</th><th>Beneficiários</th><th>%</th></tr></thead><tbody>${planos.map((p, i) => `<tr><td>${i + 1}</td><td><strong>${p.nome}</strong></td><td>${p.total.toLocaleString('pt-BR')}</td><td>${p.percentual}%</td></tr>`).join('')}</tbody></table>`;
+        function aplicarFiltrosPlanos() {
+            const filtroTexto = document.getElementById('filterPlanos').value.toLowerCase();
+            const ordenacao = document.getElementById('sortPlanos').value;
+
+            // Filtrar por texto
+            let planosFiltrados = planosOriginais.filter(p => 
+                p.nome.toLowerCase().includes(filtroTexto)
+            );
+
+            // Ordenar
+            renderizarTabelaPlanos(planosFiltrados, ordenacao);
+        }
+
+        function renderizarTabelaPlanos(planos, ordenacao) {
+            // Ordenar conforme seleção
+            let planosOrdenados = [...planos];
+            
+            switch(ordenacao) {
+                case 'beneficiarios':
+                    planosOrdenados.sort((a, b) => b.total - a.total);
+                    break;
+                case 'percentual':
+                    planosOrdenados.sort((a, b) => parseFloat(b.percentual) - parseFloat(a.percentual));
+                    break;
+                case 'nome-asc':
+                    planosOrdenados.sort((a, b) => a.nome.localeCompare(b.nome));
+                    break;
+                case 'nome-desc':
+                    planosOrdenados.sort((a, b) => b.nome.localeCompare(a.nome));
+                    break;
+            }
+
+            document.getElementById('tablePlanos').innerHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Plano</th>
+                            <th>Beneficiários</th>
+                            <th>%</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${planosOrdenados.map((p, i) => `
+                            <tr>
+                                <td>${i + 1}</td>
+                                <td><strong>${p.nome}</strong></td>
+                                <td>${p.total.toLocaleString('pt-BR')}</td>
+                                <td>${p.percentual}%</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
         }
 
         function renderizarZonas() {
-            if (!dados.zonas?.zonas) return;
+            if (!dados.zonas || !dados.zonas.zonas) return;
             const { zonas } = dados.zonas;
 
-            document.getElementById('zonas-grid').innerHTML = zonas.map(zona => `
-                <div class="zona-card">
-                    <div class="zona-card-header">
-                        <h3 class="zona-card-title">${zona.nome}</h3>
-                        <span class="zona-badge zona-${zona.nome.toLowerCase().replace(' ', '-')}">${zona.beneficiarios.toLocaleString('pt-BR')}</span>
+            document.getElementById('zonas-grid').innerHTML = zonas.map(zona => {
+                // ✅ FILTRAR "SEM PROGRAMA" dos top_programas
+                const topProgramasFiltrados = zona.top_programas
+                    ? zona.top_programas.filter(p => p.nome !== 'SEM PROGRAMA')
+                    : [];
+
+                return `
+                    <div class="zona-card">
+                        <div class="zona-card-header">
+                            <h3 class="zona-card-title">${zona.nome}</h3>
+                            <span class="zona-badge zona-${zona.nome.toLowerCase().replace(' ', '-')}">${zona.beneficiarios.toLocaleString('pt-BR')}</span>
+                        </div>
+                        <div class="zona-stats">
+                            <div class="zona-stat"><div class="zona-stat-label">Bairros</div><div class="zona-stat-value">${zona.bairros}</div></div>
+                            <div class="zona-stat"><div class="zona-stat-label">Idade Média</div><div class="zona-stat-value">${zona.idade_media_adultos} anos</div></div>
+                            <div class="zona-stat"><div class="zona-stat-label">Feminino</div><div class="zona-stat-value">${zona.pct_feminino}%</div></div>
+                            <div class="zona-stat"><div class="zona-stat-label">Masculino</div><div class="zona-stat-value">${zona.pct_masculino}%</div></div>
+                            <div class="zona-stat"><div class="zona-stat-label">Idosos 80+</div><div class="zona-stat-value">${zona.idosos_80plus.toLocaleString('pt-BR')}</div></div>
+                            <div class="zona-stat"><div class="zona-stat-label">Dist. Média</div><div class="zona-stat-value">${zona.distancia_media_km} km</div></div>
+                        </div>
+                        <div class="zona-section">
+                            <div class="zona-section-title">Distribuição Etária (8 faixas)</div>
+                            ${['18_a_49', '50_a_69', '70_a_74', '75_a_79', '80_a_89', '90_a_94', '95_a_99', '100_ou_mais'].map(f => {
+                                const label = f.replace('_', '-').replace('ou_mais', '+');
+                                return `<div class="faixa-etaria-item"><span class="faixa-etaria-label">${label} anos:</span><span class="faixa-etaria-value">${zona.faixas_etarias[f].total.toLocaleString('pt-BR')} (${zona.faixas_etarias[f].percentual}%)</span></div>`;
+                            }).join('')}
+                        </div>
+                        ${topProgramasFiltrados.length > 0 ? `
+                            <div class="zona-section">
+                                <div class="zona-section-title">Top ${topProgramasFiltrados.length} Programas</div>
+                                ${topProgramasFiltrados.map((p, i) => `
+                                    <div class="programa-item">
+                                        <span class="programa-nome">${i + 1}. ${p.nome}</span>
+                                        <span class="programa-total">${p.total.toLocaleString('pt-BR')}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        ` : ''}
                     </div>
-                    <div class="zona-stats">
-                        <div class="zona-stat"><div class="zona-stat-label">Bairros</div><div class="zona-stat-value">${zona.bairros}</div></div>
-                        <div class="zona-stat"><div class="zona-stat-label">Idade Média</div><div class="zona-stat-value">${zona.idade_media_adultos} anos</div></div>
-                        <div class="zona-stat"><div class="zona-stat-label">Feminino</div><div class="zona-stat-value">${zona.pct_feminino}%</div></div>
-                        <div class="zona-stat"><div class="zona-stat-label">Masculino</div><div class="zona-stat-value">${zona.pct_masculino}%</div></div>
-                        <div class="zona-stat"><div class="zona-stat-label">Idosos 80+</div><div class="zona-stat-value">${zona.idosos_80plus.toLocaleString('pt-BR')}</div></div>
-                        <div class="zona-stat"><div class="zona-stat-label">Dist. Média</div><div class="zona-stat-value">${zona.distancia_media_km} km</div></div>
-                    </div>
-                    <div class="zona-section">
-                        <div class="zona-section-title">Distribuição Etária (8 faixas)</div>
-                        ${['18_a_49', '50_a_69', '70_a_74', '75_a_79', '80_a_89', '90_a_94', '95_a_99', '100_ou_mais'].map(f => {
-                            const label = f.replace('_', '-').replace('ou_mais', '+');
-                            return `<div class="faixa-etaria-item"><span class="faixa-etaria-label">${label} anos:</span><span class="faixa-etaria-value">${zona.faixas_etarias[f].total.toLocaleString('pt-BR')} (${zona.faixas_etarias[f].percentual}%)</span></div>`;
-                        }).join('')}
-                    </div>
-                    <div class="zona-section">
-                        <div class="zona-section-title">Top 4 Programas</div>
-                        ${zona.top_programas.map((p, i) => `<div class="programa-item"><span class="programa-nome">${i + 1}. ${p.nome}</span><span class="programa-total">${p.total.toLocaleString('pt-BR')}</span></div>`).join('')}
-                    </div>
-                </div>
-            `).join('');
+                `;
+            }).join('');
         }
 
         function renderizarHospitais() {
-            if (!dados.hospitais?.hospitais) return;
+            if (!dados.hospitais || !dados.hospitais.hospitais) return;
             const { hospitais } = dados.hospitais;
             const maiorCobertura = hospitais[0];
 
@@ -1058,12 +1371,38 @@
                 <div class="kpi-card"><div class="kpi-label">Maior Cobertura</div><div class="kpi-value">${maiorCobertura.nome}</div><div class="kpi-subtitle">${maiorCobertura.bairros_cobertos} bairros</div></div>
             `;
 
-            document.getElementById('tableHospitais').innerHTML = `<table><thead><tr><th>#</th><th>Hospital</th><th>Zona</th><th>Bairros</th><th>Beneficiários</th><th>% Rede</th></tr></thead><tbody>${hospitais.map((h, i) => `<tr><td><strong>${i + 1}</strong></td><td><strong>${h.nome}</strong></td><td><span class="zona-badge zona-${h.zona.toLowerCase().replace(' ', '-')}">${h.zona}</span></td><td>${h.bairros_cobertos}</td><td><strong>${h.beneficiarios.toLocaleString('pt-BR')}</strong></td><td>${h.percentual_rede}%</td></tr>`).join('')}</tbody></table>`;
+            document.getElementById('tableHospitais').innerHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Hospital</th>
+                            <th>Zona</th>
+                            <th>Bairros</th>
+                            <th>Beneficiários</th>
+                            <th>% Rede</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${hospitais.map((h, i) => `
+                            <tr>
+                                <td><strong>${i + 1}</strong></td>
+                                <td><strong>${h.nome}</strong></td>
+                                <td><span class="zona-badge zona-${h.zona.toLowerCase().replace(' ', '-')}">${h.zona}</span></td>
+                                <td>${h.bairros_cobertos}</td>
+                                <td><strong>${h.beneficiarios.toLocaleString('pt-BR')}</strong></td>
+                                <td>${h.percentual_rede}%</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
         }
 
         function renderizarPerifericos() {
-            if (!dados.perifericos?.metadata) return;
+            if (!dados.perifericos || !dados.perifericos.metadata) return;
             const { metadata, todos_bairros } = dados.perifericos;
+            top50Original = [...todos_bairros]; // Guardar cópia original
 
             document.getElementById('perifericos-kpis').innerHTML = `
                 <div class="kpi-card"><div class="kpi-label">Total de Bairros</div><div class="kpi-value">${metadata.total_bairros}</div><div class="kpi-subtitle">mais distantes</div></div>
@@ -1072,24 +1411,77 @@
                 <div class="kpi-card"><div class="kpi-label">Tempo Médio</div><div class="kpi-value">${metadata.tempo_medio_min} min</div><div class="kpi-subtitle">deslocamento</div></div>
             `;
 
-            renderizarTabelaTop50(todos_bairros);
+            // Renderizar tabela inicial
+            renderizarTabelaTop50(top50Original, 'distancia');
 
-            document.getElementById('filterTop50').addEventListener('input', (e) => {
-                const filtrados = todos_bairros.filter(b => b.bairro.toLowerCase().includes(e.target.value.toLowerCase()));
-                renderizarTabelaTop50(filtrados);
-            });
-
-            document.getElementById('sortTop50').addEventListener('change', (e) => {
-                let ordenados = [...todos_bairros];
-                if (e.target.value === 'distancia') ordenados.sort((a, b) => b.distancia_km - a.distancia_km);
-                else if (e.target.value === 'beneficiarios') ordenados.sort((a, b) => b.beneficiarios - a.beneficiarios);
-                else ordenados.sort((a, b) => a.bairro.localeCompare(b.bairro));
-                renderizarTabelaTop50(ordenados);
-            });
+            // Event listeners para filtros
+            document.getElementById('filterTop50').addEventListener('input', aplicarFiltrosTop50);
+            document.getElementById('sortTop50').addEventListener('change', aplicarFiltrosTop50);
         }
 
-        function renderizarTabelaTop50(bairros) {
-            document.getElementById('tableTop50Distantes').innerHTML = `<table><thead><tr><th>#</th><th>Bairro</th><th>Cidade</th><th>Zona</th><th>Benef.</th><th>Hospital</th><th>Distância</th><th>Tempo</th></tr></thead><tbody>${bairros.map((b, i) => `<tr><td><strong>${i + 1}</strong></td><td>${b.bairro}</td><td>${b.cidade || 'São Paulo'}</td><td><span class="zona-badge zona-${b.zona.toLowerCase().replace(' ', '-')}">${b.zona}</span></td><td>${b.beneficiarios}</td><td>${b.hospital_mais_proximo}</td><td><strong>${b.distancia_km} km</strong></td><td>${b.tempo_formatado || b.tempo_min + ' min'}</td></tr>`).join('')}</tbody></table>`;
+        function aplicarFiltrosTop50() {
+            const filtroTexto = document.getElementById('filterTop50').value.toLowerCase();
+            const ordenacao = document.getElementById('sortTop50').value;
+
+            // Filtrar por texto
+            let bairrosFiltrados = top50Original.filter(b => 
+                b.bairro.toLowerCase().includes(filtroTexto) ||
+                (b.cidade && b.cidade.toLowerCase().includes(filtroTexto))
+            );
+
+            // Ordenar
+            renderizarTabelaTop50(bairrosFiltrados, ordenacao);
+        }
+
+        function renderizarTabelaTop50(bairros, ordenacao) {
+            // Ordenar conforme seleção
+            let bairrosOrdenados = [...bairros];
+            
+            switch(ordenacao) {
+                case 'distancia':
+                    bairrosOrdenados.sort((a, b) => b.distancia_km - a.distancia_km);
+                    break;
+                case 'beneficiarios':
+                    bairrosOrdenados.sort((a, b) => b.beneficiarios - a.beneficiarios);
+                    break;
+                case 'bairro-asc':
+                    bairrosOrdenados.sort((a, b) => a.bairro.localeCompare(b.bairro));
+                    break;
+                case 'bairro-desc':
+                    bairrosOrdenados.sort((a, b) => b.bairro.localeCompare(a.bairro));
+                    break;
+            }
+
+            document.getElementById('tableTop50Distantes').innerHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Bairro</th>
+                            <th>Cidade</th>
+                            <th>Zona</th>
+                            <th>Benef.</th>
+                            <th>Hospital</th>
+                            <th>Distância</th>
+                            <th>Tempo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${bairrosOrdenados.map((b, i) => `
+                            <tr>
+                                <td><strong>${i + 1}</strong></td>
+                                <td>${b.bairro}</td>
+                                <td>${b.cidade || 'São Paulo'}</td>
+                                <td><span class="zona-badge zona-${b.zona.toLowerCase().replace(' ', '-')}">${b.zona}</span></td>
+                                <td>${b.beneficiarios}</td>
+                                <td>${b.hospital_mais_proximo}</td>
+                                <td><strong>${b.distancia_km} km</strong></td>
+                                <td>${b.tempo_formatado || b.tempo_min + ' min'}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
         }
 
         window.addEventListener('DOMContentLoaded', carregarDados);
