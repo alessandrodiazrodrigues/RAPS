@@ -1,0 +1,8337 @@
+{
+  "metadata": {
+    "versao": "1.0",
+    "descricao": "Bairros únicos extraídos da planilha Google Sheets",
+    "data_extracao": "2025-11-06T10:53:22.974Z",
+    "total_bairros": 1383,
+    "total_beneficiarios": 412651,
+    "fonte": "Google Sheets",
+    "planilha_id": "1rjkLQLUArk6-neDrh9fmDuNAxUBWJ3eIkYM5R9h17wI"
+  },
+  "estatisticas": {
+    "Centro-Sul": {
+      "bairros": 349,
+      "beneficiarios": 111820
+    },
+    "Norte": {
+      "bairros": 228,
+      "beneficiarios": 58385
+    },
+    "Leste": {
+      "bairros": 325,
+      "beneficiarios": 99091
+    },
+    "Oeste": {
+      "bairros": 273,
+      "beneficiarios": 68921
+    },
+    "Centro": {
+      "bairros": 32,
+      "beneficiarios": 34133
+    },
+    "ABC": {
+      "bairros": 176,
+      "beneficiarios": 40301
+    }
+  },
+  "bairros": [
+    {
+      "bairro": "vila mariana",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 7166
+    },
+    {
+      "bairro": "santana",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 5225
+    },
+    {
+      "bairro": "mooca",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 5055
+    },
+    {
+      "bairro": "perdizes",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 4706
+    },
+    {
+      "bairro": "bela vista",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 4205
+    },
+    {
+      "bairro": "pinheiros",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 3883
+    },
+    {
+      "bairro": "tatuapé",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 3697
+    },
+    {
+      "bairro": "ipiranga",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3617
+    },
+    {
+      "bairro": "vila carrão",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 3333
+    },
+    {
+      "bairro": "vila gomes cardim",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 3332
+    },
+    {
+      "bairro": "indianópolis",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3238
+    },
+    {
+      "bairro": "jardim paulista",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 3215
+    },
+    {
+      "bairro": "santo amaro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2898
+    },
+    {
+      "bairro": "vila guarani (z sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2760
+    },
+    {
+      "bairro": "vila andrade",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 2665
+    },
+    {
+      "bairro": "rudge ramos",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 2661
+    },
+    {
+      "bairro": "saúde",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2639
+    },
+    {
+      "bairro": "cambuci",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 2590
+    },
+    {
+      "bairro": "aclimação",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 2491
+    },
+    {
+      "bairro": "brooklin paulista",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2379
+    },
+    {
+      "bairro": "vila formosa",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 2366
+    },
+    {
+      "bairro": "campo belo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2266
+    },
+    {
+      "bairro": "mirandópolis",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2179
+    },
+    {
+      "bairro": "planalto paulista",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2173
+    },
+    {
+      "bairro": "santa cecília",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 2158
+    },
+    {
+      "bairro": "paraíso",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1988
+    },
+    {
+      "bairro": "vila clementino",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1911
+    },
+    {
+      "bairro": "água fria",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1889
+    },
+    {
+      "bairro": "itaim bibi",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1850
+    },
+    {
+      "bairro": "vila suzana",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 1740
+    },
+    {
+      "bairro": "vila prudente",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 1739
+    },
+    {
+      "bairro": "belenzinho",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 1717
+    },
+    {
+      "bairro": "cerqueira césar",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1678
+    },
+    {
+      "bairro": "vila pompéia",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 1581
+    },
+    {
+      "bairro": "consolação",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1547
+    },
+    {
+      "bairro": "centro",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 1538
+    },
+    {
+      "bairro": "tucuruvi",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1525
+    },
+    {
+      "bairro": "bosque da saúde",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1499
+    },
+    {
+      "bairro": "vila ré",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 1497
+    },
+    {
+      "bairro": "chácara belenzinho",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 1458
+    },
+    {
+      "bairro": "vila gumercindo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1444
+    },
+    {
+      "bairro": "vila regente feijó",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 1413
+    },
+    {
+      "bairro": "liberdade",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1398
+    },
+    {
+      "bairro": "jaguaré",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 1398
+    },
+    {
+      "bairro": "vila guilherme",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1372
+    },
+    {
+      "bairro": "vila maria alta",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1371
+    },
+    {
+      "bairro": "vila romana",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 1368
+    },
+    {
+      "bairro": "santa teresinha",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1367
+    },
+    {
+      "bairro": "vila bertioga",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 1342
+    },
+    {
+      "bairro": "vila medeiros",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1339
+    },
+    {
+      "bairro": "vila paulista",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1335
+    },
+    {
+      "bairro": "vila romero",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1326
+    },
+    {
+      "bairro": "vila olímpia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1311
+    },
+    {
+      "bairro": "americanópolis",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1308
+    },
+    {
+      "bairro": "alto da mooca",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 1305
+    },
+    {
+      "bairro": "barra funda",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1300
+    },
+    {
+      "bairro": "lauzane paulista",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1294
+    },
+    {
+      "bairro": "água branca",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 1289
+    },
+    {
+      "bairro": "vila da saúde",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1281
+    },
+    {
+      "bairro": "chácara inglesa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1278
+    },
+    {
+      "bairro": "vila buarque",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1272
+    },
+    {
+      "bairro": "parque mandaqui",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 1255
+    },
+    {
+      "bairro": "penha de frança",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 1245
+    },
+    {
+      "bairro": "jardim são paulo(zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1243
+    },
+    {
+      "bairro": "vila hamburguesa",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 1221
+    },
+    {
+      "bairro": "centro",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 1220
+    },
+    {
+      "bairro": "vila santa catarina",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1216
+    },
+    {
+      "bairro": "vila monumento",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1209
+    },
+    {
+      "bairro": "vila madalena",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 1191
+    },
+    {
+      "bairro": "brás",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1188
+    },
+    {
+      "bairro": "vila carmosina",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 1162
+    },
+    {
+      "bairro": "cidade monções",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1160
+    },
+    {
+      "bairro": "centro",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 1152
+    },
+    {
+      "bairro": "vila matilde",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 1150
+    },
+    {
+      "bairro": "bom retiro",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1130
+    },
+    {
+      "bairro": "sumaré",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1123
+    },
+    {
+      "bairro": "chácara califórnia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 1122
+    },
+    {
+      "bairro": "vila nova conceição",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1091
+    },
+    {
+      "bairro": "conjunto residencial josé bonifácio",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 1090
+    },
+    {
+      "bairro": "osvaldo cruz",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 1078
+    },
+    {
+      "bairro": "vila gustavo",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1076
+    },
+    {
+      "bairro": "lapa",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 1067
+    },
+    {
+      "bairro": "vila constança",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1062
+    },
+    {
+      "bairro": "chácara santo antônio (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1057
+    },
+    {
+      "bairro": "socorro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1049
+    },
+    {
+      "bairro": "vila ema",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 1044
+    },
+    {
+      "bairro": "vila progredior",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 1034
+    },
+    {
+      "bairro": "higienópolis",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1032
+    },
+    {
+      "bairro": "vila parque jabaquara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1031
+    },
+    {
+      "bairro": "vila monte alegre",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1023
+    },
+    {
+      "bairro": "casa verde",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1023
+    },
+    {
+      "bairro": "vila ipojuca",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 1006
+    },
+    {
+      "bairro": "vila mazzei",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1000
+    },
+    {
+      "bairro": "cidade líder",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 994
+    },
+    {
+      "bairro": "jardim brasil (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 989
+    },
+    {
+      "bairro": "jardim monte kemel",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 989
+    },
+    {
+      "bairro": "cidade patriarca",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 987
+    },
+    {
+      "bairro": "jardim vila formosa",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 969
+    },
+    {
+      "bairro": "vila esperança",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 961
+    },
+    {
+      "bairro": "parque da mooca",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 955
+    },
+    {
+      "bairro": "vila antonieta",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 953
+    },
+    {
+      "bairro": "imirim",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 953
+    },
+    {
+      "bairro": "campestre",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 950
+    },
+    {
+      "bairro": "vila sofia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 925
+    },
+    {
+      "bairro": "vila moraes",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 922
+    },
+    {
+      "bairro": "vila guiomar",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 919
+    },
+    {
+      "bairro": "parque são domingos",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 914
+    },
+    {
+      "bairro": "vila isolina mazzei",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 911
+    },
+    {
+      "bairro": "campos elíseos",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 909
+    },
+    {
+      "bairro": "alto de pinheiros",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 904
+    },
+    {
+      "bairro": "jardim bonfiglioli",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 887
+    },
+    {
+      "bairro": "santa maria",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 877
+    },
+    {
+      "bairro": "interlagos",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 876
+    },
+    {
+      "bairro": "jardim anália franco",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 864
+    },
+    {
+      "bairro": "jardim esmeralda",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 864
+    },
+    {
+      "bairro": "vila nova cachoeirinha",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 861
+    },
+    {
+      "bairro": "vila santana",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 858
+    },
+    {
+      "bairro": "vila dom pedro i",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 857
+    },
+    {
+      "bairro": "vila leopoldina",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 846
+    },
+    {
+      "bairro": "baeta neves",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 839
+    },
+    {
+      "bairro": "vila firmiano pinto",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 832
+    },
+    {
+      "bairro": "jardim felicidade (zona oeste)",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 832
+    },
+    {
+      "bairro": "taboão",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 810
+    },
+    {
+      "bairro": "parada inglesa",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 808
+    },
+    {
+      "bairro": "vila dom pedro ii",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 794
+    },
+    {
+      "bairro": "jardim prudência",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 792
+    },
+    {
+      "bairro": "parque imperial",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 787
+    },
+    {
+      "bairro": "parque peruche",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 787
+    },
+    {
+      "bairro": "vila sônia",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 786
+    },
+    {
+      "bairro": "santa paula",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 785
+    },
+    {
+      "bairro": "jardim da glória",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 775
+    },
+    {
+      "bairro": "santa terezinha",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 768
+    },
+    {
+      "bairro": "vila príncipe de gales",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 768
+    },
+    {
+      "bairro": "vila moinho velho",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 766
+    },
+    {
+      "bairro": "jardim taquaral",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 758
+    },
+    {
+      "bairro": "chácara santo antônio (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 750
+    },
+    {
+      "bairro": "vila primavera",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 743
+    },
+    {
+      "bairro": "jardim japão",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 738
+    },
+    {
+      "bairro": "santo antônio",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 730
+    },
+    {
+      "bairro": "tremembé",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 727
+    },
+    {
+      "bairro": "parque boturussu",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 726
+    },
+    {
+      "bairro": "vila marari",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 719
+    },
+    {
+      "bairro": "paulicéia",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 716
+    },
+    {
+      "bairro": "nova petrópolis",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 716
+    },
+    {
+      "bairro": "jardim das laranjeiras",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 715
+    },
+    {
+      "bairro": "sumarezinho",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 713
+    },
+    {
+      "bairro": "são josé",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 713
+    },
+    {
+      "bairro": "vila nova mazzei",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 707
+    },
+    {
+      "bairro": "parque são jorge",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 693
+    },
+    {
+      "bairro": "jardim carlu",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 685
+    },
+    {
+      "bairro": "são joão clímaco",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 672
+    },
+    {
+      "bairro": "vila alpina",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 671
+    },
+    {
+      "bairro": "parque novo mundo",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 669
+    },
+    {
+      "bairro": "assunção",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 669
+    },
+    {
+      "bairro": "jardim das vertentes",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 668
+    },
+    {
+      "bairro": "vila uberabinha",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 663
+    },
+    {
+      "bairro": "paraíso",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 659
+    },
+    {
+      "bairro": "limão",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 650
+    },
+    {
+      "bairro": "cidade antônio estevão de carvalho",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 646
+    },
+    {
+      "bairro": "jardim londrina",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 645
+    },
+    {
+      "bairro": "vila santa clara",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 643
+    },
+    {
+      "bairro": "vila cruzeiro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 642
+    },
+    {
+      "bairro": "vila campestre",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 640
+    },
+    {
+      "bairro": "jardim",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 636
+    },
+    {
+      "bairro": "jardim vila mariana",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 632
+    },
+    {
+      "bairro": "jardim são luís",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 630
+    },
+    {
+      "bairro": "vila maria baixa",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 619
+    },
+    {
+      "bairro": "vila albertina",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 619
+    },
+    {
+      "bairro": "parque jabaquara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 609
+    },
+    {
+      "bairro": "carandiru",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 609
+    },
+    {
+      "bairro": "vila alzira",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 609
+    },
+    {
+      "bairro": "boa vista",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 602
+    },
+    {
+      "bairro": "centro",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 592
+    },
+    {
+      "bairro": "vila anglo brasileira",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 592
+    },
+    {
+      "bairro": "cidade são mateus",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 586
+    },
+    {
+      "bairro": "jardim celeste",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 580
+    },
+    {
+      "bairro": "vila cordeiro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 577
+    },
+    {
+      "bairro": "parque paulistano",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 569
+    },
+    {
+      "bairro": "real parque",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 568
+    },
+    {
+      "bairro": "vila santo estéfano",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 565
+    },
+    {
+      "bairro": "jardim peri",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 564
+    },
+    {
+      "bairro": "vila siqueira (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 559
+    },
+    {
+      "bairro": "jardim ester",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 559
+    },
+    {
+      "bairro": "vila nhocune",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 553
+    },
+    {
+      "bairro": "paraisópolis",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 552
+    },
+    {
+      "bairro": "vila das belezas",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 550
+    },
+    {
+      "bairro": "conceição",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 549
+    },
+    {
+      "bairro": "cidade mãe do céu",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 547
+    },
+    {
+      "bairro": "vila curuçá",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 545
+    },
+    {
+      "bairro": "vila alto de santo andré",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 544
+    },
+    {
+      "bairro": "vila bastos",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 543
+    },
+    {
+      "bairro": "vila são paulo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 535
+    },
+    {
+      "bairro": "vila sabrina",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 532
+    },
+    {
+      "bairro": "cidade satélite santa bárbara",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 525
+    },
+    {
+      "bairro": "jabaquara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 524
+    },
+    {
+      "bairro": "jardim aeroporto",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 524
+    },
+    {
+      "bairro": "demarchi",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 522
+    },
+    {
+      "bairro": "jardim independência",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 521
+    },
+    {
+      "bairro": "vila bela",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 519
+    },
+    {
+      "bairro": "anchieta",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 519
+    },
+    {
+      "bairro": "vila paiva",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 518
+    },
+    {
+      "bairro": "vila mascote",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 517
+    },
+    {
+      "bairro": "jardim ampliação",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 517
+    },
+    {
+      "bairro": "jardim da saúde",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 514
+    },
+    {
+      "bairro": "jardim do mar",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 513
+    },
+    {
+      "bairro": "vila campo grande",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 511
+    },
+    {
+      "bairro": "cidade são francisco",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 511
+    },
+    {
+      "bairro": "vila do encontro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 510
+    },
+    {
+      "bairro": "vila granada",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 500
+    },
+    {
+      "bairro": "cidade dutra",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 498
+    },
+    {
+      "bairro": "vila união (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 495
+    },
+    {
+      "bairro": "jardim oriental",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 493
+    },
+    {
+      "bairro": "jardim umuarama",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 489
+    },
+    {
+      "bairro": "vila buenos aires",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 483
+    },
+    {
+      "bairro": "jurubatuba",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 482
+    },
+    {
+      "bairro": "conjunto habitacional padre manoel da nóbrega",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 480
+    },
+    {
+      "bairro": "jardim nossa senhora do carmo",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 479
+    },
+    {
+      "bairro": "vila palmeiras",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 474
+    },
+    {
+      "bairro": "jardim das acácias",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 471
+    },
+    {
+      "bairro": "jaçanã",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 471
+    },
+    {
+      "bairro": "vila ester (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 471
+    },
+    {
+      "bairro": "planalto",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 471
+    },
+    {
+      "bairro": "vila são francisco",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 469
+    },
+    {
+      "bairro": "chácara mafalda",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 467
+    },
+    {
+      "bairro": "vila são geraldo",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 464
+    },
+    {
+      "bairro": "vila irmãos arnoni",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 463
+    },
+    {
+      "bairro": "parque dos pássaros",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 462
+    },
+    {
+      "bairro": "mauá",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 462
+    },
+    {
+      "bairro": "alves dias",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 461
+    },
+    {
+      "bairro": "vila pires",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 455
+    },
+    {
+      "bairro": "jardim piracuama",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 453
+    },
+    {
+      "bairro": "vila brasilina",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 449
+    },
+    {
+      "bairro": "jardim miriam",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 448
+    },
+    {
+      "bairro": "ferrazópolis",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 441
+    },
+    {
+      "bairro": "jardim adelaide",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 439
+    },
+    {
+      "bairro": "parque edu chaves",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 437
+    },
+    {
+      "bairro": "vila ede",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 435
+    },
+    {
+      "bairro": "vila paulicéia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 434
+    },
+    {
+      "bairro": "vila aricanduva",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 432
+    },
+    {
+      "bairro": "jardim olympia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 429
+    },
+    {
+      "bairro": "jardim caboré",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 429
+    },
+    {
+      "bairro": "conjunto residencial butantã",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 429
+    },
+    {
+      "bairro": "vila vermelha",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 428
+    },
+    {
+      "bairro": "cidade tiradentes",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 427
+    },
+    {
+      "bairro": "jardim cristiane",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 423
+    },
+    {
+      "bairro": "super quadra morumbi",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 422
+    },
+    {
+      "bairro": "vila perus",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 418
+    },
+    {
+      "bairro": "jardim ana maria",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 418
+    },
+    {
+      "bairro": "chácara seis de outubro",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 417
+    },
+    {
+      "bairro": "casa verde alta",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 417
+    },
+    {
+      "bairro": "jordanópolis",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 415
+    },
+    {
+      "bairro": "parque da vila prudente",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 413
+    },
+    {
+      "bairro": "vila do castelo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 412
+    },
+    {
+      "bairro": "bela aliança",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 412
+    },
+    {
+      "bairro": "vila alexandria",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 409
+    },
+    {
+      "bairro": "vila brasílio machado",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 409
+    },
+    {
+      "bairro": "nossa senhora do ó",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 408
+    },
+    {
+      "bairro": "prosperidade",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 404
+    },
+    {
+      "bairro": "freguesia do ó",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 401
+    },
+    {
+      "bairro": "butantã",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 401
+    },
+    {
+      "bairro": "vila indiana",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 401
+    },
+    {
+      "bairro": "jardim brasil (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 399
+    },
+    {
+      "bairro": "jardim leonor mendes de barros",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 398
+    },
+    {
+      "bairro": "sacomã",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 397
+    },
+    {
+      "bairro": "vila marieta",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 397
+    },
+    {
+      "bairro": "jardim maria estela",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 396
+    },
+    {
+      "bairro": "jardim são savério",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 395
+    },
+    {
+      "bairro": "parque grajaú",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 390
+    },
+    {
+      "bairro": "jardim consórcio",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 390
+    },
+    {
+      "bairro": "quinta da paineira",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 390
+    },
+    {
+      "bairro": "santa terezinha",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 390
+    },
+    {
+      "bairro": "vila scarpelli",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 388
+    },
+    {
+      "bairro": "vila guilhermina",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 385
+    },
+    {
+      "bairro": "jardim avelino",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 385
+    },
+    {
+      "bairro": "jardim leonor",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 385
+    },
+    {
+      "bairro": "parque císper",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 384
+    },
+    {
+      "bairro": "vila zelina",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 384
+    },
+    {
+      "bairro": "vila celeste",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 384
+    },
+    {
+      "bairro": "parque casa de pedra",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 382
+    },
+    {
+      "bairro": "jardim colombo",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 380
+    },
+    {
+      "bairro": "alto da lapa",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 379
+    },
+    {
+      "bairro": "parque colonial",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 378
+    },
+    {
+      "bairro": "vila santo estevão",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 377
+    },
+    {
+      "bairro": "jardim cidália",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 372
+    },
+    {
+      "bairro": "jardim aricanduva",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 372
+    },
+    {
+      "bairro": "vila taquari",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 372
+    },
+    {
+      "bairro": "jardim santa maria",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 371
+    },
+    {
+      "bairro": "vila congonhas",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 369
+    },
+    {
+      "bairro": "vila corberi",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 369
+    },
+    {
+      "bairro": "vila invernada",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 365
+    },
+    {
+      "bairro": "itaim paulista",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 364
+    },
+    {
+      "bairro": "sé",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 358
+    },
+    {
+      "bairro": "utinga",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 358
+    },
+    {
+      "bairro": "jardim santo antônio",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 357
+    },
+    {
+      "bairro": "parque américa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 355
+    },
+    {
+      "bairro": "jardim penha",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 355
+    },
+    {
+      "bairro": "jardim franca",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 355
+    },
+    {
+      "bairro": "jardim dracena",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 355
+    },
+    {
+      "bairro": "barcelona",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 354
+    },
+    {
+      "bairro": "instituto de previdência",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 352
+    },
+    {
+      "bairro": "parque continental",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 352
+    },
+    {
+      "bairro": "parque savoy city",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 351
+    },
+    {
+      "bairro": "parque são luís",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 351
+    },
+    {
+      "bairro": "vila nova alba",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 351
+    },
+    {
+      "bairro": "barro branco (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 350
+    },
+    {
+      "bairro": "caxingui",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 350
+    },
+    {
+      "bairro": "jardim santa terezinha (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 349
+    },
+    {
+      "bairro": "vila paranaguá",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 347
+    },
+    {
+      "bairro": "campo grande",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 342
+    },
+    {
+      "bairro": "vila lúcia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 342
+    },
+    {
+      "bairro": "vila pirajussara",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 342
+    },
+    {
+      "bairro": "campanário",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 342
+    },
+    {
+      "bairro": "vila rio branco",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 339
+    },
+    {
+      "bairro": "vila lageado",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 339
+    },
+    {
+      "bairro": "bangú",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 339
+    },
+    {
+      "bairro": "vila santa maria",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 338
+    },
+    {
+      "bairro": "jardim santa francisca cabrini",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 337
+    },
+    {
+      "bairro": "parque jaçatuba",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 336
+    },
+    {
+      "bairro": "cidade vargas",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 334
+    },
+    {
+      "bairro": "jardim santa cruz (sacomã)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 333
+    },
+    {
+      "bairro": "vila talarico",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 330
+    },
+    {
+      "bairro": "parque são lucas",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 325
+    },
+    {
+      "bairro": "itaquera",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 325
+    },
+    {
+      "bairro": "vila anastácio",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 325
+    },
+    {
+      "bairro": "maranhão",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 323
+    },
+    {
+      "bairro": "vila morse",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 321
+    },
+    {
+      "bairro": "jardim peri peri",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 321
+    },
+    {
+      "bairro": "vila vera",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 320
+    },
+    {
+      "bairro": "parque independência",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 320
+    },
+    {
+      "bairro": "vila sílvia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 317
+    },
+    {
+      "bairro": "parque regina",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 314
+    },
+    {
+      "bairro": "parque vitória",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 313
+    },
+    {
+      "bairro": "jardim guanhembu",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 312
+    },
+    {
+      "bairro": "jardim rina",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 312
+    },
+    {
+      "bairro": "jardim norma",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 310
+    },
+    {
+      "bairro": "quarta parada",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 310
+    },
+    {
+      "bairro": "catumbi",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 309
+    },
+    {
+      "bairro": "água rasa",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 308
+    },
+    {
+      "bairro": "vila pereira barreto",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 308
+    },
+    {
+      "bairro": "jardim são joão (guaianazes)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 307
+    },
+    {
+      "bairro": "jardim europa",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 305
+    },
+    {
+      "bairro": "república",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 304
+    },
+    {
+      "bairro": "vila são francisco (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 304
+    },
+    {
+      "bairro": "são miguel paulista",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 303
+    },
+    {
+      "bairro": "vila gomes",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 303
+    },
+    {
+      "bairro": "jardim regina",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 302
+    },
+    {
+      "bairro": "sítio pinheirinho",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 302
+    },
+    {
+      "bairro": "vila fachini",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 301
+    },
+    {
+      "bairro": "jardim bélgica",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 301
+    },
+    {
+      "bairro": "parada xv de novembro",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 301
+    },
+    {
+      "bairro": "parque munhoz",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 301
+    },
+    {
+      "bairro": "engenheiro goulart",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 299
+    },
+    {
+      "bairro": "jardim mangalot",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 296
+    },
+    {
+      "bairro": "jardim cambara",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 295
+    },
+    {
+      "bairro": "jardim guarapiranga",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 294
+    },
+    {
+      "bairro": "parque fernanda",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 294
+    },
+    {
+      "bairro": "vila universitária",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 294
+    },
+    {
+      "bairro": "conjunto habitacional padre josé de anchieta",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 291
+    },
+    {
+      "bairro": "jardim catanduva",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 291
+    },
+    {
+      "bairro": "vila curuçá",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 291
+    },
+    {
+      "bairro": "silveira",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 291
+    },
+    {
+      "bairro": "piqueri",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 289
+    },
+    {
+      "bairro": "jardim santa emília",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 288
+    },
+    {
+      "bairro": "vila laís",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 288
+    },
+    {
+      "bairro": "guaianazes",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 288
+    },
+    {
+      "bairro": "vila isa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 287
+    },
+    {
+      "bairro": "jardim nordeste",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 287
+    },
+    {
+      "bairro": "vila jaguara",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 285
+    },
+    {
+      "bairro": "jardim morumbi",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 285
+    },
+    {
+      "bairro": "jardim paulistano",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 283
+    },
+    {
+      "bairro": "são judas",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 282
+    },
+    {
+      "bairro": "vila nova manchester",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 282
+    },
+    {
+      "bairro": "jardim paraíso",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 282
+    },
+    {
+      "bairro": "vila califórnia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 281
+    },
+    {
+      "bairro": "jardim américa da penha",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 280
+    },
+    {
+      "bairro": "vila baruel",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 279
+    },
+    {
+      "bairro": "jardim coimbra",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 277
+    },
+    {
+      "bairro": "vila euro",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 277
+    },
+    {
+      "bairro": "vila nova savoia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 276
+    },
+    {
+      "bairro": "jardim modelo",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 276
+    },
+    {
+      "bairro": "jardim cidade pirituba",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 275
+    },
+    {
+      "bairro": "jardim patente",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 274
+    },
+    {
+      "bairro": "parque das paineiras",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 274
+    },
+    {
+      "bairro": "jardim germânia",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 274
+    },
+    {
+      "bairro": "eldorado",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 274
+    },
+    {
+      "bairro": "jardim santo antônio",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 274
+    },
+    {
+      "bairro": "jardim marajoara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 273
+    },
+    {
+      "bairro": "jardim rodolfo pirani",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 273
+    },
+    {
+      "bairro": "vila cláudia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 273
+    },
+    {
+      "bairro": "jardim popular",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 272
+    },
+    {
+      "bairro": "jardim ester yolanda",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 271
+    },
+    {
+      "bairro": "parque ipê",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 270
+    },
+    {
+      "bairro": "jardim caravelas",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 269
+    },
+    {
+      "bairro": "jardim tietê",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 269
+    },
+    {
+      "bairro": "jardim dos bichinhos",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 268
+    },
+    {
+      "bairro": "jardim virginia bianca",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 268
+    },
+    {
+      "bairro": "taboão",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 268
+    },
+    {
+      "bairro": "vila azevedo",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 267
+    },
+    {
+      "bairro": "granja julieta",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 266
+    },
+    {
+      "bairro": "vila amélia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 266
+    },
+    {
+      "bairro": "jardim das imbuias",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 263
+    },
+    {
+      "bairro": "vila nair",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 262
+    },
+    {
+      "bairro": "vila nivi",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 261
+    },
+    {
+      "bairro": "lapa de baixo",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 261
+    },
+    {
+      "bairro": "chora menino",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 260
+    },
+    {
+      "bairro": "lar são paulo",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 260
+    },
+    {
+      "bairro": "vila humaitá",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 260
+    },
+    {
+      "bairro": "vila são josé (ipiranga)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 259
+    },
+    {
+      "bairro": "city américa",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 259
+    },
+    {
+      "bairro": "jardim umarizal",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 258
+    },
+    {
+      "bairro": "veleiros",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 257
+    },
+    {
+      "bairro": "jardim santa mônica",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 257
+    },
+    {
+      "bairro": "jardim maringá",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 256
+    },
+    {
+      "bairro": "burgo paulista",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 256
+    },
+    {
+      "bairro": "parque maria helena",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 256
+    },
+    {
+      "bairro": "parque residencial cocaia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 255
+    },
+    {
+      "bairro": "rio bonito",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 255
+    },
+    {
+      "bairro": "vila pierina",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 254
+    },
+    {
+      "bairro": "vila zilda (tatuapé)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 253
+    },
+    {
+      "bairro": "jardim taboão",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 248
+    },
+    {
+      "bairro": "cidade domitila",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 247
+    },
+    {
+      "bairro": "parque residencial da lapa",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 246
+    },
+    {
+      "bairro": "vila nova das belezas",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 246
+    },
+    {
+      "bairro": "vila inah",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 246
+    },
+    {
+      "bairro": "jardim ernestina",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 245
+    },
+    {
+      "bairro": "umarizal",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 245
+    },
+    {
+      "bairro": "jardim textil",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 244
+    },
+    {
+      "bairro": "vila tolstoi",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 244
+    },
+    {
+      "bairro": "parque residencial dos lagos",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 242
+    },
+    {
+      "bairro": "campininha",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 242
+    },
+    {
+      "bairro": "vila jacuí",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 242
+    },
+    {
+      "bairro": "vila são pedro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 241
+    },
+    {
+      "bairro": "jardim brasília (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 241
+    },
+    {
+      "bairro": "vila salete",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 241
+    },
+    {
+      "bairro": "vila pirituba",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 241
+    },
+    {
+      "bairro": "ferreira",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 241
+    },
+    {
+      "bairro": "jardim pedro josé nunes",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 240
+    },
+    {
+      "bairro": "parque santo antônio",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 240
+    },
+    {
+      "bairro": "parque dos príncipes",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 240
+    },
+    {
+      "bairro": "vila centenário",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 239
+    },
+    {
+      "bairro": "jardim nazareth",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 239
+    },
+    {
+      "bairro": "jardim rosa maria",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 239
+    },
+    {
+      "bairro": "jardim trussardi",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 236
+    },
+    {
+      "bairro": "jardim lallo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 235
+    },
+    {
+      "bairro": "vila rosaria",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 235
+    },
+    {
+      "bairro": "vila bandeirantes",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 235
+    },
+    {
+      "bairro": "chácara santana",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 229
+    },
+    {
+      "bairro": "jardim fernandes",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 227
+    },
+    {
+      "bairro": "vila rica",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 227
+    },
+    {
+      "bairro": "vila zat",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 226
+    },
+    {
+      "bairro": "vila vitória",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 226
+    },
+    {
+      "bairro": "jardim sapopemba",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 225
+    },
+    {
+      "bairro": "parque maria domitila",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 225
+    },
+    {
+      "bairro": "parque são vicente",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 225
+    },
+    {
+      "bairro": "jardim santo amaro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 224
+    },
+    {
+      "bairro": "vila eldízia",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 224
+    },
+    {
+      "bairro": "vila inglesa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 222
+    },
+    {
+      "bairro": "jardim pinheiros",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 222
+    },
+    {
+      "bairro": "cerâmica",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 222
+    },
+    {
+      "bairro": "jardim das camélias",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 221
+    },
+    {
+      "bairro": "vila verde",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 221
+    },
+    {
+      "bairro": "jardim piratininga",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 221
+    },
+    {
+      "bairro": "vila iório",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 221
+    },
+    {
+      "bairro": "vila adalgisa",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 221
+    },
+    {
+      "bairro": "vila palmares",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 221
+    },
+    {
+      "bairro": "jardim nove de julho",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 220
+    },
+    {
+      "bairro": "vila deodoro",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 219
+    },
+    {
+      "bairro": "sítio morro grande",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 219
+    },
+    {
+      "bairro": "vila guedes",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 219
+    },
+    {
+      "bairro": "jardim maristela",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 217
+    },
+    {
+      "bairro": "jardim tupã",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 215
+    },
+    {
+      "bairro": "pirajussara",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 215
+    },
+    {
+      "bairro": "jardim suzana",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 213
+    },
+    {
+      "bairro": "vila moreira",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 213
+    },
+    {
+      "bairro": "vila vitório mazzei",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 213
+    },
+    {
+      "bairro": "jardim marília",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 211
+    },
+    {
+      "bairro": "cidade são jorge",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 210
+    },
+    {
+      "bairro": "itaberaba",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 209
+    },
+    {
+      "bairro": "vila império",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 205
+    },
+    {
+      "bairro": "jardim etelvina",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 205
+    },
+    {
+      "bairro": "limoeiro",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 204
+    },
+    {
+      "bairro": "jardim são roberto",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 204
+    },
+    {
+      "bairro": "jardim imperador (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 202
+    },
+    {
+      "bairro": "vila água funda",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 200
+    },
+    {
+      "bairro": "moinho velho",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 200
+    },
+    {
+      "bairro": "jardim do colégio (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 200
+    },
+    {
+      "bairro": "jardim santo elias",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 200
+    },
+    {
+      "bairro": "jardim campo grande",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 199
+    },
+    {
+      "bairro": "vila basileia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 199
+    },
+    {
+      "bairro": "vila araguaia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 197
+    },
+    {
+      "bairro": "vila são francisco (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 197
+    },
+    {
+      "bairro": "jardim arpoador",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 197
+    },
+    {
+      "bairro": "parque são rafael",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 196
+    },
+    {
+      "bairro": "jardim sônia (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 195
+    },
+    {
+      "bairro": "vila canero",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 195
+    },
+    {
+      "bairro": "casa verde média",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 195
+    },
+    {
+      "bairro": "pacaembu",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 194
+    },
+    {
+      "bairro": "vila anhangüera",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 193
+    },
+    {
+      "bairro": "fazenda da juta",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 193
+    },
+    {
+      "bairro": "vila morumbi",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 193
+    },
+    {
+      "bairro": "usina piratininga",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 192
+    },
+    {
+      "bairro": "parque residencial oratorio",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 192
+    },
+    {
+      "bairro": "vila norma",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 191
+    },
+    {
+      "bairro": "jardim das maravilhas",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 191
+    },
+    {
+      "bairro": "vila santa virginia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 190
+    },
+    {
+      "bairro": "jardim líbano",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 190
+    },
+    {
+      "bairro": "boaçava",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 190
+    },
+    {
+      "bairro": "morro dos ingleses",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 189
+    },
+    {
+      "bairro": "jardim jabaquara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 189
+    },
+    {
+      "bairro": "vila amália (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 189
+    },
+    {
+      "bairro": "jardim centenário",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 189
+    },
+    {
+      "bairro": "jardim aurélia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 188
+    },
+    {
+      "bairro": "jardim guanabara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 188
+    },
+    {
+      "bairro": "jardim maria luiza",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 187
+    },
+    {
+      "bairro": "vila cruz das almas",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 187
+    },
+    {
+      "bairro": "fundação",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 186
+    },
+    {
+      "bairro": "vila arriete",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 185
+    },
+    {
+      "bairro": "vila silva teles",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 185
+    },
+    {
+      "bairro": "vila roque",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 185
+    },
+    {
+      "bairro": "jardim satélite",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 184
+    },
+    {
+      "bairro": "chácara cruzeiro do sul",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 184
+    },
+    {
+      "bairro": "centro",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 183
+    },
+    {
+      "bairro": "jardim petrópolis",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 182
+    },
+    {
+      "bairro": "jardim ocara",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 182
+    },
+    {
+      "bairro": "vila das mercês",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 181
+    },
+    {
+      "bairro": "jardim planalto",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 180
+    },
+    {
+      "bairro": "jardim jaú (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 180
+    },
+    {
+      "bairro": "sítio do mandaqui",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 180
+    },
+    {
+      "bairro": "vila carolina",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 180
+    },
+    {
+      "bairro": "vila penteado",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 180
+    },
+    {
+      "bairro": "jardim são bento novo",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 180
+    },
+    {
+      "bairro": "alvarenga",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 180
+    },
+    {
+      "bairro": "jardim sabará",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 179
+    },
+    {
+      "bairro": "jardim itália",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 179
+    },
+    {
+      "bairro": "vila graciosa",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 179
+    },
+    {
+      "bairro": "parque ramos freitas",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 179
+    },
+    {
+      "bairro": "chácara monte alegre",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 178
+    },
+    {
+      "bairro": "vila princesa isabel",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 178
+    },
+    {
+      "bairro": "parque cruzeiro do sul",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 178
+    },
+    {
+      "bairro": "vila carbone",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 178
+    },
+    {
+      "bairro": "vila nogueira",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 178
+    },
+    {
+      "bairro": "jardim santa margarida",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 177
+    },
+    {
+      "bairro": "cidade nova heliópolis",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 176
+    },
+    {
+      "bairro": "jardim rubilene",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 175
+    },
+    {
+      "bairro": "vila dionisia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 175
+    },
+    {
+      "bairro": "jardim primavera (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 175
+    },
+    {
+      "bairro": "jardim imperador (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 174
+    },
+    {
+      "bairro": "jardim santa cruz (campo grande)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 173
+    },
+    {
+      "bairro": "vila antonina",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 173
+    },
+    {
+      "bairro": "jardim dom bosco",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 172
+    },
+    {
+      "bairro": "moema",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 172
+    },
+    {
+      "bairro": "jardim rizzo",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 172
+    },
+    {
+      "bairro": "vila missionária",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 171
+    },
+    {
+      "bairro": "vila santo antônio",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 171
+    },
+    {
+      "bairro": "jardim alzira",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 171
+    },
+    {
+      "bairro": "vila santa terezinha (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 171
+    },
+    {
+      "bairro": "luz",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 170
+    },
+    {
+      "bairro": "pedreira",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 170
+    },
+    {
+      "bairro": "parque alves de lima",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 170
+    },
+    {
+      "bairro": "cidade são miguel",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 170
+    },
+    {
+      "bairro": "jardim previdência",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 169
+    },
+    {
+      "bairro": "vila beatriz",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 169
+    },
+    {
+      "bairro": "jardim mabel",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 168
+    },
+    {
+      "bairro": "parque guaianazes",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 168
+    },
+    {
+      "bairro": "parque maria luiza",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 168
+    },
+    {
+      "bairro": "vila são vicente",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 168
+    },
+    {
+      "bairro": "jardim alpino",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 167
+    },
+    {
+      "bairro": "jaraguá",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 167
+    },
+    {
+      "bairro": "jardim soraia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 166
+    },
+    {
+      "bairro": "jardim maracá",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 166
+    },
+    {
+      "bairro": "jardim casablanca",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 166
+    },
+    {
+      "bairro": "vila mafra",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 165
+    },
+    {
+      "bairro": "vila industrial",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 165
+    },
+    {
+      "bairro": "capão do embira",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 165
+    },
+    {
+      "bairro": "vila raquel",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 165
+    },
+    {
+      "bairro": "jardim mitsutani",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 165
+    },
+    {
+      "bairro": "praia do leblon",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 164
+    },
+    {
+      "bairro": "cangaíba",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 164
+    },
+    {
+      "bairro": "jardim da conquista (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 164
+    },
+    {
+      "bairro": "vila paulistana",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 164
+    },
+    {
+      "bairro": "jardim monte azul",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 164
+    },
+    {
+      "bairro": "canhema",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 164
+    },
+    {
+      "bairro": "jordanópolis",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 163
+    },
+    {
+      "bairro": "jardim itacolomi",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 163
+    },
+    {
+      "bairro": "vila bancária",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 163
+    },
+    {
+      "bairro": "jardim castelo",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 163
+    },
+    {
+      "bairro": "vila libanesa",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 163
+    },
+    {
+      "bairro": "brasilândia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 163
+    },
+    {
+      "bairro": "jardim figueira grande",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 162
+    },
+    {
+      "bairro": "jardim das bandeiras",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 162
+    },
+    {
+      "bairro": "vila liviero",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 161
+    },
+    {
+      "bairro": "jardim marilu",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 160
+    },
+    {
+      "bairro": "vila diva (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 160
+    },
+    {
+      "bairro": "vila carmem",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 160
+    },
+    {
+      "bairro": "jardim são josé (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 160
+    },
+    {
+      "bairro": "jardim íris",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 160
+    },
+    {
+      "bairro": "santa efigênia",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 159
+    },
+    {
+      "bairro": "jardim santo antoninho",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 159
+    },
+    {
+      "bairro": "jardim camargo novo",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 159
+    },
+    {
+      "bairro": "vila suíça",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 159
+    },
+    {
+      "bairro": "jardim imperial",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 158
+    },
+    {
+      "bairro": "vila são josé",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 157
+    },
+    {
+      "bairro": "jardim arize",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 157
+    },
+    {
+      "bairro": "canindé",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 157
+    },
+    {
+      "bairro": "conjunto habitacional brigadeiro faria lima",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 156
+    },
+    {
+      "bairro": "jardim lucélia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 156
+    },
+    {
+      "bairro": "jardim monjolo",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 156
+    },
+    {
+      "bairro": "vila barbosa",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 156
+    },
+    {
+      "bairro": "piraporinha",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 156
+    },
+    {
+      "bairro": "guaiaúna",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 155
+    },
+    {
+      "bairro": "parque monteiro soares",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 155
+    },
+    {
+      "bairro": "vila oratório",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 154
+    },
+    {
+      "bairro": "núcleo lageado",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 154
+    },
+    {
+      "bairro": "bortolândia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 154
+    },
+    {
+      "bairro": "vila antônio",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 154
+    },
+    {
+      "bairro": "parque arariba",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 154
+    },
+    {
+      "bairro": "fazenda morumbi",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 154
+    },
+    {
+      "bairro": "parque capuava",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 154
+    },
+    {
+      "bairro": "conjunto residencial jardim canaã",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 153
+    },
+    {
+      "bairro": "vila rui barbosa",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 153
+    },
+    {
+      "bairro": "conjunto habitacional instituto adventista",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 153
+    },
+    {
+      "bairro": "parque flamengo",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 153
+    },
+    {
+      "bairro": "parque primavera",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 152
+    },
+    {
+      "bairro": "jardim jussara",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 152
+    },
+    {
+      "bairro": "casa grande",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 152
+    },
+    {
+      "bairro": "jardim luso",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 151
+    },
+    {
+      "bairro": "parque das árvores",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 151
+    },
+    {
+      "bairro": "nova piraju",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 151
+    },
+    {
+      "bairro": "jardim bandeirantes",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 151
+    },
+    {
+      "bairro": "jardim danfer",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 151
+    },
+    {
+      "bairro": "vila barreto",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 151
+    },
+    {
+      "bairro": "vila bonilha",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 151
+    },
+    {
+      "bairro": "vila nilo",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 151
+    },
+    {
+      "bairro": "jardim boa vista (zona oeste)",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 151
+    },
+    {
+      "bairro": "parque santa madalena",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 150
+    },
+    {
+      "bairro": "vila nova esperança",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 150
+    },
+    {
+      "bairro": "jardim internacional",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 149
+    },
+    {
+      "bairro": "jardim silva teles",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 149
+    },
+    {
+      "bairro": "jardim meliunas",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 148
+    },
+    {
+      "bairro": "vila carlos de campos",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 148
+    },
+    {
+      "bairro": "conjunto habitacional teotonio vilela",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 147
+    },
+    {
+      "bairro": "cidade nova são miguel",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 147
+    },
+    {
+      "bairro": "mandaqui",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 147
+    },
+    {
+      "bairro": "jardim irene",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 147
+    },
+    {
+      "bairro": "jardim botucatu",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 146
+    },
+    {
+      "bairro": "vila caraguatá",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 146
+    },
+    {
+      "bairro": "jardim dos lagos",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 146
+    },
+    {
+      "bairro": "jardim dos ipês",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 146
+    },
+    {
+      "bairro": "vila dalila",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 146
+    },
+    {
+      "bairro": "vila paulo silas",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 146
+    },
+    {
+      "bairro": "vila independência",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 145
+    },
+    {
+      "bairro": "vila santa isabel",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 145
+    },
+    {
+      "bairro": "jardim fim de semana",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 145
+    },
+    {
+      "bairro": "jardim alvorada",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 145
+    },
+    {
+      "bairro": "jardim são benedito",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 144
+    },
+    {
+      "bairro": "cidade júlia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 144
+    },
+    {
+      "bairro": "jardim são nicolau",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 144
+    },
+    {
+      "bairro": "chácara tatuapé",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 144
+    },
+    {
+      "bairro": "colônia (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 144
+    },
+    {
+      "bairro": "vila pereira cerca",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 144
+    },
+    {
+      "bairro": "vila prel",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 144
+    },
+    {
+      "bairro": "santa amélia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 143
+    },
+    {
+      "bairro": "jardim dos estados",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 142
+    },
+    {
+      "bairro": "parque artur alvim",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 142
+    },
+    {
+      "bairro": "jardim guedala",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 142
+    },
+    {
+      "bairro": "jardim santa adélia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 141
+    },
+    {
+      "bairro": "vila franca",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 141
+    },
+    {
+      "bairro": "guarapiranga",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 140
+    },
+    {
+      "bairro": "horto florestal",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 140
+    },
+    {
+      "bairro": "vila santos",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 140
+    },
+    {
+      "bairro": "vila francisco matarazzo",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 140
+    },
+    {
+      "bairro": "independência",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 140
+    },
+    {
+      "bairro": "jardim amália",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 139
+    },
+    {
+      "bairro": "vila assis brasil",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 139
+    },
+    {
+      "bairro": "jardim santo andré",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 139
+    },
+    {
+      "bairro": "capela do socorro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 138
+    },
+    {
+      "bairro": "vila babilônia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 138
+    },
+    {
+      "bairro": "vila aparecida",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 138
+    },
+    {
+      "bairro": "jardim tenani",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 137
+    },
+    {
+      "bairro": "jardim são bento",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 137
+    },
+    {
+      "bairro": "vila bom jardim",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 136
+    },
+    {
+      "bairro": "jardim vera cruz",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 136
+    },
+    {
+      "bairro": "jardim são judas tadeu",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 135
+    },
+    {
+      "bairro": "jardim ubirajara (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 135
+    },
+    {
+      "bairro": "vila nova carolina",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 135
+    },
+    {
+      "bairro": "jardim selma",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 134
+    },
+    {
+      "bairro": "jardim ângela (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 134
+    },
+    {
+      "bairro": "vila cleonice",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 134
+    },
+    {
+      "bairro": "jardim são paulo(zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 134
+    },
+    {
+      "bairro": "conjunto promorar são luis",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 134
+    },
+    {
+      "bairro": "vila junqueira",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 134
+    },
+    {
+      "bairro": "parque cocaia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 133
+    },
+    {
+      "bairro": "jardim nélia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 133
+    },
+    {
+      "bairro": "vila londrina",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 133
+    },
+    {
+      "bairro": "vila domitila",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 133
+    },
+    {
+      "bairro": "jardim ivana",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 133
+    },
+    {
+      "bairro": "vila ponte rasa",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 132
+    },
+    {
+      "bairro": "dos casa",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 132
+    },
+    {
+      "bairro": "água funda",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 131
+    },
+    {
+      "bairro": "paraíso do morumbi",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 131
+    },
+    {
+      "bairro": "jardim maria virginia",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 130
+    },
+    {
+      "bairro": "parque marajoara",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 130
+    },
+    {
+      "bairro": "vila gea",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 129
+    },
+    {
+      "bairro": "parque fongaro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 129
+    },
+    {
+      "bairro": "vila lusitânia",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 129
+    },
+    {
+      "bairro": "vila santa teresa (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 128
+    },
+    {
+      "bairro": "jardim santa cruz (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 128
+    },
+    {
+      "bairro": "jardim paris",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 128
+    },
+    {
+      "bairro": "conjunto habitacional padre manoel de paiva",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 127
+    },
+    {
+      "bairro": "vila leonor",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 127
+    },
+    {
+      "bairro": "vila da paz",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 126
+    },
+    {
+      "bairro": "artur alvim",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 126
+    },
+    {
+      "bairro": "vila portuguesa",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 126
+    },
+    {
+      "bairro": "jardim ibirapuera",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 126
+    },
+    {
+      "bairro": "jardim toca",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 125
+    },
+    {
+      "bairro": "eldorado",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 125
+    },
+    {
+      "bairro": "vila butantã",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 125
+    },
+    {
+      "bairro": "parque do morumbi",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 125
+    },
+    {
+      "bairro": "centreville",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 125
+    },
+    {
+      "bairro": "vila euthalia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 124
+    },
+    {
+      "bairro": "parque panamericano",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 124
+    },
+    {
+      "bairro": "vila ernesto",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 124
+    },
+    {
+      "bairro": "jardim guarau",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 124
+    },
+    {
+      "bairro": "vila cosmopolita",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 123
+    },
+    {
+      "bairro": "jardim ipanema (cidade líder)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 123
+    },
+    {
+      "bairro": "vila bela vista (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 123
+    },
+    {
+      "bairro": "jardim são francisco(zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 122
+    },
+    {
+      "bairro": "vila gertrudes",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 122
+    },
+    {
+      "bairro": "jardim belém",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 122
+    },
+    {
+      "bairro": "jardim rossin",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 122
+    },
+    {
+      "bairro": "jardim capelinha",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 122
+    },
+    {
+      "bairro": "jardim zaira",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 122
+    },
+    {
+      "bairro": "jardim são jorge (raposo tavares)",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 121
+    },
+    {
+      "bairro": "vila mangalot",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 121
+    },
+    {
+      "bairro": "jardim niteroi",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 120
+    },
+    {
+      "bairro": "parque bristol",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 120
+    },
+    {
+      "bairro": "jardim almanara",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 120
+    },
+    {
+      "bairro": "jardim andaraí",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 120
+    },
+    {
+      "bairro": "parque penha",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 118
+    },
+    {
+      "bairro": "capão redondo",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 118
+    },
+    {
+      "bairro": "várzea da barra funda",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 116
+    },
+    {
+      "bairro": "pari",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 116
+    },
+    {
+      "bairro": "vila olinda",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 116
+    },
+    {
+      "bairro": "jardim guanca",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 116
+    },
+    {
+      "bairro": "jardim sarah",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 116
+    },
+    {
+      "bairro": "cidade ipava",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 115
+    },
+    {
+      "bairro": "parque esmeralda",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 115
+    },
+    {
+      "bairro": "jardim ponte rasa",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 114
+    },
+    {
+      "bairro": "jardim ana maria",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 114
+    },
+    {
+      "bairro": "parque dos bancários",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 113
+    },
+    {
+      "bairro": "vila do bosque",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 111
+    },
+    {
+      "bairro": "vila mira",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 111
+    },
+    {
+      "bairro": "jardim marilda",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 111
+    },
+    {
+      "bairro": "conjunto residencial santa terezinha",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 111
+    },
+    {
+      "bairro": "vila bancária munhoz",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 111
+    },
+    {
+      "bairro": "jardim vergueiro",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 111
+    },
+    {
+      "bairro": "vila carlina",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 111
+    },
+    {
+      "bairro": "jardim três corações",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 110
+    },
+    {
+      "bairro": "vila natal",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 110
+    },
+    {
+      "bairro": "jardim angelina",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 110
+    },
+    {
+      "bairro": "vila mesquita",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 110
+    },
+    {
+      "bairro": "parque boa esperança",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 110
+    },
+    {
+      "bairro": "cidade centenário",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 110
+    },
+    {
+      "bairro": "jardim são francisco de assis",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 110
+    },
+    {
+      "bairro": "jardim marisa",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 110
+    },
+    {
+      "bairro": "conjunto habitacional jardim são bento",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 110
+    },
+    {
+      "bairro": "jardim palmares (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 109
+    },
+    {
+      "bairro": "ermelino matarazzo",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 109
+    },
+    {
+      "bairro": "vila paulistania",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 109
+    },
+    {
+      "bairro": "jardim fonte do morumbi",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 109
+    },
+    {
+      "bairro": "vila darli",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 108
+    },
+    {
+      "bairro": "vila são silvestre",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 108
+    },
+    {
+      "bairro": "jardim das flores",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 107
+    },
+    {
+      "bairro": "cursino",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 107
+    },
+    {
+      "bairro": "jardim iguatemi",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 107
+    },
+    {
+      "bairro": "vila arcádia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 107
+    },
+    {
+      "bairro": "vila diva (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 107
+    },
+    {
+      "bairro": "jardim maia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 106
+    },
+    {
+      "bairro": "jardim laone",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 106
+    },
+    {
+      "bairro": "jardim virginia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 106
+    },
+    {
+      "bairro": "vila fazzeoni",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 106
+    },
+    {
+      "bairro": "vila dos remédios",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 106
+    },
+    {
+      "bairro": "jardim aurélio",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 106
+    },
+    {
+      "bairro": "jardim cipreste",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 106
+    },
+    {
+      "bairro": "vila euclides",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 106
+    },
+    {
+      "bairro": "jardim novo parelheiros",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 105
+    },
+    {
+      "bairro": "vila elvira",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 105
+    },
+    {
+      "bairro": "parque dom joão neri",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 105
+    },
+    {
+      "bairro": "jardim artur alvim",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 105
+    },
+    {
+      "bairro": "jardim matarazzo",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 105
+    },
+    {
+      "bairro": "jardim iva",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 105
+    },
+    {
+      "bairro": "vila analia",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 105
+    },
+    {
+      "bairro": "jardim ibitirama",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 104
+    },
+    {
+      "bairro": "vila ida",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 104
+    },
+    {
+      "bairro": "jardim guarujá",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 104
+    },
+    {
+      "bairro": "vila bocaina",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 104
+    },
+    {
+      "bairro": "suíssa",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 104
+    },
+    {
+      "bairro": "jardim marabá(zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 103
+    },
+    {
+      "bairro": "chácara santa maria",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 103
+    },
+    {
+      "bairro": "parque da lapa",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 103
+    },
+    {
+      "bairro": "jardim oratório",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 103
+    },
+    {
+      "bairro": "jardim vergueiro (sacomã)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 102
+    },
+    {
+      "bairro": "vila mariza mazzei",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 102
+    },
+    {
+      "bairro": "vila souza",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 102
+    },
+    {
+      "bairro": "jardim olinda",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 102
+    },
+    {
+      "bairro": "jardim ipê",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 102
+    },
+    {
+      "bairro": "jardim las vegas",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 102
+    },
+    {
+      "bairro": "jardim são carlos (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 101
+    },
+    {
+      "bairro": "vila cachoeira",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 101
+    },
+    {
+      "bairro": "parque oratório",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 101
+    },
+    {
+      "bairro": "jardim da pedreira",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 100
+    },
+    {
+      "bairro": "jardim casa grande",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 100
+    },
+    {
+      "bairro": "rio pequeno",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 100
+    },
+    {
+      "bairro": "recanto campo belo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 99
+    },
+    {
+      "bairro": "vila clara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 99
+    },
+    {
+      "bairro": "jardim vista alegre",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 99
+    },
+    {
+      "bairro": "vila germinal",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 99
+    },
+    {
+      "bairro": "jardim do colégio",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 99
+    },
+    {
+      "bairro": "jardim avenida",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 99
+    },
+    {
+      "bairro": "jardim melo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 98
+    },
+    {
+      "bairro": "vila divina pastora",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 98
+    },
+    {
+      "bairro": "jardim da laranjeira (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 98
+    },
+    {
+      "bairro": "parque novo santo amaro",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 98
+    },
+    {
+      "bairro": "vila marina",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 98
+    },
+    {
+      "bairro": "vila santa lúcia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 97
+    },
+    {
+      "bairro": "jardim gonzaga",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 97
+    },
+    {
+      "bairro": "jardim são mateus",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 97
+    },
+    {
+      "bairro": "jardim iracema",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 97
+    },
+    {
+      "bairro": "vila costa melo",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 96
+    },
+    {
+      "bairro": "jardim macedônia",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 96
+    },
+    {
+      "bairro": "jardim novo santo amaro",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 96
+    },
+    {
+      "bairro": "cidade jardim",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 96
+    },
+    {
+      "bairro": "jardim iporã",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 95
+    },
+    {
+      "bairro": "parque sevilha",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 95
+    },
+    {
+      "bairro": "conjunto habitacional jova rural",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 95
+    },
+    {
+      "bairro": "vila joaniza",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 94
+    },
+    {
+      "bairro": "lajeado",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 94
+    },
+    {
+      "bairro": "jardim vaz de lima",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 94
+    },
+    {
+      "bairro": "parque industrial tomas edson",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 93
+    },
+    {
+      "bairro": "jardim santa helena",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 93
+    },
+    {
+      "bairro": "jardim parque morumbi",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 93
+    },
+    {
+      "bairro": "jardim neide",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 93
+    },
+    {
+      "bairro": "jardim são gabriel",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 92
+    },
+    {
+      "bairro": "jardim nice",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 92
+    },
+    {
+      "bairro": "jardim teresa",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 92
+    },
+    {
+      "bairro": "vila cavaton",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 92
+    },
+    {
+      "bairro": "jardim monte belo (raposo tavares)",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 92
+    },
+    {
+      "bairro": "jardim três marias",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 91
+    },
+    {
+      "bairro": "vila fátima",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 91
+    },
+    {
+      "bairro": "jardim santo andré",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 91
+    },
+    {
+      "bairro": "vila itaberaba",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 91
+    },
+    {
+      "bairro": "gleba do pêssego",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 90
+    },
+    {
+      "bairro": "jardim dona sinhá",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 90
+    },
+    {
+      "bairro": "jardim pereira leite",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 90
+    },
+    {
+      "bairro": "vila são domingos",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 90
+    },
+    {
+      "bairro": "jardim pouso alegre",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 89
+    },
+    {
+      "bairro": "jardim itapema",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 89
+    },
+    {
+      "bairro": "jardim hercilia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 89
+    },
+    {
+      "bairro": "vila fidalgo",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 89
+    },
+    {
+      "bairro": "vila brasilândia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 89
+    },
+    {
+      "bairro": "balneário mar paulista",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 88
+    },
+    {
+      "bairro": "jardim cruzeiro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 88
+    },
+    {
+      "bairro": "jardim são roque",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 88
+    },
+    {
+      "bairro": "chácara são joão",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 88
+    },
+    {
+      "bairro": "brooklin novo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 87
+    },
+    {
+      "bairro": "jardim quarto centenário",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 86
+    },
+    {
+      "bairro": "jardim guairaca",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 86
+    },
+    {
+      "bairro": "jardim triana",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 86
+    },
+    {
+      "bairro": "vila alzira",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 86
+    },
+    {
+      "bairro": "jardim duprat",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 86
+    },
+    {
+      "bairro": "jardim tropical",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 86
+    },
+    {
+      "bairro": "siciliano",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 86
+    },
+    {
+      "bairro": "jardim somara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 85
+    },
+    {
+      "bairro": "conjunto habitacional barreira grande",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 85
+    },
+    {
+      "bairro": "jardim panorama (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 85
+    },
+    {
+      "bairro": "vila bruna",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 85
+    },
+    {
+      "bairro": "conjunto city jaraguá",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 85
+    },
+    {
+      "bairro": "jardim dom josé",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 85
+    },
+    {
+      "bairro": "vila marte",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 84
+    },
+    {
+      "bairro": "parque nações unidas",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 84
+    },
+    {
+      "bairro": "vila regina",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 84
+    },
+    {
+      "bairro": "vila nina",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 84
+    },
+    {
+      "bairro": "jardim joão xxiii",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 84
+    },
+    {
+      "bairro": "conjunto promorar raposo tavares",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 84
+    },
+    {
+      "bairro": "alto da riviera",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 83
+    },
+    {
+      "bairro": "jardim tupi",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 83
+    },
+    {
+      "bairro": "vila fernandes",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 83
+    },
+    {
+      "bairro": "aricanduva",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 83
+    },
+    {
+      "bairro": "jardim record",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 83
+    },
+    {
+      "bairro": "rio grande",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 83
+    },
+    {
+      "bairro": "vila maria luisa",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 82
+    },
+    {
+      "bairro": "chácara cocaia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 81
+    },
+    {
+      "bairro": "jardim capela",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 81
+    },
+    {
+      "bairro": "vila itaim",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 81
+    },
+    {
+      "bairro": "jardim lídia",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 81
+    },
+    {
+      "bairro": "jardim são carlos (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 80
+    },
+    {
+      "bairro": "jardim cotching",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 80
+    },
+    {
+      "bairro": "jardim ana rosa",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 80
+    },
+    {
+      "bairro": "jardim catarina",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 80
+    },
+    {
+      "bairro": "vila ivg",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 80
+    },
+    {
+      "bairro": "vila lourdes",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 80
+    },
+    {
+      "bairro": "vila dorna",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 80
+    },
+    {
+      "bairro": "vila prado",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 80
+    },
+    {
+      "bairro": "jardim britânia",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 80
+    },
+    {
+      "bairro": "jardim das palmas",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 80
+    },
+    {
+      "bairro": "jardim das esmeraldas",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 80
+    },
+    {
+      "bairro": "jardim américa",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 79
+    },
+    {
+      "bairro": "parque do lago",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 79
+    },
+    {
+      "bairro": "vila brasil",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 79
+    },
+    {
+      "bairro": "vila frugoli",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 79
+    },
+    {
+      "bairro": "jardim lisboa",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 79
+    },
+    {
+      "bairro": "jardim são gonçalo",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 79
+    },
+    {
+      "bairro": "jardim são joão (jaraguá)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 79
+    },
+    {
+      "bairro": "jardim guarani",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 79
+    },
+    {
+      "bairro": "vila serralheiro",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 79
+    },
+    {
+      "bairro": "parque das américas",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 79
+    },
+    {
+      "bairro": "parque são lourenço",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 78
+    },
+    {
+      "bairro": "vila francos",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 78
+    },
+    {
+      "bairro": "vila maria",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 78
+    },
+    {
+      "bairro": "pirituba",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 78
+    },
+    {
+      "bairro": "jardim jaqueline",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 78
+    },
+    {
+      "bairro": "jardim paquetá (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 77
+    },
+    {
+      "bairro": "jardim iporanga",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 77
+    },
+    {
+      "bairro": "vila santa teresa (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 77
+    },
+    {
+      "bairro": "jardim fraternidade",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 77
+    },
+    {
+      "bairro": "jardim novo mundo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 76
+    },
+    {
+      "bairro": "colônia",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 76
+    },
+    {
+      "bairro": "jardim cotinha",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 75
+    },
+    {
+      "bairro": "vila odete",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 75
+    },
+    {
+      "bairro": "vila nova pauliceia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 75
+    },
+    {
+      "bairro": "jardim das rosas (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 75
+    },
+    {
+      "bairro": "jardim novo carrão",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 75
+    },
+    {
+      "bairro": "jardim elisa maria",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 75
+    },
+    {
+      "bairro": "jardim rosana",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 75
+    },
+    {
+      "bairro": "vila continental",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 74
+    },
+    {
+      "bairro": "montanhão",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 74
+    },
+    {
+      "bairro": "jardim de lorenzo",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 73
+    },
+    {
+      "bairro": "vila macedópolis",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 73
+    },
+    {
+      "bairro": "vila elze",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 72
+    },
+    {
+      "bairro": "chácara itaim",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 71
+    },
+    {
+      "bairro": "jardim santa edwiges (capela do socorro)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 71
+    },
+    {
+      "bairro": "vila nova york",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 71
+    },
+    {
+      "bairro": "vila arruda",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 71
+    },
+    {
+      "bairro": "jardim sônia inga",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 71
+    },
+    {
+      "bairro": "vila boaçava",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 71
+    },
+    {
+      "bairro": "jardim alfredo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 70
+    },
+    {
+      "bairro": "jardim porteira grande",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 70
+    },
+    {
+      "bairro": "jardim imbé",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 70
+    },
+    {
+      "bairro": "vila tramontano",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 70
+    },
+    {
+      "bairro": "jardim paraguaçu",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 69
+    },
+    {
+      "bairro": "jardim d'abril",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 69
+    },
+    {
+      "bairro": "jardim das oliveiras",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 68
+    },
+    {
+      "bairro": "vila cisper",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 68
+    },
+    {
+      "bairro": "jardim tango",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 68
+    },
+    {
+      "bairro": "vila iolanda(lajeado)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 68
+    },
+    {
+      "bairro": "jardim joamar",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 68
+    },
+    {
+      "bairro": "chácara nossa senhora aparecida",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 68
+    },
+    {
+      "bairro": "vila espanhola",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 68
+    },
+    {
+      "bairro": "jardim belaura",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 68
+    },
+    {
+      "bairro": "vila arapuã",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 67
+    },
+    {
+      "bairro": "vila conde do pinhal",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 67
+    },
+    {
+      "bairro": "parque bologne",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 67
+    },
+    {
+      "bairro": "jardim dos álamos",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 67
+    },
+    {
+      "bairro": "jardim luzitânia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 67
+    },
+    {
+      "bairro": "jardim lajeado",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 67
+    },
+    {
+      "bairro": "conjunto habitacional inácio monteiro",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 67
+    },
+    {
+      "bairro": "vila santa edwiges",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 67
+    },
+    {
+      "bairro": "recanto verde do sol",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 66
+    },
+    {
+      "bairro": "jardim margarida",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 66
+    },
+    {
+      "bairro": "sítio do morro",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 66
+    },
+    {
+      "bairro": "vila portugal",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 66
+    },
+    {
+      "bairro": "jardim boa vista (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 66
+    },
+    {
+      "bairro": "jardim adhemar de barros",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 66
+    },
+    {
+      "bairro": "vila fanton",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 66
+    },
+    {
+      "bairro": "vila gonçalves",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 66
+    },
+    {
+      "bairro": "jardim santa rita",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 65
+    },
+    {
+      "bairro": "jardim sul são paulo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 65
+    },
+    {
+      "bairro": "vila nova",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 65
+    },
+    {
+      "bairro": "jardim são joão (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 65
+    },
+    {
+      "bairro": "vila dalva",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 65
+    },
+    {
+      "bairro": "jardim kagohara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 64
+    },
+    {
+      "bairro": "jardim ipanema (zona oeste)",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 64
+    },
+    {
+      "bairro": "jardim itapark",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 64
+    },
+    {
+      "bairro": "riviera paulista",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 63
+    },
+    {
+      "bairro": "vila mirante",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 63
+    },
+    {
+      "bairro": "cidade d'abril",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 63
+    },
+    {
+      "bairro": "jardim martinica",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 63
+    },
+    {
+      "bairro": "vila figueiredo",
+      "cidade": "rio grande da serra",
+      "zona": "ABC",
+      "beneficiarios": 63
+    },
+    {
+      "bairro": "jardim aparecida",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 62
+    },
+    {
+      "bairro": "jardim marquesa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 62
+    },
+    {
+      "bairro": "vila pedra branca",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 62
+    },
+    {
+      "bairro": "jardim viana",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 62
+    },
+    {
+      "bairro": "santana",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 62
+    },
+    {
+      "bairro": "jardim paulistano (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 61
+    },
+    {
+      "bairro": "vila clarice",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 61
+    },
+    {
+      "bairro": "jardim cruzeiro",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 61
+    },
+    {
+      "bairro": "jardim elizabeth",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 60
+    },
+    {
+      "bairro": "jardim francisco mendes",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 60
+    },
+    {
+      "bairro": "jardim cachoeira",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 60
+    },
+    {
+      "bairro": "jardim lúcia",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 60
+    },
+    {
+      "bairro": "jardim colorado",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 59
+    },
+    {
+      "bairro": "jardim egle",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 59
+    },
+    {
+      "bairro": "jardim pérola i",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 59
+    },
+    {
+      "bairro": "vila damaceno",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 59
+    },
+    {
+      "bairro": "jardim são manoel",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 59
+    },
+    {
+      "bairro": "vila jaraguá",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 59
+    },
+    {
+      "bairro": "parque santo antônio (aricanduva)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 58
+    },
+    {
+      "bairro": "jardim são josé (são mateus)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 58
+    },
+    {
+      "bairro": "jardim monte alegre (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 58
+    },
+    {
+      "bairro": "raposo tavares",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 58
+    },
+    {
+      "bairro": "jardim faria lima",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 58
+    },
+    {
+      "bairro": "batistini",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 58
+    },
+    {
+      "bairro": "jardim lourdes (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 57
+    },
+    {
+      "bairro": "jardim martini",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 57
+    },
+    {
+      "bairro": "chácara do conde",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 57
+    },
+    {
+      "bairro": "vila são josé (guaianazes)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 57
+    },
+    {
+      "bairro": "jardim brasília",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 57
+    },
+    {
+      "bairro": "jardim raposo tavares",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 57
+    },
+    {
+      "bairro": "parque sonia",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 57
+    },
+    {
+      "bairro": "vila são luís(zona oeste)",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 57
+    },
+    {
+      "bairro": "centro",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 56
+    },
+    {
+      "bairro": "vila morelli",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 56
+    },
+    {
+      "bairro": "jardim nakamura",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 55
+    },
+    {
+      "bairro": "jardim das rosas (iguatemi)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 55
+    },
+    {
+      "bairro": "jardim alvina",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 55
+    },
+    {
+      "bairro": "jardim irapiranga",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 55
+    },
+    {
+      "bairro": "vila emir",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 54
+    },
+    {
+      "bairro": "jardim aracati",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 54
+    },
+    {
+      "bairro": "jardim caguassu",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 54
+    },
+    {
+      "bairro": "conjunto habitacional juscelino kubitschek",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 54
+    },
+    {
+      "bairro": "vila américa",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 54
+    },
+    {
+      "bairro": "parque reboucas",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 54
+    },
+    {
+      "bairro": "vila bela aliança",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 54
+    },
+    {
+      "bairro": "jardim nair",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 53
+    },
+    {
+      "bairro": "vila aurora (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 53
+    },
+    {
+      "bairro": "vila progresso (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 52
+    },
+    {
+      "bairro": "morro do índio",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 52
+    },
+    {
+      "bairro": "morumbi",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 52
+    },
+    {
+      "bairro": "vila capela",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 51
+    },
+    {
+      "bairro": "jardim santa terezinha (parelheiros)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 51
+    },
+    {
+      "bairro": "jardim cotiana",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 51
+    },
+    {
+      "bairro": "vila cunha bueno",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 51
+    },
+    {
+      "bairro": "jardim paquetá (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 51
+    },
+    {
+      "bairro": "parque tietê",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 51
+    },
+    {
+      "bairro": "jardim vitória régia (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 51
+    },
+    {
+      "bairro": "jardim jaraguá (são domingos)",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 51
+    },
+    {
+      "bairro": "vila natália",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 50
+    },
+    {
+      "bairro": "jardim grimaldi",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 50
+    },
+    {
+      "bairro": "vila nossa senhora do retiro",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 50
+    },
+    {
+      "bairro": "jardim pirituba",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 50
+    },
+    {
+      "bairro": "vila comercial",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 50
+    },
+    {
+      "bairro": "vila quintana",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 49
+    },
+    {
+      "bairro": "jardim verônia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 49
+    },
+    {
+      "bairro": "jardim nova tereza",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 49
+    },
+    {
+      "bairro": "jardim das pedras",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 49
+    },
+    {
+      "bairro": "jardim maracanã",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 49
+    },
+    {
+      "bairro": "vila picinin",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 49
+    },
+    {
+      "bairro": "jardim seckler",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 48
+    },
+    {
+      "bairro": "jardim das rosas (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 48
+    },
+    {
+      "bairro": "represa",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 48
+    },
+    {
+      "bairro": "jardim petroni",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 48
+    },
+    {
+      "bairro": "dos finco",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 48
+    },
+    {
+      "bairro": "vila dos andrades",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 47
+    },
+    {
+      "bairro": "perus",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 47
+    },
+    {
+      "bairro": "jardim vale das virtudes",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 47
+    },
+    {
+      "bairro": "jardim itapura",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 46
+    },
+    {
+      "bairro": "jardim ondina",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 46
+    },
+    {
+      "bairro": "vila acre",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 46
+    },
+    {
+      "bairro": "jardim nadir",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 46
+    },
+    {
+      "bairro": "jardim santa lucrécia",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 46
+    },
+    {
+      "bairro": "cidade ademar",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 45
+    },
+    {
+      "bairro": "barragem",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 45
+    },
+    {
+      "bairro": "jardim shangrilá (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 45
+    },
+    {
+      "bairro": "parque itaberaba",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 45
+    },
+    {
+      "bairro": "jardim panorama",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 45
+    },
+    {
+      "bairro": "vila socorro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 44
+    },
+    {
+      "bairro": "cidade kemel",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 44
+    },
+    {
+      "bairro": "vila miriam",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 44
+    },
+    {
+      "bairro": "jardim apuana",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 44
+    },
+    {
+      "bairro": "jardim adelfiore",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 44
+    },
+    {
+      "bairro": "jardim clarice",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 44
+    },
+    {
+      "bairro": "vila nova galvão",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 43
+    },
+    {
+      "bairro": "jardim são januário",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 43
+    },
+    {
+      "bairro": "jardim aristocrata",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 42
+    },
+    {
+      "bairro": "jardim vera cruz(zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 42
+    },
+    {
+      "bairro": "jardim noronha",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 42
+    },
+    {
+      "bairro": "conjunto promorar sapopemba",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 42
+    },
+    {
+      "bairro": "jardim bom recanto",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 42
+    },
+    {
+      "bairro": "vila renato (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 41
+    },
+    {
+      "bairro": "vila ribeiro de barros",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 41
+    },
+    {
+      "bairro": "ponte seca",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 41
+    },
+    {
+      "bairro": "recreio da borda do campo",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 41
+    },
+    {
+      "bairro": "jardim myrna",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 40
+    },
+    {
+      "bairro": "jardim herculano",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 40
+    },
+    {
+      "bairro": "jardim santa zélia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 40
+    },
+    {
+      "bairro": "vila caiúba",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 40
+    },
+    {
+      "bairro": "vila aurora",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 40
+    },
+    {
+      "bairro": "santa luzia",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 40
+    },
+    {
+      "bairro": "jardim turquesa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 39
+    },
+    {
+      "bairro": "jardim keralux",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 39
+    },
+    {
+      "bairro": "conjunto habitacional brigadeiro eduardo gomes",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 39
+    },
+    {
+      "bairro": "serraria",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 39
+    },
+    {
+      "bairro": "centro",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 39
+    },
+    {
+      "bairro": "chácara da enseada",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 38
+    },
+    {
+      "bairro": "jardim nova são paulo(são rafael)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 38
+    },
+    {
+      "bairro": "praia da lagoa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 37
+    },
+    {
+      "bairro": "jardim novo pantanal",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 37
+    },
+    {
+      "bairro": "jardim elba",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 37
+    },
+    {
+      "bairro": "jardim cinco de julho",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 37
+    },
+    {
+      "bairro": "parque novo grajaú",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 36
+    },
+    {
+      "bairro": "são mateus",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 36
+    },
+    {
+      "bairro": "vila nova parada",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 36
+    },
+    {
+      "bairro": "jardim felicidade (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 36
+    },
+    {
+      "bairro": "jardim damasceno",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 36
+    },
+    {
+      "bairro": "jardim leônidas moreira",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 36
+    },
+    {
+      "bairro": "jardim dos francos",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 35
+    },
+    {
+      "bairro": "recanto santo antônio",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 35
+    },
+    {
+      "bairro": "jardim maria eneida",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 35
+    },
+    {
+      "bairro": "jardim ângela (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 34
+    },
+    {
+      "bairro": "vila santo henrique",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 34
+    },
+    {
+      "bairro": "vila ramos",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 34
+    },
+    {
+      "bairro": "jardim recanto verde",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 34
+    },
+    {
+      "bairro": "jardim do lago",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 34
+    },
+    {
+      "bairro": "inamar",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 34
+    },
+    {
+      "bairro": "vila santa inês",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 33
+    },
+    {
+      "bairro": "jardim itápolis",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 33
+    },
+    {
+      "bairro": "jardim princesa",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 33
+    },
+    {
+      "bairro": "jardim carombé",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 33
+    },
+    {
+      "bairro": "jardim flor de maio",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 33
+    },
+    {
+      "bairro": "núcleo do engordador",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 33
+    },
+    {
+      "bairro": "paineiras do morumbi",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 33
+    },
+    {
+      "bairro": "jardim anhangüera",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 33
+    },
+    {
+      "bairro": "várzea de baixo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 32
+    },
+    {
+      "bairro": "vila teresinha",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 32
+    },
+    {
+      "bairro": "parque do otero",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 32
+    },
+    {
+      "bairro": "jardim dionisio",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 31
+    },
+    {
+      "bairro": "união de vila nova",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 31
+    },
+    {
+      "bairro": "vila hebe",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 31
+    },
+    {
+      "bairro": "jardim vazani",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 31
+    },
+    {
+      "bairro": "pouso alegre",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 31
+    },
+    {
+      "bairro": "jardim club de campo",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 31
+    },
+    {
+      "bairro": "jardim olavo bilac",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 31
+    },
+    {
+      "bairro": "jardim tremembé",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 30
+    },
+    {
+      "bairro": "parada",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 30
+    },
+    {
+      "bairro": "jardim herplin",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 29
+    },
+    {
+      "bairro": "embura",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 29
+    },
+    {
+      "bairro": "vila carioca",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 29
+    },
+    {
+      "bairro": "parque recreio",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 29
+    },
+    {
+      "bairro": "vila roseira ii",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 29
+    },
+    {
+      "bairro": "sítio represa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 28
+    },
+    {
+      "bairro": "vila santista",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 28
+    },
+    {
+      "bairro": "jardim solange",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 27
+    },
+    {
+      "bairro": "jardim jua",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 27
+    },
+    {
+      "bairro": "vila santa eulalia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 27
+    },
+    {
+      "bairro": "parque belém",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 27
+    },
+    {
+      "bairro": "vila joão batista",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 27
+    },
+    {
+      "bairro": "vila nova jaguaré",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 27
+    },
+    {
+      "bairro": "vl lusitânia",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 27
+    },
+    {
+      "bairro": "balneária",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 27
+    },
+    {
+      "bairro": "copacabana",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 26
+    },
+    {
+      "bairro": "jardim kika",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 26
+    },
+    {
+      "bairro": "vila miami",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 26
+    },
+    {
+      "bairro": "cidade continental",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 26
+    },
+    {
+      "bairro": "jardim nova vitória i",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 26
+    },
+    {
+      "bairro": "jardim maggi",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 26
+    },
+    {
+      "bairro": "jardim antártica",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 26
+    },
+    {
+      "bairro": "residencial sol nascente",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 26
+    },
+    {
+      "bairro": "jardim gilda maria",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 26
+    },
+    {
+      "bairro": "jardim maria adelaide",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 26
+    },
+    {
+      "bairro": "jardim novo horizonte",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 25
+    },
+    {
+      "bairro": "parque novo lar",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 25
+    },
+    {
+      "bairro": "vila yara",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 25
+    },
+    {
+      "bairro": "vila jaguari",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 25
+    },
+    {
+      "bairro": "jardim campo limpo",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 25
+    },
+    {
+      "bairro": "jardim universidade pinheiros",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 25
+    },
+    {
+      "bairro": "centro de ouro fino paulista",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 25
+    },
+    {
+      "bairro": "vila do sol",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 24
+    },
+    {
+      "bairro": "parque vila maria",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 24
+    },
+    {
+      "bairro": "jardim lider",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 24
+    },
+    {
+      "bairro": "jardim monte alegre",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 24
+    },
+    {
+      "bairro": "jardim do russo",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 24
+    },
+    {
+      "bairro": "parque miami",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 24
+    },
+    {
+      "bairro": "jardim indaiá",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 23
+    },
+    {
+      "bairro": "jardim são francisco (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 23
+    },
+    {
+      "bairro": "jardim portal i e ii",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 23
+    },
+    {
+      "bairro": "jardim hebrom",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 23
+    },
+    {
+      "bairro": "vila inácio",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 23
+    },
+    {
+      "bairro": "jardim silveira",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 22
+    },
+    {
+      "bairro": "parelheiros",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 22
+    },
+    {
+      "bairro": "jardim cecy",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 22
+    },
+    {
+      "bairro": "conjunto habitacional turística",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 22
+    },
+    {
+      "bairro": "jardim zilda",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 21
+    },
+    {
+      "bairro": "jardim adutora",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 21
+    },
+    {
+      "bairro": "jardim palmares (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 21
+    },
+    {
+      "bairro": "bororé",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 20
+    },
+    {
+      "bairro": "vila chica luisa",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 20
+    },
+    {
+      "bairro": "pilar velho",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 20
+    },
+    {
+      "bairro": "jardim fontalis",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 19
+    },
+    {
+      "bairro": "vila ayrosa",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 19
+    },
+    {
+      "bairro": "vila gilda",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 18
+    },
+    {
+      "bairro": "vila calu",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 18
+    },
+    {
+      "bairro": "jardim riviera",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 18
+    },
+    {
+      "bairro": "parque santo eduardo",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 18
+    },
+    {
+      "bairro": "parque veloso",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 18
+    },
+    {
+      "bairro": "jardim jaraguá",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 18
+    },
+    {
+      "bairro": "jardim sílvia (zona oeste)",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 18
+    },
+    {
+      "bairro": "jardim bandeirantes (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 17
+    },
+    {
+      "bairro": "recanto dos humildes",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 17
+    },
+    {
+      "bairro": "vl euclides",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 17
+    },
+    {
+      "bairro": "jardim alvorada (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 16
+    },
+    {
+      "bairro": "jardim bartira",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 16
+    },
+    {
+      "bairro": "jardim russo",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 16
+    },
+    {
+      "bairro": "parque santa cecília (grajaú)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 15
+    },
+    {
+      "bairro": "sapopemba",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 15
+    },
+    {
+      "bairro": "bocaina",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 15
+    },
+    {
+      "bairro": "aliança",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 15
+    },
+    {
+      "bairro": "chácara santo amaro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 14
+    },
+    {
+      "bairro": "jardim sydney",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 14
+    },
+    {
+      "bairro": "jardim brasília (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 14
+    },
+    {
+      "bairro": "jardim ibiratiba",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 14
+    },
+    {
+      "bairro": "recanto paraíso",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 14
+    },
+    {
+      "bairro": "vila guiomar",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 13
+    },
+    {
+      "bairro": "jardim do centro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 13
+    },
+    {
+      "bairro": "jardim campo limpo (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 13
+    },
+    {
+      "bairro": "associação sobradinho",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 13
+    },
+    {
+      "bairro": "conjunto habitacional vila nova cachoeirinha",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 13
+    },
+    {
+      "bairro": "vl gonçalves",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 13
+    },
+    {
+      "bairro": "parque botujuru",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 13
+    },
+    {
+      "bairro": "jardim varginha",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 12
+    },
+    {
+      "bairro": "jardim tanay",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 12
+    },
+    {
+      "bairro": "conjunto promorar rio claro",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 12
+    },
+    {
+      "bairro": "três cruzes",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 12
+    },
+    {
+      "bairro": "furnas",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 12
+    },
+    {
+      "bairro": "jardim everest",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 12
+    },
+    {
+      "bairro": "vila albano",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 12
+    },
+    {
+      "bairro": "parque esperança",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 12
+    },
+    {
+      "bairro": "são caetaninho",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 12
+    },
+    {
+      "bairro": "jardim vera cruz (parelheiros)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 11
+    },
+    {
+      "bairro": "vila baby",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 11
+    },
+    {
+      "bairro": "jardim das graças",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 11
+    },
+    {
+      "bairro": "chácara jaraguá",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 10
+    },
+    {
+      "bairro": "jardim monte belo",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 10
+    },
+    {
+      "bairro": "núcleo sampaio vidal",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 10
+    },
+    {
+      "bairro": "barro branco",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 10
+    },
+    {
+      "bairro": "vila bela vista (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 9
+    },
+    {
+      "bairro": "conjunto residencial morada do sol",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 9
+    },
+    {
+      "bairro": "jardim pinheirinho",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 9
+    },
+    {
+      "bairro": "jardim santa lídia",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 9
+    },
+    {
+      "bairro": "tatetos",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 9
+    },
+    {
+      "bairro": "chácara vista alegre",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 8
+    },
+    {
+      "bairro": "flor da cantareira",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 8
+    },
+    {
+      "bairro": "conjunto promorar vila maria iii",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 8
+    },
+    {
+      "bairro": "conjunto residencial bandeirantes",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 8
+    },
+    {
+      "bairro": "jd olavo bilac",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 8
+    },
+    {
+      "bairro": "parque florestal",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 7
+    },
+    {
+      "bairro": "chácara flora",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 7
+    },
+    {
+      "bairro": "vila danubio azul",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 7
+    },
+    {
+      "bairro": "jardim alto paulistano",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 7
+    },
+    {
+      "bairro": "jardim peri",
+      "cidade": "sao paulo",
+      "zona": "Norte",
+      "beneficiarios": 7
+    },
+    {
+      "bairro": "jardim são luís (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 7
+    },
+    {
+      "bairro": "parque anhangüera",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 7
+    },
+    {
+      "bairro": "sítio itaberaba i",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 7
+    },
+    {
+      "bairro": "jardim paineiras",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 7
+    },
+    {
+      "bairro": "chácara são lucido",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 7
+    },
+    {
+      "bairro": "guapituba",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 7
+    },
+    {
+      "bairro": "cidade nova américa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 6
+    },
+    {
+      "bairro": "estância jaraguá",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 6
+    },
+    {
+      "bairro": "vila sulina",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 6
+    },
+    {
+      "bairro": "jardim elizabeth",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 6
+    },
+    {
+      "bairro": "santa cruz",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 6
+    },
+    {
+      "bairro": "jardim tanay",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "jardim sabiá ii",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "vl calu",
+      "cidade": "s paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "jardim das pedras(zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "jardim paraná",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "parque taipas - parque das flores",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "jardim rosinha",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "residencial morumbi",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "vila real",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "núcleo dr. carlos de campos",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "itrapoá",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "quarta divisão",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "vl goncalves",
+      "cidade": "s bernardo campo",
+      "zona": "ABC",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "jardim alzira franco",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "tamanduateí 8",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "jd mar",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "zanzala",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 5
+    },
+    {
+      "bairro": "jardim papai noel",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 4
+    },
+    {
+      "bairro": "jd sabia ii",
+      "cidade": "s paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 4
+    },
+    {
+      "bairro": "jardim varginha",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 4
+    },
+    {
+      "bairro": "parelheiros",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 4
+    },
+    {
+      "bairro": "jardim da conquista (zona oeste)",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 4
+    },
+    {
+      "bairro": "alto da boa vista",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 4
+    },
+    {
+      "bairro": "tanque caio",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 4
+    },
+    {
+      "bairro": "centro",
+      "cidade": "s bernardo campo",
+      "zona": "ABC",
+      "beneficiarios": 4
+    },
+    {
+      "bairro": "condomínio maracanã",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 4
+    },
+    {
+      "bairro": "vila gonçalves",
+      "cidade": "sao bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 4
+    },
+    {
+      "bairro": "jd novo horizonte",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "vila calu",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "jardim são francisco de assis",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "jd papai noel",
+      "cidade": "s paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "jd varginha",
+      "cidade": "s paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "parelheiros",
+      "cidade": "s paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "jardim das oliveiras (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "jd myrna",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "jardim zilda",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "recanto alegre",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "casa verde baixa",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "parque taipas",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "campo belo",
+      "cidade": "sao paulo",
+      "zona": "Oeste",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "anhangüera",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "vila dos palmares",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "chácara maria trindade",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "jardim canadá",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "roncon",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "tecelão",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "km 4",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "região de campo grande",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "cata preta",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 3
+    },
+    {
+      "bairro": "ponte pequena",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "jardim paulo afonso",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "ibirapuera",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "vila guiomar",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "vl guiomar",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "parque ibirapuera",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "jd sabiá ii",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "colônia (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "jd zilda",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "jardim nova harmonia",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "jardim poleti",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "jd peri",
+      "cidade": "s paulo",
+      "zona": "Norte",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "jd peri",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "residencial taipas",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "ch maria trindade",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "contry park",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "montanhão",
+      "cidade": "s bernardo campo",
+      "zona": "ABC",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "vl paineiras",
+      "cidade": "s bernardo campo",
+      "zona": "ABC",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "vila euclides",
+      "cidade": "sao bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "taquacetuba",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "capivari",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "vila das paineiras",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 2
+    },
+    {
+      "bairro": "jd varginha",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "cidade ademar",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "parque alto rio",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jd novo horizonte",
+      "cidade": "s paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jd tanay",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "vl guiomar",
+      "cidade": "s paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "chácara santo hubertus",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jardim santa tereza",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jardim sabiá ii",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jardim das pedras(zona sul)",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "vl sta catarina",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jardim sabia",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jardim papai noel",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "balneário dom carlos",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jd noronha",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "parque bologne",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jardim vaginha",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jardim novo horizonte",
+      "cidade": "sao paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "chácara bandeirantes",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "tatuape",
+      "cidade": "sao paulo",
+      "zona": "Leste",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "vila rosa molla",
+      "cidade": "são paulo",
+      "zona": "Leste",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "tucuruvi",
+      "cidade": "sao paulo",
+      "zona": "Norte",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jd marilu",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jd peri",
+      "cidade": "sao paulo",
+      "zona": "Norte",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "freguesia do ó",
+      "cidade": "sao paulo",
+      "zona": "Norte",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jd jaragua",
+      "cidade": "s paulo",
+      "zona": "Oeste",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "sítio areião",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "ch m trindade",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "vila santa cruz",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jd jaraguá",
+      "cidade": "são paulo",
+      "zona": "Oeste",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jardim jaraguá",
+      "cidade": "sao paulo",
+      "zona": "Oeste",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "batistini",
+      "cidade": "s bernardo campo",
+      "zona": "ABC",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jd olavo bilac",
+      "cidade": "s bernardo campo",
+      "zona": "ABC",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "parque das nações",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jd jamaica",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jardim olavo bilac",
+      "cidade": "sao bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "montanhão",
+      "cidade": "sao bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "vl paineiras",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jd maria adelaide",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jd o bilac",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "jardim industrial",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 1
+    },
+    {
+      "bairro": "nova baeta",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 1
+    }
+  ]
+}

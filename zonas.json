@@ -1,0 +1,320 @@
+{
+  "metadata": {
+    "versao": "6.0",
+    "data_exportacao": "2025-11-06T19:19:18.117Z",
+    "total_zonas": 5,
+    "observacao": "Centro foi consolidado em Centro-Sul"
+  },
+  "zonas": [
+    {
+      "nome": "Centro-Sul",
+      "beneficiarios": 140070,
+      "bairros": 365,
+      "idade_media_adultos": 69.81,
+      "pct_feminino": "66.8",
+      "pct_masculino": "33.2",
+      "idosos_80plus": 34586,
+      "distancia_media_km": 7.23,
+      "faixas_etarias": {
+        "18_a_49": {
+          "total": 12306,
+          "percentual": "8.8"
+        },
+        "50_a_69": {
+          "total": 47875,
+          "percentual": "34.2"
+        },
+        "70_a_74": {
+          "total": 22501,
+          "percentual": "16.1"
+        },
+        "75_a_79": {
+          "total": 20443,
+          "percentual": "14.6"
+        },
+        "80_a_89": {
+          "total": 26643,
+          "percentual": "19.0"
+        },
+        "90_a_94": {
+          "total": 5648,
+          "percentual": "4.0"
+        },
+        "95_a_99": {
+          "total": 1979,
+          "percentual": "1.4"
+        },
+        "100_ou_mais": {
+          "total": 316,
+          "percentual": "0.2"
+        }
+      },
+      "top_programas": [
+        {
+          "nome": "SEM PROGRAMA",
+          "total": 117907
+        },
+        {
+          "nome": "APS - ZONA SUL",
+          "total": 7595
+        },
+        {
+          "nome": "APS - ZONA OESTE",
+          "total": 7317
+        },
+        {
+          "nome": "CORPORATE",
+          "total": 2948
+        }
+      ]
+    },
+    {
+      "nome": "Leste",
+      "beneficiarios": 99122,
+      "bairros": 334,
+      "idade_media_adultos": 69.64,
+      "pct_feminino": "68.8",
+      "pct_masculino": "31.2",
+      "idosos_80plus": 24808,
+      "distancia_media_km": 2.39,
+      "faixas_etarias": {
+        "18_a_49": {
+          "total": 9059,
+          "percentual": "9.1"
+        },
+        "50_a_69": {
+          "total": 33291,
+          "percentual": "33.6"
+        },
+        "70_a_74": {
+          "total": 15924,
+          "percentual": "16.1"
+        },
+        "75_a_79": {
+          "total": 14251,
+          "percentual": "14.4"
+        },
+        "80_a_89": {
+          "total": 19739,
+          "percentual": "19.9"
+        },
+        "90_a_94": {
+          "total": 3823,
+          "percentual": "3.9"
+        },
+        "95_a_99": {
+          "total": 1110,
+          "percentual": "1.1"
+        },
+        "100_ou_mais": {
+          "total": 136,
+          "percentual": "0.1"
+        }
+      },
+      "top_programas": [
+        {
+          "nome": "SEM PROGRAMA",
+          "total": 74865
+        },
+        {
+          "nome": "APS - ZONA LESTE",
+          "total": 10962
+        },
+        {
+          "nome": "CORPORATE",
+          "total": 4499
+        },
+        {
+          "nome": "MVC",
+          "total": 2697
+        }
+      ]
+    },
+    {
+      "nome": "Norte",
+      "beneficiarios": 61790,
+      "bairros": 233,
+      "idade_media_adultos": 69.95,
+      "pct_feminino": "68.1",
+      "pct_masculino": "31.9",
+      "idosos_80plus": 15479,
+      "distancia_media_km": 1.67,
+      "faixas_etarias": {
+        "18_a_49": {
+          "total": 5079,
+          "percentual": "8.2"
+        },
+        "50_a_69": {
+          "total": 21490,
+          "percentual": "34.8"
+        },
+        "70_a_74": {
+          "total": 9920,
+          "percentual": "16.1"
+        },
+        "75_a_79": {
+          "total": 8800,
+          "percentual": "14.2"
+        },
+        "80_a_89": {
+          "total": 12035,
+          "percentual": "19.5"
+        },
+        "90_a_94": {
+          "total": 2541,
+          "percentual": "4.1"
+        },
+        "95_a_99": {
+          "total": 802,
+          "percentual": "1.3"
+        },
+        "100_ou_mais": {
+          "total": 101,
+          "percentual": "0.2"
+        }
+      },
+      "top_programas": [
+        {
+          "nome": "SEM PROGRAMA",
+          "total": 46693
+        },
+        {
+          "nome": "APS - ZONA NORTE",
+          "total": 8910
+        },
+        {
+          "nome": "APS - ZONA OESTE",
+          "total": 8765
+        },
+        {
+          "nome": "NEXUS - GERIATRIA",
+          "total": 1411
+        }
+      ]
+    },
+    {
+      "nome": "Oeste",
+      "beneficiarios": 71368,
+      "bairros": 288,
+      "idade_media_adultos": 69.07,
+      "pct_feminino": "66.7",
+      "pct_masculino": "33.3",
+      "idosos_80plus": 16564,
+      "distancia_media_km": 5.32,
+      "faixas_etarias": {
+        "18_a_49": {
+          "total": 6778,
+          "percentual": "9.5"
+        },
+        "50_a_69": {
+          "total": 25068,
+          "percentual": "35.1"
+        },
+        "70_a_74": {
+          "total": 11271,
+          "percentual": "15.8"
+        },
+        "75_a_79": {
+          "total": 10313,
+          "percentual": "14.5"
+        },
+        "80_a_89": {
+          "total": 12926,
+          "percentual": "18.1"
+        },
+        "90_a_94": {
+          "total": 2632,
+          "percentual": "3.7"
+        },
+        "95_a_99": {
+          "total": 877,
+          "percentual": "1.2"
+        },
+        "100_ou_mais": {
+          "total": 129,
+          "percentual": "0.2"
+        }
+      },
+      "top_programas": [
+        {
+          "nome": "SEM PROGRAMA",
+          "total": 60631
+        },
+        {
+          "nome": "APS - ZONA OESTE",
+          "total": 3581
+        },
+        {
+          "nome": "CORPORATE",
+          "total": 1664
+        },
+        {
+          "nome": "APS - ZONA SUL",
+          "total": 1510
+        }
+      ]
+    },
+    {
+      "nome": "ABC",
+      "beneficiarios": 40301,
+      "bairros": 160,
+      "idade_media_adultos": 69.12,
+      "pct_feminino": "65.1",
+      "pct_masculino": "34.9",
+      "idosos_80plus": 8920,
+      "distancia_media_km": 2.94,
+      "faixas_etarias": {
+        "18_a_49": {
+          "total": 3434,
+          "percentual": "8.5"
+        },
+        "50_a_69": {
+          "total": 14791,
+          "percentual": "36.7"
+        },
+        "70_a_74": {
+          "total": 6722,
+          "percentual": "16.7"
+        },
+        "75_a_79": {
+          "total": 5604,
+          "percentual": "13.9"
+        },
+        "80_a_89": {
+          "total": 7103,
+          "percentual": "17.6"
+        },
+        "90_a_94": {
+          "total": 1360,
+          "percentual": "3.4"
+        },
+        "95_a_99": {
+          "total": 402,
+          "percentual": "1.0"
+        },
+        "100_ou_mais": {
+          "total": 55,
+          "percentual": "0.1"
+        }
+      },
+      "top_programas": [
+        {
+          "nome": "REGIONAL ABC",
+          "total": 36786
+        },
+        {
+          "nome": "SEM PROGRAMA",
+          "total": 2932
+        },
+        {
+          "nome": "CORPORATE",
+          "total": 1188
+        },
+        {
+          "nome": "NEXUS - GERIATRIA",
+          "total": 510
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "versao": "6.0",
+    "data_exportacao": "2025-11-06T19:19:17.564Z"
+  },
+  "kpis": {
+    "idade_media_adultos_18plus": 69.59,
+    "pct_feminino": "67.3",
+    "pct_masculino": "32.7",
+    "total_idosos_75plus": 159768,
+    "total_idosos_80plus": 100357
+  },
+  "faixas_etarias": {
+    "perfil_80_menos": {
+      "faixas": {
+        "18_a_49": 36656,
+        "50_a_69": 142515,
+        "70_a_74": 66338,
+        "75_a_79": 59411
+      }
+    },
+    "perfil_80_mais": {
+      "faixas": {
+        "80_a_89": 78446,
+        "90_a_94": 16004,
+        "95_a_99": 5170,
+        "100_ou_mais": 737
+      }
+    }
+  },
+  "genero": {
+    "feminino": 277685,
+    "masculino": 134966,
+    "total": 412651
+  },
+  "por_zona": [
+    {
+      "zona": "Centro-Sul",
+      "beneficiarios": 140070,
+      "idade_media": 69.81,
+      "pct_feminino": "66.8",
+      "pct_masculino": "33.2"
+    },
+    {
+      "zona": "Leste",
+      "beneficiarios": 99122,
+      "idade_media": 69.64,
+      "pct_feminino": "68.8",
+      "pct_masculino": "31.2"
+    },
+    {
+      "zona": "Norte",
+      "beneficiarios": 61790,
+      "idade_media": 69.95,
+      "pct_feminino": "68.1",
+      "pct_masculino": "31.9"
+    },
+    {
+      "zona": "Oeste",
+      "beneficiarios": 71368,
+      "idade_media": 69.07,
+      "pct_feminino": "66.7",
+      "pct_masculino": "33.3"
+    },
+    {
+      "zona": "ABC",
+      "beneficiarios": 40301,
+      "idade_media": 69.12,
+      "pct_feminino": "65.1",
+      "pct_masculino": "34.9"
+    }
+  ]
+}
