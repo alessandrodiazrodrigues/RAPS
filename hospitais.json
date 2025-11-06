@@ -1,7 +1,8 @@
 {
   "metadata": {
-    "versao": "5.0",
-    "data_exportacao": "2025-11-05T22:17:46.471Z"
+    "versao": "6.0",
+    "data_exportacao": "2025-11-06T19:19:18.210Z",
+    "observacao": "Bairros contados como únicos - um bairro pode estar mais próximo de apenas um hospital"
   },
   "hospitais": [
     {
