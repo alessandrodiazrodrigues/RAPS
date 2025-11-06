@@ -1,572 +1,544 @@
 {
   "metadata": {
-    "versao": "5.0",
-    "data_exportacao": "2025-11-05T22:17:45.850Z",
-    "observacao": "Um beneficiário pode estar em múltiplos programas"
+    "versao": "6.0",
+    "data_exportacao": "2025-11-06T19:19:18.592Z",
+    "observacao": "Top 20 agora inclui os 3 hospitais mais próximos de cada bairro"
   },
-  "programas": [
+  "top_20_distantes": [
     {
-      "nome": "SEM PROGRAMA",
-      "total": 303028,
-      "percentual": "73.4"
+      "bairro": "planalto paulista",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2173,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "REGIONAL ABC",
-      "total": 37018,
-      "percentual": "9.0"
+      "bairro": "parque grajaú",
+      "zona": "Centro-Sul",
+      "beneficiarios": 390,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "APS - ZONA OESTE",
-      "total": 19707,
-      "percentual": "4.8"
+      "bairro": "vila do encontro",
+      "zona": "Centro-Sul",
+      "beneficiarios": 510,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "APS - ZONA NORTE",
-      "total": 12330,
-      "percentual": "3.0"
+      "bairro": "jardim dom bosco",
+      "zona": "Centro-Sul",
+      "beneficiarios": 172,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "APS - ZONA LESTE",
-      "total": 11636,
-      "percentual": "2.8"
+      "bairro": "vila olímpia",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1311,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "CORPORATE",
-      "total": 11621,
-      "percentual": "2.8"
+      "bairro": "jardim oriental",
+      "zona": "Centro-Sul",
+      "beneficiarios": 493,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "APS - ZONA SUL",
-      "total": 9879,
-      "percentual": "2.4"
+      "bairro": "vila monte alegre",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1023,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "NEXUS - GERIATRIA",
-      "total": 7065,
-      "percentual": "1.7"
+      "bairro": "campo grande",
+      "zona": "Centro-Sul",
+      "beneficiarios": 342,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "MVC",
-      "total": 6139,
-      "percentual": "1.5"
+      "bairro": "vila brasilina",
+      "zona": "Centro-Sul",
+      "beneficiarios": 449,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "NEXUS - CARDIOLOGIA",
-      "total": 5672,
-      "percentual": "1.4"
+      "bairro": "vila joaniza",
+      "zona": "Centro-Sul",
+      "beneficiarios": 94,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "ASSISTE",
-      "total": 3698,
-      "percentual": "0.9"
+      "bairro": "vila firmiano pinto",
+      "zona": "Centro-Sul",
+      "beneficiarios": 832,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "AUTOIMUNE",
-      "total": 2023,
-      "percentual": "0.5"
+      "bairro": "vila santo estéfano",
+      "zona": "Centro-Sul",
+      "beneficiarios": 565,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "NEXUS - SAUDE DO FIGADO",
-      "total": 1961,
-      "percentual": "0.5"
+      "bairro": "jabaquara",
+      "zona": "Centro-Sul",
+      "beneficiarios": 524,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "APS - CENTRO",
-      "total": 1644,
-      "percentual": "0.4"
+      "bairro": "vila campestre",
+      "zona": "Centro-Sul",
+      "beneficiarios": 640,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "NEXUS - PSIQUIATRIA",
-      "total": 1581,
-      "percentual": "0.4"
+      "bairro": "vila gumercindo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1444,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "CUIDADOS PALIATIVOS",
-      "total": 1443,
-      "percentual": "0.3"
+      "bairro": "jordanópolis",
+      "zona": "Centro-Sul",
+      "beneficiarios": 578,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "NEXUS - REUMATOLOGIA",
-      "total": 1122,
-      "percentual": "0.3"
+      "bairro": "americanópolis",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1308,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "NEXUS - NEUROLOGIA",
-      "total": 1085,
-      "percentual": "0.3"
+      "bairro": "jardim prudência",
+      "zona": "Centro-Sul",
+      "beneficiarios": 792,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "ONCOLOGIA",
-      "total": 1034,
-      "percentual": "0.3"
+      "bairro": "vila moraes",
+      "zona": "Centro-Sul",
+      "beneficiarios": 922,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     },
     {
-      "nome": "REGIONAL OSASCO",
-      "total": 563,
-      "percentual": "0.1"
-    },
-    {
-      "nome": "NEXUS - PNEUMOLOGIA",
-      "total": 468,
-      "percentual": "0.1"
-    },
-    {
-      "nome": "NEXUS - GASTROENTEROLOGIA",
-      "total": 313,
-      "percentual": "0.1"
-    },
-    {
-      "nome": "ASSISTE - CONTINGENCIA",
-      "total": 274,
-      "percentual": "0.1"
-    },
-    {
-      "nome": "REGIONAL GUARULHOS",
-      "total": 221,
-      "percentual": "0.1"
-    },
-    {
-      "nome": "REGIONAL DF/RS/PR",
-      "total": 95,
-      "percentual": "0.0"
-    },
-    {
-      "nome": "ASSISTE - CONCESSAO",
-      "total": 4,
-      "percentual": "0.0"
+      "bairro": "paraíso",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2647,
+      "hospital": "São Camilo Ipiranga",
+      "distancia_km": 9.35,
+      "tempo_min": 19,
+      "hospitais_proximos": [
+        {
+          "hospital": "São Camilo Ipiranga",
+          "distancia_km": 9.35,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Adventista",
+          "distancia_km": 9.45,
+          "tempo_min": 19
+        },
+        {
+          "hospital": "Hospital Cruz Azul",
+          "distancia_km": 10.06,
+          "tempo_min": 20
+        }
+      ]
     }
   ],
-  "top_10": [
-    {
-      "nome": "SEM PROGRAMA",
-      "total": 303028,
-      "percentual": "73.4"
+  "distribuicao_por_faixa": {
+    "0-5km": {
+      "bairros": 731,
+      "beneficiarios": 250850
     },
-    {
-      "nome": "REGIONAL ABC",
-      "total": 37018,
-      "percentual": "9.0"
+    "5-10km": {
+      "bairros": 599,
+      "beneficiarios": 161801
     },
-    {
-      "nome": "APS - ZONA OESTE",
-      "total": 19707,
-      "percentual": "4.8"
+    "10-15km": {
+      "bairros": 0,
+      "beneficiarios": 0
     },
-    {
-      "nome": "APS - ZONA NORTE",
-      "total": 12330,
-      "percentual": "3.0"
+    "15-20km": {
+      "bairros": 0,
+      "beneficiarios": 0
     },
-    {
-      "nome": "APS - ZONA LESTE",
-      "total": 11636,
-      "percentual": "2.8"
+    "20-30km": {
+      "bairros": 0,
+      "beneficiarios": 0
     },
-    {
-      "nome": "CORPORATE",
-      "total": 11621,
-      "percentual": "2.8"
-    },
-    {
-      "nome": "APS - ZONA SUL",
-      "total": 9879,
-      "percentual": "2.4"
-    },
-    {
-      "nome": "NEXUS - GERIATRIA",
-      "total": 7065,
-      "percentual": "1.7"
-    },
-    {
-      "nome": "MVC",
-      "total": 6139,
-      "percentual": "1.5"
-    },
-    {
-      "nome": "NEXUS - CARDIOLOGIA",
-      "total": 5672,
-      "percentual": "1.4"
-    }
-  ],
-  "por_zona": {
-    "Centro": {
-      "SEM PROGRAMA": 26032,
-      "NEXUS - GERIATRIA": 552,
-      "NEXUS - CARDIOLOGIA": 400,
-      "APS - ZONA SUL": 563,
-      "APS - CENTRO": 1644,
-      "ASSISTE": 264,
-      "APS - ZONA NORTE": 496,
-      "NEXUS - REUMATOLOGIA": 79,
-      "AUTOIMUNE": 138,
-      "NEXUS - NEUROLOGIA": 91,
-      "MVC": 300,
-      "APS - ZONA OESTE": 504,
-      "ONCOLOGIA": 69,
-      "NEXUS - SAUDE DO FIGADO": 147,
-      "NEXUS - GASTROENTEROLOGIA": 28,
-      "APS - ZONA LESTE": 74,
-      "CUIDADOS PALIATIVOS": 112,
-      "NEXUS - PNEUMOLOGIA": 38,
-      "NEXUS - PSIQUIATRIA": 144,
-      "REGIONAL GUARULHOS": 25,
-      "REGIONAL OSASCO": 49,
-      "CORPORATE": 321,
-      "REGIONAL ABC": 15,
-      "ASSISTE - CONTINGENCIA": 16,
-      "REGIONAL DF/RS/PR": 2,
-      "ASSISTE - CONCESSAO": 1
-    },
-    "Centro-Sul": {
-      "NEXUS - GERIATRIA": 1859,
-      "SEM PROGRAMA": 91875,
-      "APS - ZONA SUL": 7032,
-      "APS - ZONA OESTE": 6813,
-      "ASSISTE": 941,
-      "NEXUS - CARDIOLOGIA": 1622,
-      "NEXUS - SAUDE DO FIGADO": 547,
-      "NEXUS - REUMATOLOGIA": 344,
-      "AUTOIMUNE": 614,
-      "NEXUS - PSIQUIATRIA": 435,
-      "MVC": 1237,
-      "ONCOLOGIA": 273,
-      "NEXUS - NEUROLOGIA": 280,
-      "APS - ZONA NORTE": 1277,
-      "CUIDADOS PALIATIVOS": 366,
-      "ASSISTE - CONTINGENCIA": 53,
-      "NEXUS - PNEUMOLOGIA": 155,
-      "REGIONAL ABC": 122,
-      "REGIONAL GUARULHOS": 36,
-      "APS - ZONA LESTE": 219,
-      "REGIONAL OSASCO": 124,
-      "NEXUS - GASTROENTEROLOGIA": 83,
-      "CORPORATE": 2627,
-      "ASSISTE - CONCESSAO": 1,
-      "REGIONAL DF/RS/PR": 6
-    },
-    "Leste": {
-      "SEM PROGRAMA": 74865,
-      "ASSISTE": 1031,
-      "APS - ZONA LESTE": 10962,
-      "NEXUS - GERIATRIA": 1686,
-      "MVC": 2697,
-      "NEXUS - CARDIOLOGIA": 1309,
-      "ONCOLOGIA": 261,
-      "APS - ZONA NORTE": 753,
-      "REGIONAL GUARULHOS": 54,
-      "NEXUS - NEUROLOGIA": 277,
-      "CUIDADOS PALIATIVOS": 327,
-      "NEXUS - REUMATOLOGIA": 294,
-      "AUTOIMUNE": 481,
-      "NEXUS - PSIQUIATRIA": 371,
-      "REGIONAL OSASCO": 46,
-      "NEXUS - SAUDE DO FIGADO": 512,
-      "APS - ZONA SUL": 317,
-      "ASSISTE - CONTINGENCIA": 84,
-      "REGIONAL ABC": 50,
-      "NEXUS - PNEUMOLOGIA": 103,
-      "NEXUS - GASTROENTEROLOGIA": 71,
-      "CORPORATE": 4499,
-      "APS - ZONA OESTE": 1,
-      "REGIONAL DF/RS/PR": 3,
-      "ASSISTE - CONCESSAO": 1
-    },
-    "Norte": {
-      "SEM PROGRAMA": 46693,
-      "APS - ZONA NORTE": 8910,
-      "APS - ZONA OESTE": 8765,
-      "ASSISTE": 503,
-      "APS - ZONA SUL": 397,
-      "NEXUS - GERIATRIA": 1411,
-      "NEXUS - CARDIOLOGIA": 803,
-      "NEXUS - NEUROLOGIA": 192,
-      "MVC": 775,
-      "CUIDADOS PALIATIVOS": 226,
-      "NEXUS - SAUDE DO FIGADO": 299,
-      "REGIONAL OSASCO": 39,
-      "NEXUS - PSIQUIATRIA": 225,
-      "NEXUS - REUMATOLOGIA": 157,
-      "AUTOIMUNE": 309,
-      "ONCOLOGIA": 166,
-      "NEXUS - PNEUMOLOGIA": 55,
-      "REGIONAL ABC": 13,
-      "REGIONAL GUARULHOS": 69,
-      "ASSISTE - CONTINGENCIA": 42,
-      "APS - ZONA LESTE": 145,
-      "CORPORATE": 1322,
-      "NEXUS - GASTROENTEROLOGIA": 46,
-      "ASSISTE - CONCESSAO": 1,
-      "REGIONAL DF/RS/PR": 3
-    },
-    "Oeste": {
-      "SEM PROGRAMA": 60631,
-      "APS - ZONA OESTE": 3581,
-      "ASSISTE": 617,
-      "NEXUS - PNEUMOLOGIA": 89,
-      "NEXUS - GERIATRIA": 1047,
-      "NEXUS - CARDIOLOGIA": 1065,
-      "CUIDADOS PALIATIVOS": 268,
-      "APS - ZONA SUL": 1510,
-      "NEXUS - NEUROLOGIA": 187,
-      "MVC": 850,
-      "NEXUS - SAUDE DO FIGADO": 301,
-      "APS - ZONA NORTE": 809,
-      "NEXUS - PSIQUIATRIA": 301,
-      "NEXUS - REUMATOLOGIA": 213,
-      "AUTOIMUNE": 370,
-      "ASSISTE - CONTINGENCIA": 45,
-      "REGIONAL OSASCO": 292,
-      "APS - ZONA LESTE": 144,
-      "REGIONAL ABC": 32,
-      "NEXUS - GASTROENTEROLOGIA": 63,
-      "ONCOLOGIA": 172,
-      "CORPORATE": 1664,
-      "REGIONAL GUARULHOS": 22,
-      "REGIONAL DF/RS/PR": 4
-    },
-    "ABC": {
-      "REGIONAL ABC": 36786,
-      "MVC": 280,
-      "NEXUS - CARDIOLOGIA": 473,
-      "NEXUS - PNEUMOLOGIA": 28,
-      "ASSISTE": 342,
-      "CUIDADOS PALIATIVOS": 144,
-      "APS - ZONA OESTE": 43,
-      "APS - ZONA SUL": 60,
-      "NEXUS - GERIATRIA": 510,
-      "SEM PROGRAMA": 2932,
-      "APS - ZONA NORTE": 85,
-      "REGIONAL DF/RS/PR": 77,
-      "NEXUS - NEUROLOGIA": 58,
-      "CORPORATE": 1188,
-      "NEXUS - SAUDE DO FIGADO": 155,
-      "APS - ZONA LESTE": 92,
-      "ONCOLOGIA": 93,
-      "NEXUS - PSIQUIATRIA": 105,
-      "AUTOIMUNE": 111,
-      "NEXUS - REUMATOLOGIA": 35,
-      "NEXUS - GASTROENTEROLOGIA": 22,
-      "ASSISTE - CONTINGENCIA": 34,
-      "REGIONAL GUARULHOS": 15,
-      "REGIONAL OSASCO": 13
+    ">30km": {
+      "bairros": 0,
+      "beneficiarios": 0
     }
   },
-  "por_classificacao": {
-    "80+ B2": {
-      "SEM PROGRAMA": 23621,
-      "NEXUS - CARDIOLOGIA": 998,
-      "NEXUS - GERIATRIA": 2125,
-      "APS - ZONA SUL": 397,
-      "APS - CENTRO": 50,
-      "ASSISTE": 861,
-      "NEXUS - NEUROLOGIA": 200,
-      "CUIDADOS PALIATIVOS": 268,
-      "NEXUS - PNEUMOLOGIA": 56,
-      "APS - ZONA NORTE": 320,
-      "MVC": 712,
-      "AUTOIMUNE": 158,
-      "NEXUS - REUMATOLOGIA": 97,
-      "NEXUS - SAUDE DO FIGADO": 173,
-      "ONCOLOGIA": 104,
-      "REGIONAL GUARULHOS": 11,
-      "APS - ZONA OESTE": 682,
-      "APS - ZONA LESTE": 517,
-      "NEXUS - PSIQUIATRIA": 37,
-      "ASSISTE - CONTINGENCIA": 37,
-      "REGIONAL DF/RS/PR": 10,
-      "NEXUS - GASTROENTEROLOGIA": 17,
-      "REGIONAL OSASCO": 32,
-      "REGIONAL ABC": 2811,
-      "ASSISTE - CONCESSAO": 2
-    },
-    "80+ A": {
-      "SEM PROGRAMA": 15273,
-      "ASSISTE": 169,
-      "APS - ZONA SUL": 83,
-      "APS - CENTRO": 11,
-      "ONCOLOGIA": 39,
-      "NEXUS - CARDIOLOGIA": 111,
-      "NEXUS - GERIATRIA": 211,
-      "MVC": 48,
-      "REGIONAL OSASCO": 39,
-      "APS - ZONA OESTE": 140,
-      "NEXUS - NEUROLOGIA": 39,
-      "APS - ZONA LESTE": 118,
-      "NEXUS - SAUDE DO FIGADO": 47,
-      "NEXUS - REUMATOLOGIA": 13,
-      "AUTOIMUNE": 20,
-      "CUIDADOS PALIATIVOS": 31,
-      "ASSISTE - CONTINGENCIA": 18,
-      "APS - ZONA NORTE": 81,
-      "REGIONAL ABC": 1544,
-      "NEXUS - PSIQUIATRIA": 11,
-      "NEXUS - PNEUMOLOGIA": 8,
-      "NEXUS - GASTROENTEROLOGIA": 2,
-      "REGIONAL GUARULHOS": 3,
-      "REGIONAL DF/RS/PR": 2
-    },
-    "80+ B1": {
-      "SEM PROGRAMA": 20459,
-      "NEXUS - GERIATRIA": 945,
-      "ASSISTE": 434,
-      "NEXUS - CARDIOLOGIA": 394,
-      "APS - ZONA OESTE": 408,
-      "APS - CENTRO": 37,
-      "MVC": 229,
-      "APS - ZONA SUL": 234,
-      "APS - ZONA LESTE": 309,
-      "NEXUS - NEUROLOGIA": 100,
-      "NEXUS - PSIQUIATRIA": 24,
-      "NEXUS - REUMATOLOGIA": 41,
-      "AUTOIMUNE": 68,
-      "NEXUS - SAUDE DO FIGADO": 102,
-      "ONCOLOGIA": 80,
-      "NEXUS - PNEUMOLOGIA": 35,
-      "APS - ZONA NORTE": 194,
-      "CUIDADOS PALIATIVOS": 109,
-      "REGIONAL OSASCO": 25,
-      "ASSISTE - CONCESSAO": 1,
-      "ASSISTE - CONTINGENCIA": 38,
-      "REGIONAL ABC": 2225,
-      "REGIONAL GUARULHOS": 8,
-      "NEXUS - GASTROENTEROLOGIA": 3,
-      "REGIONAL DF/RS/PR": 3
-    },
-    "80- C": {
-      "SEM PROGRAMA": 6231,
-      "NEXUS - CARDIOLOGIA": 462,
-      "ONCOLOGIA": 36,
-      "APS - ZONA OESTE": 895,
-      "APS - CENTRO": 70,
-      "MVC": 275,
-      "NEXUS - PNEUMOLOGIA": 49,
-      "NEXUS - REUMATOLOGIA": 76,
-      "AUTOIMUNE": 123,
-      "APS - ZONA SUL": 427,
-      "ASSISTE": 117,
-      "CUIDADOS PALIATIVOS": 79,
-      "NEXUS - SAUDE DO FIGADO": 154,
-      "NEXUS - GERIATRIA": 74,
-      "NEXUS - PSIQUIATRIA": 88,
-      "APS - ZONA NORTE": 555,
-      "NEXUS - NEUROLOGIA": 66,
-      "APS - ZONA LESTE": 497,
-      "CORPORATE": 17,
-      "ASSISTE - CONTINGENCIA": 20,
-      "REGIONAL GUARULHOS": 4,
-      "NEXUS - GASTROENTEROLOGIA": 20,
-      "REGIONAL ABC": 852,
-      "REGIONAL OSASCO": 14,
-      "REGIONAL DF/RS/PR": 6
-    },
-    "80+ C": {
-      "SEM PROGRAMA": 13618,
-      "NEXUS - GERIATRIA": 3113,
-      "ASSISTE": 1491,
-      "NEXUS - NEUROLOGIA": 110,
-      "APS - ZONA NORTE": 172,
-      "APS - CENTRO": 25,
-      "NEXUS - SAUDE DO FIGADO": 119,
-      "MVC": 404,
-      "APS - ZONA SUL": 213,
-      "NEXUS - CARDIOLOGIA": 870,
-      "CUIDADOS PALIATIVOS": 736,
-      "APS - ZONA OESTE": 352,
-      "NEXUS - PSIQUIATRIA": 29,
-      "NEXUS - REUMATOLOGIA": 52,
-      "AUTOIMUNE": 84,
-      "REGIONAL ABC": 1835,
-      "REGIONAL OSASCO": 28,
-      "APS - ZONA LESTE": 212,
-      "ASSISTE - CONTINGENCIA": 38,
-      "ONCOLOGIA": 62,
-      "NEXUS - PNEUMOLOGIA": 44,
-      "NEXUS - GASTROENTEROLOGIA": 3,
-      "REGIONAL GUARULHOS": 14,
-      "CORPORATE": 1,
-      "ASSISTE - CONCESSAO": 1,
-      "REGIONAL DF/RS/PR": 5
-    },
-    "80- B2": {
-      "SEM PROGRAMA": 45826,
-      "APS - ZONA NORTE": 4411,
-      "APS - CENTRO": 540,
-      "NEXUS - REUMATOLOGIA": 413,
-      "AUTOIMUNE": 668,
-      "MVC": 1958,
-      "APS - ZONA OESTE": 6905,
-      "APS - ZONA SUL": 3208,
-      "NEXUS - CARDIOLOGIA": 1624,
-      "NEXUS - NEUROLOGIA": 268,
-      "APS - ZONA LESTE": 3580,
-      "NEXUS - PSIQUIATRIA": 448,
-      "NEXUS - PNEUMOLOGIA": 176,
-      "NEXUS - GERIATRIA": 360,
-      "NEXUS - SAUDE DO FIGADO": 632,
-      "ASSISTE": 288,
-      "REGIONAL ABC": 6602,
-      "ONCOLOGIA": 242,
-      "CORPORATE": 736,
-      "REGIONAL GUARULHOS": 34,
-      "CUIDADOS PALIATIVOS": 116,
-      "NEXUS - GASTROENTEROLOGIA": 97,
-      "ASSISTE - CONTINGENCIA": 43,
-      "REGIONAL OSASCO": 72,
-      "REGIONAL DF/RS/PR": 33
-    },
-    "80- A": {
-      "SEM PROGRAMA": 98410,
-      "APS - ZONA OESTE": 2730,
-      "APS - CENTRO": 243,
-      "NEXUS - CARDIOLOGIA": 207,
-      "APS - ZONA NORTE": 1895,
-      "REGIONAL OSASCO": 146,
-      "CORPORATE": 6858,
-      "APS - ZONA SUL": 1463,
-      "MVC": 465,
-      "NEXUS - PSIQUIATRIA": 305,
-      "REGIONAL GUARULHOS": 63,
-      "NEXUS - SAUDE DO FIGADO": 194,
-      "REGIONAL ABC": 10522,
-      "NEXUS - NEUROLOGIA": 67,
-      "AUTOIMUNE": 188,
-      "NEXUS - GERIATRIA": 38,
-      "APS - ZONA LESTE": 1942,
-      "NEXUS - GASTROENTEROLOGIA": 37,
-      "ONCOLOGIA": 137,
-      "ASSISTE": 82,
-      "NEXUS - REUMATOLOGIA": 56,
-      "NEXUS - PNEUMOLOGIA": 13,
-      "ASSISTE - CONTINGENCIA": 30,
-      "CUIDADOS PALIATIVOS": 18,
-      "REGIONAL DF/RS/PR": 10
-    },
-    "80- B1": {
-      "SEM PROGRAMA": 79590,
-      "APS - ZONA SUL": 3854,
-      "APS - CENTRO": 668,
-      "APS - ZONA NORTE": 4702,
-      "APS - ZONA OESTE": 7595,
-      "NEXUS - NEUROLOGIA": 235,
-      "NEXUS - GASTROENTEROLOGIA": 134,
-      "NEXUS - SAUDE DO FIGADO": 540,
-      "MVC": 2048,
-      "NEXUS - REUMATOLOGIA": 374,
-      "AUTOIMUNE": 714,
-      "APS - ZONA LESTE": 4461,
-      "NEXUS - PSIQUIATRIA": 639,
-      "REGIONAL OSASCO": 207,
-      "CORPORATE": 4009,
-      "ONCOLOGIA": 334,
-      "NEXUS - CARDIOLOGIA": 1006,
-      "ASSISTE": 256,
-      "REGIONAL ABC": 10627,
-      "NEXUS - PNEUMOLOGIA": 87,
-      "CUIDADOS PALIATIVOS": 86,
-      "REGIONAL GUARULHOS": 84,
-      "ASSISTE - CONTINGENCIA": 50,
-      "NEXUS - GERIATRIA": 199,
-      "REGIONAL DF/RS/PR": 26
-    }
+  "bairros_descobertos": {
+    "threshold_km": 15,
+    "total_bairros": 0,
+    "percentual_bairros": "0.0",
+    "total_beneficiarios": 0,
+    "percentual_beneficiarios": "0.0",
+    "distancia_maxima_km": 0,
+    "bairro_mais_distante": null
   }
 }
