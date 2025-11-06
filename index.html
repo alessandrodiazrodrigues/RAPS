@@ -1199,12 +1199,20 @@
         function renderizarProgramas() {
             const programasSection = document.getElementById('programas');
             
+            // 🔍 DEBUG - Ver estrutura completa
+            console.log('🔍 DEBUG dados.programas:', dados.programas);
+            console.log('🔍 DEBUG dados.programas?.programas:', dados.programas?.programas);
+            console.log('🔍 DEBUG keys:', dados.programas ? Object.keys(dados.programas) : 'null');
+            
             if (!dados.programas || !dados.programas.programas) {
-                console.warn('Dados de programas não disponíveis');
+                console.warn('❌ Dados de programas não disponíveis');
+                console.log('dados.programas existe?', !!dados.programas);
+                console.log('dados.programas.programas existe?', !!dados.programas?.programas);
                 programasSection.innerHTML = `
                     <h2 class="section-title">Análise de Programas de Saúde</h2>
                     <div class="alert alert-error">
-                        ⚠️ Dados de programas não disponíveis. O arquivo programas.json não foi encontrado.
+                        ⚠️ Dados de programas não disponíveis. Estrutura incorreta do JSON.
+                        <br><small>Verifique o Console (F12) para mais detalhes.</small>
                     </div>
                 `;
                 return;
@@ -1282,12 +1290,18 @@
         function renderizarPlanos() {
             const planosSection = document.getElementById('planos');
             
+            // 🔍 DEBUG - Ver estrutura completa
+            console.log('🔍 DEBUG dados.planos:', dados.planos);
+            console.log('🔍 DEBUG dados.planos?.kpis:', dados.planos?.kpis);
+            console.log('🔍 DEBUG keys:', dados.planos ? Object.keys(dados.planos) : 'null');
+            
             if (!dados.planos || !dados.planos.kpis) {
-                console.warn('Dados de planos não disponíveis');
+                console.warn('❌ Dados de planos não disponíveis');
                 planosSection.innerHTML = `
                     <h2 class="section-title">Análise de Planos de Saúde</h2>
                     <div class="alert alert-error">
-                        ⚠️ Dados de planos não disponíveis. O arquivo planos.json não foi encontrado.
+                        ⚠️ Dados de planos não disponíveis. Estrutura incorreta do JSON.
+                        <br><small>Verifique o Console (F12) para mais detalhes.</small>
                     </div>
                 `;
                 return;
