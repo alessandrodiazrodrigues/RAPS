@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal RAPS - Prevent Senior | Análise Completa</title>
+    <title>Portal RAPS - Prevent Senior | Dashboard v6.0</title>
+    
+    <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+    
+    <!-- Leaflet (Mapa) -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     
@@ -16,111 +20,97 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            color: #e2e8f0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
+            padding: 20px;
         }
 
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* ==================== HEADER ==================== */
         .header {
-            background: #1e293b;
-            padding: 20px 30px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
 
         .header h1 {
-            color: #60a5fa;
-            font-size: 24px;
+            color: #2d3748;
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
 
         .badge {
-            background: #10b981;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 4px 12px;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .version {
+            background: #48bb78;
+            color: white;
+            padding: 5px 12px;
             border-radius: 12px;
             font-size: 12px;
             font-weight: 600;
         }
 
-        .loading {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(15, 23, 42, 0.95);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            gap: 20px;
-        }
-
-        .loading-spinner {
-            width: 50px;
-            height: 50px;
-            border: 5px solid rgba(96, 165, 250, 0.2);
-            border-top-color: #60a5fa;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        .loading-text {
-            color: #60a5fa;
-            font-size: 18px;
-            font-weight: 600;
-        }
-
+        /* ==================== NAVEGAÇÃO ==================== */
         .nav {
-            background: #1e293b;
-            padding: 0 30px;
-            border-bottom: 2px solid rgba(96, 165, 250, 0.2);
-            overflow-x: auto;
-        }
-
-        .nav-tabs {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
             display: flex;
             gap: 10px;
+            flex-wrap: wrap;
         }
 
         .nav-tab {
-            background: transparent;
+            background: #f7fafc;
+            color: #4a5568;
             border: none;
-            color: #94a3b8;
-            padding: 15px 25px;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
             cursor: pointer;
-            border-bottom: 3px solid transparent;
-            transition: all 0.3s;
-            white-space: nowrap;
-            font-size: 14px;
-            font-weight: 500;
+            transition: all 0.3s ease;
         }
 
         .nav-tab:hover {
-            color: #e2e8f0;
-            background: rgba(255, 255, 255, 0.05);
+            background: #edf2f7;
+            transform: translateY(-2px);
         }
 
         .nav-tab.active {
-            color: #60a5fa;
-            border-bottom-color: #60a5fa;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
 
+        /* ==================== CONTEÚDO ==================== */
         .content {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             padding: 30px;
-            max-width: 1600px;
-            margin: 0 auto;
+            min-height: 600px;
         }
 
         .section {
@@ -129,481 +119,701 @@
 
         .section.active {
             display: block;
-            animation: fadeIn 0.3s;
+            animation: fadeIn 0.3s ease-in;
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
+            from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+        .section-title {
+            font-size: 28px;
+            color: #2d3748;
             margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
-        .stat-card {
-            background: #1e293b;
+        /* ==================== KPI CARDS ==================== */
+        .kpis {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .kpi-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            border-left: 4px solid #60a5fa;
-            transition: transform 0.3s;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
         }
 
-        .stat-card:hover {
+        .kpi-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
         }
 
-        .stat-label {
-            color: #94a3b8;
+        .kpi-label {
             font-size: 14px;
+            opacity: 0.9;
             margin-bottom: 10px;
             display: flex;
             align-items: center;
             gap: 8px;
         }
 
-        .stat-value {
-            color: #e2e8f0;
-            font-size: 32px;
+        .kpi-value {
+            font-size: 36px;
             font-weight: 700;
             margin-bottom: 5px;
         }
 
-        .stat-subtitle {
-            color: #10b981;
+        .kpi-subtitle {
             font-size: 13px;
+            opacity: 0.8;
         }
 
+        /* ==================== TOOLTIP ==================== */
+        .tooltip-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            font-size: 12px;
+            cursor: help;
+            position: relative;
+        }
+
+        .tooltip-icon:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2d3748;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            white-space: normal;
+            width: 280px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            z-index: 1000;
+            margin-bottom: 8px;
+            line-height: 1.4;
+            font-weight: normal;
+        }
+
+        .tooltip-icon:hover::before {
+            content: '';
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent;
+            border-top-color: #2d3748;
+            margin-bottom: 2px;
+        }
+
+        /* ==================== GRÁFICOS ==================== */
         .charts-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
         }
 
-        .chart-card {
-            background: #1e293b;
+        .chart-container {
+            background: #f7fafc;
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         .chart-title {
-            color: #e2e8f0;
             font-size: 18px;
-            margin-bottom: 20px;
             font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
-        .chart-wrapper {
+        .chart-canvas {
             position: relative;
-            height: 300px;
-            width: 100%;
+            height: 350px;
         }
 
+        /* ==================== TABELAS ==================== */
         .table-container {
-            background: #1e293b;
-            border-radius: 12px;
-            padding: 25px;
             overflow-x: auto;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
             margin-bottom: 30px;
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .table-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .table-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2d3748;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .table-filters {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .filter-input {
+            padding: 8px 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 14px;
+            min-width: 200px;
+        }
+
+        .filter-select {
+            padding: 8px 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 14px;
+            min-width: 150px;
+            cursor: pointer;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
         }
 
         th {
-            background: rgba(96, 165, 250, 0.1);
-            color: #60a5fa;
             padding: 15px;
             text-align: left;
             font-weight: 600;
             font-size: 14px;
-            position: sticky;
-            top: 0;
         }
 
         td {
-            padding: 15px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            color: #e2e8f0;
-            font-size: 14px;
+            padding: 12px 15px;
+            border-bottom: 1px solid #e2e8f0;
         }
 
-        tr:hover {
-            background: rgba(255, 255, 255, 0.02);
+        tbody tr:hover {
+            background: #f7fafc;
         }
 
-        .map-container {
-            background: #1e293b;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
-
-        .real-map {
-            height: 600px;
-            border-radius: 8px;
-            z-index: 1;
+        tbody tr:last-child td {
+            border-bottom: none;
         }
 
         .zona-badge {
-            padding: 5px 12px;
+            display: inline-block;
+            padding: 4px 12px;
             border-radius: 12px;
             font-size: 12px;
             font-weight: 600;
         }
 
-        .zona-centro { background: #6366f1; color: white; }
-        .zona-centro-sul { background: #10b981; color: white; }
-        .zona-leste { background: #3b82f6; color: white; }
-        .zona-norte { background: #f59e0b; color: white; }
-        .zona-oeste { background: #8b5cf6; color: white; }
-        .zona-abc { background: #ec4899; color: white; }
+        .zona-centro-sul { background: #c3dafe; color: #2c5282; }
+        .zona-leste { background: #c6f6d5; color: #276749; }
+        .zona-norte { background: #fed7d7; color: #9b2c2c; }
+        .zona-oeste { background: #feebc8; color: #9c4221; }
+        .zona-abc { background: #e9d8fd; color: #553c9a; }
 
-        .section-title {
-            color: #60a5fa;
-            font-size: 24px;
-            margin-bottom: 25px;
-        }
-
-        .hospital-grid {
+        /* ==================== ZONA CARDS ==================== */
+        .zonas-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
         }
 
-        .hospital-card {
-            background: #1e293b;
-            padding: 25px;
+        .zona-card {
+            background: white;
+            border: 2px solid #e2e8f0;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            border-top: 4px solid #60a5fa;
+            padding: 25px;
+            transition: all 0.3s ease;
         }
 
-        .hospital-name {
-            color: #e2e8f0;
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 15px;
+        .zona-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
         }
 
-        .hospital-stats {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .hospital-stat {
+        .zona-card-header {
             display: flex;
             justify-content: space-between;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 6px;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e2e8f0;
         }
 
-        .hospital-stat-label {
-            color: #94a3b8;
-            font-size: 13px;
-        }
-
-        .hospital-stat-value {
-            color: #60a5fa;
-            font-weight: 600;
-            font-size: 14px;
-        }
-
-        .kpis {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-bottom: 25px;
-        }
-
-        .kpi-card {
-            background: rgba(96, 165, 250, 0.05);
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid rgba(96, 165, 250, 0.2);
-        }
-
-        .kpi-value {
-            color: #60a5fa;
-            font-size: 28px;
+        .zona-card-title {
+            font-size: 22px;
             font-weight: 700;
+            color: #2d3748;
+        }
+
+        .zona-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .zona-stat {
+            background: #f7fafc;
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        .zona-stat-label {
+            font-size: 12px;
+            color: #718096;
             margin-bottom: 5px;
         }
 
-        .kpi-label {
-            color: #94a3b8;
+        .zona-stat-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2d3748;
+        }
+
+        .zona-section {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .zona-section-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 12px;
+        }
+
+        .faixa-etaria-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 0;
             font-size: 13px;
         }
 
-        .card {
-            background: #1e293b;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        .faixa-etaria-label {
+            color: #4a5568;
         }
 
-        .card h3 {
-            color: #60a5fa;
-            font-size: 18px;
-            margin-bottom: 20px;
+        .faixa-etaria-value {
             font-weight: 600;
+            color: #2d3748;
+        }
+
+        .programa-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            background: #f7fafc;
+            border-radius: 6px;
+            margin-bottom: 6px;
+            font-size: 13px;
+        }
+
+        .programa-nome {
+            color: #4a5568;
+            font-weight: 500;
+        }
+
+        .programa-total {
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        /* ==================== MAPA ==================== */
+        .map-container {
+            height: 600px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        /* ==================== LOADING ==================== */
+        .loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px;
+            color: #667eea;
+        }
+
+        .loading-spinner {
+            width: 60px;
+            height: 60px;
+            border: 4px solid #e2e8f0;
+            border-top-color: #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* ==================== ALERTAS ==================== */
+        .alert {
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .alert-warning {
+            background: #fef5e7;
+            border-left: 4px solid #f39c12;
+            color: #9c4221;
+        }
+
+        .alert-info {
+            background: #ebf8ff;
+            border-left: 4px solid #3182ce;
+            color: #2c5282;
+        }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .nav {
+                flex-direction: column;
+            }
+
+            .nav-tab {
+                width: 100%;
+            }
+
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .zonas-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .kpis {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="loading" id="loading">
-        <div class="loading-spinner"></div>
-        <div class="loading-text">Carregando Portal RAPS...</div>
-    </div>
-
-    <div class="header">
-        <h1>🏥 Portal RAPS - Prevent Senior</h1>
-        <span class="badge">✅ DADOS REAIS - Nov/2025</span>
-    </div>
-
-    <div class="nav">
-        <div class="nav-tabs">
-            <button class="nav-tab active" onclick="showSection('dashboard')">📊 Dashboard</button>
-            <button class="nav-tab" onclick="showSection('demografia')">👥 Demografia</button>
-            <button class="nav-tab" onclick="showSection('programas')">📋 Programas</button>
-            <button class="nav-tab" onclick="showSection('zonas')">🗺️ Zonas</button>
-            <button class="nav-tab" onclick="showSection('hospitais')">🏥 Hospitais</button>
-            <button class="nav-tab" onclick="showSection('gaps')">⚠️ Gaps</button>
-            <button class="nav-tab" onclick="showSection('extremo-sul')">🌍 Extremo Sul</button>
-            <button class="nav-tab" onclick="showSection('mapa')">🗺 Mapa</button>
-        </div>
-    </div>
-
-    <div class="content" id="mainContent" style="display: none;">
-        
-        <!-- DASHBOARD EXECUTIVO -->
-        <div id="dashboard" class="section active">
-            <h2 class="section-title">📊 Visão Geral da Rede</h2>
-            <div class="stats-grid" id="dashboardStats"></div>
-            <div class="charts-grid" id="dashboardCharts"></div>
-            <div class="table-container" id="topBairros"></div>
+    <div class="container">
+        <!-- ==================== HEADER ==================== -->
+        <div class="header">
+            <h1>
+                🏥 Portal RAPS - Prevent Senior
+                <span class="version">v6.0</span>
+            </h1>
+            <div>
+                <span class="badge" id="badge-status">⏳ Carregando...</span>
+            </div>
         </div>
 
-        <!-- ANÁLISE DEMOGRÁFICA -->
-        <div id="demografia" class="section">
-            <h2 class="section-title">👥 Análise Demográfica</h2>
-            <div class="stats-grid" id="demografiaStats"></div>
-            <div class="charts-grid" id="demografiaCharts"></div>
+        <!-- ==================== NAVEGAÇÃO ==================== -->
+        <div class="nav">
+            <button class="nav-tab active" data-section="dashboard">📊 Dashboard</button>
+            <button class="nav-tab" data-section="demografia">👥 Demografia</button>
+            <button class="nav-tab" data-section="programas">📋 Programas</button>
+            <button class="nav-tab" data-section="planos">💳 Planos</button>
+            <button class="nav-tab" data-section="zonas">🗺️ Zonas</button>
+            <button class="nav-tab" data-section="hospitais">🏥 Hospitais</button>
+            <button class="nav-tab" data-section="perifericos">📍 Bairros Periféricos</button>
         </div>
 
-        <!-- ANÁLISE DE PROGRAMAS -->
-        <div id="programas" class="section">
-            <h2 class="section-title">📋 Análise de Programas</h2>
-            <div class="stats-grid" id="programasStats"></div>
-            <div class="charts-grid" id="programasCharts"></div>
-            <div class="table-container" id="programasTabela"></div>
-        </div>
+        <!-- ==================== CONTEÚDO ==================== -->
+        <div class="content">
+            <!-- ==================== LOADING ==================== -->
+            <div id="loading" class="loading">
+                <div class="loading-spinner"></div>
+                <h2>Carregando dados...</h2>
+                <p>Aguarde enquanto processamos 412.651 beneficiários</p>
+            </div>
 
-        <!-- ANÁLISE POR ZONA -->
-        <div id="zonas" class="section">
-            <h2 class="section-title">🗺️ Análise por Zona</h2>
-            <div class="hospital-grid" id="zonasCards"></div>
-            <div class="charts-grid" id="zonasCharts"></div>
-        </div>
-
-        <!-- ANÁLISE POR HOSPITAL -->
-        <div id="hospitais" class="section">
-            <h2 class="section-title">🏥 Análise por Hospital</h2>
-            <div class="table-container" id="hospitaisTabela"></div>
-            <div class="charts-grid" id="hospitaisCharts"></div>
-        </div>
-
-        <!-- GAPS E OPORTUNIDADES -->
-        <div id="gaps" class="section">
-            <h2 class="section-title">⚠️ Gaps e Oportunidades</h2>
-            <div class="stats-grid" id="gapsStats"></div>
-            <div class="table-container" id="gapsTabela"></div>
-            
-            <div class="card">
-                <h3>⚠️ Top 50 Bairros Mais Distantes (Diagnóstico Crítico)</h3>
+            <!-- ==================== 1. DASHBOARD ==================== -->
+            <div id="dashboard" class="section">
+                <h2 class="section-title">📊 Dashboard Executivo</h2>
                 
-                <div class="kpis">
-                    <div class="kpi-card">
-                        <div class="kpi-value">50</div>
-                        <div class="kpi-label">Bairros Críticos</div>
+                <div class="kpis" id="dashboard-kpis"></div>
+                
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <div class="chart-title">
+                            📏 Distribuição por Faixas de Distância
+                            <span class="tooltip-icon" data-tooltip="Mostra quantos bairros estão em cada faixa de distância do hospital mais próximo. Distâncias calculadas usando rotas reais de carro via Google Maps API.">ℹ️</span>
+                        </div>
+                        <div class="chart-canvas">
+                            <canvas id="chartFaixas"></canvas>
+                        </div>
                     </div>
-                    <div class="kpi-card">
-                        <div class="kpi-value" id="top50-beneficiarios">-</div>
-                        <div class="kpi-label">Beneficiários (0.4%)</div>
-                    </div>
-                    <div class="kpi-card">
-                        <div class="kpi-value" id="top50-distancia">-</div>
-                        <div class="kpi-label">Distância Média</div>
-                    </div>
-                    <div class="kpi-card">
-                        <div class="kpi-value" id="top50-tempo">-</div>
-                        <div class="kpi-label">Tempo Médio</div>
+                    
+                    <div class="chart-container">
+                        <div class="chart-title">
+                            🏘️ Top 15 Bairros
+                            <span class="tooltip-icon" data-tooltip="Bairros com maior número de beneficiários ativos. Essencial para priorização de recursos e estratégias de atendimento regional.">ℹ️</span>
+                        </div>
+                        <div class="chart-canvas">
+                            <canvas id="chartTopBairros"></canvas>
+                        </div>
                     </div>
                 </div>
 
-                <div style="height: 300px; margin-bottom: 2rem;">
-                    <canvas id="chartTop50Zonas"></canvas>
-                </div>
-
-                <div class="table-container" style="background: transparent; padding: 0;">
-                    <table id="tabela-top50">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Bairro</th>
-                                <th>Cidade</th>
-                                <th>Zona</th>
-                                <th>Beneficiários</th>
-                                <th>Hospital</th>
-                                <th>Distância</th>
-                                <th>Tempo</th>
-                            </tr>
-                        </thead>
-                        <tbody id="tbody-top50"></tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <!-- 🆕 NOVA FUNCIONALIDADE: ABA EXTREMO SUL -->
-        <div id="extremo-sul" class="section">
-            <h2 class="section-title">🌍 Análise do Extremo Sul</h2>
-            
-            <div class="kpis">
-                <div class="kpi-card">
-                    <div class="kpi-value" id="extremo-sul-bairros">-</div>
-                    <div class="kpi-label">Bairros</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-value" id="extremo-sul-beneficiarios">-</div>
-                    <div class="kpi-label">Beneficiários (4.6%)</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-value" id="extremo-sul-distancia">-</div>
-                    <div class="kpi-label">Distância Média</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-value" id="extremo-sul-tempo">-</div>
-                    <div class="kpi-label">Tempo Médio</div>
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="table-title">
+                            🏆 Top 15 Bairros - Detalhamento
+                            <span class="tooltip-icon" data-tooltip="Lista completa dos 15 bairros com mais beneficiários, incluindo hospital mais próximo e distância real de deslocamento.">ℹ️</span>
+                        </div>
+                    </div>
+                    <div id="tableTopBairros"></div>
                 </div>
             </div>
 
-            <div class="card">
-                <h3>🏥 Hospitais Mais Próximos</h3>
-                <div style="height: 300px;">
-                    <canvas id="chartExtremoSulHospitais"></canvas>
+            <!-- ==================== 2. DEMOGRAFIA ==================== -->
+            <div id="demografia" class="section">
+                <h2 class="section-title">👥 Análise Demográfica</h2>
+                
+                <div class="kpis" id="demografia-kpis"></div>
+                
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <div class="chart-title">
+                            📊 Distribuição por Faixas Etárias (Perfil 80-)
+                            <span class="tooltip-icon" data-tooltip="Beneficiários com menos de 80 anos, divididos em 4 faixas etárias para análise de perfil de risco e necessidades de cuidado.">ℹ️</span>
+                        </div>
+                        <div class="chart-canvas">
+                            <canvas id="chartFaixas80menos"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <div class="chart-title">
+                            📊 Distribuição por Faixas Etárias (Perfil 80+)
+                            <span class="tooltip-icon" data-tooltip="Beneficiários com 80 anos ou mais, divididos em 4 faixas etárias. Grupo que requer atenção especial e programas de geriatria.">ℹ️</span>
+                        </div>
+                        <div class="chart-canvas">
+                            <canvas id="chartFaixas80mais"></canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="card">
-                <h3>⚠️ Top 10 Bairros Mais Distantes</h3>
-                <div class="table-container" style="background: transparent; padding: 0;">
-                    <table id="tabela-extremo-sul-distantes">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Bairro</th>
-                                <th>Cidade</th>
-                                <th>Beneficiários</th>
-                                <th>Hospital</th>
-                                <th>Distância</th>
-                                <th>Tempo</th>
-                            </tr>
-                        </thead>
-                        <tbody id="tbody-extremo-sul-distantes"></tbody>
-                    </table>
+            <!-- ==================== 3. PROGRAMAS ==================== -->
+            <div id="programas" class="section">
+                <h2 class="section-title">📋 Análise de Programas de Saúde</h2>
+                
+                <div class="alert alert-info">
+                    ℹ️ <strong>Importante:</strong> Um beneficiário pode estar em múltiplos programas simultaneamente. Os percentuais somam mais de 100%.
+                </div>
+                
+                <div class="kpis" id="programas-kpis"></div>
+                
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <div class="chart-title">
+                            🏆 Top 10 Programas Mais Procurados
+                            <span class="tooltip-icon" data-tooltip="Programas de saúde com maior adesão. Útil para alocação de recursos e identificação de demandas prioritárias.">ℹ️</span>
+                        </div>
+                        <div class="chart-canvas">
+                            <canvas id="chartTopProgramas"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="table-title">
+                            📋 Todos os Programas (26 categorias)
+                            <span class="tooltip-icon" data-tooltip="Lista completa de todos os programas de saúde disponíveis na rede, ordenados por número de beneficiários.">ℹ️</span>
+                        </div>
+                    </div>
+                    <div id="tableProgramas"></div>
                 </div>
             </div>
 
-            <div class="card">
-                <h3>📋 Todos os Bairros do Extremo Sul</h3>
-                <div class="table-container" style="background: transparent; padding: 0; max-height: 600px; overflow-y: auto;">
-                    <table id="tabela-extremo-sul-todos">
-                        <thead>
-                            <tr>
-                                <th>Bairro</th>
-                                <th>Cidade</th>
-                                <th>Zona</th>
-                                <th>Beneficiários</th>
-                                <th>Hospital Mais Próximo</th>
-                                <th>Distância</th>
-                                <th>Tempo</th>
-                            </tr>
-                        </thead>
-                        <tbody id="tbody-extremo-sul-todos"></tbody>
-                    </table>
+            <!-- ==================== 4. PLANOS ==================== -->
+            <div id="planos" class="section">
+                <h2 class="section-title">💳 Análise de Planos de Saúde</h2>
+                
+                <div class="kpis" id="planos-kpis"></div>
+                
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <div class="chart-title">
+                            🏆 Top 10 Planos Mais Contratados
+                            <span class="tooltip-icon" data-tooltip="Planos de saúde com maior número de beneficiários ativos. Análise essencial para estratégias comerciais e de renovação.">ℹ️</span>
+                        </div>
+                        <div class="chart-canvas">
+                            <canvas id="chartTopPlanos"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="table-title">
+                            📋 Todos os Planos (61 tipos)
+                            <span class="tooltip-icon" data-tooltip="Lista completa de todos os tipos de planos de saúde contratados pelos beneficiários, incluindo acomodação e nível de cobertura.">ℹ️</span>
+                        </div>
+                        <div class="table-filters">
+                            <input type="text" id="filterPlanos" class="filter-input" placeholder="🔍 Buscar plano...">
+                        </div>
+                    </div>
+                    <div id="tablePlanos"></div>
                 </div>
             </div>
-        </div>
 
-        <!-- MAPA GEOGRÁFICO -->
-        <div id="mapa" class="section">
-            <h2 class="section-title">🗺 Mapa Geográfico</h2>
-            <div class="map-container">
-                <div id="mapReal" class="real-map"></div>
+            <!-- ==================== 5. ZONAS ==================== -->
+            <div id="zonas" class="section">
+                <h2 class="section-title">🗺️ Análise por Zona Geográfica</h2>
+                
+                <div class="alert alert-info">
+                    ℹ️ <strong>Atualização:</strong> A zona Centro foi consolidada em Centro-Sul. Agora trabalhamos com 5 zonas principais.
+                </div>
+                
+                <div id="zonas-grid" class="zonas-grid"></div>
+            </div>
+
+            <!-- ==================== 6. HOSPITAIS ==================== -->
+            <div id="hospitais" class="section">
+                <h2 class="section-title">🏥 Análise por Hospital</h2>
+                
+                <div class="kpis" id="hospitais-kpis"></div>
+                
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="table-title">
+                            🏥 Ranking de Hospitais por Cobertura
+                            <span class="tooltip-icon" data-tooltip="Hospitais ordenados por número de bairros cobertos (onde são o hospital mais próximo) e beneficiários atendidos.">ℹ️</span>
+                        </div>
+                    </div>
+                    <div id="tableHospitais"></div>
+                </div>
+            </div>
+
+            <!-- ==================== 7. BAIRROS PERIFÉRICOS ==================== -->
+            <div id="perifericos" class="section">
+                <h2 class="section-title">📍 Análise de Bairros Periféricos</h2>
+                
+                <div class="alert alert-warning">
+                    ⚠️ <strong>Critério:</strong> Bairros com mais de 20km de distância do hospital credenciado mais próximo (rota real de carro).
+                </div>
+                
+                <div class="kpis" id="perifericos-kpis"></div>
+                
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="table-title">
+                            🔴 Top 10 Bairros Mais Distantes
+                            <span class="tooltip-icon" data-tooltip="Bairros com maior distância do hospital mais próximo. Crítico para identificar gaps de cobertura e avaliar necessidade de parcerias regionais ou soluções de transporte.">ℹ️</span>
+                        </div>
+                        <div class="table-filters">
+                            <input type="text" id="filterTop10" class="filter-input" placeholder="🔍 Buscar bairro...">
+                            <select id="sortTop10" class="filter-select">
+                                <option value="distancia">Ordenar por: Distância</option>
+                                <option value="beneficiarios">Ordenar por: Beneficiários</option>
+                                <option value="bairro">Ordenar por: Bairro (A-Z)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="tableTop10Distantes"></div>
+                </div>
+
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="table-title">
+                            📋 Todos os Bairros Periféricos
+                            <span class="tooltip-icon" data-tooltip="Lista completa de bairros com distância superior a 20km, incluindo os 3 hospitais mais próximos de cada um. Útil para planejamento de expansão e soluções logísticas.">ℹ️</span>
+                        </div>
+                        <div class="table-filters">
+                            <input type="text" id="filterTodos" class="filter-input" placeholder="🔍 Buscar bairro...">
+                            <select id="filterZona" class="filter-select">
+                                <option value="">Todas as zonas</option>
+                                <option value="Centro-Sul">Centro-Sul</option>
+                                <option value="Leste">Leste</option>
+                                <option value="Norte">Norte</option>
+                                <option value="Oeste">Oeste</option>
+                                <option value="ABC">ABC</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="tableTodosPerifricos"></div>
+                </div>
             </div>
         </div>
     </div>
 
     <script>
-        // CONFIGURAÇÃO
+        // ==================== CONFIGURAÇÃO ==================== 
         const GITHUB_USER = 'alessandrodiazrodrigues';
         const REPO = 'RAPS';
         const BRANCH = 'main';
-        const DATA_URL = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO}/${BRANCH}`;
+        const DATA_URL = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO}/${BRANCH}/data`;
 
-        // DADOS GLOBAIS
-        let dados = {
-            dashboard: null,
-            demografico: null,
-            programas: null,
-            planos: null,
-            zonas: null,
-            hospitais: null,
-            distancias: null,
-            bairros: [],
-            extremoSul: null,
-            top50Distantes: null
-        };
+        // Variáveis globais
+        let dados = {};
+        let charts = {};
 
-        let mapInstance = null;
-        let chartInstances = {};
-
-        // 🆕 NOVA FUNCIONALIDADE: Carregar dados atualizados
+        // ==================== CARREGAR DADOS ====================
         async function carregarDados() {
             try {
                 console.log('🔄 Carregando dados...');
-                
-                const [
-                    dashboard,
-                    demografico,
-                    programas,
-                    planos,
-                    zonas,
-                    hospitais,
-                    distancias,
-                    bairrosCentroSul,
-                    bairrosABC,
-                    bairrosLeste,
-                    bairrosNorte,
-                    bairrosOeste,
-                    extremoSul,
-                    top50Distantes
-                ] = await Promise.all([
+
+                const [dashboard, demografico, programas, planos, zonas, hospitais, distancias, perifericos] = await Promise.all([
                     fetch(`${DATA_URL}/dashboard.json`).then(r => r.json()),
                     fetch(`${DATA_URL}/demografico.json`).then(r => r.json()),
                     fetch(`${DATA_URL}/programas.json`).then(r => r.json()),
@@ -611,154 +821,151 @@
                     fetch(`${DATA_URL}/zonas.json`).then(r => r.json()),
                     fetch(`${DATA_URL}/hospitais.json`).then(r => r.json()),
                     fetch(`${DATA_URL}/distancias.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/bairros_centro_sul.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/bairros_abc.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/bairros_leste.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/bairros_norte.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/bairros_oeste.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/analise_extremo_sul.json`).then(r => r.json()),
-                    fetch(`${DATA_URL}/top_50_mais_distantes.json`).then(r => r.json())
+                    fetch(`${DATA_URL}/bairros_perifericos.json`).then(r => r.json())
                 ]);
 
-                dados.dashboard = dashboard;
-                dados.demografico = demografico;
-                dados.programas = programas;
-                dados.planos = planos;
-                dados.zonas = zonas;
-                dados.hospitais = hospitais;
-                dados.distancias = distancias;
-                dados.extremoSul = extremoSul;
-                dados.top50Distantes = top50Distantes;
+                dados = { dashboard, demografico, programas, planos, zonas, hospitais, distancias, perifericos };
 
-                dados.bairros = [
-                    ...bairrosCentroSul.bairros,
-                    ...bairrosABC.bairros,
-                    ...bairrosLeste.bairros,
-                    ...bairrosNorte.bairros,
-                    ...bairrosOeste.bairros
-                ];
+                console.log('✅ Dados carregados:', dados);
 
-                console.log('✅ Dados carregados');
-                renderizarTudo();
-                
                 document.getElementById('loading').style.display = 'none';
-                document.getElementById('mainContent').style.display = 'block';
-                
+                document.getElementById('dashboard').classList.add('active');
+                document.getElementById('badge-status').textContent = '✅ DADOS REAIS';
+                document.getElementById('badge-status').style.background = 'linear-gradient(135deg, #48bb78 0%, #38a169 100%)';
+
+                renderizarTudo();
+
             } catch (error) {
-                console.error('❌ Erro:', error);
-                document.querySelector('.loading-text').textContent = 'Erro ao carregar dados';
-                document.querySelector('.loading-text').style.color = '#ef4444';
+                console.error('❌ Erro ao carregar dados:', error);
+                document.getElementById('loading').innerHTML = `
+                    <div class="loading-spinner"></div>
+                    <h2 style="color: #e53e3e;">Erro ao carregar dados</h2>
+                    <p>${error.message}</p>
+                `;
             }
         }
 
-        // 🆕 NOVA FUNCIONALIDADE: Atualizar renderizarTudo
+        // ==================== RENDERIZAR TUDO ====================
         function renderizarTudo() {
             renderizarDashboard();
             renderizarDemografia();
             renderizarProgramas();
+            renderizarPlanos();
             renderizarZonas();
             renderizarHospitais();
-            renderizarGaps();
-            renderizarTop50Distantes();
-            renderizarExtremoSul();
+            renderizarPerifericos();
         }
 
-        // DASHBOARD
+        // ==================== 1. DASHBOARD ====================
         function renderizarDashboard() {
-            const { kpis_gerais, distribuicao_faixas, top_bairros } = dados.dashboard;
-            
-            // Stats
-            document.getElementById('dashboardStats').innerHTML = `
-                <div class="stat-card">
-                    <div class="stat-label">👥 Total Beneficiários</div>
-                    <div class="stat-value">${parseInt(kpis_gerais.total_beneficiarios).toLocaleString('pt-BR')}</div>
-                    <div class="stat-subtitle">100% mapeados</div>
+            const { kpis_gerais, distribuicao_faixas, top_bairros, bairros_descobertos } = dados.dashboard;
+
+            // KPIs
+            const kpisHTML = `
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        👥 Total de Beneficiários
+                        <span class="tooltip-icon" data-tooltip="Número total de pessoas ativas no plano de saúde Prevent Senior, distribuídas em 5 regiões da Grande São Paulo. Inclui todos os tipos de planos e categorias de atendimento.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${kpis_gerais.total_beneficiarios.toLocaleString('pt-BR')}</div>
+                    <div class="kpi-subtitle">em 5 zonas</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-label">📍 Bairros Únicos</div>
-                    <div class="stat-value">${parseInt(kpis_gerais.total_bairros).toLocaleString('pt-BR')}</div>
-                    <div class="stat-subtitle">6 zonas</div>
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        🏘️ Total de Bairros
+                        <span class="tooltip-icon" data-tooltip="Número total de bairros únicos onde temos beneficiários ativos na rede. Os nomes foram normalizados para evitar duplicatas (Centro consolidado em Centro-Sul).">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${kpis_gerais.total_bairros.toLocaleString('pt-BR')}</div>
+                    <div class="kpi-subtitle">normalizados</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-label">🏥 Hospitais</div>
-                    <div class="stat-value">${parseInt(kpis_gerais.total_hospitais)}</div>
-                    <div class="stat-subtitle">Rede credenciada</div>
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        🏥 Total de Hospitais
+                        <span class="tooltip-icon" data-tooltip="Número de hospitais credenciados na rede Prevent Senior, estrategicamente distribuídos nas 5 zonas para garantir cobertura adequada.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${kpis_gerais.total_hospitais}</div>
+                    <div class="kpi-subtitle">credenciados</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-label">📏 Distância Média</div>
-                    <div class="stat-value">${parseFloat(kpis_gerais.distancia_media_km).toFixed(2)} km</div>
-                    <div class="stat-subtitle">Hospital mais próximo</div>
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        📏 Distância Média
+                        <span class="tooltip-icon" data-tooltip="Distância média real (rota de carro) de todos os beneficiários até o hospital mais próximo. Calculado usando Google Maps Directions API.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${kpis_gerais.distancia_media_km} km</div>
+                    <div class="kpi-subtitle">até hospital mais próximo</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        ✅ Cobertura 15km
+                        <span class="tooltip-icon" data-tooltip="Percentual de beneficiários que estão a até 15km do hospital mais próximo. Meta interna: mínimo 85% de cobertura.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${kpis_gerais.cobertura_15km_pct}%</div>
+                    <div class="kpi-subtitle">${bairros_descobertos ? bairros_descobertos.total_beneficiarios.toLocaleString('pt-BR') : '0'} fora da cobertura</div>
                 </div>
             `;
 
-            // Charts
-            document.getElementById('dashboardCharts').innerHTML = `
-                <div class="chart-card">
-                    <div class="chart-title">Distribuição por Faixas de Distância</div>
-                    <div class="chart-wrapper"><canvas id="chartFaixas"></canvas></div>
-                </div>
-                <div class="chart-card">
-                    <div class="chart-title">Beneficiários por Zona</div>
-                    <div class="chart-wrapper"><canvas id="chartBenefZona"></canvas></div>
-                </div>
-            `;
+            document.getElementById('dashboard-kpis').innerHTML = kpisHTML;
 
-            // Gráfico Faixas
-            new Chart(document.getElementById('chartFaixas'), {
+            // Gráfico: Distribuição por Faixas
+            const ctxFaixas = document.getElementById('chartFaixas').getContext('2d');
+            if (charts.faixas) charts.faixas.destroy();
+            charts.faixas = new Chart(ctxFaixas, {
                 type: 'bar',
                 data: {
                     labels: Object.keys(distribuicao_faixas),
                     datasets: [{
-                        label: 'Bairros',
+                        label: 'Número de Bairros',
                         data: Object.values(distribuicao_faixas),
-                        backgroundColor: ['#10b981', '#3b82f6', '#f59e0b', '#f97316', '#ef4444'],
-                        borderRadius: 8
+                        backgroundColor: [
+                            '#48bb78',
+                            '#4299e1',
+                            '#ed8936',
+                            '#f56565',
+                            '#9f7aea',
+                            '#ed64a6'
+                        ]
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    plugins: { legend: { display: false } },
+                    plugins: {
+                        legend: { display: false }
+                    },
                     scales: {
-                        y: { 
-                            beginAtZero: true,
-                            ticks: { color: '#94a3b8' },
-                            grid: { color: 'rgba(255,255,255,0.05)' }
-                        },
-                        x: { 
-                            ticks: { color: '#94a3b8' },
-                            grid: { display: false }
-                        }
+                        y: { beginAtZero: true }
                     }
                 }
             });
 
-            // Gráfico Zonas
-            const zonasData = dados.zonas.zonas;
-            new Chart(document.getElementById('chartBenefZona'), {
-                type: 'doughnut',
+            // Gráfico: Top 15 Bairros
+            const ctxTopBairros = document.getElementById('chartTopBairros').getContext('2d');
+            if (charts.topBairros) charts.topBairros.destroy();
+            charts.topBairros = new Chart(ctxTopBairros, {
+                type: 'bar',
                 data: {
-                    labels: zonasData.map(z => z.nome),
+                    labels: top_bairros.map(b => b.bairro),
                     datasets: [{
-                        data: zonasData.map(z => parseInt(z.beneficiarios)),
-                        backgroundColor: ['#6366f1', '#10b981', '#3b82f6', '#f59e0b', '#8b5cf6', '#ec4899']
+                        label: 'Beneficiários',
+                        data: top_bairros.map(b => b.beneficiarios),
+                        backgroundColor: '#667eea'
                     }]
                 },
                 options: {
+                    indexAxis: 'y',
                     responsive: true,
                     maintainAspectRatio: false,
-                    plugins: { 
-                        legend: { 
-                            position: 'bottom',
-                            labels: { color: '#94a3b8' }
-                        } 
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        x: { beginAtZero: true }
                     }
                 }
             });
 
-            // Tabela Top Bairros
-            document.getElementById('topBairros').innerHTML = `
-                <h3 style="color: #60a5fa; margin-bottom: 20px;">📍 Top 15 Bairros</h3>
+            // Tabela: Top 15 Bairros
+            const tableHTML = `
                 <table>
                     <thead>
                         <tr>
@@ -771,367 +978,446 @@
                         </tr>
                     </thead>
                     <tbody>
-                        ${top_bairros.slice(0, 15).map((b, i) => `
+                        ${top_bairros.map((b, i) => `
                             <tr>
-                                <td>${i + 1}</td>
+                                <td><strong>${i + 1}</strong></td>
                                 <td>${b.bairro}</td>
-                                <td><span class="zona-badge zona-${normalizeZona(b.zona)}">${b.zona}</span></td>
-                                <td>${parseInt(b.beneficiarios).toLocaleString('pt-BR')}</td>
+                                <td><span class="zona-badge zona-${b.zona.toLowerCase().replace(' ', '-').replace('-sul', '-sul')}">${b.zona}</span></td>
+                                <td><strong>${b.beneficiarios.toLocaleString('pt-BR')}</strong></td>
                                 <td>${b.hospital_proximo}</td>
-                                <td>${parseFloat(b.distancia_km).toFixed(2)} km</td>
+                                <td>${b.distancia_km} km</td>
                             </tr>
                         `).join('')}
                     </tbody>
                 </table>
             `;
+
+            document.getElementById('tableTopBairros').innerHTML = tableHTML;
         }
 
-        // DEMOGRAFIA
+        // ==================== 2. DEMOGRAFIA ====================
         function renderizarDemografia() {
             const { kpis, faixas_etarias } = dados.demografico;
-            
-            const idadeMedia = parseFloat(kpis.idade_media_adultos_18plus);
-            const pctFem = parseFloat(kpis.pct_feminino);
-            const pctMasc = parseFloat(kpis.pct_masculino);
-            const totalFem = parseInt(kpis.total_feminino || dados.dashboard.kpis_gerais.total_beneficiarios * pctFem / 100);
-            const totalMasc = parseInt(kpis.total_masculino || dados.dashboard.kpis_gerais.total_beneficiarios * pctMasc / 100);
-            const totalIdosos = parseInt(kpis.total_idosos_80plus);
-            
-            // Stats
-            document.getElementById('demografiaStats').innerHTML = `
-                <div class="stat-card">
-                    <div class="stat-label">🎂 Idade Média (18+)</div>
-                    <div class="stat-value">${idadeMedia.toFixed(1)} anos</div>
-                    <div class="stat-subtitle">Apenas adultos</div>
+
+            // KPIs
+            const kpisHTML = `
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        📊 Idade Média (18+)
+                        <span class="tooltip-icon" data-tooltip="Idade média dos beneficiários adultos (18 anos ou mais). Importante para planejamento de programas de saúde e perfil de risco.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${kpis.idade_media_adultos_18plus}</div>
+                    <div class="kpi-subtitle">anos</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-label">👩 Feminino</div>
-                    <div class="stat-value">${pctFem.toFixed(1)}%</div>
-                    <div class="stat-subtitle">${totalFem.toLocaleString('pt-BR')} mulheres</div>
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        👩 Feminino
+                        <span class="tooltip-icon" data-tooltip="Percentual de beneficiárias do sexo feminino na rede. Mulheres geralmente têm maior utilização de serviços de saúde preventivos.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${kpis.pct_feminino}%</div>
+                    <div class="kpi-subtitle">${Math.round(dados.dashboard.kpis_gerais.total_beneficiarios * parseFloat(kpis.pct_feminino) / 100).toLocaleString('pt-BR')} beneficiárias</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-label">👨 Masculino</div>
-                    <div class="stat-value">${pctMasc.toFixed(1)}%</div>
-                    <div class="stat-subtitle">${totalMasc.toLocaleString('pt-BR')} homens</div>
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        👨 Masculino
+                        <span class="tooltip-icon" data-tooltip="Percentual de beneficiários do sexo masculino na rede. Homens geralmente têm menor adesão a programas preventivos.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${kpis.pct_masculino}%</div>
+                    <div class="kpi-subtitle">${Math.round(dados.dashboard.kpis_gerais.total_beneficiarios * parseFloat(kpis.pct_masculino) / 100).toLocaleString('pt-BR')} beneficiários</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-label">👴 Idosos (≥80)</div>
-                    <div class="stat-value">${totalIdosos.toLocaleString('pt-BR')}</div>
-                    <div class="stat-subtitle">${((totalIdosos/dados.dashboard.kpis_gerais.total_beneficiarios)*100).toFixed(1)}% do total</div>
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        👴 Idosos 75+
+                        <span class="tooltip-icon" data-tooltip="Total de beneficiários com 75 anos ou mais. Grupo prioritário para programas de geriatria e cuidados preventivos.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${kpis.total_idosos_75plus.toLocaleString('pt-BR')}</div>
+                    <div class="kpi-subtitle">${((kpis.total_idosos_75plus / dados.dashboard.kpis_gerais.total_beneficiarios) * 100).toFixed(1)}% do total</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        🏥 Idosos 80+
+                        <span class="tooltip-icon" data-tooltip="Total de beneficiários com 80 anos ou mais. Grupo que requer atenção especializada e acompanhamento geriátrico contínuo.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${kpis.total_idosos_80plus.toLocaleString('pt-BR')}</div>
+                    <div class="kpi-subtitle">${((kpis.total_idosos_80plus / dados.dashboard.kpis_gerais.total_beneficiarios) * 100).toFixed(1)}% do total</div>
                 </div>
             `;
 
-            // Charts
-            document.getElementById('demografiaCharts').innerHTML = `
-                <div class="chart-card" style="grid-column: 1 / -1;">
-                    <div class="chart-title">Faixas Etárias Detalhadas</div>
-                    <div class="chart-wrapper"><canvas id="chartFaixasCompleto"></canvas></div>
-                </div>
-                <div class="chart-card">
-                    <div class="chart-title">Distribuição por Gênero</div>
-                    <div class="chart-wrapper"><canvas id="chartGenero"></canvas></div>
-                </div>
-            `;
+            document.getElementById('demografia-kpis').innerHTML = kpisHTML;
 
-            // Gráfico Completo
-            const perfil80Menos = faixas_etarias.perfil_80_menos.faixas;
-            const perfil80Mais = faixas_etarias.perfil_80_mais.faixas;
-            
-            const labelsCompleto = [
-                '18 a 49 anos',
-                '50 a 69 anos',
-                '70 a 74 anos',
-                '75 a 79 anos',
-                '80 a 89 anos',
-                '90 a 94 anos',
-                '95 a 99 anos',
-                '100 ou mais'
-            ];
-            
-            const valoresCompleto = [
-                perfil80Menos['18_a_49'],
-                perfil80Menos['50_a_69'],
-                perfil80Menos['70_a_74'],
-                perfil80Menos['75_a_79'],
-                perfil80Mais['80_a_89'],
-                perfil80Mais['90_a_94'],
-                perfil80Mais['95_a_99'],
-                perfil80Mais['100_ou_mais']
-            ];
-
-            new Chart(document.getElementById('chartFaixasCompleto'), {
-                type: 'bar',
+            // Gráfico: Faixas 80-
+            const ctx80menos = document.getElementById('chartFaixas80menos').getContext('2d');
+            if (charts.faixas80menos) charts.faixas80menos.destroy();
+            charts.faixas80menos = new Chart(ctx80menos, {
+                type: 'doughnut',
                 data: {
-                    labels: labelsCompleto,
+                    labels: ['18-49 anos', '50-69 anos', '70-74 anos', '75-79 anos'],
                     datasets: [{
-                        label: 'Beneficiários',
-                        data: valoresCompleto,
-                        backgroundColor: [
-                            '#3b82f6', '#3b82f6', '#3b82f6', '#3b82f6',
-                            '#f59e0b', '#f59e0b', '#f59e0b', '#f59e0b'
+                        data: [
+                            faixas_etarias.perfil_80_menos.faixas['18_a_49'],
+                            faixas_etarias.perfil_80_menos.faixas['50_a_69'],
+                            faixas_etarias.perfil_80_menos.faixas['70_a_74'],
+                            faixas_etarias.perfil_80_menos.faixas['75_a_79']
                         ],
-                        borderRadius: 8
+                        backgroundColor: ['#48bb78', '#4299e1', '#ed8936', '#f56565']
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    plugins: { legend: { display: false } },
-                    scales: {
-                        y: { 
-                            beginAtZero: true,
-                            ticks: { color: '#94a3b8' },
-                            grid: { color: 'rgba(255,255,255,0.05)' }
-                        },
-                        x: { 
-                            ticks: { color: '#94a3b8' },
-                            grid: { display: false }
-                        }
+                    plugins: {
+                        legend: { position: 'bottom' }
                     }
                 }
             });
 
-            // Gráfico Gênero
-            new Chart(document.getElementById('chartGenero'), {
-                type: 'pie',
+            // Gráfico: Faixas 80+
+            const ctx80mais = document.getElementById('chartFaixas80mais').getContext('2d');
+            if (charts.faixas80mais) charts.faixas80mais.destroy();
+            charts.faixas80mais = new Chart(ctx80mais, {
+                type: 'doughnut',
                 data: {
-                    labels: [`Feminino (${pctFem.toFixed(1)}%)`, `Masculino (${pctMasc.toFixed(1)}%)`],
+                    labels: ['80-89 anos', '90-94 anos', '95-99 anos', '100+ anos'],
                     datasets: [{
-                        data: [totalFem, totalMasc],
-                        backgroundColor: ['#ec4899', '#3b82f6']
+                        data: [
+                            faixas_etarias.perfil_80_mais.faixas['80_a_89'],
+                            faixas_etarias.perfil_80_mais.faixas['90_a_94'],
+                            faixas_etarias.perfil_80_mais.faixas['95_a_99'],
+                            faixas_etarias.perfil_80_mais.faixas['100_ou_mais']
+                        ],
+                        backgroundColor: ['#9f7aea', '#ed64a6', '#fc8181', '#f687b3']
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    plugins: { 
-                        legend: { 
-                            position: 'bottom',
-                            labels: { color: '#94a3b8' }
-                        } 
+                    plugins: {
+                        legend: { position: 'bottom' }
                     }
                 }
             });
         }
 
-        // PROGRAMAS
+        // ==================== 3. PROGRAMAS ====================
         function renderizarProgramas() {
-            const { programas: progs, top_10 } = dados.programas;
-            const totalBenef = parseInt(dados.dashboard.kpis_gerais.total_beneficiarios);
-            
-            const comPrograma = progs.find(p => p.nome === "SEM PROGRAMA");
-            const semPrograma = comPrograma ? parseInt(comPrograma.total) : 0;
-            const totalComPrograma = totalBenef - semPrograma;
-            
-            // Stats
-            document.getElementById('programasStats').innerHTML = `
-                <div class="stat-card">
-                    <div class="stat-label">📋 Total Programas</div>
-                    <div class="stat-value">${progs.length}</div>
-                    <div class="stat-subtitle">Categorias</div>
+            const { programas, top_10 } = dados.programas;
+
+            // KPIs
+            const totalProgramas = programas.length;
+            const semPrograma = programas.find(p => p.nome === 'SEM PROGRAMA');
+            const comPrograma = dados.dashboard.kpis_gerais.total_beneficiarios - (semPrograma ? semPrograma.total : 0);
+
+            const kpisHTML = `
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        📊 Total de Programas
+                        <span class="tooltip-icon" data-tooltip="Total de categorias de programas de saúde disponíveis na rede Prevent Senior.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${totalProgramas}</div>
+                    <div class="kpi-subtitle">categorias ativas</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-label">❌ Sem Programa</div>
-                    <div class="stat-value">${semPrograma.toLocaleString('pt-BR')}</div>
-                    <div class="stat-subtitle">${((semPrograma/totalBenef)*100).toFixed(1)}%</div>
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        ❌ Sem Programa
+                        <span class="tooltip-icon" data-tooltip="Beneficiários que não estão inscritos em nenhum programa de saúde específico. Oportunidade para captação e engajamento.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${semPrograma ? semPrograma.total.toLocaleString('pt-BR') : '0'}</div>
+                    <div class="kpi-subtitle">${semPrograma ? semPrograma.percentual : '0'}% do total</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-label">✅ Com Programa</div>
-                    <div class="stat-value">${totalComPrograma.toLocaleString('pt-BR')}</div>
-                    <div class="stat-subtitle">${((totalComPrograma/totalBenef)*100).toFixed(1)}%</div>
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        ✅ Com Programa
+                        <span class="tooltip-icon" data-tooltip="Beneficiários inscritos em pelo menos um programa de saúde. Um beneficiário pode estar em múltiplos programas simultaneamente.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${comPrograma.toLocaleString('pt-BR')}</div>
+                    <div class="kpi-subtitle">${((comPrograma / dados.dashboard.kpis_gerais.total_beneficiarios) * 100).toFixed(1)}% do total</div>
                 </div>
             `;
 
-            // Charts
-            const top10Ativos = top_10.filter(p => p.nome !== "SEM PROGRAMA");
-            
-            document.getElementById('programasCharts').innerHTML = `
-                <div class="chart-card" style="grid-column: 1 / -1;">
-                    <div class="chart-title">Top 10 Programas ATIVOS</div>
-                    <div class="chart-wrapper"><canvas id="chartTop10Programas"></canvas></div>
-                </div>
-            `;
+            document.getElementById('programas-kpis').innerHTML = kpisHTML;
 
-            new Chart(document.getElementById('chartTop10Programas'), {
+            // Gráfico: Top 10
+            const ctxTopProgramas = document.getElementById('chartTopProgramas').getContext('2d');
+            if (charts.topProgramas) charts.topProgramas.destroy();
+            charts.topProgramas = new Chart(ctxTopProgramas, {
                 type: 'bar',
                 data: {
-                    labels: top10Ativos.map(p => p.nome),
+                    labels: top_10.map(p => p.nome),
                     datasets: [{
                         label: 'Beneficiários',
-                        data: top10Ativos.map(p => parseInt(p.total)),
-                        backgroundColor: '#60a5fa',
-                        borderRadius: 8
+                        data: top_10.map(p => p.total),
+                        backgroundColor: '#667eea'
                     }]
                 },
                 options: {
                     indexAxis: 'y',
                     responsive: true,
                     maintainAspectRatio: false,
-                    plugins: { legend: { display: false } },
+                    plugins: {
+                        legend: { display: false }
+                    },
                     scales: {
-                        x: { 
-                            beginAtZero: true,
-                            ticks: { color: '#94a3b8' },
-                            grid: { color: 'rgba(255,255,255,0.05)' }
-                        },
-                        y: { 
-                            ticks: { color: '#94a3b8' },
-                            grid: { display: false }
-                        }
+                        x: { beginAtZero: true }
                     }
                 }
             });
 
-            // Tabela
-            const progsAtivos = progs.filter(p => p.nome !== "SEM PROGRAMA");
-            
-            document.getElementById('programasTabela').innerHTML = `
-                <h3 style="color: #60a5fa; margin-bottom: 20px;">📊 Todos os Programas ATIVOS</h3>
+            // Tabela: Todos os programas
+            const tableHTML = `
                 <table>
                     <thead>
                         <tr>
                             <th>#</th>
                             <th>Programa</th>
                             <th>Beneficiários</th>
-                            <th>% Total</th>
+                            <th>Percentual</th>
                         </tr>
                     </thead>
                     <tbody>
-                        ${progsAtivos.map((p, i) => `
+                        ${programas.map((p, i) => `
                             <tr>
                                 <td>${i + 1}</td>
-                                <td>${p.nome}</td>
-                                <td>${parseInt(p.total).toLocaleString('pt-BR')}</td>
-                                <td>${parseFloat(p.percentual).toFixed(1)}%</td>
+                                <td><strong>${p.nome}</strong></td>
+                                <td>${p.total.toLocaleString('pt-BR')}</td>
+                                <td>${p.percentual}%</td>
                             </tr>
                         `).join('')}
                     </tbody>
                 </table>
             `;
+
+            document.getElementById('tableProgramas').innerHTML = tableHTML;
         }
 
-        // ZONAS
-        function renderizarZonas() {
-            const zonasData = dados.zonas.zonas;
-            
-            // Cards
-            document.getElementById('zonasCards').innerHTML = zonasData.map(z => `
-                <div class="hospital-card" style="border-top-color: ${getZonaColor(z.nome)};">
-                    <div class="hospital-name">📍 ${z.nome}</div>
-                    <div class="hospital-stats">
-                        <div class="hospital-stat">
-                            <span class="hospital-stat-label">👥 Beneficiários</span>
-                            <span class="hospital-stat-value">${parseInt(z.beneficiarios).toLocaleString('pt-BR')}</span>
-                        </div>
-                        <div class="hospital-stat">
-                            <span class="hospital-stat-label">🏘️ Bairros</span>
-                            <span class="hospital-stat-value">${parseInt(z.bairros)}</span>
-                        </div>
-                        <div class="hospital-stat">
-                            <span class="hospital-stat-label">🎂 Idade Média (18+)</span>
-                            <span class="hospital-stat-value">${parseFloat(z.idade_media_adultos).toFixed(1)} anos</span>
-                        </div>
-                        <div class="hospital-stat">
-                            <span class="hospital-stat-label">👩 Feminino</span>
-                            <span class="hospital-stat-value">${parseFloat(z.pct_feminino).toFixed(1)}%</span>
-                        </div>
-                        <div class="hospital-stat">
-                            <span class="hospital-stat-label">👨 Masculino</span>
-                            <span class="hospital-stat-value">${parseFloat(z.pct_masculino).toFixed(1)}%</span>
-                        </div>
-                        <div class="hospital-stat">
-                            <span class="hospital-stat-label">👴 Idosos (≥80)</span>
-                            <span class="hospital-stat-value">${parseInt(z.idosos_80plus).toLocaleString('pt-BR')}</span>
-                        </div>
-                        <div class="hospital-stat">
-                            <span class="hospital-stat-label">📏 Distância Média</span>
-                            <span class="hospital-stat-value">${parseFloat(z.distancia_media_km).toFixed(2)} km</span>
-                        </div>
-                    </div>
-                </div>
-            `).join('');
+        // ==================== 4. PLANOS ====================
+        function renderizarPlanos() {
+            const { kpis, todos_planos, top_10_geral } = dados.planos;
 
-            // Charts
-            document.getElementById('zonasCharts').innerHTML = `
-                <div class="chart-card">
-                    <div class="chart-title">Distância Média por Zona</div>
-                    <div class="chart-wrapper"><canvas id="chartDistZona"></canvas></div>
+            // KPIs
+            const kpisHTML = `
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        📋 Total de Planos
+                        <span class="tooltip-icon" data-tooltip="Total de tipos diferentes de planos de saúde contratados pelos beneficiários.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${kpis.total_planos_unicos}</div>
+                    <div class="kpi-subtitle">tipos diferentes</div>
                 </div>
-                <div class="chart-card">
-                    <div class="chart-title">Idade Média por Zona (18+)</div>
-                    <div class="chart-wrapper"><canvas id="chartIdadeZona"></canvas></div>
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        🏆 Plano Mais Comum
+                        <span class="tooltip-icon" data-tooltip="Plano de saúde com maior número de beneficiários ativos na rede.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${kpis.plano_mais_comum}</div>
+                    <div class="kpi-subtitle">${kpis.pct_plano_mais_comum}% dos beneficiários</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        👥 Top 5 Planos
+                        <span class="tooltip-icon" data-tooltip="Total de beneficiários concentrados nos 5 planos mais comuns. Indica nível de concentração da carteira.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${kpis.total_top_5.toLocaleString('pt-BR')}</div>
+                    <div class="kpi-subtitle">${((kpis.total_top_5 / kpis.total_beneficiarios) * 100).toFixed(1)}% do total</div>
                 </div>
             `;
 
-            // Gráfico Distância
-            new Chart(document.getElementById('chartDistZona'), {
+            document.getElementById('planos-kpis').innerHTML = kpisHTML;
+
+            // Gráfico: Top 10
+            const ctxTopPlanos = document.getElementById('chartTopPlanos').getContext('2d');
+            if (charts.topPlanos) charts.topPlanos.destroy();
+            charts.topPlanos = new Chart(ctxTopPlanos, {
                 type: 'bar',
                 data: {
-                    labels: zonasData.map(z => z.nome),
+                    labels: top_10_geral.map(p => p.nome),
                     datasets: [{
-                        label: 'km',
-                        data: zonasData.map(z => parseFloat(z.distancia_media_km)),
-                        backgroundColor: zonasData.map(z => getZonaColor(z.nome)),
-                        borderRadius: 8
+                        label: 'Beneficiários',
+                        data: top_10_geral.map(p => p.total),
+                        backgroundColor: '#667eea'
                     }]
                 },
                 options: {
                     indexAxis: 'y',
                     responsive: true,
                     maintainAspectRatio: false,
-                    plugins: { legend: { display: false } },
+                    plugins: {
+                        legend: { display: false }
+                    },
                     scales: {
-                        x: { 
-                            beginAtZero: true,
-                            ticks: { color: '#94a3b8' },
-                            grid: { color: 'rgba(255,255,255,0.05)' }
-                        },
-                        y: { 
-                            ticks: { color: '#94a3b8' },
-                            grid: { display: false }
-                        }
+                        x: { beginAtZero: true }
                     }
                 }
             });
 
-            // Gráfico Idade
-            new Chart(document.getElementById('chartIdadeZona'), {
-                type: 'bar',
-                data: {
-                    labels: zonasData.map(z => z.nome),
-                    datasets: [{
-                        label: 'Anos',
-                        data: zonasData.map(z => parseFloat(z.idade_media_adultos)),
-                        backgroundColor: zonasData.map(z => getZonaColor(z.nome)),
-                        borderRadius: 8
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: { legend: { display: false } },
-                    scales: {
-                        y: { 
-                            beginAtZero: true,
-                            max: 75,
-                            ticks: { color: '#94a3b8' },
-                            grid: { color: 'rgba(255,255,255,0.05)' }
-                        },
-                        x: { 
-                            ticks: { color: '#94a3b8' },
-                            grid: { display: false }
-                        }
-                    }
-                }
+            // Tabela: Todos os planos (com filtro)
+            renderizarTabelaPlanos(todos_planos);
+
+            // Event listener para filtro
+            document.getElementById('filterPlanos').addEventListener('input', (e) => {
+                const termo = e.target.value.toLowerCase();
+                const filtrados = todos_planos.filter(p => p.nome.toLowerCase().includes(termo));
+                renderizarTabelaPlanos(filtrados);
             });
         }
 
-        // HOSPITAIS
+        function renderizarTabelaPlanos(planos) {
+            const tableHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Plano</th>
+                            <th>Beneficiários</th>
+                            <th>Percentual</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${planos.map((p, i) => `
+                            <tr>
+                                <td>${i + 1}</td>
+                                <td><strong>${p.nome}</strong></td>
+                                <td>${p.total.toLocaleString('pt-BR')}</td>
+                                <td>${p.percentual}%</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+
+            document.getElementById('tablePlanos').innerHTML = tableHTML;
+        }
+
+        // ==================== 5. ZONAS ====================
+        function renderizarZonas() {
+            const { zonas } = dados.zonas;
+
+            const zonasHTML = zonas.map(zona => {
+                const faixas = zona.faixas_etarias;
+                const programas = zona.top_programas;
+
+                return `
+                    <div class="zona-card">
+                        <div class="zona-card-header">
+                            <h3 class="zona-card-title">📍 ${zona.nome}</h3>
+                            <span class="zona-badge zona-${zona.nome.toLowerCase().replace(' ', '-')}">${zona.beneficiarios.toLocaleString('pt-BR')}</span>
+                        </div>
+
+                        <div class="zona-stats">
+                            <div class="zona-stat">
+                                <div class="zona-stat-label">Bairros</div>
+                                <div class="zona-stat-value">${zona.bairros}</div>
+                            </div>
+                            <div class="zona-stat">
+                                <div class="zona-stat-label">Idade Média</div>
+                                <div class="zona-stat-value">${zona.idade_media_adultos} anos</div>
+                            </div>
+                            <div class="zona-stat">
+                                <div class="zona-stat-label">Feminino</div>
+                                <div class="zona-stat-value">${zona.pct_feminino}%</div>
+                            </div>
+                            <div class="zona-stat">
+                                <div class="zona-stat-label">Masculino</div>
+                                <div class="zona-stat-value">${zona.pct_masculino}%</div>
+                            </div>
+                            <div class="zona-stat">
+                                <div class="zona-stat-label">Idosos 80+</div>
+                                <div class="zona-stat-value">${zona.idosos_80plus.toLocaleString('pt-BR')}</div>
+                            </div>
+                            <div class="zona-stat">
+                                <div class="zona-stat-label">Dist. Média</div>
+                                <div class="zona-stat-value">${zona.distancia_media_km} km</div>
+                            </div>
+                        </div>
+
+                        <div class="zona-section">
+                            <div class="zona-section-title">
+                                👥 Distribuição Etária (8 faixas)
+                                <span class="tooltip-icon" data-tooltip="Divisão dos beneficiários da zona em 8 faixas etárias para análise detalhada de perfil demográfico.">ℹ️</span>
+                            </div>
+                            <div class="faixa-etaria-item">
+                                <span class="faixa-etaria-label">18-49 anos:</span>
+                                <span class="faixa-etaria-value">${faixas['18_a_49'].total.toLocaleString('pt-BR')} (${faixas['18_a_49'].percentual}%)</span>
+                            </div>
+                            <div class="faixa-etaria-item">
+                                <span class="faixa-etaria-label">50-69 anos:</span>
+                                <span class="faixa-etaria-value">${faixas['50_a_69'].total.toLocaleString('pt-BR')} (${faixas['50_a_69'].percentual}%)</span>
+                            </div>
+                            <div class="faixa-etaria-item">
+                                <span class="faixa-etaria-label">70-74 anos:</span>
+                                <span class="faixa-etaria-value">${faixas['70_a_74'].total.toLocaleString('pt-BR')} (${faixas['70_a_74'].percentual}%)</span>
+                            </div>
+                            <div class="faixa-etaria-item">
+                                <span class="faixa-etaria-label">75-79 anos:</span>
+                                <span class="faixa-etaria-value">${faixas['75_a_79'].total.toLocaleString('pt-BR')} (${faixas['75_a_79'].percentual}%)</span>
+                            </div>
+                            <div class="faixa-etaria-item">
+                                <span class="faixa-etaria-label">80-89 anos:</span>
+                                <span class="faixa-etaria-value">${faixas['80_a_89'].total.toLocaleString('pt-BR')} (${faixas['80_a_89'].percentual}%)</span>
+                            </div>
+                            <div class="faixa-etaria-item">
+                                <span class="faixa-etaria-label">90-94 anos:</span>
+                                <span class="faixa-etaria-value">${faixas['90_a_94'].total.toLocaleString('pt-BR')} (${faixas['90_a_94'].percentual}%)</span>
+                            </div>
+                            <div class="faixa-etaria-item">
+                                <span class="faixa-etaria-label">95-99 anos:</span>
+                                <span class="faixa-etaria-value">${faixas['95_a_99'].total.toLocaleString('pt-BR')} (${faixas['95_a_99'].percentual}%)</span>
+                            </div>
+                            <div class="faixa-etaria-item">
+                                <span class="faixa-etaria-label">100+ anos:</span>
+                                <span class="faixa-etaria-value">${faixas['100_ou_mais'].total.toLocaleString('pt-BR')} (${faixas['100_ou_mais'].percentual}%)</span>
+                            </div>
+                        </div>
+
+                        <div class="zona-section">
+                            <div class="zona-section-title">
+                                📋 Top 4 Programas
+                                <span class="tooltip-icon" data-tooltip="Os 4 programas de saúde mais procurados nesta zona, mostrando número absoluto de beneficiários inscritos.">ℹ️</span>
+                            </div>
+                            ${programas.map((p, i) => `
+                                <div class="programa-item">
+                                    <span class="programa-nome">${i + 1}. ${p.nome}</span>
+                                    <span class="programa-total">${p.total.toLocaleString('pt-BR')}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            document.getElementById('zonas-grid').innerHTML = zonasHTML;
+        }
+
+        // ==================== 6. HOSPITAIS ====================
         function renderizarHospitais() {
-            const hospsData = dados.hospitais.hospitais;
-            
-            document.getElementById('hospitaisTabela').innerHTML = `
-                <h3 style="color: #60a5fa; margin-bottom: 20px;">🏥 Ranking de Hospitais</h3>
+            const { hospitais } = dados.hospitais;
+
+            // KPIs
+            const totalHospitais = hospitais.length;
+            const maiorCobertura = hospitais[0];
+
+            const kpisHTML = `
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        🏥 Total de Hospitais
+                        <span class="tooltip-icon" data-tooltip="Número total de hospitais credenciados na rede Prevent Senior.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${totalHospitais}</div>
+                    <div class="kpi-subtitle">na rede credenciada</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        🏆 Maior Cobertura
+                        <span class="tooltip-icon" data-tooltip="Hospital com maior número de bairros onde é o hospital mais próximo e maior número de beneficiários atendidos.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${maiorCobertura.nome}</div>
+                    <div class="kpi-subtitle">${maiorCobertura.bairros_cobertos} bairros | ${maiorCobertura.beneficiarios.toLocaleString('pt-BR')} benef.</div>
+                </div>
+            `;
+
+            document.getElementById('hospitais-kpis').innerHTML = kpisHTML;
+
+            // Tabela: Ranking
+            const tableHTML = `
                 <table>
                     <thead>
                         <tr>
@@ -1144,88 +1430,117 @@
                         </tr>
                     </thead>
                     <tbody>
-                        ${hospsData.map((h, i) => `
+                        ${hospitais.map((h, i) => `
                             <tr>
-                                <td>${i + 1}</td>
+                                <td><strong>${i + 1}</strong></td>
                                 <td><strong>${h.nome}</strong></td>
-                                <td><span class="zona-badge zona-${normalizeZona(h.zona)}">${h.zona}</span></td>
-                                <td>${parseInt(h.bairros_cobertos).toLocaleString('pt-BR')}</td>
-                                <td>${parseInt(h.beneficiarios).toLocaleString('pt-BR')}</td>
-                                <td>${parseFloat(h.percentual_rede).toFixed(1)}%</td>
+                                <td><span class="zona-badge zona-${h.zona.toLowerCase().replace(' ', '-')}">${h.zona}</span></td>
+                                <td>${h.bairros_cobertos}</td>
+                                <td><strong>${h.beneficiarios.toLocaleString('pt-BR')}</strong></td>
+                                <td>${h.percentual_rede}%</td>
                             </tr>
                         `).join('')}
                     </tbody>
                 </table>
             `;
 
-            document.getElementById('hospitaisCharts').innerHTML = `
-                <div class="chart-card" style="grid-column: 1 / -1;">
-                    <div class="chart-title">Cobertura por Hospital</div>
-                    <div class="chart-wrapper"><canvas id="chartHospitais"></canvas></div>
+            document.getElementById('tableHospitais').innerHTML = tableHTML;
+        }
+
+        // ==================== 7. BAIRROS PERIFÉRICOS ====================
+        function renderizarPerifericos() {
+            const { metadata, top_10_mais_distantes, todos_bairros } = dados.perifericos;
+
+            // KPIs
+            const kpisHTML = `
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        📍 Total de Bairros
+                        <span class="tooltip-icon" data-tooltip="Número de bairros com distância superior a 20km do hospital credenciado mais próximo.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${metadata.total_bairros}</div>
+                    <div class="kpi-subtitle">>20km do hospital</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        👥 Beneficiários Afetados
+                        <span class="tooltip-icon" data-tooltip="Total de beneficiários que residem em bairros periféricos (>20km). Representa apenas ${((metadata.total_beneficiarios / 412651) * 100).toFixed(1)}% da rede.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${metadata.total_beneficiarios.toLocaleString('pt-BR')}</div>
+                    <div class="kpi-subtitle">${((metadata.total_beneficiarios / 412651) * 100).toFixed(1)}% da rede</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        📏 Distância Média
+                        <span class="tooltip-icon" data-tooltip="Distância média real (rota de carro) dos bairros periféricos até o hospital mais próximo.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${metadata.distancia_media_km} km</div>
+                    <div class="kpi-subtitle">até hospital mais próximo</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">
+                        ⏱️ Tempo Médio
+                        <span class="tooltip-icon" data-tooltip="Tempo médio de deslocamento de carro dos bairros periféricos até o hospital mais próximo, considerando trânsito normal.">ℹ️</span>
+                    </div>
+                    <div class="kpi-value">${metadata.tempo_medio_min} min</div>
+                    <div class="kpi-subtitle">de deslocamento</div>
                 </div>
             `;
 
-            new Chart(document.getElementById('chartHospitais'), {
-                type: 'bar',
-                data: {
-                    labels: hospsData.map(h => h.nome),
-                    datasets: [{
-                        label: 'Beneficiários',
-                        data: hospsData.map(h => parseInt(h.beneficiarios)),
-                        backgroundColor: '#60a5fa',
-                        borderRadius: 8
-                    }]
-                },
-                options: {
-                    indexAxis: 'y',
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: { legend: { display: false } },
-                    scales: {
-                        x: { 
-                            beginAtZero: true,
-                            ticks: { color: '#94a3b8' },
-                            grid: { color: 'rgba(255,255,255,0.05)' }
-                        },
-                        y: { 
-                            ticks: { color: '#94a3b8', font: { size: 11 } },
-                            grid: { display: false }
-                        }
-                    }
+            document.getElementById('perifericos-kpis').innerHTML = kpisHTML;
+
+            // Tabela: Top 10 (com filtros)
+            renderizarTabelaTop10(top_10_mais_distantes);
+
+            // Event listeners para filtros
+            document.getElementById('filterTop10').addEventListener('input', (e) => {
+                const termo = e.target.value.toLowerCase();
+                const filtrados = top_10_mais_distantes.filter(b => b.bairro.toLowerCase().includes(termo));
+                renderizarTabelaTop10(filtrados);
+            });
+
+            document.getElementById('sortTop10').addEventListener('change', (e) => {
+                const criterio = e.target.value;
+                let ordenados = [...top_10_mais_distantes];
+                
+                if (criterio === 'distancia') {
+                    ordenados.sort((a, b) => b.distancia_km - a.distancia_km);
+                } else if (criterio === 'beneficiarios') {
+                    ordenados.sort((a, b) => b.beneficiarios - a.beneficiarios);
+                } else if (criterio === 'bairro') {
+                    ordenados.sort((a, b) => a.bairro.localeCompare(b.bairro));
                 }
+                
+                renderizarTabelaTop10(ordenados);
+            });
+
+            // Tabela: Todos (com filtros)
+            renderizarTabelaTodos(todos_bairros);
+
+            // Event listeners para filtros
+            document.getElementById('filterTodos').addEventListener('input', (e) => {
+                const termo = e.target.value.toLowerCase();
+                const zona = document.getElementById('filterZona').value;
+                
+                let filtrados = todos_bairros.filter(b => b.bairro.toLowerCase().includes(termo));
+                if (zona) filtrados = filtrados.filter(b => b.zona === zona);
+                
+                renderizarTabelaTodos(filtrados);
+            });
+
+            document.getElementById('filterZona').addEventListener('change', (e) => {
+                const zona = e.target.value;
+                const termo = document.getElementById('filterTodos').value.toLowerCase();
+                
+                let filtrados = todos_bairros.filter(b => b.bairro.toLowerCase().includes(termo));
+                if (zona) filtrados = filtrados.filter(b => b.zona === zona);
+                
+                renderizarTabelaTodos(filtrados);
             });
         }
 
-        // GAPS
-        function renderizarGaps() {
-            const { top_20_distantes, distribuicao_por_faixa } = dados.distancias;
-            const totalBairros = parseInt(dados.dashboard.kpis_gerais.total_bairros);
-            
-            const bairrosDescobertos = parseInt(distribuicao_por_faixa["15-20km"].bairros) + parseInt(distribuicao_por_faixa[">20km"].bairros);
-            const benef15_20 = parseInt(distribuicao_por_faixa["15-20km"].beneficiarios);
-            const benefMais20 = parseInt(distribuicao_por_faixa[">20km"].beneficiarios);
-            const benefDescobertos = benef15_20 + benefMais20;
-            
-            document.getElementById('gapsStats').innerHTML = `
-                <div class="stat-card">
-                    <div class="stat-label">⚠️ Bairros Descobertos</div>
-                    <div class="stat-value">${bairrosDescobertos}</div>
-                    <div class="stat-subtitle">${((bairrosDescobertos/totalBairros)*100).toFixed(1)}% (>15km)</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">👥 Benef. Afetados</div>
-                    <div class="stat-value">${benefDescobertos.toLocaleString('pt-BR')}</div>
-                    <div class="stat-subtitle">${((benefDescobertos/parseInt(dados.dashboard.kpis_gerais.total_beneficiarios))*100).toFixed(1)}%</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">📏 Distância Máxima</div>
-                    <div class="stat-value">${parseFloat(top_20_distantes[0].distancia_km).toFixed(2)} km</div>
-                    <div class="stat-subtitle">${top_20_distantes[0].bairro}</div>
-                </div>
-            `;
-
-            document.getElementById('gapsTabela').innerHTML = `
-                <h3 style="color: #60a5fa; margin-bottom: 20px;">🔴 Top 20 Bairros Mais Distantes</h3>
+        function renderizarTabelaTop10(bairros) {
+            const tableHTML = `
                 <table>
                     <thead>
                         <tr>
@@ -1233,212 +1548,82 @@
                             <th>Bairro</th>
                             <th>Zona</th>
                             <th>Benef.</th>
-                            <th>Hospital</th>
-                            <th>Distância</th>
-                            <th>Tempo</th>
+                            <th>1º Hospital</th>
+                            <th>Dist.</th>
+                            <th>2º Hospital</th>
+                            <th>Dist.</th>
+                            <th>3º Hospital</th>
+                            <th>Dist.</th>
                         </tr>
                     </thead>
                     <tbody>
-                        ${top_20_distantes.map((b, i) => `
+                        ${bairros.map((b, i) => `
                             <tr>
-                                <td>${i + 1}</td>
+                                <td><strong>${i + 1}</strong></td>
                                 <td>${b.bairro}</td>
-                                <td><span class="zona-badge zona-${normalizeZona(b.zona)}">${b.zona}</span></td>
-                                <td>${parseInt(b.beneficiarios)}</td>
-                                <td>${b.hospital}</td>
-                                <td>${parseFloat(b.distancia_km).toFixed(2)} km</td>
-                                <td>${parseInt(b.tempo_min)} min</td>
+                                <td><span class="zona-badge zona-${b.zona.toLowerCase().replace(' ', '-')}">${b.zona}</span></td>
+                                <td>${b.beneficiarios}</td>
+                                <td>${b.hospitais_proximos[0].hospital}</td>
+                                <td><strong>${b.hospitais_proximos[0].distancia_km} km</strong></td>
+                                <td>${b.hospitais_proximos[1].hospital}</td>
+                                <td>${b.hospitais_proximos[1].distancia_km} km</td>
+                                <td>${b.hospitais_proximos[2].hospital}</td>
+                                <td>${b.hospitais_proximos[2].distancia_km} km</td>
                             </tr>
                         `).join('')}
                     </tbody>
                 </table>
             `;
+
+            document.getElementById('tableTop10Distantes').innerHTML = tableHTML;
         }
 
-        // 🆕 NOVA FUNCIONALIDADE: Renderizar Top 50 Distantes
-        function renderizarTop50Distantes() {
-            const top50 = dados.top50Distantes;
-            
-            document.getElementById('top50-beneficiarios').textContent = top50.metadata.total_beneficiarios.toLocaleString('pt-BR');
-            document.getElementById('top50-distancia').textContent = `${top50.metadata.distancia_media_km} km`;
-            document.getElementById('top50-tempo').textContent = `${top50.metadata.tempo_medio_min} min`;
-            
-            const ctx = document.getElementById('chartTop50Zonas').getContext('2d');
-            new Chart(ctx, {
-                type: 'pie',
-                data: {
-                    labels: top50.distribuicao_zonas.map(z => z.zona),
-                    datasets: [{
-                        data: top50.distribuicao_zonas.map(z => z.bairros),
-                        backgroundColor: ['#ef4444', '#f59e0b', '#3b82f6', '#10b981', '#8b5cf6']
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: { 
-                        legend: { 
-                            position: 'right',
-                            labels: { color: '#94a3b8' }
-                        } 
-                    }
-                }
+        function renderizarTabelaTodos(bairros) {
+            const tableHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bairro</th>
+                            <th>Zona</th>
+                            <th>Benef.</th>
+                            <th>Hospital Mais Próximo</th>
+                            <th>Distância</th>
+                            <th>Tempo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${bairros.map(b => `
+                            <tr>
+                                <td><strong>${b.bairro}</strong></td>
+                                <td><span class="zona-badge zona-${b.zona.toLowerCase().replace(' ', '-')}">${b.zona}</span></td>
+                                <td>${b.beneficiarios}</td>
+                                <td>${b.hospital_mais_proximo}</td>
+                                <td><strong>${b.distancia_km} km</strong></td>
+                                <td>${b.tempo_min} min</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+
+            document.getElementById('tableTodosPerifricos').innerHTML = tableHTML;
+        }
+
+        // ==================== NAVEGAÇÃO ====================
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remover active de todos
+                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+                
+                // Adicionar active ao clicado
+                tab.classList.add('active');
+                const sectionId = tab.getAttribute('data-section');
+                document.getElementById(sectionId).classList.add('active');
             });
-            
-            const tbody = document.getElementById('tbody-top50');
-            tbody.innerHTML = top50.bairros.map((b, i) => `
-                <tr>
-                    <td>${i + 1}</td>
-                    <td><strong>${b.bairro}</strong></td>
-                    <td>${b.cidade}</td>
-                    <td><span class="zona-badge zona-${normalizeZona(b.zona)}">${b.zona}</span></td>
-                    <td>${b.beneficiarios.toLocaleString('pt-BR')}</td>
-                    <td>${b.hospital_mais_proximo}</td>
-                    <td>${b.distancia_km} km</td>
-                    <td>${b.tempo_formatado}</td>
-                </tr>
-            `).join('');
-        }
+        });
 
-        // 🆕 NOVA FUNCIONALIDADE: Renderizar Extremo Sul
-        function renderizarExtremoSul() {
-            const extremoSul = dados.extremoSul;
-            
-            document.getElementById('extremo-sul-bairros').textContent = extremoSul.metadata.total_bairros.toLocaleString('pt-BR');
-            document.getElementById('extremo-sul-beneficiarios').textContent = extremoSul.metadata.total_beneficiarios.toLocaleString('pt-BR');
-            document.getElementById('extremo-sul-distancia').textContent = `${extremoSul.metadata.distancia_media_km} km`;
-            document.getElementById('extremo-sul-tempo').textContent = `${extremoSul.metadata.tempo_medio_min} min`;
-            
-            const ctx = document.getElementById('chartExtremoSulHospitais').getContext('2d');
-            new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: extremoSul.hospitais_mais_proximos.map(h => h.hospital),
-                    datasets: [{
-                        label: 'Número de Bairros',
-                        data: extremoSul.hospitais_mais_proximos.map(h => h.bairros),
-                        backgroundColor: ['#3b82f6', '#ef4444', '#10b981'],
-                        borderRadius: 8
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: { legend: { display: false } },
-                    scales: {
-                        y: { 
-                            beginAtZero: true,
-                            ticks: { color: '#94a3b8' },
-                            grid: { color: 'rgba(255,255,255,0.05)' }
-                        },
-                        x: { 
-                            ticks: { color: '#94a3b8' },
-                            grid: { display: false }
-                        }
-                    }
-                }
-            });
-            
-            const top10 = extremoSul.bairros.slice(0, 10);
-            const tbody = document.getElementById('tbody-extremo-sul-distantes');
-            tbody.innerHTML = top10.map((b, i) => `
-                <tr>
-                    <td>${i + 1}</td>
-                    <td><strong>${b.bairro}</strong></td>
-                    <td>${b.cidade}</td>
-                    <td>${b.beneficiarios.toLocaleString('pt-BR')}</td>
-                    <td>${b.hospital_mais_proximo}</td>
-                    <td>${b.distancia_km} km</td>
-                    <td>${b.tempo_formatado}</td>
-                </tr>
-            `).join('');
-            
-            const tbodyTodos = document.getElementById('tbody-extremo-sul-todos');
-            tbodyTodos.innerHTML = extremoSul.bairros.map(b => `
-                <tr>
-                    <td>${b.bairro}</td>
-                    <td>${b.cidade}</td>
-                    <td><span class="zona-badge zona-${normalizeZona(b.zona)}">${b.zona}</span></td>
-                    <td>${b.beneficiarios.toLocaleString('pt-BR')}</td>
-                    <td>${b.hospital_mais_proximo}</td>
-                    <td>${b.distancia_km} km</td>
-                    <td>${b.tempo_formatado}</td>
-                </tr>
-            `).join('');
-        }
-
-        // MAPA
-        function renderizarMapa() {
-            if (mapInstance) return;
-            
-            mapInstance = L.map('mapReal').setView([-23.5505, -46.6333], 10);
-            
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '© OpenStreetMap'
-            }).addTo(mapInstance);
-            
-            const hospitalIcon = L.divIcon({
-                html: '<div style="background:#ef4444; width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-size:18px; border:3px solid white; box-shadow:0 3px 10px rgba(0,0,0,0.5);">🏥</div>',
-                className: '',
-                iconSize: [32, 32]
-            });
-            
-            const coordsHospitais = {
-                'Hospital Cruz Azul': { lat: -23.565920, lng: -46.622154 },
-                'Hospital Adventista': { lat: -23.563566, lng: -46.633928 },
-                'São Camilo Ipiranga': { lat: -23.583081, lng: -46.612073 },
-                'Santa Clara': { lat: -23.532691, lng: -46.527272 },
-                'Santa Virgínia': { lat: -23.536880, lng: -46.589506 },
-                'Santa Marcelina': { lat: -23.555054, lng: -46.462603 },
-                'São Camilo Pompéia': { lat: -23.534065, lng: -46.688244 },
-                'São Camilo Santana': { lat: -23.487767, lng: -46.627247 },
-                'Neomater': { lat: -23.669184, lng: -46.553716 }
-            };
-            
-            dados.hospitais.hospitais.forEach(h => {
-                const coords = coordsHospitais[h.nome];
-                if (coords) {
-                    L.marker([coords.lat, coords.lng], { icon: hospitalIcon })
-                        .bindPopup(`<div style="font-family:sans-serif;"><strong style="color:#60a5fa;font-size:16px;">🏥 ${h.nome}</strong><br><br><strong>Zona:</strong> ${h.zona}<br><strong>Beneficiários:</strong> ${h.beneficiarios.toLocaleString('pt-BR')}<br><strong>% Rede:</strong> ${h.percentual_rede}%</div>`)
-                        .addTo(mapInstance);
-                }
-            });
-        }
-
-        // NAVEGAÇÃO
-        function showSection(sectionId) {
-            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-            document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-            
-            document.getElementById(sectionId).classList.add('active');
-            event.target.classList.add('active');
-            
-            if (sectionId === 'mapa' && !mapInstance) {
-                setTimeout(renderizarMapa, 100);
-            }
-        }
-
-        // UTILITÁRIOS
-        function normalizeZona(zona) {
-            return zona.toLowerCase()
-                .replace(/\s+/g, '-')
-                .normalize('NFD')
-                .replace(/[\u0300-\u036f]/g, '');
-        }
-
-        function getZonaColor(zona) {
-            const colors = {
-                'Centro': '#6366f1',
-                'Centro-Sul': '#10b981',
-                'Leste': '#3b82f6',
-                'Norte': '#f59e0b',
-                'Oeste': '#8b5cf6',
-                'ABC': '#ec4899'
-            };
-            return colors[zona] || '#60a5fa';
-        }
-
-        // INICIALIZAR
+        // ==================== INICIALIZAR ====================
         window.addEventListener('DOMContentLoaded', carregarDados);
     </script>
 </body>
