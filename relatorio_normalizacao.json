@@ -1,0 +1,47 @@
+{
+  "data_normalizacao": "2025-11-06T15:35:43.502455",
+  "estatisticas_gerais": {
+    "total_bairros_antes": 1383,
+    "total_bairros_depois": 1349,
+    "duplicatas_consolidadas": 34,
+    "reducao_percentual": 2.46,
+    "total_beneficiarios": 412651
+  },
+  "detalhamento_regioes": [
+    {
+      "regiao": "centro_sul",
+      "bairros_antes": 381,
+      "bairros_depois": 364,
+      "duplicatas": 17,
+      "beneficiarios": 145953
+    },
+    {
+      "regiao": "abc",
+      "bairros_antes": 176,
+      "bairros_depois": 166,
+      "duplicatas": 10,
+      "beneficiarios": 40301
+    },
+    {
+      "regiao": "leste",
+      "bairros_antes": 325,
+      "bairros_depois": 324,
+      "duplicatas": 1,
+      "beneficiarios": 99091
+    },
+    {
+      "regiao": "norte",
+      "bairros_antes": 228,
+      "bairros_depois": 224,
+      "duplicatas": 4,
+      "beneficiarios": 58385
+    },
+    {
+      "regiao": "oeste",
+      "bairros_antes": 273,
+      "bairros_depois": 271,
+      "duplicatas": 2,
+      "beneficiarios": 68921
+    }
+  ]
+}

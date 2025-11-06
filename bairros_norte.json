@@ -1,0 +1,4046 @@
+{
+  "metadata": {
+    "versao": "2.0",
+    "zona": "Norte",
+    "total_bairros": 224,
+    "metodo": "directions_api",
+    "data_correcao": "2025-11-06 14:57:07",
+    "data_normalizacao": "2025-11-06T15:35:43.476234",
+    "bairros_antes_normalizacao": 228,
+    "duplicatas_consolidadas": 4
+  },
+  "bairros": [
+    {
+      "bairro": "santana",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 5225,
+      "lat": -23.5086,
+      "lng": -46.6291,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 3.66,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "santana"
+      ]
+    },
+    {
+      "bairro": "água fria",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1889,
+      "lat": -23.4838589,
+      "lng": -46.618616,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 1.59,
+        "tempo_real_min": 6,
+        "tempo_formatado": "6 min"
+      },
+      "variantes": [
+        "água fria"
+      ]
+    },
+    {
+      "bairro": "tucuruvi",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1526,
+      "lat": -23.473904,
+      "lng": -46.61081739999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 3.11,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "tucuruvi"
+      ]
+    },
+    {
+      "bairro": "vila guilherme",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1372,
+      "lat": -23.5144031,
+      "lng": -46.6074484,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.98,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "vila guilherme"
+      ]
+    },
+    {
+      "bairro": "vila maria alta",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1371,
+      "lat": -23.5067889,
+      "lng": -46.5893843,
+      "hospital_mais_proximo": {
+        "nome": "Santa Virgínia",
+        "zona": "Leste",
+        "distancia_real_km": 6.33,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "vila maria alta"
+      ]
+    },
+    {
+      "bairro": "santa teresinha",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1367,
+      "lat": -23.4921793,
+      "lng": -46.636143,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 2.68,
+        "tempo_real_min": 8,
+        "tempo_formatado": "8 min"
+      },
+      "variantes": [
+        "santa teresinha"
+      ]
+    },
+    {
+      "bairro": "vila medeiros",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1339,
+      "lat": -23.4892554,
+      "lng": -46.5845224,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 6.12,
+        "tempo_real_min": 19,
+        "tempo_formatado": "19 min"
+      },
+      "variantes": [
+        "vila medeiros"
+      ]
+    },
+    {
+      "bairro": "vila romero",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1326,
+      "lat": -23.4863956,
+      "lng": -46.6470008,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 3.37,
+        "tempo_real_min": 9,
+        "tempo_formatado": "9 min"
+      },
+      "variantes": [
+        "vila romero"
+      ]
+    },
+    {
+      "bairro": "lauzane paulista",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1294,
+      "lat": -23.4785054,
+      "lng": -46.6442483,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 2.84,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "lauzane paulista"
+      ]
+    },
+    {
+      "bairro": "jardim são paulo(zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1243,
+      "lat": -23.4946826,
+      "lng": -46.6193838,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 1.66,
+        "tempo_real_min": 6,
+        "tempo_formatado": "6 min"
+      },
+      "variantes": [
+        "jardim são paulo(zona norte)"
+      ]
+    },
+    {
+      "bairro": "vila gustavo",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1076,
+      "lat": -23.4824715,
+      "lng": -46.5974842,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.27,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "vila gustavo"
+      ]
+    },
+    {
+      "bairro": "casa verde",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1023,
+      "lat": -23.5109881,
+      "lng": -46.65744189999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 6.48,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "casa verde"
+      ]
+    },
+    {
+      "bairro": "vila mazzei",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1000,
+      "lat": -23.4756953,
+      "lng": -46.60305719999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 3.88,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "vila mazzei"
+      ]
+    },
+    {
+      "bairro": "jardim brasil (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 989,
+      "lat": -23.4845576,
+      "lng": -46.5673768,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 8.75,
+        "tempo_real_min": 26,
+        "tempo_formatado": "26 min"
+      },
+      "variantes": [
+        "jardim brasil (zona norte)"
+      ]
+    },
+    {
+      "bairro": "imirim",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 953,
+      "lat": -23.4903531,
+      "lng": -46.6553352,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 3.5,
+        "tempo_real_min": 9,
+        "tempo_formatado": "9 min"
+      },
+      "variantes": [
+        "imirim"
+      ]
+    },
+    {
+      "bairro": "vila isolina mazzei",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 911,
+      "lat": -23.4968976,
+      "lng": -46.6020105,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.64,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "vila isolina mazzei"
+      ]
+    },
+    {
+      "bairro": "vila nova cachoeirinha",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 861,
+      "lat": -23.4722961,
+      "lng": -46.6596712,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.79,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "vila nova cachoeirinha"
+      ]
+    },
+    {
+      "bairro": "parada inglesa",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 808,
+      "lat": -23.4859845,
+      "lng": -46.6083797,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.33,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "parada inglesa"
+      ]
+    },
+    {
+      "bairro": "vila dom pedro ii",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 794,
+      "lat": -23.4888824,
+      "lng": -46.6041867,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 3.39,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "vila dom pedro ii"
+      ]
+    },
+    {
+      "bairro": "parque peruche",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 787,
+      "lat": -23.4976876,
+      "lng": -46.6544264,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.57,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "parque peruche"
+      ]
+    },
+    {
+      "bairro": "tremembé",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 727,
+      "lat": -23.4643,
+      "lng": -46.5863,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 6.49,
+        "tempo_real_min": 19,
+        "tempo_formatado": "19 min"
+      },
+      "variantes": [
+        "tremembé"
+      ]
+    },
+    {
+      "bairro": "jardim das laranjeiras",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 715,
+      "lat": -23.5105462,
+      "lng": -46.6669128,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 4.78,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "jardim das laranjeiras"
+      ]
+    },
+    {
+      "bairro": "vila nova mazzei",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 707,
+      "lat": -23.4658615,
+      "lng": -46.5971852,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.27,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "vila nova mazzei"
+      ]
+    },
+    {
+      "bairro": "jardim carlu",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 685,
+      "lat": -23.467907,
+      "lng": -46.6331274,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 2.95,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "jardim carlu"
+      ]
+    },
+    {
+      "bairro": "parque novo mundo",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 669,
+      "lat": -23.5173966,
+      "lng": -46.5679289,
+      "hospital_mais_proximo": {
+        "nome": "Santa Virgínia",
+        "zona": "Leste",
+        "distancia_real_km": 6.3,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "parque novo mundo"
+      ]
+    },
+    {
+      "bairro": "limão",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 650,
+      "lat": -23.4921727,
+      "lng": -46.6772924,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 5.59,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "limão"
+      ]
+    },
+    {
+      "bairro": "vila maria baixa",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 619,
+      "lat": -23.519279,
+      "lng": -46.5939409,
+      "hospital_mais_proximo": {
+        "nome": "Santa Virgínia",
+        "zona": "Leste",
+        "distancia_real_km": 5.0,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "vila maria baixa"
+      ]
+    },
+    {
+      "bairro": "vila albertina",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 619,
+      "lat": -23.5021875,
+      "lng": -46.6910592,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 5.2,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "vila albertina"
+      ]
+    },
+    {
+      "bairro": "carandiru",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 609,
+      "lat": -23.5037216,
+      "lng": -46.6151765,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 3.19,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "carandiru"
+      ]
+    },
+    {
+      "bairro": "vila siqueira (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 559,
+      "lat": -23.5004083,
+      "lng": -46.6789846,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 4.46,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "vila siqueira (zona norte)"
+      ]
+    },
+    {
+      "bairro": "vila sabrina",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 532,
+      "lat": -23.492335,
+      "lng": -46.5728532,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 8.01,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "vila sabrina"
+      ]
+    },
+    {
+      "bairro": "vila paiva",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 518,
+      "lat": -23.5023401,
+      "lng": -46.6017757,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.4,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "vila paiva"
+      ]
+    },
+    {
+      "bairro": "vila palmeiras",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 474,
+      "lat": -23.4981382,
+      "lng": -46.686229,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 5.82,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "vila palmeiras"
+      ]
+    },
+    {
+      "bairro": "jaçanã",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 471,
+      "lat": -23.4685394,
+      "lng": -46.5797393,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 6.99,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "jaçanã"
+      ]
+    },
+    {
+      "bairro": "vila ester (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 471,
+      "lat": -23.5006357,
+      "lng": -46.64338129999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 3.19,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "vila ester (zona norte)"
+      ]
+    },
+    {
+      "bairro": "vila irmãos arnoni",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 463,
+      "lat": -23.4550428,
+      "lng": -46.6235025,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.56,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "vila irmãos arnoni"
+      ]
+    },
+    {
+      "bairro": "parque edu chaves",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 437,
+      "lat": -23.4768882,
+      "lng": -46.5646429,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.96,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "parque edu chaves"
+      ]
+    },
+    {
+      "bairro": "vila ede",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 435,
+      "lat": -23.4942421,
+      "lng": -46.592133,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.93,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila ede"
+      ]
+    },
+    {
+      "bairro": "vila paulicéia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 434,
+      "lat": -23.5557714,
+      "lng": -46.6395571,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 2.42,
+        "tempo_real_min": 7,
+        "tempo_formatado": "7 min"
+      },
+      "variantes": [
+        "vila paulicéia"
+      ]
+    },
+    {
+      "bairro": "casa verde alta",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 417,
+      "lat": -23.490645,
+      "lng": -46.6644988,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.11,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "casa verde alta"
+      ]
+    },
+    {
+      "bairro": "nossa senhora do ó",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 408,
+      "lat": -23.4991968,
+      "lng": -46.7031368,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 6.51,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "nossa senhora do ó"
+      ]
+    },
+    {
+      "bairro": "freguesia do ó",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 402,
+      "lat": -23.5014967,
+      "lng": -46.69770159999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 6.0,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "freguesia do ó"
+      ]
+    },
+    {
+      "bairro": "jardim leonor mendes de barros",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 398,
+      "lat": -23.4674892,
+      "lng": -46.6100342,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 3.55,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "jardim leonor mendes de barros"
+      ]
+    },
+    {
+      "bairro": "parque casa de pedra",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 382,
+      "lat": -23.4555885,
+      "lng": -46.6025523,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.32,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "parque casa de pedra"
+      ]
+    },
+    {
+      "bairro": "jardim franca",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 355,
+      "lat": -23.4763734,
+      "lng": -46.6162433,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 2.29,
+        "tempo_real_min": 8,
+        "tempo_formatado": "8 min"
+      },
+      "variantes": [
+        "jardim franca"
+      ]
+    },
+    {
+      "bairro": "parque são luís",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 351,
+      "lat": -23.4798976,
+      "lng": -46.6886441,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 8.43,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "parque são luís"
+      ]
+    },
+    {
+      "bairro": "barro branco (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 350,
+      "lat": -23.4699436,
+      "lng": -46.6114203,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 3.26,
+        "tempo_real_min": 9,
+        "tempo_formatado": "9 min"
+      },
+      "variantes": [
+        "barro branco (zona norte)"
+      ]
+    },
+    {
+      "bairro": "vila santa maria",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 338,
+      "lat": -23.4892079,
+      "lng": -46.6741555,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 6.26,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila santa maria"
+      ]
+    },
+    {
+      "bairro": "parque vitória",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 313,
+      "lat": -23.4712593,
+      "lng": -46.59454350000001,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.3,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "parque vitória"
+      ]
+    },
+    {
+      "bairro": "vila pereira barreto",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 308,
+      "lat": -23.4907133,
+      "lng": -46.7200504,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 8.78,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "vila pereira barreto"
+      ]
+    },
+    {
+      "bairro": "piqueri",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 289,
+      "lat": -23.5040786,
+      "lng": -46.7103848,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 7.13,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "piqueri"
+      ]
+    },
+    {
+      "bairro": "jardim paraíso",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 282,
+      "lat": -23.4757724,
+      "lng": -46.6283028,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 2.02,
+        "tempo_real_min": 6,
+        "tempo_formatado": "6 min"
+      },
+      "variantes": [
+        "jardim paraíso"
+      ]
+    },
+    {
+      "bairro": "vila baruel",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 279,
+      "lat": -23.5044428,
+      "lng": -46.6578609,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.69,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila baruel"
+      ]
+    },
+    {
+      "bairro": "jardim modelo",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 276,
+      "lat": -23.4669765,
+      "lng": -46.5752628,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.67,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "jardim modelo"
+      ]
+    },
+    {
+      "bairro": "jardim cidade pirituba",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 275,
+      "lat": -23.4790064,
+      "lng": -46.727258,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 11.76,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "jardim cidade pirituba"
+      ]
+    },
+    {
+      "bairro": "jardim virginia bianca",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 268,
+      "lat": -23.4569111,
+      "lng": -46.6166761,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.53,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "jardim virginia bianca"
+      ]
+    },
+    {
+      "bairro": "vila amélia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 266,
+      "lat": -23.4710195,
+      "lng": -46.6542406,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.32,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila amélia"
+      ]
+    },
+    {
+      "bairro": "vila nivi",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 261,
+      "lat": -23.477571,
+      "lng": -46.592133,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.22,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "vila nivi"
+      ]
+    },
+    {
+      "bairro": "chora menino",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 260,
+      "lat": -23.4902999,
+      "lng": -46.642778,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 2.66,
+        "tempo_real_min": 8,
+        "tempo_formatado": "8 min"
+      },
+      "variantes": [
+        "chora menino"
+      ]
+    },
+    {
+      "bairro": "vila pirituba",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 241,
+      "lat": -23.4791158,
+      "lng": -46.7418047,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 13.15,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "vila pirituba"
+      ]
+    },
+    {
+      "bairro": "vila bandeirantes",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 235,
+      "lat": -23.62,
+      "lng": -46.74,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 15.47,
+        "tempo_real_min": 38,
+        "tempo_formatado": "38 min"
+      },
+      "variantes": [
+        "vila bandeirantes"
+      ]
+    },
+    {
+      "bairro": "vila zat",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 226,
+      "lat": -23.4730432,
+      "lng": -46.7139687,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 10.35,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "vila zat"
+      ]
+    },
+    {
+      "bairro": "vila iório",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 221,
+      "lat": -23.4853334,
+      "lng": -46.7061567,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 9.09,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "vila iório"
+      ]
+    },
+    {
+      "bairro": "sítio morro grande",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 219,
+      "lat": -23.4696501,
+      "lng": -46.70378729999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 10.57,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "sítio morro grande"
+      ]
+    },
+    {
+      "bairro": "jardim maristela",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 217,
+      "lat": -23.4749079,
+      "lng": -46.7001172,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 9.65,
+        "tempo_real_min": 31,
+        "tempo_formatado": "31 min"
+      },
+      "variantes": [
+        "jardim maristela"
+      ]
+    },
+    {
+      "bairro": "vila vitório mazzei",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 213,
+      "lat": -23.4773222,
+      "lng": -46.6258906,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 1.87,
+        "tempo_real_min": 6,
+        "tempo_formatado": "6 min"
+      },
+      "variantes": [
+        "vila vitório mazzei"
+      ]
+    },
+    {
+      "bairro": "itaberaba",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 209,
+      "lat": -23.4863021,
+      "lng": -46.6916631,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 7.91,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "itaberaba"
+      ]
+    },
+    {
+      "bairro": "moinho velho",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 200,
+      "lat": -23.4932635,
+      "lng": -46.7049487,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 7.87,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "moinho velho"
+      ]
+    },
+    {
+      "bairro": "jardim do colégio (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 200,
+      "lat": -23.4878013,
+      "lng": -46.6355399,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 1.85,
+        "tempo_real_min": 6,
+        "tempo_formatado": "6 min"
+      },
+      "variantes": [
+        "jardim do colégio (zona norte)"
+      ]
+    },
+    {
+      "bairro": "vila basileia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 199,
+      "lat": -23.4817155,
+      "lng": -46.6524305,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.31,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "vila basileia"
+      ]
+    },
+    {
+      "bairro": "casa verde média",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 195,
+      "lat": -23.5021172,
+      "lng": -46.6614815,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.24,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "casa verde média"
+      ]
+    },
+    {
+      "bairro": "vila amália (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 189,
+      "lat": -23.4665843,
+      "lng": -46.65001720000001,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 3.99,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "vila amália (zona norte)"
+      ]
+    },
+    {
+      "bairro": "jardim centenário",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 189,
+      "lat": -23.4712454,
+      "lng": -46.6687234,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 6.62,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "jardim centenário"
+      ]
+    },
+    {
+      "bairro": "vila cruz das almas",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 187,
+      "lat": -23.4808412,
+      "lng": -46.6983054,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 9.62,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "vila cruz das almas"
+      ]
+    },
+    {
+      "bairro": "vila roque",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 185,
+      "lat": -23.4781482,
+      "lng": -46.6553457,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.7,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "vila roque"
+      ]
+    },
+    {
+      "bairro": "sítio do mandaqui",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 180,
+      "lat": -23.484213,
+      "lng": -46.6596712,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.42,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "sítio do mandaqui"
+      ]
+    },
+    {
+      "bairro": "vila carolina",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 180,
+      "lat": -23.5060006,
+      "lng": -46.4459141,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 7.46,
+        "tempo_real_min": 19,
+        "tempo_formatado": "19 min"
+      },
+      "variantes": [
+        "vila carolina"
+      ]
+    },
+    {
+      "bairro": "vila penteado",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 180,
+      "lat": -23.4702496,
+      "lng": -46.6813993,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.35,
+        "tempo_real_min": 24,
+        "tempo_formatado": "24 min"
+      },
+      "variantes": [
+        "vila penteado"
+      ]
+    },
+    {
+      "bairro": "parque ramos freitas",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 179,
+      "lat": -23.4531541,
+      "lng": -46.6041867,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.88,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "parque ramos freitas"
+      ]
+    },
+    {
+      "bairro": "vila carbone",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 178,
+      "lat": -23.4917052,
+      "lng": -46.6813993,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 6.67,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "vila carbone"
+      ]
+    },
+    {
+      "bairro": "vila dionisia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 175,
+      "lat": -23.46681,
+      "lng": -46.6644988,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.45,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "vila dionisia"
+      ]
+    },
+    {
+      "bairro": "jardim primavera (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 175,
+      "lat": -23.486105,
+      "lng": -46.6789846,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 6.45,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "jardim primavera (zona norte)"
+      ]
+    },
+    {
+      "bairro": "vila santa terezinha (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 171,
+      "lat": -23.4695934,
+      "lng": -46.58972259999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.97,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "vila santa terezinha (zona norte)"
+      ]
+    },
+    {
+      "bairro": "vila são vicente",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 168,
+      "lat": -23.4958955,
+      "lng": -46.6952861,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 6.29,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "vila são vicente"
+      ]
+    },
+    {
+      "bairro": "vila paulistana",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 164,
+      "lat": -23.4513738,
+      "lng": -46.592133,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.02,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "vila paulistana"
+      ]
+    },
+    {
+      "bairro": "brasilândia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 163,
+      "lat": -23.4703331,
+      "lng": -46.6899783,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 8.76,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "brasilândia"
+      ]
+    },
+    {
+      "bairro": "jardim são josé (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 160,
+      "lat": -23.4858327,
+      "lng": -46.712801,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 8.81,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "jardim são josé (zona norte)"
+      ]
+    },
+    {
+      "bairro": "jardim monjolo",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 156,
+      "lat": -23.4935674,
+      "lng": -46.6989093,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 6.6,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "jardim monjolo"
+      ]
+    },
+    {
+      "bairro": "vila barbosa",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 156,
+      "lat": -23.4933716,
+      "lng": -46.4266911,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 9.25,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "vila barbosa"
+      ]
+    },
+    {
+      "bairro": "parque monteiro soares",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 155,
+      "lat": -23.4902665,
+      "lng": -46.6910592,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 6.89,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "parque monteiro soares"
+      ]
+    },
+    {
+      "bairro": "bortolândia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 154,
+      "lat": -23.4546168,
+      "lng": -46.5963514,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 6.17,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "bortolândia"
+      ]
+    },
+    {
+      "bairro": "vila barreto",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 151,
+      "lat": -23.4859433,
+      "lng": -46.7200504,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 9.42,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "vila barreto"
+      ]
+    },
+    {
+      "bairro": "vila bonilha",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 151,
+      "lat": -23.4981448,
+      "lng": -46.7121969,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 7.43,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila bonilha"
+      ]
+    },
+    {
+      "bairro": "vila nilo",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 151,
+      "lat": -23.4591177,
+      "lng": -46.5800822,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.48,
+        "tempo_real_min": 22,
+        "tempo_formatado": "22 min"
+      },
+      "variantes": [
+        "vila nilo"
+      ]
+    },
+    {
+      "bairro": "mandaqui",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 147,
+      "lat": -23.4820871,
+      "lng": -46.6258906,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 1.24,
+        "tempo_real_min": 4,
+        "tempo_formatado": "4 min"
+      },
+      "variantes": [
+        "mandaqui"
+      ]
+    },
+    {
+      "bairro": "vila pereira cerca",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 144,
+      "lat": -23.492987,
+      "lng": -46.712801,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 8.16,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "vila pereira cerca"
+      ]
+    },
+    {
+      "bairro": "horto florestal",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 140,
+      "lat": -23.4560035,
+      "lng": -46.6298195,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.07,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "horto florestal"
+      ]
+    },
+    {
+      "bairro": "vila santos",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 140,
+      "lat": -23.4545652,
+      "lng": -46.6470898,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.57,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila santos"
+      ]
+    },
+    {
+      "bairro": "jardim são bento",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 137,
+      "lat": -23.5037326,
+      "lng": -46.6486066,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.66,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "jardim são bento"
+      ]
+    },
+    {
+      "bairro": "vila nova carolina",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 135,
+      "lat": -23.4613813,
+      "lng": -46.5728532,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.98,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "vila nova carolina"
+      ]
+    },
+    {
+      "bairro": "jardim santa cruz (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 128,
+      "lat": -23.4604913,
+      "lng": -46.6669128,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 6.71,
+        "tempo_real_min": 22,
+        "tempo_formatado": "22 min"
+      },
+      "variantes": [
+        "jardim santa cruz (zona norte)"
+      ]
+    },
+    {
+      "bairro": "vila leonor",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 127,
+      "lat": -23.5016128,
+      "lng": -46.5973343,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.15,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "vila leonor"
+      ]
+    },
+    {
+      "bairro": "parque panamericano",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 124,
+      "lat": -23.4469448,
+      "lng": -46.7290879,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 14.9,
+        "tempo_real_min": 44,
+        "tempo_formatado": "44 min"
+      },
+      "variantes": [
+        "parque panamericano"
+      ]
+    },
+    {
+      "bairro": "vila bela vista (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 123,
+      "lat": -23.4666973,
+      "lng": -46.6572575,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.13,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "vila bela vista (zona norte)"
+      ]
+    },
+    {
+      "bairro": "jardim rossin",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 122,
+      "lat": -23.4857495,
+      "lng": -46.6563524,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.28,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "jardim rossin"
+      ]
+    },
+    {
+      "bairro": "jardim almanara",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 120,
+      "lat": -23.4733255,
+      "lng": -46.6747591,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 6.46,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "jardim almanara"
+      ]
+    },
+    {
+      "bairro": "jardim andaraí",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 120,
+      "lat": -23.5192582,
+      "lng": -46.57801600000001,
+      "hospital_mais_proximo": {
+        "nome": "Santa Virgínia",
+        "zona": "Leste",
+        "distancia_real_km": 5.52,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "jardim andaraí"
+      ]
+    },
+    {
+      "bairro": "jardim guanca",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 116,
+      "lat": -23.4962632,
+      "lng": -46.5704437,
+      "hospital_mais_proximo": {
+        "nome": "Santa Virgínia",
+        "zona": "Leste",
+        "distancia_real_km": 7.85,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "jardim guanca"
+      ]
+    },
+    {
+      "bairro": "conjunto residencial santa terezinha",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 111,
+      "lat": -23.4779403,
+      "lng": -46.639762,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 2.27,
+        "tempo_real_min": 8,
+        "tempo_formatado": "8 min"
+      },
+      "variantes": [
+        "conjunto residencial santa terezinha"
+      ]
+    },
+    {
+      "bairro": "vila bancária munhoz",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 111,
+      "lat": -23.4853856,
+      "lng": -46.6838141,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 7.38,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "vila bancária munhoz"
+      ]
+    },
+    {
+      "bairro": "vila arcádia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 107,
+      "lat": -23.5055179,
+      "lng": -46.7007211,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 5.82,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila arcádia"
+      ]
+    },
+    {
+      "bairro": "vila diva (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 107,
+      "lat": -23.4994611,
+      "lng": -46.66932689999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 5.61,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "vila diva (zona norte)"
+      ]
+    },
+    {
+      "bairro": "jardim virginia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 106,
+      "lat": -23.4978547,
+      "lng": -46.390068,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 13.55,
+        "tempo_real_min": 37,
+        "tempo_formatado": "37 min"
+      },
+      "variantes": [
+        "jardim virginia"
+      ]
+    },
+    {
+      "bairro": "vila mariza mazzei",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 102,
+      "lat": -23.4846146,
+      "lng": -46.6349367,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 1.29,
+        "tempo_real_min": 5,
+        "tempo_formatado": "5 min"
+      },
+      "variantes": [
+        "vila mariza mazzei"
+      ]
+    },
+    {
+      "bairro": "vila souza",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 102,
+      "lat": -23.4451678,
+      "lng": -46.70531159999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 11.07,
+        "tempo_real_min": 33,
+        "tempo_formatado": "33 min"
+      },
+      "variantes": [
+        "vila souza"
+      ]
+    },
+    {
+      "bairro": "vila cachoeira",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 101,
+      "lat": -23.4674454,
+      "lng": -46.6041867,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.28,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "vila cachoeira"
+      ]
+    },
+    {
+      "bairro": "jardim vista alegre",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 99,
+      "lat": -23.4521719,
+      "lng": -46.6858844,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 9.81,
+        "tempo_real_min": 29,
+        "tempo_formatado": "29 min"
+      },
+      "variantes": [
+        "jardim vista alegre"
+      ]
+    },
+    {
+      "bairro": "vila germinal",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 99,
+      "lat": -23.4656339,
+      "lng": -46.5903252,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.92,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "vila germinal"
+      ]
+    },
+    {
+      "bairro": "conjunto habitacional jova rural",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 95,
+      "lat": -23.4511413,
+      "lng": -46.5776724,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 8.44,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "conjunto habitacional jova rural"
+      ]
+    },
+    {
+      "bairro": "vila cavaton",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 92,
+      "lat": -23.4900468,
+      "lng": -46.7025329,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 8.32,
+        "tempo_real_min": 19,
+        "tempo_formatado": "19 min"
+      },
+      "variantes": [
+        "vila cavaton"
+      ]
+    },
+    {
+      "bairro": "vila itaberaba",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 91,
+      "lat": -23.4633189,
+      "lng": -46.6958899,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 9.7,
+        "tempo_real_min": 30,
+        "tempo_formatado": "30 min"
+      },
+      "variantes": [
+        "vila itaberaba"
+      ]
+    },
+    {
+      "bairro": "jardim pereira leite",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 90,
+      "lat": -23.5083355,
+      "lng": -46.6777773,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 3.94,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "jardim pereira leite"
+      ]
+    },
+    {
+      "bairro": "vila fidalgo",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 89,
+      "lat": -23.4453911,
+      "lng": -46.5903252,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.54,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "vila fidalgo"
+      ]
+    },
+    {
+      "bairro": "vila brasilândia",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 89,
+      "lat": -23.4703331,
+      "lng": -46.6899783,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 8.76,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "vila brasilândia"
+      ]
+    },
+    {
+      "bairro": "vila bruna",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 85,
+      "lat": -23.487302,
+      "lng": -46.7049487,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 9.18,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "vila bruna"
+      ]
+    },
+    {
+      "bairro": "conjunto city jaraguá",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 85,
+      "lat": -23.438456,
+      "lng": -46.7345522,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 25.27,
+        "tempo_real_min": 33,
+        "tempo_formatado": "33 min"
+      },
+      "variantes": [
+        "conjunto city jaraguá"
+      ]
+    },
+    {
+      "bairro": "parque nações unidas",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 84,
+      "lat": -23.4438715,
+      "lng": -46.7354273,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 25.29,
+        "tempo_real_min": 33,
+        "tempo_formatado": "33 min"
+      },
+      "variantes": [
+        "parque nações unidas"
+      ]
+    },
+    {
+      "bairro": "vila regina",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 84,
+      "lat": -23.533019,
+      "lng": -46.46503999999999,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 4.5,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "vila regina"
+      ]
+    },
+    {
+      "bairro": "vila nina",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 84,
+      "lat": -23.475989,
+      "lng": -46.6928707,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 8.9,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "vila nina"
+      ]
+    },
+    {
+      "bairro": "vila maria luisa",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 82,
+      "lat": -23.4900687,
+      "lng": -46.6783809,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 5.91,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "vila maria luisa"
+      ]
+    },
+    {
+      "bairro": "vila dorna",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 80,
+      "lat": -23.4462234,
+      "lng": -46.5927356,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.24,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "vila dorna"
+      ]
+    },
+    {
+      "bairro": "vila prado",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 80,
+      "lat": -23.4959714,
+      "lng": -46.6747591,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 5.38,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "vila prado"
+      ]
+    },
+    {
+      "bairro": "jardim são joão (jaraguá)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 79,
+      "lat": -23.448828,
+      "lng": -46.73696959999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 15.93,
+        "tempo_real_min": 47,
+        "tempo_formatado": "47 min"
+      },
+      "variantes": [
+        "jardim são joão (jaraguá)"
+      ]
+    },
+    {
+      "bairro": "jardim guarani",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 79,
+      "lat": -23.4624047,
+      "lng": -46.6880403,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 8.6,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "jardim guarani"
+      ]
+    },
+    {
+      "bairro": "vila serralheiro",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 79,
+      "lat": -23.4728563,
+      "lng": -46.6958899,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 9.18,
+        "tempo_real_min": 29,
+        "tempo_formatado": "29 min"
+      },
+      "variantes": [
+        "vila serralheiro"
+      ]
+    },
+    {
+      "bairro": "vila francos",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 78,
+      "lat": -23.4669501,
+      "lng": -46.6735519,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 6.74,
+        "tempo_real_min": 22,
+        "tempo_formatado": "22 min"
+      },
+      "variantes": [
+        "vila francos"
+      ]
+    },
+    {
+      "bairro": "vila maria",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 78,
+      "lat": -23.5175587,
+      "lng": -46.5890875,
+      "hospital_mais_proximo": {
+        "nome": "Santa Virgínia",
+        "zona": "Leste",
+        "distancia_real_km": 4.65,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "vila maria"
+      ]
+    },
+    {
+      "bairro": "pirituba",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 78,
+      "lat": -23.4791158,
+      "lng": -46.7418047,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 13.15,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "pirituba"
+      ]
+    },
+    {
+      "bairro": "jardim elisa maria",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 75,
+      "lat": -23.4607138,
+      "lng": -46.6813993,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 8.25,
+        "tempo_real_min": 26,
+        "tempo_formatado": "26 min"
+      },
+      "variantes": [
+        "jardim elisa maria"
+      ]
+    },
+    {
+      "bairro": "vila continental",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 74,
+      "lat": -23.4686363,
+      "lng": -46.6542406,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.68,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila continental"
+      ]
+    },
+    {
+      "bairro": "jardim joamar",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 68,
+      "lat": -23.4544718,
+      "lng": -46.5873123,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.72,
+        "tempo_real_min": 24,
+        "tempo_formatado": "24 min"
+      },
+      "variantes": [
+        "jardim joamar"
+      ]
+    },
+    {
+      "bairro": "chácara nossa senhora aparecida",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 68,
+      "lat": -23.4876064,
+      "lng": -46.6989093,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 8.64,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "chácara nossa senhora aparecida"
+      ]
+    },
+    {
+      "bairro": "vila espanhola",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 68,
+      "lat": -23.4780084,
+      "lng": -46.66932689999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.87,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "vila espanhola"
+      ]
+    },
+    {
+      "bairro": "sítio do morro",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 66,
+      "lat": -23.5018448,
+      "lng": -46.66932689999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.69,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "sítio do morro"
+      ]
+    },
+    {
+      "bairro": "vila portugal",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 66,
+      "lat": -23.4954137,
+      "lng": -46.7155194,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 8.09,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "vila portugal"
+      ]
+    },
+    {
+      "bairro": "jardim são joão (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 65,
+      "lat": -23.4345883,
+      "lng": -46.58490219999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 8.98,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "jardim são joão (zona norte)"
+      ]
+    },
+    {
+      "bairro": "vila mirante",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 63,
+      "lat": -23.4676947,
+      "lng": -46.72246699999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 11.05,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "vila mirante"
+      ]
+    },
+    {
+      "bairro": "vila pedra branca",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 62,
+      "lat": -23.4577428,
+      "lng": -46.64338129999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.07,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "vila pedra branca"
+      ]
+    },
+    {
+      "bairro": "jardim paulistano (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 61,
+      "lat": -23.4529559,
+      "lng": -46.71045640000001,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 12.23,
+        "tempo_real_min": 40,
+        "tempo_formatado": "40 min"
+      },
+      "variantes": [
+        "jardim paulistano (zona norte)"
+      ]
+    },
+    {
+      "bairro": "jardim francisco mendes",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 60,
+      "lat": -23.6329488,
+      "lng": -46.6925688,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 13.96,
+        "tempo_real_min": 26,
+        "tempo_formatado": "26 min"
+      },
+      "variantes": [
+        "jardim francisco mendes"
+      ]
+    },
+    {
+      "bairro": "jardim cachoeira",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 60,
+      "lat": -23.479701,
+      "lng": -46.6759664,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.25,
+        "tempo_real_min": 22,
+        "tempo_formatado": "22 min"
+      },
+      "variantes": [
+        "jardim cachoeira"
+      ]
+    },
+    {
+      "bairro": "jardim monte alegre (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 58,
+      "lat": -23.4757397,
+      "lng": -46.7025329,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 9.99,
+        "tempo_real_min": 22,
+        "tempo_formatado": "22 min"
+      },
+      "variantes": [
+        "jardim monte alegre (zona norte)"
+      ]
+    },
+    {
+      "bairro": "jardim alvina",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 55,
+      "lat": -23.4351346,
+      "lng": -46.72488380000001,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 14.0,
+        "tempo_real_min": 42,
+        "tempo_formatado": "42 min"
+      },
+      "variantes": [
+        "jardim alvina"
+      ]
+    },
+    {
+      "bairro": "vila américa",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 54,
+      "lat": -23.4944418,
+      "lng": -46.7040428,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 7.72,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "vila américa"
+      ]
+    },
+    {
+      "bairro": "vila aurora (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 53,
+      "lat": -23.4757146,
+      "lng": -46.62468459999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 2.07,
+        "tempo_real_min": 7,
+        "tempo_formatado": "7 min"
+      },
+      "variantes": [
+        "vila aurora (zona norte)"
+      ]
+    },
+    {
+      "bairro": "vila progresso (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 52,
+      "lat": -23.4746302,
+      "lng": -46.7079687,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 10.2,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "vila progresso (zona norte)"
+      ]
+    },
+    {
+      "bairro": "jardim paquetá (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 51,
+      "lat": -23.4699979,
+      "lng": -46.7170297,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 10.81,
+        "tempo_real_min": 24,
+        "tempo_formatado": "24 min"
+      },
+      "variantes": [
+        "jardim paquetá (zona norte)"
+      ]
+    },
+    {
+      "bairro": "parque tietê",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 51,
+      "lat": -23.4614345,
+      "lng": -46.67657,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.46,
+        "tempo_real_min": 24,
+        "tempo_formatado": "24 min"
+      },
+      "variantes": [
+        "parque tietê"
+      ]
+    },
+    {
+      "bairro": "jardim vitória régia (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 51,
+      "lat": -23.4404144,
+      "lng": -46.7055527,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 12.15,
+        "tempo_real_min": 37,
+        "tempo_formatado": "37 min"
+      },
+      "variantes": [
+        "jardim vitória régia (zona norte)"
+      ]
+    },
+    {
+      "bairro": "vila nossa senhora do retiro",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 50,
+      "lat": -23.4740457,
+      "lng": -46.7218629,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 10.88,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "vila nossa senhora do retiro"
+      ]
+    },
+    {
+      "bairro": "jardim pirituba",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 50,
+      "lat": -23.4428034,
+      "lng": -46.7202878,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 13.34,
+        "tempo_real_min": 40,
+        "tempo_formatado": "40 min"
+      },
+      "variantes": [
+        "jardim pirituba"
+      ]
+    },
+    {
+      "bairro": "jardim das pedras",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 49,
+      "lat": -23.4203782,
+      "lng": -46.5898733,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 10.47,
+        "tempo_real_min": 26,
+        "tempo_formatado": "26 min"
+      },
+      "variantes": [
+        "jardim das pedras"
+      ]
+    },
+    {
+      "bairro": "jardim maracanã",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 49,
+      "lat": -23.4770135,
+      "lng": -46.68200299999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.42,
+        "tempo_real_min": 24,
+        "tempo_formatado": "24 min"
+      },
+      "variantes": [
+        "jardim maracanã"
+      ]
+    },
+    {
+      "bairro": "vila picinin",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 49,
+      "lat": -23.4909347,
+      "lng": -46.7085727,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 7.95,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "vila picinin"
+      ]
+    },
+    {
+      "bairro": "vila dos andrades",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 47,
+      "lat": -23.4757622,
+      "lng": -46.665404,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.22,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "vila dos andrades"
+      ]
+    },
+    {
+      "bairro": "jardim ondina",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 46,
+      "lat": -23.4614345,
+      "lng": -46.67657,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.46,
+        "tempo_real_min": 24,
+        "tempo_formatado": "24 min"
+      },
+      "variantes": [
+        "jardim ondina"
+      ]
+    },
+    {
+      "bairro": "vila acre",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 46,
+      "lat": -23.4837493,
+      "lng": -46.6807956,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 7.25,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "vila acre"
+      ]
+    },
+    {
+      "bairro": "jardim shangrilá (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 45,
+      "lat": -23.4288095,
+      "lng": -46.72730079999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 23.1,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "jardim shangrilá (zona norte)"
+      ]
+    },
+    {
+      "bairro": "parque itaberaba",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 45,
+      "lat": -23.4793413,
+      "lng": -46.6783809,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.56,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "parque itaberaba"
+      ]
+    },
+    {
+      "bairro": "vila miriam",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 44,
+      "lat": -23.4785678,
+      "lng": -46.7055527,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 9.53,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "vila miriam"
+      ]
+    },
+    {
+      "bairro": "jardim apuana",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 44,
+      "lat": -23.4537591,
+      "lng": -46.588605,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.79,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "jardim apuana"
+      ]
+    },
+    {
+      "bairro": "vila nova galvão",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 43,
+      "lat": -23.4533793,
+      "lng": -46.5723852,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 8.64,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "vila nova galvão"
+      ]
+    },
+    {
+      "bairro": "conjunto habitacional brigadeiro eduardo gomes",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 39,
+      "lat": -23.4441258,
+      "lng": -46.7146132,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 13.01,
+        "tempo_real_min": 38,
+        "tempo_formatado": "38 min"
+      },
+      "variantes": [
+        "conjunto habitacional brigadeiro eduardo gomes"
+      ]
+    },
+    {
+      "bairro": "vila nova parada",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 36,
+      "lat": -23.4389676,
+      "lng": -46.7152173,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 12.74,
+        "tempo_real_min": 37,
+        "tempo_formatado": "37 min"
+      },
+      "variantes": [
+        "vila nova parada"
+      ]
+    },
+    {
+      "bairro": "jardim felicidade (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 36,
+      "lat": -23.4444205,
+      "lng": -46.5827397,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 8.54,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "jardim felicidade (zona norte)"
+      ]
+    },
+    {
+      "bairro": "jardim damasceno",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 36,
+      "lat": -23.4481939,
+      "lng": -46.6875213,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 10.08,
+        "tempo_real_min": 30,
+        "tempo_formatado": "30 min"
+      },
+      "variantes": [
+        "jardim damasceno"
+      ]
+    },
+    {
+      "bairro": "jardim dos francos",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 35,
+      "lat": -23.455863,
+      "lng": -46.6759664,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.9,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "jardim dos francos"
+      ]
+    },
+    {
+      "bairro": "vila ramos",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 34,
+      "lat": -23.4809493,
+      "lng": -46.6795882,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.86,
+        "tempo_real_min": 24,
+        "tempo_formatado": "24 min"
+      },
+      "variantes": [
+        "vila ramos"
+      ]
+    },
+    {
+      "bairro": "jardim recanto verde",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 34,
+      "lat": -23.4329241,
+      "lng": -46.5800822,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 9.24,
+        "tempo_real_min": 26,
+        "tempo_formatado": "26 min"
+      },
+      "variantes": [
+        "jardim recanto verde"
+      ]
+    },
+    {
+      "bairro": "jardim princesa",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 33,
+      "lat": -23.4537543,
+      "lng": -46.6940784,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 9.46,
+        "tempo_real_min": 30,
+        "tempo_formatado": "30 min"
+      },
+      "variantes": [
+        "jardim princesa"
+      ]
+    },
+    {
+      "bairro": "jardim carombé",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 33,
+      "lat": -23.4558324,
+      "lng": -46.7001172,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 10.07,
+        "tempo_real_min": 31,
+        "tempo_formatado": "31 min"
+      },
+      "variantes": [
+        "jardim carombé"
+      ]
+    },
+    {
+      "bairro": "jardim flor de maio",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 33,
+      "lat": -23.435054,
+      "lng": -46.5767688,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 9.83,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "jardim flor de maio"
+      ]
+    },
+    {
+      "bairro": "núcleo do engordador",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 33,
+      "lat": -23.434248,
+      "lng": -46.6152271,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.07,
+        "tempo_real_min": 19,
+        "tempo_formatado": "19 min"
+      },
+      "variantes": [
+        "núcleo do engordador"
+      ]
+    },
+    {
+      "bairro": "vila teresinha",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 32,
+      "lat": -23.4569699,
+      "lng": -46.6964938,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 9.75,
+        "tempo_real_min": 31,
+        "tempo_formatado": "31 min"
+      },
+      "variantes": [
+        "vila teresinha"
+      ]
+    },
+    {
+      "bairro": "vila hebe",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 31,
+      "lat": -23.4750711,
+      "lng": -46.6720429,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 6.2,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "vila hebe"
+      ]
+    },
+    {
+      "bairro": "jardim tremembé",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 30,
+      "lat": -23.45786,
+      "lng": -46.6005703,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.31,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "jardim tremembé"
+      ]
+    },
+    {
+      "bairro": "parada",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 30,
+      "lat": -23.4318397,
+      "lng": -46.7170297,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 13.3,
+        "tempo_real_min": 39,
+        "tempo_formatado": "39 min"
+      },
+      "variantes": [
+        "parada"
+      ]
+    },
+    {
+      "bairro": "vila santista",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 28,
+      "lat": -23.4943061,
+      "lng": -46.6699305,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 6.03,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila santista"
+      ]
+    },
+    {
+      "bairro": "parque belém",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 27,
+      "lat": -23.4650937,
+      "lng": -46.68200299999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.6,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "parque belém"
+      ]
+    },
+    {
+      "bairro": "vila joão batista",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 27,
+      "lat": -23.4661328,
+      "lng": -46.6980035,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 9.66,
+        "tempo_real_min": 31,
+        "tempo_formatado": "31 min"
+      },
+      "variantes": [
+        "vila joão batista"
+      ]
+    },
+    {
+      "bairro": "jardim maggi",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 26,
+      "lat": -23.4564925,
+      "lng": -46.71763379999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 13.1,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "jardim maggi"
+      ]
+    },
+    {
+      "bairro": "jardim antártica",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 26,
+      "lat": -23.4556126,
+      "lng": -46.6596712,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 6.69,
+        "tempo_real_min": 19,
+        "tempo_formatado": "19 min"
+      },
+      "variantes": [
+        "jardim antártica"
+      ]
+    },
+    {
+      "bairro": "vila yara",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 25,
+      "lat": -23.5510236,
+      "lng": -46.7635685,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 16.04,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "vila yara"
+      ]
+    },
+    {
+      "bairro": "parque vila maria",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 24,
+      "lat": -23.5201958,
+      "lng": -46.5776724,
+      "hospital_mais_proximo": {
+        "nome": "Santa Virgínia",
+        "zona": "Leste",
+        "distancia_real_km": 5.54,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "parque vila maria"
+      ]
+    },
+    {
+      "bairro": "jardim lider",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 24,
+      "lat": -23.4501417,
+      "lng": -46.7182379,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 13.65,
+        "tempo_real_min": 40,
+        "tempo_formatado": "40 min"
+      },
+      "variantes": [
+        "jardim lider"
+      ]
+    },
+    {
+      "bairro": "jardim portal i e ii",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 23,
+      "lat": -23.4427782,
+      "lng": -46.5758652,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 9.42,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "jardim portal i e ii"
+      ]
+    },
+    {
+      "bairro": "jardim hebrom",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 23,
+      "lat": -23.448044,
+      "lng": -46.5824922,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.97,
+        "tempo_real_min": 24,
+        "tempo_formatado": "24 min"
+      },
+      "variantes": [
+        "jardim hebrom"
+      ]
+    },
+    {
+      "bairro": "jardim cecy",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 22,
+      "lat": -23.4645105,
+      "lng": -46.6699305,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 6.69,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "jardim cecy"
+      ]
+    },
+    {
+      "bairro": "jardim palmares (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 21,
+      "lat": -23.448044,
+      "lng": -46.5824922,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.97,
+        "tempo_real_min": 24,
+        "tempo_formatado": "24 min"
+      },
+      "variantes": [
+        "jardim palmares (zona norte)"
+      ]
+    },
+    {
+      "bairro": "jardim fontalis",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 19,
+      "lat": -23.4384321,
+      "lng": -46.57707,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 9.92,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "jardim fontalis"
+      ]
+    },
+    {
+      "bairro": "vila ayrosa",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 19,
+      "lat": -23.4367386,
+      "lng": -46.5704437,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 11.0,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "vila ayrosa"
+      ]
+    },
+    {
+      "bairro": "parque veloso",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 18,
+      "lat": -23.5166312,
+      "lng": -46.6017757,
+      "hospital_mais_proximo": {
+        "nome": "Santa Virgínia",
+        "zona": "Leste",
+        "distancia_real_km": 5.4,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "parque veloso"
+      ]
+    },
+    {
+      "bairro": "jardim bandeirantes (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 17,
+      "lat": -23.4571502,
+      "lng": -46.7351565,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 15.8,
+        "tempo_real_min": 35,
+        "tempo_formatado": "35 min"
+      },
+      "variantes": [
+        "jardim bandeirantes (zona norte)"
+      ]
+    },
+    {
+      "bairro": "jardim sydney",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 14,
+      "lat": -23.4548846,
+      "lng": -46.7164256,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 13.38,
+        "tempo_real_min": 29,
+        "tempo_formatado": "29 min"
+      },
+      "variantes": [
+        "jardim sydney"
+      ]
+    },
+    {
+      "bairro": "jardim brasília (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 14,
+      "lat": -23.4428259,
+      "lng": -46.7073647,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 11.47,
+        "tempo_real_min": 34,
+        "tempo_formatado": "34 min"
+      },
+      "variantes": [
+        "jardim brasília (zona norte)"
+      ]
+    },
+    {
+      "bairro": "jardim ibiratiba",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 14,
+      "lat": -23.4482314,
+      "lng": -46.6192579,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.34,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "jardim ibiratiba"
+      ]
+    },
+    {
+      "bairro": "jardim campo limpo (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 13,
+      "lat": -23.6242488,
+      "lng": -46.766592,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 17.13,
+        "tempo_real_min": 42,
+        "tempo_formatado": "42 min"
+      },
+      "variantes": [
+        "jardim campo limpo (zona norte)"
+      ]
+    },
+    {
+      "bairro": "associação sobradinho",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 13,
+      "lat": -23.4372993,
+      "lng": -46.5806847,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 8.96,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "associação sobradinho"
+      ]
+    },
+    {
+      "bairro": "conjunto habitacional vila nova cachoeirinha",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 13,
+      "lat": -23.4807799,
+      "lng": -46.6687234,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 6.63,
+        "tempo_real_min": 19,
+        "tempo_formatado": "19 min"
+      },
+      "variantes": [
+        "conjunto habitacional vila nova cachoeirinha"
+      ]
+    },
+    {
+      "bairro": "três cruzes",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 12,
+      "lat": -23.4136612,
+      "lng": -46.5706803,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 14.38,
+        "tempo_real_min": 37,
+        "tempo_formatado": "37 min"
+      },
+      "variantes": [
+        "três cruzes"
+      ]
+    },
+    {
+      "bairro": "furnas",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 12,
+      "lat": -23.72,
+      "lng": -46.71,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 22.25,
+        "tempo_real_min": 56,
+        "tempo_formatado": "56 min"
+      },
+      "variantes": [
+        "furnas"
+      ]
+    },
+    {
+      "bairro": "jardim das graças",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 11,
+      "lat": -23.5068418,
+      "lng": -46.6838141,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 3.81,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "jardim das graças"
+      ]
+    },
+    {
+      "bairro": "flor da cantareira",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 8,
+      "lat": -23.4176519,
+      "lng": -46.5822758,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 11.4,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "flor da cantareira"
+      ]
+    },
+    {
+      "bairro": "conjunto promorar vila maria iii",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 8,
+      "lat": -23.5208369,
+      "lng": -46.5803835,
+      "hospital_mais_proximo": {
+        "nome": "Santa Virgínia",
+        "zona": "Leste",
+        "distancia_real_km": 4.89,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "conjunto promorar vila maria iii"
+      ]
+    },
+    {
+      "bairro": "jardim peri",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 7,
+      "lat": -23.4579572,
+      "lng": -46.6615178,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.43,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "jardim peri"
+      ]
+    },
+    {
+      "bairro": "jardim são luís (zona norte)",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 7,
+      "lat": -23.4357228,
+      "lng": -46.5690751,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 11.14,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "jardim são luís (zona norte)"
+      ]
+    },
+    {
+      "bairro": "estância jaraguá",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 6,
+      "lat": -23.4319844,
+      "lng": -46.7097354,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 13.33,
+        "tempo_real_min": 40,
+        "tempo_formatado": "40 min"
+      },
+      "variantes": [
+        "estância jaraguá"
+      ]
+    },
+    {
+      "bairro": "jardim paraná",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 5,
+      "lat": -23.4490802,
+      "lng": -46.6915405,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 10.63,
+        "tempo_real_min": 32,
+        "tempo_formatado": "32 min"
+      },
+      "variantes": [
+        "jardim paraná"
+      ]
+    },
+    {
+      "bairro": "parque taipas - parque das flores",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 5,
+      "lat": -23.6404492,
+      "lng": -46.4477973,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 13.94,
+        "tempo_real_min": 26,
+        "tempo_formatado": "26 min"
+      },
+      "variantes": [
+        "parque taipas - parque das flores"
+      ]
+    },
+    {
+      "bairro": "casa verde baixa",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 3,
+      "lat": -23.5112052,
+      "lng": -46.6584643,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 6.29,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "casa verde baixa"
+      ]
+    },
+    {
+      "bairro": "parque taipas",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 3,
+      "lat": -23.4357523,
+      "lng": -46.712801,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 12.54,
+        "tempo_real_min": 36,
+        "tempo_formatado": "36 min"
+      },
+      "variantes": [
+        "parque taipas"
+      ]
+    },
+    {
+      "bairro": "jardim poleti",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 2,
+      "lat": -23.5734145,
+      "lng": -46.67294829999999,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.96,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "jardim poleti"
+      ]
+    },
+    {
+      "bairro": "jd peri",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 5,
+      "lat": -23.4642145,
+      "lng": -46.6546598,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 4.72,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "jd peri"
+      ]
+    },
+    {
+      "bairro": "jd marilu",
+      "cidade": "são paulo",
+      "zona": "Norte",
+      "beneficiarios": 1,
+      "lat": -23.7225205,
+      "lng": -46.8536536,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 41.81,
+        "tempo_real_min": 60,
+        "tempo_formatado": "1h 0min"
+      },
+      "variantes": [
+        "jd marilu"
+      ]
+    }
+  ]
+}

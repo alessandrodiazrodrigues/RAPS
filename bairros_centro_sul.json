@@ -1,0 +1,6569 @@
+{
+  "metadata": {
+    "versao": "2.0",
+    "zona": "Centro-Sul",
+    "descricao": "Zona Centro e Centro-Sul consolidadas",
+    "total_bairros": 364,
+    "metodo": "directions_api",
+    "data_consolidacao": "2025-11-06 15:26:51",
+    "origem": "Centro (32 bairros) + Centro-Sul (349 bairros)",
+    "data_normalizacao": "2025-11-06T15:35:43.438196",
+    "bairros_antes_normalizacao": 381,
+    "duplicatas_consolidadas": 17
+  },
+  "bairros": [
+    {
+      "bairro": "bela vista",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 4205,
+      "lat": -23.5554048,
+      "lng": -46.6456426,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 2.6,
+        "tempo_real_min": 7,
+        "tempo_formatado": "7 min"
+      },
+      "variantes": [
+        "bela vista"
+      ]
+    },
+    {
+      "bairro": "jardim paulista",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 3215,
+      "lat": -23.5739787,
+      "lng": -46.6606906,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 3.85,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "jardim paulista"
+      ]
+    },
+    {
+      "bairro": "cambuci",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 2590,
+      "lat": -23.5644729,
+      "lng": -46.6211126,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Cruz Azul",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 0.51,
+        "tempo_real_min": 2,
+        "tempo_formatado": "2 min"
+      },
+      "variantes": [
+        "cambuci"
+      ]
+    },
+    {
+      "bairro": "aclimação",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 2491,
+      "lat": -23.571487,
+      "lng": -46.6309716,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 1.45,
+        "tempo_real_min": 6,
+        "tempo_formatado": "6 min"
+      },
+      "variantes": [
+        "aclimação"
+      ]
+    },
+    {
+      "bairro": "santa cecília",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 2158,
+      "lat": -23.534385,
+      "lng": -46.6490241,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 4.97,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "santa cecília"
+      ]
+    },
+    {
+      "bairro": "itaim bibi",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1850,
+      "lat": -23.5837476,
+      "lng": -46.6780743,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 7.28,
+        "tempo_real_min": 19,
+        "tempo_formatado": "19 min"
+      },
+      "variantes": [
+        "itaim bibi"
+      ]
+    },
+    {
+      "bairro": "cerqueira césar",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1678,
+      "lat": -23.5596,
+      "lng": -46.6688,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 4.88,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "cerqueira césar"
+      ]
+    },
+    {
+      "bairro": "consolação",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1547,
+      "lat": -23.5520577,
+      "lng": -46.6525766,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 4.07,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "consolação"
+      ]
+    },
+    {
+      "bairro": "liberdade",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1398,
+      "lat": -23.5599169,
+      "lng": -46.6312586,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 0.61,
+        "tempo_real_min": 3,
+        "tempo_formatado": "3 min"
+      },
+      "variantes": [
+        "liberdade"
+      ]
+    },
+    {
+      "bairro": "barra funda",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1300,
+      "lat": -23.5291923,
+      "lng": -46.6609986,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 4.21,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "barra funda"
+      ]
+    },
+    {
+      "bairro": "vila buarque",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1272,
+      "lat": -23.5417051,
+      "lng": -46.650918,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 4.11,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "vila buarque"
+      ]
+    },
+    {
+      "bairro": "vila monumento",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1209,
+      "lat": -23.5745079,
+      "lng": -46.6141322,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 1.48,
+        "tempo_real_min": 5,
+        "tempo_formatado": "5 min"
+      },
+      "variantes": [
+        "vila monumento"
+      ]
+    },
+    {
+      "bairro": "brás",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1188,
+      "lat": -23.5377391,
+      "lng": -46.6139513,
+      "hospital_mais_proximo": {
+        "nome": "Santa Virgínia",
+        "zona": "Leste",
+        "distancia_real_km": 2.69,
+        "tempo_real_min": 9,
+        "tempo_formatado": "9 min"
+      },
+      "variantes": [
+        "brás"
+      ]
+    },
+    {
+      "bairro": "bom retiro",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1130,
+      "lat": -23.5256699,
+      "lng": -46.64070599999999,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.39,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "bom retiro"
+      ]
+    },
+    {
+      "bairro": "sumaré",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1123,
+      "lat": -23.5496,
+      "lng": -46.6818,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 2.99,
+        "tempo_real_min": 8,
+        "tempo_formatado": "8 min"
+      },
+      "variantes": [
+        "sumaré"
+      ]
+    },
+    {
+      "bairro": "higienópolis",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 1032,
+      "lat": -23.5457512,
+      "lng": -46.6599426,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 3.98,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "higienópolis"
+      ]
+    },
+    {
+      "bairro": "campos elíseos",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 909,
+      "lat": -23.5321694,
+      "lng": -46.6455786,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 5.35,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "campos elíseos"
+      ]
+    },
+    {
+      "bairro": "jardim da glória",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 775,
+      "lat": -23.580103,
+      "lng": -46.6216064,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 1.2,
+        "tempo_real_min": 4,
+        "tempo_formatado": "4 min"
+      },
+      "variantes": [
+        "jardim da glória"
+      ]
+    },
+    {
+      "bairro": "centro",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 592,
+      "lat": -23.6838273,
+      "lng": -46.6270967,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 9.44,
+        "tempo_real_min": 22,
+        "tempo_formatado": "22 min"
+      },
+      "variantes": [
+        "centro"
+      ]
+    },
+    {
+      "bairro": "sé",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 358,
+      "lat": -23.5511,
+      "lng": -46.6342,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 1.62,
+        "tempo_real_min": 7,
+        "tempo_formatado": "7 min"
+      },
+      "variantes": [
+        "sé"
+      ]
+    },
+    {
+      "bairro": "jardim europa",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 305,
+      "lat": -23.5773019,
+      "lng": -46.6802279,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 7.0,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "jardim europa"
+      ]
+    },
+    {
+      "bairro": "república",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 304,
+      "lat": -23.5438,
+      "lng": -46.6422,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 3.57,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "república"
+      ]
+    },
+    {
+      "bairro": "jardim paulistano",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 283,
+      "lat": -23.5709036,
+      "lng": -46.6835306,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 6.34,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "jardim paulistano"
+      ]
+    },
+    {
+      "bairro": "vila deodoro",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 219,
+      "lat": -23.5765512,
+      "lng": -46.6234786,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Cruz Azul",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 1.66,
+        "tempo_real_min": 5,
+        "tempo_formatado": "5 min"
+      },
+      "variantes": [
+        "vila deodoro"
+      ]
+    },
+    {
+      "bairro": "pacaembu",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 194,
+      "lat": -23.5460244,
+      "lng": -46.66936339999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 3.92,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "pacaembu"
+      ]
+    },
+    {
+      "bairro": "morro dos ingleses",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 189,
+      "lat": -23.5610746,
+      "lng": -46.6476041,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 2.44,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "morro dos ingleses"
+      ]
+    },
+    {
+      "bairro": "luz",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 170,
+      "lat": -23.5294565,
+      "lng": -46.6291504,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Cruz Azul",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 5.05,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "luz"
+      ]
+    },
+    {
+      "bairro": "santa efigênia",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 159,
+      "lat": -23.5376549,
+      "lng": -46.6385252,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 4.37,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "santa efigênia"
+      ]
+    },
+    {
+      "bairro": "várzea da barra funda",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 116,
+      "lat": -23.5223421,
+      "lng": -46.6613032,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 3.9,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "várzea da barra funda"
+      ]
+    },
+    {
+      "bairro": "parque industrial tomas edson",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 93,
+      "lat": -23.5193985,
+      "lng": -46.6746637,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 3.79,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "parque industrial tomas edson"
+      ]
+    },
+    {
+      "bairro": "jardim américa",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 79,
+      "lat": -23.5693707,
+      "lng": -46.6719782,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 5.89,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "jardim américa"
+      ]
+    },
+    {
+      "bairro": "ponte pequena",
+      "cidade": "são paulo",
+      "zona": "Centro",
+      "beneficiarios": 2,
+      "lat": -23.5250315,
+      "lng": -46.6295089,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.25,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "ponte pequena"
+      ]
+    },
+    {
+      "bairro": "vila mariana",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 7166,
+      "lat": -23.589702,
+      "lng": -46.6346381,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 3.02,
+        "tempo_real_min": 9,
+        "tempo_formatado": "9 min"
+      },
+      "variantes": [
+        "vila mariana"
+      ]
+    },
+    {
+      "bairro": "ipiranga",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3617,
+      "lat": -23.5959271,
+      "lng": -46.6097972,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 2.31,
+        "tempo_real_min": 8,
+        "tempo_formatado": "8 min"
+      },
+      "variantes": [
+        "ipiranga"
+      ]
+    },
+    {
+      "bairro": "indianópolis",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3238,
+      "lat": -23.6124759,
+      "lng": -46.661547,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 8.56,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "indianópolis"
+      ]
+    },
+    {
+      "bairro": "santo amaro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2898,
+      "lat": -23.6438693,
+      "lng": -46.7011403,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 14.95,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "santo amaro"
+      ]
+    },
+    {
+      "bairro": "vila guarani (z sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2760,
+      "lat": -23.6388918,
+      "lng": -46.636921,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 9.94,
+        "tempo_real_min": 19,
+        "tempo_formatado": "19 min"
+      },
+      "variantes": [
+        "vila guarani (z sul)"
+      ]
+    },
+    {
+      "bairro": "saúde",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2639,
+      "lat": -23.6183379,
+      "lng": -46.6354972,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 5.47,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "saúde"
+      ]
+    },
+    {
+      "bairro": "brooklin paulista",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2379,
+      "lat": -23.6193175,
+      "lng": -46.682458,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 12.29,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "brooklin paulista"
+      ]
+    },
+    {
+      "bairro": "campo belo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2266,
+      "lat": -23.6220296,
+      "lng": -46.6720199,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 9.71,
+        "tempo_real_min": 19,
+        "tempo_formatado": "19 min"
+      },
+      "variantes": [
+        "campo belo"
+      ]
+    },
+    {
+      "bairro": "mirandópolis",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2179,
+      "lat": -23.5956,
+      "lng": -46.6428,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 4.69,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "mirandópolis"
+      ]
+    },
+    {
+      "bairro": "planalto paulista",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2173,
+      "lat": -23.6186305,
+      "lng": -46.64827469999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.93,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "planalto paulista"
+      ]
+    },
+    {
+      "bairro": "paraíso",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1988,
+      "lat": -23.5752,
+      "lng": -46.6415,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 2.12,
+        "tempo_real_min": 5,
+        "tempo_formatado": "5 min"
+      },
+      "variantes": [
+        "paraíso"
+      ]
+    },
+    {
+      "bairro": "vila clementino",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1911,
+      "lat": -23.5983156,
+      "lng": -46.64396259999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 4.85,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "vila clementino"
+      ]
+    },
+    {
+      "bairro": "bosque da saúde",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1499,
+      "lat": -23.6114521,
+      "lng": -46.6233355,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 4.21,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "bosque da saúde"
+      ]
+    },
+    {
+      "bairro": "vila gumercindo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1444,
+      "lat": -23.6043043,
+      "lng": -46.6210667,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 3.38,
+        "tempo_real_min": 8,
+        "tempo_formatado": "8 min"
+      },
+      "variantes": [
+        "vila gumercindo"
+      ]
+    },
+    {
+      "bairro": "vila paulista",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1335,
+      "lat": -23.6423539,
+      "lng": -46.6620849,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 10.79,
+        "tempo_real_min": 24,
+        "tempo_formatado": "24 min"
+      },
+      "variantes": [
+        "vila paulista"
+      ]
+    },
+    {
+      "bairro": "vila olímpia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1311,
+      "lat": -23.598157,
+      "lng": -46.6829301,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 11.46,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "vila olímpia"
+      ]
+    },
+    {
+      "bairro": "americanópolis",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1308,
+      "lat": -23.6762366,
+      "lng": -46.6495408,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 12.71,
+        "tempo_real_min": 31,
+        "tempo_formatado": "31 min"
+      },
+      "variantes": [
+        "americanópolis"
+      ]
+    },
+    {
+      "bairro": "vila da saúde",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1281,
+      "lat": -23.6183379,
+      "lng": -46.6354972,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 5.47,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "vila da saúde"
+      ]
+    },
+    {
+      "bairro": "chácara inglesa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1278,
+      "lat": -23.6084853,
+      "lng": -46.6331274,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 4.23,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "chácara inglesa"
+      ]
+    },
+    {
+      "bairro": "vila santa catarina",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1216,
+      "lat": -23.6523213,
+      "lng": -46.658595,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 11.34,
+        "tempo_real_min": 26,
+        "tempo_formatado": "26 min"
+      },
+      "variantes": [
+        "vila santa catarina"
+      ]
+    },
+    {
+      "bairro": "cidade monções",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1160,
+      "lat": -23.6087646,
+      "lng": -46.6958899,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 11.51,
+        "tempo_real_min": 26,
+        "tempo_formatado": "26 min"
+      },
+      "variantes": [
+        "cidade monções"
+      ]
+    },
+    {
+      "bairro": "vila nova conceição",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1091,
+      "lat": -23.5917828,
+      "lng": -46.6727333,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 7.92,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "vila nova conceição"
+      ]
+    },
+    {
+      "bairro": "vila constança",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1062,
+      "lat": -23.47178,
+      "lng": -46.5873767,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 5.69,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "vila constança"
+      ]
+    },
+    {
+      "bairro": "chácara santo antônio (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1057,
+      "lat": -23.6303678,
+      "lng": -46.7037923,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 14.94,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "chácara santo antônio (zona sul)"
+      ]
+    },
+    {
+      "bairro": "socorro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1049,
+      "lat": -23.7201,
+      "lng": -46.7011,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 21.01,
+        "tempo_real_min": 52,
+        "tempo_formatado": "52 min"
+      },
+      "variantes": [
+        "socorro"
+      ]
+    },
+    {
+      "bairro": "vila parque jabaquara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1031,
+      "lat": -23.638297,
+      "lng": -46.6572575,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 9.81,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "vila parque jabaquara"
+      ]
+    },
+    {
+      "bairro": "vila monte alegre",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1023,
+      "lat": -23.6283836,
+      "lng": -46.6355399,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.49,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila monte alegre"
+      ]
+    },
+    {
+      "bairro": "vila antonieta",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 953,
+      "lat": -23.5719127,
+      "lng": -46.5137774,
+      "hospital_mais_proximo": {
+        "nome": "Santa Clara",
+        "zona": "Leste",
+        "distancia_real_km": 5.95,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "vila antonieta"
+      ]
+    },
+    {
+      "bairro": "vila sofia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 925,
+      "lat": -23.659547,
+      "lng": -46.6910592,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 14.78,
+        "tempo_real_min": 26,
+        "tempo_formatado": "26 min"
+      },
+      "variantes": [
+        "vila sofia"
+      ]
+    },
+    {
+      "bairro": "vila moraes",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 922,
+      "lat": -23.6269413,
+      "lng": -46.6064568,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 7.02,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "vila moraes"
+      ]
+    },
+    {
+      "bairro": "interlagos",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 876,
+      "lat": -23.7016969,
+      "lng": -46.7058986,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 19.77,
+        "tempo_real_min": 37,
+        "tempo_formatado": "37 min"
+      },
+      "variantes": [
+        "interlagos"
+      ]
+    },
+    {
+      "bairro": "vila santana",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 858,
+      "lat": -23.5186502,
+      "lng": -46.5337141,
+      "hospital_mais_proximo": {
+        "nome": "Santa Clara",
+        "zona": "Leste",
+        "distancia_real_km": 2.95,
+        "tempo_real_min": 8,
+        "tempo_formatado": "8 min"
+      },
+      "variantes": [
+        "vila santana"
+      ]
+    },
+    {
+      "bairro": "vila dom pedro i",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 857,
+      "lat": -23.5994133,
+      "lng": -46.6138317,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 2.99,
+        "tempo_real_min": 8,
+        "tempo_formatado": "8 min"
+      },
+      "variantes": [
+        "vila dom pedro i"
+      ]
+    },
+    {
+      "bairro": "vila firmiano pinto",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 832,
+      "lat": -23.5987034,
+      "lng": -46.6186549,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 2.93,
+        "tempo_real_min": 8,
+        "tempo_formatado": "8 min"
+      },
+      "variantes": [
+        "vila firmiano pinto"
+      ]
+    },
+    {
+      "bairro": "jardim prudência",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 792,
+      "lat": -23.652852,
+      "lng": -46.6717412,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 13.39,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "jardim prudência"
+      ]
+    },
+    {
+      "bairro": "parque imperial",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 787,
+      "lat": -23.6231681,
+      "lng": -46.6325243,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.24,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "parque imperial"
+      ]
+    },
+    {
+      "bairro": "vila moinho velho",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 766,
+      "lat": -23.6103601,
+      "lng": -46.6041867,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 4.0,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "vila moinho velho"
+      ]
+    },
+    {
+      "bairro": "jardim taquaral",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 758,
+      "lat": -23.6649939,
+      "lng": -46.6844178,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 14.87,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "jardim taquaral"
+      ]
+    },
+    {
+      "bairro": "jardim japão",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 738,
+      "lat": -23.5018566,
+      "lng": -46.57671029999999,
+      "hospital_mais_proximo": {
+        "nome": "Santa Virgínia",
+        "zona": "Leste",
+        "distancia_real_km": 6.67,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "jardim japão"
+      ]
+    },
+    {
+      "bairro": "vila marari",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 719,
+      "lat": -23.6709555,
+      "lng": -46.6620849,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 14.3,
+        "tempo_real_min": 36,
+        "tempo_formatado": "36 min"
+      },
+      "variantes": [
+        "vila marari"
+      ]
+    },
+    {
+      "bairro": "são joão clímaco",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 672,
+      "lat": -23.6241987,
+      "lng": -46.5915692,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.82,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "são joão clímaco"
+      ]
+    },
+    {
+      "bairro": "vila uberabinha",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 663,
+      "lat": -23.5990071,
+      "lng": -46.668074,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 7.27,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "vila uberabinha"
+      ]
+    },
+    {
+      "bairro": "vila cruzeiro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 642,
+      "lat": -23.5868,
+      "lng": -46.6,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 2.13,
+        "tempo_real_min": 7,
+        "tempo_formatado": "7 min"
+      },
+      "variantes": [
+        "vila cruzeiro"
+      ]
+    },
+    {
+      "bairro": "vila campestre",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 640,
+      "lat": -23.6582653,
+      "lng": -46.6474298,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 10.69,
+        "tempo_real_min": 24,
+        "tempo_formatado": "24 min"
+      },
+      "variantes": [
+        "vila campestre"
+      ]
+    },
+    {
+      "bairro": "jardim vila mariana",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 632,
+      "lat": -23.5916817,
+      "lng": -46.6258906,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 2.24,
+        "tempo_real_min": 7,
+        "tempo_formatado": "7 min"
+      },
+      "variantes": [
+        "jardim vila mariana"
+      ]
+    },
+    {
+      "bairro": "parque jabaquara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 609,
+      "lat": -23.638297,
+      "lng": -46.6572575,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 9.81,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "parque jabaquara"
+      ]
+    },
+    {
+      "bairro": "jardim celeste",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 580,
+      "lat": -23.6520067,
+      "lng": -46.607615,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 10.18,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "jardim celeste"
+      ]
+    },
+    {
+      "bairro": "vila cordeiro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 577,
+      "lat": -23.6174664,
+      "lng": -46.6934745,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 13.51,
+        "tempo_real_min": 26,
+        "tempo_formatado": "26 min"
+      },
+      "variantes": [
+        "vila cordeiro"
+      ]
+    },
+    {
+      "bairro": "vila santo estéfano",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 565,
+      "lat": -23.6265825,
+      "lng": -46.6234786,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.12,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "vila santo estéfano"
+      ]
+    },
+    {
+      "bairro": "jardim peri",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 564,
+      "lat": -23.4579572,
+      "lng": -46.6615178,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 7.43,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "jardim peri"
+      ]
+    },
+    {
+      "bairro": "vila são paulo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 535,
+      "lat": -23.5557714,
+      "lng": -46.6395571,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 2.42,
+        "tempo_real_min": 7,
+        "tempo_formatado": "7 min"
+      },
+      "variantes": [
+        "vila são paulo"
+      ]
+    },
+    {
+      "bairro": "jabaquara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 524,
+      "lat": -23.6396479,
+      "lng": -46.6505173,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 9.22,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "jabaquara"
+      ]
+    },
+    {
+      "bairro": "jardim aeroporto",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 524,
+      "lat": -23.6336565,
+      "lng": -46.6644988,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 10.21,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "jardim aeroporto"
+      ]
+    },
+    {
+      "bairro": "vila mascote",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 517,
+      "lat": -23.6464109,
+      "lng": -46.6669128,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 11.91,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "vila mascote"
+      ]
+    },
+    {
+      "bairro": "jardim da saúde",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 514,
+      "lat": -23.6169253,
+      "lng": -46.6162433,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 5.42,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "jardim da saúde"
+      ]
+    },
+    {
+      "bairro": "vila campo grande",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 511,
+      "lat": -23.6792019,
+      "lng": -46.6789846,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 16.17,
+        "tempo_real_min": 29,
+        "tempo_formatado": "29 min"
+      },
+      "variantes": [
+        "vila campo grande"
+      ]
+    },
+    {
+      "bairro": "vila do encontro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 510,
+      "lat": -23.6552094,
+      "lng": -46.63863629999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 10.49,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "vila do encontro"
+      ]
+    },
+    {
+      "bairro": "cidade dutra",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 498,
+      "lat": -23.7138766,
+      "lng": -46.69857469999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 20.39,
+        "tempo_real_min": 50,
+        "tempo_formatado": "50 min"
+      },
+      "variantes": [
+        "cidade dutra"
+      ]
+    },
+    {
+      "bairro": "vila união (zona leste)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 495,
+      "lat": -23.5232501,
+      "lng": -46.4846867,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 6.59,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "vila união (zona leste)"
+      ]
+    },
+    {
+      "bairro": "jardim oriental",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 493,
+      "lat": -23.6459111,
+      "lng": -46.6473053,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 9.54,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "jardim oriental"
+      ]
+    },
+    {
+      "bairro": "jardim umuarama",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 489,
+      "lat": -23.6457251,
+      "lng": -46.766592,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 22.6,
+        "tempo_real_min": 41,
+        "tempo_formatado": "41 min"
+      },
+      "variantes": [
+        "jardim umuarama"
+      ]
+    },
+    {
+      "bairro": "jurubatuba",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 482,
+      "lat": -23.6752628,
+      "lng": -46.6992611,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 16.55,
+        "tempo_real_min": 31,
+        "tempo_formatado": "31 min"
+      },
+      "variantes": [
+        "jurubatuba"
+      ]
+    },
+    {
+      "bairro": "jardim das acácias",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 471,
+      "lat": -23.6237834,
+      "lng": -46.6910592,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 13.76,
+        "tempo_real_min": 26,
+        "tempo_formatado": "26 min"
+      },
+      "variantes": [
+        "jardim das acácias"
+      ]
+    },
+    {
+      "bairro": "vila brasilina",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 449,
+      "lat": -23.6288365,
+      "lng": -46.6162433,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.89,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila brasilina"
+      ]
+    },
+    {
+      "bairro": "jardim miriam",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 448,
+      "lat": -23.6817732,
+      "lng": -46.6372653,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 11.03,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "jardim miriam"
+      ]
+    },
+    {
+      "bairro": "vila vermelha",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 428,
+      "lat": -23.6261642,
+      "lng": -46.5999675,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.91,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "vila vermelha"
+      ]
+    },
+    {
+      "bairro": "vila perus",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 418,
+      "lat": -23.4070915,
+      "lng": -46.7584771,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 23.36,
+        "tempo_real_min": 30,
+        "tempo_formatado": "30 min"
+      },
+      "variantes": [
+        "vila perus"
+      ]
+    },
+    {
+      "bairro": "vila do castelo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 412,
+      "lat": -23.6758517,
+      "lng": -46.66932689999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 15.29,
+        "tempo_real_min": 39,
+        "tempo_formatado": "39 min"
+      },
+      "variantes": [
+        "vila do castelo"
+      ]
+    },
+    {
+      "bairro": "vila alexandria",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 409,
+      "lat": -23.6400967,
+      "lng": -46.66932689999999,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 11.07,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "vila alexandria"
+      ]
+    },
+    {
+      "bairro": "vila brasílio machado",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 409,
+      "lat": -23.6105196,
+      "lng": -46.61322879999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 4.49,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "vila brasílio machado"
+      ]
+    },
+    {
+      "bairro": "jardim brasil (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 399,
+      "lat": -23.6400967,
+      "lng": -46.66932689999999,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 11.07,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "jardim brasil (zona sul)"
+      ]
+    },
+    {
+      "bairro": "sacomã",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 397,
+      "lat": -23.6149954,
+      "lng": -46.5969541,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 4.59,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "sacomã"
+      ]
+    },
+    {
+      "bairro": "jardim maria estela",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 396,
+      "lat": -23.6343679,
+      "lng": -46.599914,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 8.22,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "jardim maria estela"
+      ]
+    },
+    {
+      "bairro": "jardim são savério",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 395,
+      "lat": -23.6549103,
+      "lng": -46.609009,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 9.58,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "jardim são savério"
+      ]
+    },
+    {
+      "bairro": "parque grajaú",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 390,
+      "lat": -23.7441952,
+      "lng": -46.6859923,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 23.53,
+        "tempo_real_min": 58,
+        "tempo_formatado": "58 min"
+      },
+      "variantes": [
+        "parque grajaú"
+      ]
+    },
+    {
+      "bairro": "jardim consórcio",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 390,
+      "lat": -23.669906,
+      "lng": -46.677128,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 14.66,
+        "tempo_real_min": 26,
+        "tempo_formatado": "26 min"
+      },
+      "variantes": [
+        "jardim consórcio"
+      ]
+    },
+    {
+      "bairro": "parque colonial",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 378,
+      "lat": -23.6056063,
+      "lng": -46.4741615,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 9.63,
+        "tempo_real_min": 19,
+        "tempo_formatado": "19 min"
+      },
+      "variantes": [
+        "parque colonial"
+      ]
+    },
+    {
+      "bairro": "jardim cidália",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 372,
+      "lat": -23.6603259,
+      "lng": -46.6675163,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 14.43,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "jardim cidália"
+      ]
+    },
+    {
+      "bairro": "vila congonhas",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 369,
+      "lat": -23.6276287,
+      "lng": -46.6617992,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 11.18,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "vila congonhas"
+      ]
+    },
+    {
+      "bairro": "parque américa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 355,
+      "lat": -23.7334584,
+      "lng": -46.6910592,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 22.04,
+        "tempo_real_min": 55,
+        "tempo_formatado": "55 min"
+      },
+      "variantes": [
+        "parque américa"
+      ]
+    },
+    {
+      "bairro": "campo grande",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 342,
+      "lat": -23.6780897,
+      "lng": -46.6872368,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 16.61,
+        "tempo_real_min": 32,
+        "tempo_formatado": "32 min"
+      },
+      "variantes": [
+        "campo grande"
+      ]
+    },
+    {
+      "bairro": "jardim santa francisca cabrini",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 337,
+      "lat": -23.7593734,
+      "lng": -46.7064587,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 25.9,
+        "tempo_real_min": 62,
+        "tempo_formatado": "1h 2min"
+      },
+      "variantes": [
+        "jardim santa francisca cabrini"
+      ]
+    },
+    {
+      "bairro": "cidade vargas",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 334,
+      "lat": -23.6474457,
+      "lng": -46.6355399,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 8.98,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "cidade vargas"
+      ]
+    },
+    {
+      "bairro": "jardim santa cruz (sacomã)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 333,
+      "lat": -23.6411945,
+      "lng": -46.5969541,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.53,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "jardim santa cruz (sacomã)"
+      ]
+    },
+    {
+      "bairro": "vila vera",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 320,
+      "lat": -23.6206925,
+      "lng": -46.6047894,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 5.11,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila vera"
+      ]
+    },
+    {
+      "bairro": "jardim guanhembu",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 312,
+      "lat": -23.7321944,
+      "lng": -46.6836701,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 21.68,
+        "tempo_real_min": 53,
+        "tempo_formatado": "53 min"
+      },
+      "variantes": [
+        "jardim guanhembu"
+      ]
+    },
+    {
+      "bairro": "vila são francisco (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 304,
+      "lat": -23.6279627,
+      "lng": -46.7031368,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 15.14,
+        "tempo_real_min": 29,
+        "tempo_formatado": "29 min"
+      },
+      "variantes": [
+        "vila são francisco (zona sul)"
+      ]
+    },
+    {
+      "bairro": "jardim regina",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 302,
+      "lat": -23.4727902,
+      "lng": -46.7442224,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 14.14,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "jardim regina"
+      ]
+    },
+    {
+      "bairro": "vila fachini",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 301,
+      "lat": -23.6573631,
+      "lng": -46.6349367,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 10.74,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "vila fachini"
+      ]
+    },
+    {
+      "bairro": "jardim bélgica",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 301,
+      "lat": -23.6608968,
+      "lng": -46.7001172,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 15.38,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "jardim bélgica"
+      ]
+    },
+    {
+      "bairro": "jardim guarapiranga",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 294,
+      "lat": -23.6798395,
+      "lng": -46.7152173,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 18.87,
+        "tempo_real_min": 36,
+        "tempo_formatado": "36 min"
+      },
+      "variantes": [
+        "jardim guarapiranga"
+      ]
+    },
+    {
+      "bairro": "jardim santa emília",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 288,
+      "lat": -23.6444138,
+      "lng": -46.5993648,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.85,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "jardim santa emília"
+      ]
+    },
+    {
+      "bairro": "vila isa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 287,
+      "lat": -23.6706629,
+      "lng": -46.6904554,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 16.1,
+        "tempo_real_min": 30,
+        "tempo_formatado": "30 min"
+      },
+      "variantes": [
+        "vila isa"
+      ]
+    },
+    {
+      "bairro": "são judas",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 282,
+      "lat": -23.6333,
+      "lng": -46.6417,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 8.39,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "são judas"
+      ]
+    },
+    {
+      "bairro": "jardim coimbra",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 277,
+      "lat": -23.5311357,
+      "lng": -46.4771675,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 4.6,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "jardim coimbra"
+      ]
+    },
+    {
+      "bairro": "jardim patente",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 274,
+      "lat": -23.6274811,
+      "lng": -46.58490219999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.0,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "jardim patente"
+      ]
+    },
+    {
+      "bairro": "jardim marajoara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 273,
+      "lat": -23.6546524,
+      "lng": -46.6838141,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 13.81,
+        "tempo_real_min": 24,
+        "tempo_formatado": "24 min"
+      },
+      "variantes": [
+        "jardim marajoara"
+      ]
+    },
+    {
+      "bairro": "jardim caravelas",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 269,
+      "lat": -23.6392965,
+      "lng": -46.7152173,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 16.68,
+        "tempo_real_min": 31,
+        "tempo_formatado": "31 min"
+      },
+      "variantes": [
+        "jardim caravelas"
+      ]
+    },
+    {
+      "bairro": "jardim dos bichinhos",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 268,
+      "lat": -23.7257874,
+      "lng": -46.6844178,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 20.89,
+        "tempo_real_min": 52,
+        "tempo_formatado": "52 min"
+      },
+      "variantes": [
+        "jardim dos bichinhos"
+      ]
+    },
+    {
+      "bairro": "granja julieta",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 266,
+      "lat": -23.6390494,
+      "lng": -46.7007211,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 15.6,
+        "tempo_real_min": 30,
+        "tempo_formatado": "30 min"
+      },
+      "variantes": [
+        "granja julieta"
+      ]
+    },
+    {
+      "bairro": "jardim das imbuias",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 263,
+      "lat": -23.732176,
+      "lng": -46.7079687,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 23.67,
+        "tempo_real_min": 47,
+        "tempo_formatado": "47 min"
+      },
+      "variantes": [
+        "jardim das imbuias"
+      ]
+    },
+    {
+      "bairro": "vila nair",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 262,
+      "lat": -23.6072692,
+      "lng": -46.609009,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 3.16,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "vila nair"
+      ]
+    },
+    {
+      "bairro": "vila são josé (ipiranga)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 259,
+      "lat": -23.5907205,
+      "lng": -46.6162433,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 1.24,
+        "tempo_real_min": 5,
+        "tempo_formatado": "5 min"
+      },
+      "variantes": [
+        "vila são josé (ipiranga)"
+      ]
+    },
+    {
+      "bairro": "veleiros",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 257,
+      "lat": -23.6820976,
+      "lng": -46.7079687,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 18.65,
+        "tempo_real_min": 35,
+        "tempo_formatado": "35 min"
+      },
+      "variantes": [
+        "veleiros"
+      ]
+    },
+    {
+      "bairro": "parque residencial cocaia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 255,
+      "lat": -23.7053331,
+      "lng": -46.6488034,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 15.71,
+        "tempo_real_min": 35,
+        "tempo_formatado": "35 min"
+      },
+      "variantes": [
+        "parque residencial cocaia"
+      ]
+    },
+    {
+      "bairro": "rio bonito",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 255,
+      "lat": -23.69,
+      "lng": -46.78,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 25.25,
+        "tempo_real_min": 53,
+        "tempo_formatado": "53 min"
+      },
+      "variantes": [
+        "rio bonito"
+      ]
+    },
+    {
+      "bairro": "cidade domitila",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 247,
+      "lat": -23.6624014,
+      "lng": -46.6513291,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 13.03,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "cidade domitila"
+      ]
+    },
+    {
+      "bairro": "jardim ernestina",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 245,
+      "lat": -23.6705354,
+      "lng": -46.6832104,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 15.11,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "jardim ernestina"
+      ]
+    },
+    {
+      "bairro": "parque residencial dos lagos",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 242,
+      "lat": -23.7484977,
+      "lng": -46.6618121,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 28.23,
+        "tempo_real_min": 72,
+        "tempo_formatado": "1h 12min"
+      },
+      "variantes": [
+        "parque residencial dos lagos"
+      ]
+    },
+    {
+      "bairro": "campininha",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 242,
+      "lat": -23.6705035,
+      "lng": -46.6813993,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 14.94,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "campininha"
+      ]
+    },
+    {
+      "bairro": "vila são pedro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 241,
+      "lat": -23.6674416,
+      "lng": -46.6880403,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 15.41,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "vila são pedro"
+      ]
+    },
+    {
+      "bairro": "jardim lallo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 235,
+      "lat": -23.7099373,
+      "lng": -46.6868328,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 18.86,
+        "tempo_real_min": 46,
+        "tempo_formatado": "46 min"
+      },
+      "variantes": [
+        "jardim lallo"
+      ]
+    },
+    {
+      "bairro": "jardim santo amaro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 224,
+      "lat": -23.6511675,
+      "lng": -46.6971927,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 15.12,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "jardim santo amaro"
+      ]
+    },
+    {
+      "bairro": "vila inglesa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 222,
+      "lat": -23.6640293,
+      "lng": -46.6747591,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 14.16,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "vila inglesa"
+      ]
+    },
+    {
+      "bairro": "jardim tupã",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 215,
+      "lat": -23.6710382,
+      "lng": -46.7364137,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 19.57,
+        "tempo_real_min": 37,
+        "tempo_formatado": "37 min"
+      },
+      "variantes": [
+        "jardim tupã"
+      ]
+    },
+    {
+      "bairro": "jardim suzana",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 213,
+      "lat": -23.6900891,
+      "lng": -46.7103848,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 19.69,
+        "tempo_real_min": 38,
+        "tempo_formatado": "38 min"
+      },
+      "variantes": [
+        "jardim suzana"
+      ]
+    },
+    {
+      "bairro": "vila império",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 205,
+      "lat": -23.6707938,
+      "lng": -46.6530339,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 12.92,
+        "tempo_real_min": 32,
+        "tempo_formatado": "32 min"
+      },
+      "variantes": [
+        "vila império"
+      ]
+    },
+    {
+      "bairro": "vila água funda",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 200,
+      "lat": -23.6337298,
+      "lng": -46.6234786,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.96,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila água funda"
+      ]
+    },
+    {
+      "bairro": "jardim campo grande",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 199,
+      "lat": -23.6777836,
+      "lng": -46.6886441,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 16.42,
+        "tempo_real_min": 31,
+        "tempo_formatado": "31 min"
+      },
+      "variantes": [
+        "jardim campo grande"
+      ]
+    },
+    {
+      "bairro": "jardim sônia (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 195,
+      "lat": -23.6865457,
+      "lng": -46.6675163,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 14.81,
+        "tempo_real_min": 39,
+        "tempo_formatado": "39 min"
+      },
+      "variantes": [
+        "jardim sônia (zona sul)"
+      ]
+    },
+    {
+      "bairro": "vila anhangüera",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 193,
+      "lat": -23.6635735,
+      "lng": -46.6940784,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 15.32,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "vila anhangüera"
+      ]
+    },
+    {
+      "bairro": "usina piratininga",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 192,
+      "lat": -23.6904454,
+      "lng": -46.6856253,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 17.93,
+        "tempo_real_min": 34,
+        "tempo_formatado": "34 min"
+      },
+      "variantes": [
+        "usina piratininga"
+      ]
+    },
+    {
+      "bairro": "jardim jabaquara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 189,
+      "lat": -23.6611984,
+      "lng": -46.6581239,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 11.87,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "jardim jabaquara"
+      ]
+    },
+    {
+      "bairro": "jardim aurélia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 188,
+      "lat": -23.5955357,
+      "lng": -46.62350600000001,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 4.28,
+        "tempo_real_min": 9,
+        "tempo_formatado": "9 min"
+      },
+      "variantes": [
+        "jardim aurélia"
+      ]
+    },
+    {
+      "bairro": "jardim guanabara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 188,
+      "lat": -23.7656951,
+      "lng": -46.7152173,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 26.58,
+        "tempo_real_min": 63,
+        "tempo_formatado": "1h 3min"
+      },
+      "variantes": [
+        "jardim guanabara"
+      ]
+    },
+    {
+      "bairro": "jardim maria luiza",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 187,
+      "lat": -23.5842851,
+      "lng": -46.7544991,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 14.73,
+        "tempo_real_min": 29,
+        "tempo_formatado": "29 min"
+      },
+      "variantes": [
+        "jardim maria luiza"
+      ]
+    },
+    {
+      "bairro": "vila arriete",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 185,
+      "lat": -23.6849361,
+      "lng": -46.6886441,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 17.46,
+        "tempo_real_min": 34,
+        "tempo_formatado": "34 min"
+      },
+      "variantes": [
+        "vila arriete"
+      ]
+    },
+    {
+      "bairro": "jardim satélite",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 184,
+      "lat": -23.7040745,
+      "lng": -46.6922669,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 19.41,
+        "tempo_real_min": 49,
+        "tempo_formatado": "49 min"
+      },
+      "variantes": [
+        "jardim satélite"
+      ]
+    },
+    {
+      "bairro": "jardim petrópolis",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 182,
+      "lat": -23.6308119,
+      "lng": -46.6838141,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 13.73,
+        "tempo_real_min": 24,
+        "tempo_formatado": "24 min"
+      },
+      "variantes": [
+        "jardim petrópolis"
+      ]
+    },
+    {
+      "bairro": "vila das mercês",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 181,
+      "lat": -23.6207761,
+      "lng": -46.6082584,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.31,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "vila das mercês"
+      ]
+    },
+    {
+      "bairro": "jardim sabará",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 179,
+      "lat": -23.6897045,
+      "lng": -46.6886441,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 17.69,
+        "tempo_real_min": 44,
+        "tempo_formatado": "44 min"
+      },
+      "variantes": [
+        "jardim sabará"
+      ]
+    },
+    {
+      "bairro": "chácara monte alegre",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 178,
+      "lat": -23.6449904,
+      "lng": -46.67657,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 12.19,
+        "tempo_real_min": 22,
+        "tempo_formatado": "22 min"
+      },
+      "variantes": [
+        "chácara monte alegre"
+      ]
+    },
+    {
+      "bairro": "jardim santa margarida",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 177,
+      "lat": -23.6813025,
+      "lng": -46.7538945,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 21.71,
+        "tempo_real_min": 43,
+        "tempo_formatado": "43 min"
+      },
+      "variantes": [
+        "jardim santa margarida"
+      ]
+    },
+    {
+      "bairro": "cidade nova heliópolis",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 176,
+      "lat": -23.6086228,
+      "lng": -46.5957488,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 4.36,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "cidade nova heliópolis"
+      ]
+    },
+    {
+      "bairro": "jardim rubilene",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 175,
+      "lat": -23.7038267,
+      "lng": -46.6349367,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 11.67,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "jardim rubilene"
+      ]
+    },
+    {
+      "bairro": "jardim imperador (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 174,
+      "lat": -23.6438049,
+      "lng": -46.6096118,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 9.2,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "jardim imperador (zona sul)"
+      ]
+    },
+    {
+      "bairro": "jardim santa cruz (campo grande)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 173,
+      "lat": -23.6855159,
+      "lng": -46.67657,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 15.89,
+        "tempo_real_min": 42,
+        "tempo_formatado": "42 min"
+      },
+      "variantes": [
+        "jardim santa cruz (campo grande)"
+      ]
+    },
+    {
+      "bairro": "jardim dom bosco",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 172,
+      "lat": -23.6481235,
+      "lng": -46.7200504,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 18.23,
+        "tempo_real_min": 30,
+        "tempo_formatado": "30 min"
+      },
+      "variantes": [
+        "jardim dom bosco"
+      ]
+    },
+    {
+      "bairro": "moema",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 172,
+      "lat": -23.5999726,
+      "lng": -46.6588901,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.22,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "moema"
+      ]
+    },
+    {
+      "bairro": "vila missionária",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 171,
+      "lat": -23.6905993,
+      "lng": -46.65001720000001,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 12.53,
+        "tempo_real_min": 31,
+        "tempo_formatado": "31 min"
+      },
+      "variantes": [
+        "vila missionária"
+      ]
+    },
+    {
+      "bairro": "vila santo antônio",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 171,
+      "lat": -23.4294283,
+      "lng": -46.7152173,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 13.55,
+        "tempo_real_min": 39,
+        "tempo_formatado": "39 min"
+      },
+      "variantes": [
+        "vila santo antônio"
+      ]
+    },
+    {
+      "bairro": "jardim alzira",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 171,
+      "lat": -23.6108536,
+      "lng": -46.5216775,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 8.67,
+        "tempo_real_min": 19,
+        "tempo_formatado": "19 min"
+      },
+      "variantes": [
+        "jardim alzira"
+      ]
+    },
+    {
+      "bairro": "pedreira",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 170,
+      "lat": -23.6021,
+      "lng": -46.5985,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 4.52,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "pedreira"
+      ]
+    },
+    {
+      "bairro": "parque alves de lima",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 170,
+      "lat": -23.6691348,
+      "lng": -46.7293964,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 18.63,
+        "tempo_real_min": 35,
+        "tempo_formatado": "35 min"
+      },
+      "variantes": [
+        "parque alves de lima"
+      ]
+    },
+    {
+      "bairro": "jardim previdência",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 169,
+      "lat": -23.620853,
+      "lng": -46.6138317,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.5,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "jardim previdência"
+      ]
+    },
+    {
+      "bairro": "jardim alpino",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 167,
+      "lat": -23.7473231,
+      "lng": -46.7103848,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 25.07,
+        "tempo_real_min": 61,
+        "tempo_formatado": "1h 1min"
+      },
+      "variantes": [
+        "jardim alpino"
+      ]
+    },
+    {
+      "bairro": "praia do leblon",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 164,
+      "lat": -23.7078536,
+      "lng": -46.6379525,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 14.39,
+        "tempo_real_min": 32,
+        "tempo_formatado": "32 min"
+      },
+      "variantes": [
+        "praia do leblon"
+      ]
+    },
+    {
+      "bairro": "jordanópolis",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 163,
+      "lat": -23.7312389,
+      "lng": -46.7001172,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 22.08,
+        "tempo_real_min": 54,
+        "tempo_formatado": "54 min"
+      },
+      "variantes": [
+        "jordanópolis"
+      ]
+    },
+    {
+      "bairro": "jardim itacolomi",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 163,
+      "lat": -23.6649002,
+      "lng": -46.6566541,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 13.69,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "jardim itacolomi"
+      ]
+    },
+    {
+      "bairro": "jardim figueira grande",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 162,
+      "lat": -23.6820149,
+      "lng": -46.74905829999999,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 21.43,
+        "tempo_real_min": 42,
+        "tempo_formatado": "42 min"
+      },
+      "variantes": [
+        "jardim figueira grande"
+      ]
+    },
+    {
+      "bairro": "vila liviero",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 161,
+      "lat": -23.6471653,
+      "lng": -46.5946849,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.28,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "vila liviero"
+      ]
+    },
+    {
+      "bairro": "jardim santo antoninho",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 159,
+      "lat": -23.658297,
+      "lng": -46.6651023,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 13.37,
+        "tempo_real_min": 24,
+        "tempo_formatado": "24 min"
+      },
+      "variantes": [
+        "jardim santo antoninho"
+      ]
+    },
+    {
+      "bairro": "jardim imperial",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 158,
+      "lat": -23.5782484,
+      "lng": -46.7750587,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 15.54,
+        "tempo_real_min": 33,
+        "tempo_formatado": "33 min"
+      },
+      "variantes": [
+        "jardim imperial"
+      ]
+    },
+    {
+      "bairro": "vila são josé",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 157,
+      "lat": -23.5907205,
+      "lng": -46.6162433,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 1.24,
+        "tempo_real_min": 5,
+        "tempo_formatado": "5 min"
+      },
+      "variantes": [
+        "vila são josé"
+      ]
+    },
+    {
+      "bairro": "conjunto habitacional brigadeiro faria lima",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 156,
+      "lat": -23.7547822,
+      "lng": -46.6838141,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 25.59,
+        "tempo_real_min": 65,
+        "tempo_formatado": "1h 5min"
+      },
+      "variantes": [
+        "conjunto habitacional brigadeiro faria lima"
+      ]
+    },
+    {
+      "bairro": "jardim lucélia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 156,
+      "lat": -23.7585755,
+      "lng": -46.6741555,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 26.73,
+        "tempo_real_min": 68,
+        "tempo_formatado": "1h 8min"
+      },
+      "variantes": [
+        "jardim lucélia"
+      ]
+    },
+    {
+      "bairro": "conjunto residencial jardim canaã",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 153,
+      "lat": -23.6554949,
+      "lng": -46.6638953,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 13.31,
+        "tempo_real_min": 24,
+        "tempo_formatado": "24 min"
+      },
+      "variantes": [
+        "conjunto residencial jardim canaã"
+      ]
+    },
+    {
+      "bairro": "parque primavera",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 152,
+      "lat": -23.6941411,
+      "lng": -46.6482073,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 12.38,
+        "tempo_real_min": 31,
+        "tempo_formatado": "31 min"
+      },
+      "variantes": [
+        "parque primavera"
+      ]
+    },
+    {
+      "bairro": "jardim luso",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 151,
+      "lat": -23.6912069,
+      "lng": -46.639762,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 11.87,
+        "tempo_real_min": 30,
+        "tempo_formatado": "30 min"
+      },
+      "variantes": [
+        "jardim luso"
+      ]
+    },
+    {
+      "bairro": "parque das árvores",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 151,
+      "lat": -23.7295616,
+      "lng": -46.6952861,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 22.15,
+        "tempo_real_min": 54,
+        "tempo_formatado": "54 min"
+      },
+      "variantes": [
+        "parque das árvores"
+      ]
+    },
+    {
+      "bairro": "nova piraju",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 151,
+      "lat": -23.6273421,
+      "lng": -46.6669128,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 11.0,
+        "tempo_real_min": 19,
+        "tempo_formatado": "19 min"
+      },
+      "variantes": [
+        "nova piraju"
+      ]
+    },
+    {
+      "bairro": "jardim bandeirantes",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 151,
+      "lat": -23.460891,
+      "lng": -46.7284436,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 16.69,
+        "tempo_real_min": 51,
+        "tempo_formatado": "51 min"
+      },
+      "variantes": [
+        "jardim bandeirantes"
+      ]
+    },
+    {
+      "bairro": "jardim internacional",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 149,
+      "lat": -23.6461257,
+      "lng": -46.7194462,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 17.02,
+        "tempo_real_min": 33,
+        "tempo_formatado": "33 min"
+      },
+      "variantes": [
+        "jardim internacional"
+      ]
+    },
+    {
+      "bairro": "jardim botucatu",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 146,
+      "lat": -23.6382683,
+      "lng": -46.61081739999999,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 9.1,
+        "tempo_real_min": 22,
+        "tempo_formatado": "22 min"
+      },
+      "variantes": [
+        "jardim botucatu"
+      ]
+    },
+    {
+      "bairro": "vila caraguatá",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 146,
+      "lat": -23.6457029,
+      "lng": -46.6047894,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 8.9,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "vila caraguatá"
+      ]
+    },
+    {
+      "bairro": "jardim dos lagos",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 146,
+      "lat": -23.6837721,
+      "lng": -46.712801,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 18.62,
+        "tempo_real_min": 35,
+        "tempo_formatado": "35 min"
+      },
+      "variantes": [
+        "jardim dos lagos"
+      ]
+    },
+    {
+      "bairro": "vila independência",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 145,
+      "lat": -23.5956223,
+      "lng": -46.5917098,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 3.33,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "vila independência"
+      ]
+    },
+    {
+      "bairro": "jardim são benedito",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 144,
+      "lat": -23.7187174,
+      "lng": -46.688946,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 19.85,
+        "tempo_real_min": 48,
+        "tempo_formatado": "48 min"
+      },
+      "variantes": [
+        "jardim são benedito"
+      ]
+    },
+    {
+      "bairro": "cidade júlia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 144,
+      "lat": -23.6880847,
+      "lng": -46.642778,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 11.33,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "cidade júlia"
+      ]
+    },
+    {
+      "bairro": "santa amélia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 143,
+      "lat": -23.54,
+      "lng": -46.52,
+      "hospital_mais_proximo": {
+        "nome": "Santa Clara",
+        "zona": "Leste",
+        "distancia_real_km": 1.12,
+        "tempo_real_min": 4,
+        "tempo_formatado": "4 min"
+      },
+      "variantes": [
+        "santa amélia"
+      ]
+    },
+    {
+      "bairro": "jardim dos estados",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 142,
+      "lat": -23.6361777,
+      "lng": -46.68642819999999,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 13.76,
+        "tempo_real_min": 24,
+        "tempo_formatado": "24 min"
+      },
+      "variantes": [
+        "jardim dos estados"
+      ]
+    },
+    {
+      "bairro": "guarapiranga",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 140,
+      "lat": -23.6818903,
+      "lng": -46.7418047,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 21.23,
+        "tempo_real_min": 43,
+        "tempo_formatado": "43 min"
+      },
+      "variantes": [
+        "guarapiranga"
+      ]
+    },
+    {
+      "bairro": "capela do socorro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 138,
+      "lat": -23.587778,
+      "lng": -46.716667,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 10.12,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "capela do socorro"
+      ]
+    },
+    {
+      "bairro": "vila babilônia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 138,
+      "lat": -23.6449967,
+      "lng": -46.6542406,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 10.28,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "vila babilônia"
+      ]
+    },
+    {
+      "bairro": "jardim tenani",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 137,
+      "lat": -23.6487093,
+      "lng": -46.5954475,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.46,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "jardim tenani"
+      ]
+    },
+    {
+      "bairro": "vila bom jardim",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 136,
+      "lat": -23.6861675,
+      "lng": -46.7593359,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 22.77,
+        "tempo_real_min": 46,
+        "tempo_formatado": "46 min"
+      },
+      "variantes": [
+        "vila bom jardim"
+      ]
+    },
+    {
+      "bairro": "jardim são judas tadeu",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 135,
+      "lat": -23.7754865,
+      "lng": -46.7073647,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 28.41,
+        "tempo_real_min": 67,
+        "tempo_formatado": "1h 7min"
+      },
+      "variantes": [
+        "jardim são judas tadeu"
+      ]
+    },
+    {
+      "bairro": "jardim selma",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 134,
+      "lat": -23.6898924,
+      "lng": -46.654844,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 13.62,
+        "tempo_real_min": 35,
+        "tempo_formatado": "35 min"
+      },
+      "variantes": [
+        "jardim selma"
+      ]
+    },
+    {
+      "bairro": "parque cocaia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 133,
+      "lat": -23.7509671,
+      "lng": -46.6787964,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 25.69,
+        "tempo_real_min": 65,
+        "tempo_formatado": "1h 5min"
+      },
+      "variantes": [
+        "parque cocaia"
+      ]
+    },
+    {
+      "bairro": "água funda",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 131,
+      "lat": -23.6337298,
+      "lng": -46.6234786,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.96,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "água funda"
+      ]
+    },
+    {
+      "bairro": "vila gea",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 129,
+      "lat": -23.6754313,
+      "lng": -46.6904554,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 16.39,
+        "tempo_real_min": 31,
+        "tempo_formatado": "31 min"
+      },
+      "variantes": [
+        "vila gea"
+      ]
+    },
+    {
+      "bairro": "parque fongaro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 129,
+      "lat": -23.633212,
+      "lng": -46.59454350000001,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.89,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "parque fongaro"
+      ]
+    },
+    {
+      "bairro": "vila da paz",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 126,
+      "lat": -23.6898331,
+      "lng": -46.6958899,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 17.99,
+        "tempo_real_min": 34,
+        "tempo_formatado": "34 min"
+      },
+      "variantes": [
+        "vila da paz"
+      ]
+    },
+    {
+      "bairro": "jardim toca",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 125,
+      "lat": -23.739421,
+      "lng": -46.6704951,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 28.09,
+        "tempo_real_min": 71,
+        "tempo_formatado": "1h 11min"
+      },
+      "variantes": [
+        "jardim toca"
+      ]
+    },
+    {
+      "bairro": "eldorado",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 125,
+      "lat": -23.64,
+      "lng": -46.72,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 16.06,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "eldorado"
+      ]
+    },
+    {
+      "bairro": "jardim são francisco(zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 122,
+      "lat": -23.6890471,
+      "lng": -46.7418047,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 21.68,
+        "tempo_real_min": 42,
+        "tempo_formatado": "42 min"
+      },
+      "variantes": [
+        "jardim são francisco(zona sul)"
+      ]
+    },
+    {
+      "bairro": "vila gertrudes",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 122,
+      "lat": -23.6214914,
+      "lng": -46.6964938,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 13.41,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "vila gertrudes"
+      ]
+    },
+    {
+      "bairro": "jardim niteroi",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 120,
+      "lat": -23.6817136,
+      "lng": -46.6638953,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 14.59,
+        "tempo_real_min": 39,
+        "tempo_formatado": "39 min"
+      },
+      "variantes": [
+        "jardim niteroi"
+      ]
+    },
+    {
+      "bairro": "parque bristol",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 120,
+      "lat": -23.6486017,
+      "lng": -46.6114203,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 9.48,
+        "tempo_real_min": 22,
+        "tempo_formatado": "22 min"
+      },
+      "variantes": [
+        "parque bristol"
+      ]
+    },
+    {
+      "bairro": "cidade ipava",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 115,
+      "lat": -23.7231298,
+      "lng": -46.7586172,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 28.63,
+        "tempo_real_min": 59,
+        "tempo_formatado": "59 min"
+      },
+      "variantes": [
+        "cidade ipava"
+      ]
+    },
+    {
+      "bairro": "vila do bosque",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 111,
+      "lat": -23.6203671,
+      "lng": -46.6313181,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 5.33,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "vila do bosque"
+      ]
+    },
+    {
+      "bairro": "vila mira",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 111,
+      "lat": -23.6526942,
+      "lng": -46.6515255,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 10.72,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "vila mira"
+      ]
+    },
+    {
+      "bairro": "jardim marilda",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 111,
+      "lat": -23.7859586,
+      "lng": -46.6808293,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 29.3,
+        "tempo_real_min": 75,
+        "tempo_formatado": "1h 15min"
+      },
+      "variantes": [
+        "jardim marilda"
+      ]
+    },
+    {
+      "bairro": "jardim três corações",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 110,
+      "lat": -23.7690865,
+      "lng": -46.6838141,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 26.75,
+        "tempo_real_min": 68,
+        "tempo_formatado": "1h 8min"
+      },
+      "variantes": [
+        "jardim três corações"
+      ]
+    },
+    {
+      "bairro": "vila natal",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 110,
+      "lat": -23.7613855,
+      "lng": -46.7038832,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 26.29,
+        "tempo_real_min": 63,
+        "tempo_formatado": "1h 3min"
+      },
+      "variantes": [
+        "vila natal"
+      ]
+    },
+    {
+      "bairro": "jardim angelina",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 110,
+      "lat": -23.7369454,
+      "lng": -46.7079687,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 23.73,
+        "tempo_real_min": 58,
+        "tempo_formatado": "58 min"
+      },
+      "variantes": [
+        "jardim angelina"
+      ]
+    },
+    {
+      "bairro": "jardim palmares (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 109,
+      "lat": -23.6855159,
+      "lng": -46.67657,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 15.89,
+        "tempo_real_min": 42,
+        "tempo_formatado": "42 min"
+      },
+      "variantes": [
+        "jardim palmares (zona sul)"
+      ]
+    },
+    {
+      "bairro": "jardim das flores",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 107,
+      "lat": -23.6738969,
+      "lng": -46.73938709999999,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 19.99,
+        "tempo_real_min": 38,
+        "tempo_formatado": "38 min"
+      },
+      "variantes": [
+        "jardim das flores"
+      ]
+    },
+    {
+      "bairro": "cursino",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 107,
+      "lat": -23.6029915,
+      "lng": -46.6255389,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 3.27,
+        "tempo_real_min": 7,
+        "tempo_formatado": "7 min"
+      },
+      "variantes": [
+        "cursino"
+      ]
+    },
+    {
+      "bairro": "jardim novo parelheiros",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 105,
+      "lat": -23.8301469,
+      "lng": -46.7234165,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 35.52,
+        "tempo_real_min": 81,
+        "tempo_formatado": "1h 21min"
+      },
+      "variantes": [
+        "jardim novo parelheiros"
+      ]
+    },
+    {
+      "bairro": "vila elvira",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 105,
+      "lat": -23.6431063,
+      "lng": -46.7055527,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 15.61,
+        "tempo_real_min": 30,
+        "tempo_formatado": "30 min"
+      },
+      "variantes": [
+        "vila elvira"
+      ]
+    },
+    {
+      "bairro": "jardim marabá(zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 103,
+      "lat": -23.6867073,
+      "lng": -46.6989093,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 18.91,
+        "tempo_real_min": 37,
+        "tempo_formatado": "37 min"
+      },
+      "variantes": [
+        "jardim marabá(zona sul)"
+      ]
+    },
+    {
+      "bairro": "jardim vergueiro (sacomã)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 102,
+      "lat": -23.6357889,
+      "lng": -46.6053922,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 8.61,
+        "tempo_real_min": 22,
+        "tempo_formatado": "22 min"
+      },
+      "variantes": [
+        "jardim vergueiro (sacomã)"
+      ]
+    },
+    {
+      "bairro": "jardim da pedreira",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 100,
+      "lat": -23.6957591,
+      "lng": -46.6717412,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 16.01,
+        "tempo_real_min": 41,
+        "tempo_formatado": "41 min"
+      },
+      "variantes": [
+        "jardim da pedreira"
+      ]
+    },
+    {
+      "bairro": "jardim casa grande",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 100,
+      "lat": -23.7749152,
+      "lng": -46.7194462,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 27.59,
+        "tempo_real_min": 66,
+        "tempo_formatado": "1h 6min"
+      },
+      "variantes": [
+        "jardim casa grande"
+      ]
+    },
+    {
+      "bairro": "recanto campo belo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 99,
+      "lat": -23.8094515,
+      "lng": -46.7379539,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 32.18,
+        "tempo_real_min": 74,
+        "tempo_formatado": "1h 14min"
+      },
+      "variantes": [
+        "recanto campo belo"
+      ]
+    },
+    {
+      "bairro": "vila clara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 99,
+      "lat": -23.6729491,
+      "lng": -46.6403652,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 12.91,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "vila clara"
+      ]
+    },
+    {
+      "bairro": "jardim melo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 98,
+      "lat": -23.6859561,
+      "lng": -46.6349367,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 10.37,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "jardim melo"
+      ]
+    },
+    {
+      "bairro": "vila santa lúcia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 97,
+      "lat": -23.6878718,
+      "lng": -46.7659873,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 23.52,
+        "tempo_real_min": 48,
+        "tempo_formatado": "48 min"
+      },
+      "variantes": [
+        "vila santa lúcia"
+      ]
+    },
+    {
+      "bairro": "jardim iporã",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 95,
+      "lat": -23.7808554,
+      "lng": -46.7128495,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 28.74,
+        "tempo_real_min": 69,
+        "tempo_formatado": "1h 9min"
+      },
+      "variantes": [
+        "jardim iporã"
+      ]
+    },
+    {
+      "bairro": "vila joaniza",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 94,
+      "lat": -23.673339,
+      "lng": -46.6620849,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 14.28,
+        "tempo_real_min": 35,
+        "tempo_formatado": "35 min"
+      },
+      "variantes": [
+        "vila joaniza"
+      ]
+    },
+    {
+      "bairro": "jardim santa helena",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 93,
+      "lat": -23.6956962,
+      "lng": -46.712801,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 20.16,
+        "tempo_real_min": 39,
+        "tempo_formatado": "39 min"
+      },
+      "variantes": [
+        "jardim santa helena"
+      ]
+    },
+    {
+      "bairro": "jardim pouso alegre",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 89,
+      "lat": -23.7338859,
+      "lng": -46.7146132,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 23.69,
+        "tempo_real_min": 58,
+        "tempo_formatado": "58 min"
+      },
+      "variantes": [
+        "jardim pouso alegre"
+      ]
+    },
+    {
+      "bairro": "balneário mar paulista",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 88,
+      "lat": -23.6987188,
+      "lng": -46.6596712,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 14.15,
+        "tempo_real_min": 36,
+        "tempo_formatado": "36 min"
+      },
+      "variantes": [
+        "balneário mar paulista"
+      ]
+    },
+    {
+      "bairro": "jardim cruzeiro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 88,
+      "lat": -23.3251292,
+      "lng": -46.7327392,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 31.98,
+        "tempo_real_min": 57,
+        "tempo_formatado": "57 min"
+      },
+      "variantes": [
+        "jardim cruzeiro"
+      ]
+    },
+    {
+      "bairro": "brooklin novo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 87,
+      "lat": -23.6148608,
+      "lng": -46.6773968,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 10.23,
+        "tempo_real_min": 19,
+        "tempo_formatado": "19 min"
+      },
+      "variantes": [
+        "brooklin novo"
+      ]
+    },
+    {
+      "bairro": "jardim quarto centenário",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 86,
+      "lat": -23.7063611,
+      "lng": -46.6868328,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 18.3,
+        "tempo_real_min": 44,
+        "tempo_formatado": "44 min"
+      },
+      "variantes": [
+        "jardim quarto centenário"
+      ]
+    },
+    {
+      "bairro": "jardim somara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 85,
+      "lat": -23.7485697,
+      "lng": -46.6916631,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 24.5,
+        "tempo_real_min": 62,
+        "tempo_formatado": "1h 2min"
+      },
+      "variantes": [
+        "jardim somara"
+      ]
+    },
+    {
+      "bairro": "vila marte",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 84,
+      "lat": -23.620982,
+      "lng": -46.5987622,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 5.43,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "vila marte"
+      ]
+    },
+    {
+      "bairro": "alto da riviera",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 83,
+      "lat": -23.699916,
+      "lng": -46.76365740000001,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 25.43,
+        "tempo_real_min": 51,
+        "tempo_formatado": "51 min"
+      },
+      "variantes": [
+        "alto da riviera"
+      ]
+    },
+    {
+      "bairro": "jardim tupi",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 83,
+      "lat": -23.6883414,
+      "lng": -46.7692863,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 24.02,
+        "tempo_real_min": 49,
+        "tempo_formatado": "49 min"
+      },
+      "variantes": [
+        "jardim tupi"
+      ]
+    },
+    {
+      "bairro": "chácara cocaia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 81,
+      "lat": -23.7692556,
+      "lng": -46.6928707,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 26.7,
+        "tempo_real_min": 67,
+        "tempo_formatado": "1h 7min"
+      },
+      "variantes": [
+        "chácara cocaia"
+      ]
+    },
+    {
+      "bairro": "jardim capela",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 81,
+      "lat": -23.7288168,
+      "lng": -46.78776149999999,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 29.04,
+        "tempo_real_min": 61,
+        "tempo_formatado": "1h 1min"
+      },
+      "variantes": [
+        "jardim capela"
+      ]
+    },
+    {
+      "bairro": "jardim são carlos (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 80,
+      "lat": -23.6839668,
+      "lng": -46.6566541,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 13.27,
+        "tempo_real_min": 34,
+        "tempo_formatado": "34 min"
+      },
+      "variantes": [
+        "jardim são carlos (zona sul)"
+      ]
+    },
+    {
+      "bairro": "parque do lago",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 79,
+      "lat": -23.7145863,
+      "lng": -46.7776418,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 27.59,
+        "tempo_real_min": 56,
+        "tempo_formatado": "56 min"
+      },
+      "variantes": [
+        "parque do lago"
+      ]
+    },
+    {
+      "bairro": "jardim paquetá (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 77,
+      "lat": -23.6908308,
+      "lng": -46.7073647,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 19.27,
+        "tempo_real_min": 38,
+        "tempo_formatado": "38 min"
+      },
+      "variantes": [
+        "jardim paquetá (zona sul)"
+      ]
+    },
+    {
+      "bairro": "jardim iporanga",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 77,
+      "lat": -23.7265355,
+      "lng": -46.70374080000001,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 22.28,
+        "tempo_real_min": 56,
+        "tempo_formatado": "56 min"
+      },
+      "variantes": [
+        "jardim iporanga"
+      ]
+    },
+    {
+      "bairro": "vila santa teresa (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 77,
+      "lat": -23.6483397,
+      "lng": -46.5969541,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.77,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "vila santa teresa (zona sul)"
+      ]
+    },
+    {
+      "bairro": "jardim novo mundo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 76,
+      "lat": -23.6083968,
+      "lng": -46.6741555,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 8.34,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "jardim novo mundo"
+      ]
+    },
+    {
+      "bairro": "chácara itaim",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 71,
+      "lat": -23.5863499,
+      "lng": -46.686229,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 8.17,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "chácara itaim"
+      ]
+    },
+    {
+      "bairro": "jardim santa edwiges (capela do socorro)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 71,
+      "lat": -23.7364273,
+      "lng": -46.701325,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 23.16,
+        "tempo_real_min": 57,
+        "tempo_formatado": "57 min"
+      },
+      "variantes": [
+        "jardim santa edwiges (capela do socorro)"
+      ]
+    },
+    {
+      "bairro": "jardim alfredo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 70,
+      "lat": -23.6782184,
+      "lng": -46.73636519999999,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 20.25,
+        "tempo_real_min": 39,
+        "tempo_formatado": "39 min"
+      },
+      "variantes": [
+        "jardim alfredo"
+      ]
+    },
+    {
+      "bairro": "vila arapuã",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 67,
+      "lat": -23.6347235,
+      "lng": -46.5903252,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.04,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila arapuã"
+      ]
+    },
+    {
+      "bairro": "vila conde do pinhal",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 67,
+      "lat": -23.6216898,
+      "lng": -46.5939409,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 5.82,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila conde do pinhal"
+      ]
+    },
+    {
+      "bairro": "parque bologne",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 68,
+      "lat": -23.7040345,
+      "lng": -46.7761586,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 26.08,
+        "tempo_real_min": 54,
+        "tempo_formatado": "54 min"
+      },
+      "variantes": [
+        "parque bologne"
+      ]
+    },
+    {
+      "bairro": "jardim dos álamos",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 67,
+      "lat": -23.8114164,
+      "lng": -46.73696959999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 32.38,
+        "tempo_real_min": 75,
+        "tempo_formatado": "1h 15min"
+      },
+      "variantes": [
+        "jardim dos álamos"
+      ]
+    },
+    {
+      "bairro": "jardim luzitânia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 67,
+      "lat": -23.5953969,
+      "lng": -46.6572575,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 5.7,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "jardim luzitânia"
+      ]
+    },
+    {
+      "bairro": "jardim santa rita",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 65,
+      "lat": -23.5279066,
+      "lng": -46.4302949,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 6.12,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "jardim santa rita"
+      ]
+    },
+    {
+      "bairro": "jardim sul são paulo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 65,
+      "lat": -23.6708871,
+      "lng": -46.636143,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 12.44,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "jardim sul são paulo"
+      ]
+    },
+    {
+      "bairro": "jardim kagohara",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 64,
+      "lat": -23.6905833,
+      "lng": -46.7617545,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 23.74,
+        "tempo_real_min": 48,
+        "tempo_formatado": "48 min"
+      },
+      "variantes": [
+        "jardim kagohara"
+      ]
+    },
+    {
+      "bairro": "riviera paulista",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 63,
+      "lat": -23.7414499,
+      "lng": -46.7769062,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 30.96,
+        "tempo_real_min": 68,
+        "tempo_formatado": "1h 8min"
+      },
+      "variantes": [
+        "riviera paulista"
+      ]
+    },
+    {
+      "bairro": "jardim aparecida",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 62,
+      "lat": -23.6917319,
+      "lng": -46.6687234,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 15.28,
+        "tempo_real_min": 40,
+        "tempo_formatado": "40 min"
+      },
+      "variantes": [
+        "jardim aparecida"
+      ]
+    },
+    {
+      "bairro": "jardim marquesa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 62,
+      "lat": -23.6947809,
+      "lng": -46.7514763,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 23.81,
+        "tempo_real_min": 47,
+        "tempo_formatado": "47 min"
+      },
+      "variantes": [
+        "jardim marquesa"
+      ]
+    },
+    {
+      "bairro": "jardim lourdes (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 57,
+      "lat": -23.6649302,
+      "lng": -46.636143,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 11.54,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "jardim lourdes (zona sul)"
+      ]
+    },
+    {
+      "bairro": "jardim martini",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 57,
+      "lat": -23.678203,
+      "lng": -46.6675163,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 15.28,
+        "tempo_real_min": 39,
+        "tempo_formatado": "39 min"
+      },
+      "variantes": [
+        "jardim martini"
+      ]
+    },
+    {
+      "bairro": "chácara do conde",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 57,
+      "lat": -23.7581345,
+      "lng": -46.69693239999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 25.18,
+        "tempo_real_min": 64,
+        "tempo_formatado": "1h 4min"
+      },
+      "variantes": [
+        "chácara do conde"
+      ]
+    },
+    {
+      "bairro": "jardim nakamura",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 55,
+      "lat": -23.6979905,
+      "lng": -46.7762684,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 25.34,
+        "tempo_real_min": 53,
+        "tempo_formatado": "53 min"
+      },
+      "variantes": [
+        "jardim nakamura"
+      ]
+    },
+    {
+      "bairro": "vila emir",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 54,
+      "lat": -23.6919593,
+      "lng": -46.6813993,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 17.19,
+        "tempo_real_min": 44,
+        "tempo_formatado": "44 min"
+      },
+      "variantes": [
+        "vila emir"
+      ]
+    },
+    {
+      "bairro": "jardim aracati",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 54,
+      "lat": -23.7193431,
+      "lng": -46.7690109,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 27.69,
+        "tempo_real_min": 57,
+        "tempo_formatado": "57 min"
+      },
+      "variantes": [
+        "jardim aracati"
+      ]
+    },
+    {
+      "bairro": "vila capela",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 51,
+      "lat": -23.6748147,
+      "lng": -46.6337305,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 11.18,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "vila capela"
+      ]
+    },
+    {
+      "bairro": "jardim santa terezinha (parelheiros)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 51,
+      "lat": -23.8515833,
+      "lng": -46.6964938,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 40.11,
+        "tempo_real_min": 79,
+        "tempo_formatado": "1h 19min"
+      },
+      "variantes": [
+        "jardim santa terezinha (parelheiros)"
+      ]
+    },
+    {
+      "bairro": "vila natália",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 50,
+      "lat": -23.6233638,
+      "lng": -46.5987622,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 5.85,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila natália"
+      ]
+    },
+    {
+      "bairro": "vila quintana",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 49,
+      "lat": -23.7424547,
+      "lng": -46.7049487,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 23.55,
+        "tempo_real_min": 58,
+        "tempo_formatado": "58 min"
+      },
+      "variantes": [
+        "vila quintana"
+      ]
+    },
+    {
+      "bairro": "jardim seckler",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 48,
+      "lat": -23.6259695,
+      "lng": -46.58912,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.2,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "jardim seckler"
+      ]
+    },
+    {
+      "bairro": "jardim itapura",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 46,
+      "lat": -23.6868018,
+      "lng": -46.6596712,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 13.82,
+        "tempo_real_min": 36,
+        "tempo_formatado": "36 min"
+      },
+      "variantes": [
+        "jardim itapura"
+      ]
+    },
+    {
+      "bairro": "cidade ademar",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 46,
+      "lat": -23.6708586,
+      "lng": -46.6566541,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 13.5,
+        "tempo_real_min": 33,
+        "tempo_formatado": "33 min"
+      },
+      "variantes": [
+        "cidade ademar"
+      ]
+    },
+    {
+      "bairro": "barragem",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 45,
+      "lat": -23.8743323,
+      "lng": -46.6489361,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 43.03,
+        "tempo_real_min": 58,
+        "tempo_formatado": "58 min"
+      },
+      "variantes": [
+        "barragem"
+      ]
+    },
+    {
+      "bairro": "vila socorro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 44,
+      "lat": -23.663982,
+      "lng": -46.71763379999999,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 17.5,
+        "tempo_real_min": 33,
+        "tempo_formatado": "33 min"
+      },
+      "variantes": [
+        "vila socorro"
+      ]
+    },
+    {
+      "bairro": "jardim aristocrata",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 42,
+      "lat": -23.5415471,
+      "lng": -46.56961,
+      "hospital_mais_proximo": {
+        "nome": "Santa Virgínia",
+        "zona": "Leste",
+        "distancia_real_km": 4.32,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "jardim aristocrata"
+      ]
+    },
+    {
+      "bairro": "jardim vera cruz(zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 42,
+      "lat": -23.7390117,
+      "lng": -46.7792927,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 30.41,
+        "tempo_real_min": 65,
+        "tempo_formatado": "1h 5min"
+      },
+      "variantes": [
+        "jardim vera cruz(zona sul)"
+      ]
+    },
+    {
+      "bairro": "jardim noronha",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 42,
+      "lat": -23.7717204,
+      "lng": -46.6759664,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 27.44,
+        "tempo_real_min": 70,
+        "tempo_formatado": "1h 10min"
+      },
+      "variantes": [
+        "jardim noronha"
+      ]
+    },
+    {
+      "bairro": "jardim myrna",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 40,
+      "lat": -23.7681309,
+      "lng": -46.6964938,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 26.42,
+        "tempo_real_min": 67,
+        "tempo_formatado": "1h 7min"
+      },
+      "variantes": [
+        "jardim myrna"
+      ]
+    },
+    {
+      "bairro": "jardim herculano",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 40,
+      "lat": -23.6949059,
+      "lng": -46.7587313,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 24.46,
+        "tempo_real_min": 48,
+        "tempo_formatado": "48 min"
+      },
+      "variantes": [
+        "jardim herculano"
+      ]
+    },
+    {
+      "bairro": "jardim santa zélia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 40,
+      "lat": -23.6822937,
+      "lng": -46.7653826,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 22.88,
+        "tempo_real_min": 46,
+        "tempo_formatado": "46 min"
+      },
+      "variantes": [
+        "jardim santa zélia"
+      ]
+    },
+    {
+      "bairro": "jardim turquesa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 39,
+      "lat": -23.702562,
+      "lng": -46.78776149999999,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 26.8,
+        "tempo_real_min": 57,
+        "tempo_formatado": "57 min"
+      },
+      "variantes": [
+        "jardim turquesa"
+      ]
+    },
+    {
+      "bairro": "chácara da enseada",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 38,
+      "lat": -23.74501,
+      "lng": -46.7811073,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 31.15,
+        "tempo_real_min": 68,
+        "tempo_formatado": "1h 8min"
+      },
+      "variantes": [
+        "chácara da enseada"
+      ]
+    },
+    {
+      "bairro": "praia da lagoa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 37,
+      "lat": -23.6826021,
+      "lng": -46.73696959999999,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 21.14,
+        "tempo_real_min": 41,
+        "tempo_formatado": "41 min"
+      },
+      "variantes": [
+        "praia da lagoa"
+      ]
+    },
+    {
+      "bairro": "jardim novo pantanal",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 37,
+      "lat": -23.6975833,
+      "lng": -46.6409684,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 12.78,
+        "tempo_real_min": 34,
+        "tempo_formatado": "34 min"
+      },
+      "variantes": [
+        "jardim novo pantanal"
+      ]
+    },
+    {
+      "bairro": "parque novo grajaú",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 36,
+      "lat": -23.7573007,
+      "lng": -46.6910592,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 25.17,
+        "tempo_real_min": 65,
+        "tempo_formatado": "1h 5min"
+      },
+      "variantes": [
+        "parque novo grajaú"
+      ]
+    },
+    {
+      "bairro": "jardim ângela (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 34,
+      "lat": -23.6908461,
+      "lng": -46.7538945,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 23.4,
+        "tempo_real_min": 46,
+        "tempo_formatado": "46 min"
+      },
+      "variantes": [
+        "jardim ângela (zona sul)"
+      ]
+    },
+    {
+      "bairro": "várzea de baixo",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 32,
+      "lat": -23.6409685,
+      "lng": -46.7200504,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 16.31,
+        "tempo_real_min": 28,
+        "tempo_formatado": "28 min"
+      },
+      "variantes": [
+        "várzea de baixo"
+      ]
+    },
+    {
+      "bairro": "jardim dionisio",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 31,
+      "lat": -23.6843079,
+      "lng": -46.7668943,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 23.51,
+        "tempo_real_min": 48,
+        "tempo_formatado": "48 min"
+      },
+      "variantes": [
+        "jardim dionisio"
+      ]
+    },
+    {
+      "bairro": "jardim herplin",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 29,
+      "lat": -23.7937319,
+      "lng": -46.7184642,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 30.18,
+        "tempo_real_min": 72,
+        "tempo_formatado": "1h 12min"
+      },
+      "variantes": [
+        "jardim herplin"
+      ]
+    },
+    {
+      "bairro": "embura",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 29,
+      "lat": -23.9362543,
+      "lng": -46.642888,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 50.92,
+        "tempo_real_min": 76,
+        "tempo_formatado": "1h 16min"
+      },
+      "variantes": [
+        "embura"
+      ]
+    },
+    {
+      "bairro": "vila carioca",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 29,
+      "lat": -23.6037896,
+      "lng": -46.58681060000001,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 4.57,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "vila carioca"
+      ]
+    },
+    {
+      "bairro": "parque recreio",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 29,
+      "lat": -23.8447196,
+      "lng": -46.7357613,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 37.18,
+        "tempo_real_min": 84,
+        "tempo_formatado": "1h 24min"
+      },
+      "variantes": [
+        "parque recreio"
+      ]
+    },
+    {
+      "bairro": "sítio represa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 28,
+      "lat": -23.8540074,
+      "lng": -46.7558598,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 38.81,
+        "tempo_real_min": 86,
+        "tempo_formatado": "1h 26min"
+      },
+      "variantes": [
+        "sítio represa"
+      ]
+    },
+    {
+      "bairro": "jardim solange",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 27,
+      "lat": -23.7026629,
+      "lng": -46.7820146,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 25.89,
+        "tempo_real_min": 54,
+        "tempo_formatado": "54 min"
+      },
+      "variantes": [
+        "jardim solange"
+      ]
+    },
+    {
+      "bairro": "jardim jua",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 27,
+      "lat": -23.6663129,
+      "lng": -46.6916631,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 15.62,
+        "tempo_real_min": 29,
+        "tempo_formatado": "29 min"
+      },
+      "variantes": [
+        "jardim jua"
+      ]
+    },
+    {
+      "bairro": "vila santa eulalia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 27,
+      "lat": -23.5116227,
+      "lng": -46.6262026,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Santana",
+        "zona": "Norte",
+        "distancia_real_km": 3.47,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "vila santa eulalia"
+      ]
+    },
+    {
+      "bairro": "copacabana",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 26,
+      "lat": -23.7091654,
+      "lng": -46.7327392,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 27.54,
+        "tempo_real_min": 56,
+        "tempo_formatado": "56 min"
+      },
+      "variantes": [
+        "copacabana"
+      ]
+    },
+    {
+      "bairro": "jardim kika",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 26,
+      "lat": -23.7359695,
+      "lng": -46.6871347,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 22.83,
+        "tempo_real_min": 56,
+        "tempo_formatado": "56 min"
+      },
+      "variantes": [
+        "jardim kika"
+      ]
+    },
+    {
+      "bairro": "jardim novo horizonte",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 26,
+      "lat": -23.7786032,
+      "lng": -46.69736899999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 29.33,
+        "tempo_real_min": 69,
+        "tempo_formatado": "1h 9min"
+      },
+      "variantes": [
+        "jardim novo horizonte"
+      ]
+    },
+    {
+      "bairro": "vila do sol",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 24,
+      "lat": -23.7366885,
+      "lng": -46.782922,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 30.26,
+        "tempo_real_min": 66,
+        "tempo_formatado": "1h 6min"
+      },
+      "variantes": [
+        "vila do sol"
+      ]
+    },
+    {
+      "bairro": "jardim silveira",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 22,
+      "lat": -23.8500512,
+      "lng": -46.7099328,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 39.05,
+        "tempo_real_min": 77,
+        "tempo_formatado": "1h 17min"
+      },
+      "variantes": [
+        "jardim silveira"
+      ]
+    },
+    {
+      "bairro": "parelheiros",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 29,
+      "lat": -23.8281051,
+      "lng": -46.7311693,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 35.46,
+        "tempo_real_min": 82,
+        "tempo_formatado": "1h 22min"
+      },
+      "variantes": [
+        "parelheiros"
+      ]
+    },
+    {
+      "bairro": "jardim zilda",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 24,
+      "lat": -23.7732858,
+      "lng": -46.6958899,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 27.11,
+        "tempo_real_min": 69,
+        "tempo_formatado": "1h 9min"
+      },
+      "variantes": [
+        "jardim zilda"
+      ]
+    },
+    {
+      "bairro": "bororé",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 20,
+      "lat": -23.7697922,
+      "lng": -46.6488679,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 30.46,
+        "tempo_real_min": 89,
+        "tempo_formatado": "1h 29min"
+      },
+      "variantes": [
+        "bororé"
+      ]
+    },
+    {
+      "bairro": "vila gilda",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 18,
+      "lat": -23.7227006,
+      "lng": -46.7563129,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 29.03,
+        "tempo_real_min": 60,
+        "tempo_formatado": "1h 0min"
+      },
+      "variantes": [
+        "vila gilda"
+      ]
+    },
+    {
+      "bairro": "vila calu",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 21,
+      "lat": -23.7300374,
+      "lng": -46.7912705,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 29.43,
+        "tempo_real_min": 63,
+        "tempo_formatado": "1h 3min"
+      },
+      "variantes": [
+        "vila calu"
+      ]
+    },
+    {
+      "bairro": "jardim riviera",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 18,
+      "lat": -23.7054225,
+      "lng": -46.7460358,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 25.85,
+        "tempo_real_min": 51,
+        "tempo_formatado": "51 min"
+      },
+      "variantes": [
+        "jardim riviera"
+      ]
+    },
+    {
+      "bairro": "jardim alvorada (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 16,
+      "lat": -23.7675599,
+      "lng": -46.7085727,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 27.01,
+        "tempo_real_min": 66,
+        "tempo_formatado": "1h 6min"
+      },
+      "variantes": [
+        "jardim alvorada (zona sul)"
+      ]
+    },
+    {
+      "bairro": "parque santa cecília (grajaú)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 15,
+      "lat": -23.7622371,
+      "lng": -46.7001172,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 25.54,
+        "tempo_real_min": 65,
+        "tempo_formatado": "1h 5min"
+      },
+      "variantes": [
+        "parque santa cecília (grajaú)"
+      ]
+    },
+    {
+      "bairro": "chácara santo amaro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 14,
+      "lat": -23.8183494,
+      "lng": -46.6731747,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 34.01,
+        "tempo_real_min": 84,
+        "tempo_formatado": "1h 24min"
+      },
+      "variantes": [
+        "chácara santo amaro"
+      ]
+    },
+    {
+      "bairro": "vila guiomar",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 15,
+      "lat": -23.7333289,
+      "lng": -46.7956268,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 30.17,
+        "tempo_real_min": 65,
+        "tempo_formatado": "1h 5min"
+      },
+      "variantes": [
+        "vila guiomar"
+      ]
+    },
+    {
+      "bairro": "jardim do centro",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 13,
+      "lat": -23.8248882,
+      "lng": -46.7345522,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 35.38,
+        "tempo_real_min": 83,
+        "tempo_formatado": "1h 23min"
+      },
+      "variantes": [
+        "jardim do centro"
+      ]
+    },
+    {
+      "bairro": "jardim varginha",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 16,
+      "lat": -23.7833906,
+      "lng": -46.6838141,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 28.8,
+        "tempo_real_min": 73,
+        "tempo_formatado": "1h 13min"
+      },
+      "variantes": [
+        "jardim varginha"
+      ]
+    },
+    {
+      "bairro": "jardim tanay",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 17,
+      "lat": -23.7649069,
+      "lng": -46.6940784,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 25.91,
+        "tempo_real_min": 66,
+        "tempo_formatado": "1h 6min"
+      },
+      "variantes": [
+        "jardim tanay"
+      ]
+    },
+    {
+      "bairro": "jardim vera cruz (parelheiros)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 11,
+      "lat": -23.8786915,
+      "lng": -46.6421903,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 41.93,
+        "tempo_real_min": 57,
+        "tempo_formatado": "57 min"
+      },
+      "variantes": [
+        "jardim vera cruz (parelheiros)"
+      ]
+    },
+    {
+      "bairro": "vila baby",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 11,
+      "lat": -23.6901862,
+      "lng": -46.67113759999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 15.54,
+        "tempo_real_min": 41,
+        "tempo_formatado": "41 min"
+      },
+      "variantes": [
+        "vila baby"
+      ]
+    },
+    {
+      "bairro": "vila bela vista (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 9,
+      "lat": -23.7206381,
+      "lng": -46.7520809,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 29.13,
+        "tempo_real_min": 60,
+        "tempo_formatado": "1h 0min"
+      },
+      "variantes": [
+        "vila bela vista (zona sul)"
+      ]
+    },
+    {
+      "bairro": "chácara vista alegre",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 8,
+      "lat": -23.68979,
+      "lng": -46.73878269999999,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 21.35,
+        "tempo_real_min": 41,
+        "tempo_formatado": "41 min"
+      },
+      "variantes": [
+        "chácara vista alegre"
+      ]
+    },
+    {
+      "bairro": "parque florestal",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 7,
+      "lat": -23.8071494,
+      "lng": -46.76417319999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 35.53,
+        "tempo_real_min": 80,
+        "tempo_formatado": "1h 20min"
+      },
+      "variantes": [
+        "parque florestal"
+      ]
+    },
+    {
+      "bairro": "chácara flora",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 7,
+      "lat": -23.6497016,
+      "lng": -46.6866127,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 14.53,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "chácara flora"
+      ]
+    },
+    {
+      "bairro": "cidade nova américa",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 6,
+      "lat": -23.8695285,
+      "lng": -46.6795882,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 43.03,
+        "tempo_real_min": 83,
+        "tempo_formatado": "1h 23min"
+      },
+      "variantes": [
+        "cidade nova américa"
+      ]
+    },
+    {
+      "bairro": "jardim sabiá ii",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 6,
+      "lat": -23.7824747,
+      "lng": -46.69131669999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 28.32,
+        "tempo_real_min": 71,
+        "tempo_formatado": "1h 11min"
+      },
+      "variantes": [
+        "jardim sabiá ii"
+      ]
+    },
+    {
+      "bairro": "vl calu",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 5,
+      "lat": -23.7300374,
+      "lng": -46.7912705,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 29.43,
+        "tempo_real_min": 63,
+        "tempo_formatado": "1h 3min"
+      },
+      "variantes": [
+        "vl calu"
+      ]
+    },
+    {
+      "bairro": "jardim das pedras(zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 6,
+      "lat": -23.7794286,
+      "lng": -46.6844178,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 27.99,
+        "tempo_real_min": 70,
+        "tempo_formatado": "1h 10min"
+      },
+      "variantes": [
+        "jardim das pedras(zona sul)"
+      ]
+    },
+    {
+      "bairro": "jardim papai noel",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 5,
+      "lat": -23.8281117,
+      "lng": -46.7312544,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 34.53,
+        "tempo_real_min": 79,
+        "tempo_formatado": "1h 19min"
+      },
+      "variantes": [
+        "jardim papai noel"
+      ]
+    },
+    {
+      "bairro": "jd sabia ii",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 6,
+      "lat": -23.7824747,
+      "lng": -46.69131669999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 28.32,
+        "tempo_real_min": 71,
+        "tempo_formatado": "1h 11min"
+      },
+      "variantes": [
+        "jd sabia ii",
+        "jd sabiá ii"
+      ]
+    },
+    {
+      "bairro": "jd novo horizonte",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 4,
+      "lat": -23.7786,
+      "lng": -46.6974,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 29.33,
+        "tempo_real_min": 69,
+        "tempo_formatado": "1h 9min"
+      },
+      "variantes": [
+        "jd novo horizonte"
+      ]
+    },
+    {
+      "bairro": "jardim são francisco de assis",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3,
+      "lat": -23.6602967,
+      "lng": -46.7345522,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Pompéia",
+        "zona": "Oeste",
+        "distancia_real_km": 19.47,
+        "tempo_real_min": 35,
+        "tempo_formatado": "35 min"
+      },
+      "variantes": [
+        "jardim são francisco de assis"
+      ]
+    },
+    {
+      "bairro": "jd papai noel",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3,
+      "lat": -23.8264539,
+      "lng": -46.7003162,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 34.31,
+        "tempo_real_min": 81,
+        "tempo_formatado": "1h 21min"
+      },
+      "variantes": [
+        "jd papai noel"
+      ]
+    },
+    {
+      "bairro": "jd varginha",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 4,
+      "lat": -23.7833906,
+      "lng": -46.6838141,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 28.8,
+        "tempo_real_min": 73,
+        "tempo_formatado": "1h 13min"
+      },
+      "variantes": [
+        "jd varginha"
+      ]
+    },
+    {
+      "bairro": "jardim das oliveiras (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3,
+      "lat": -23.4922357,
+      "lng": -46.379237,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 14.35,
+        "tempo_real_min": 39,
+        "tempo_formatado": "39 min"
+      },
+      "variantes": [
+        "jardim das oliveiras (zona sul)"
+      ]
+    },
+    {
+      "bairro": "jd myrna",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3,
+      "lat": -23.7691595,
+      "lng": -46.6983809,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 26.54,
+        "tempo_real_min": 67,
+        "tempo_formatado": "1h 7min"
+      },
+      "variantes": [
+        "jd myrna"
+      ]
+    },
+    {
+      "bairro": "jardim paulo afonso",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2,
+      "lat": -23.78601,
+      "lng": -46.7270888,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 29.19,
+        "tempo_real_min": 69,
+        "tempo_formatado": "1h 9min"
+      },
+      "variantes": [
+        "jardim paulo afonso"
+      ]
+    },
+    {
+      "bairro": "ibirapuera",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2,
+      "lat": -23.5836023,
+      "lng": -46.6644988,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.58,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "ibirapuera"
+      ]
+    },
+    {
+      "bairro": "vl guiomar",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 3,
+      "lat": -23.7333289,
+      "lng": -46.7956268,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 30.17,
+        "tempo_real_min": 65,
+        "tempo_formatado": "1h 5min"
+      },
+      "variantes": [
+        "vl guiomar"
+      ]
+    },
+    {
+      "bairro": "parque ibirapuera",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2,
+      "lat": -23.5848435,
+      "lng": -46.6559132,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 4.38,
+        "tempo_real_min": 9,
+        "tempo_formatado": "9 min"
+      },
+      "variantes": [
+        "parque ibirapuera"
+      ]
+    },
+    {
+      "bairro": "colônia (zona sul)",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2,
+      "lat": -23.8586338,
+      "lng": -46.7115929,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 41.06,
+        "tempo_real_min": 81,
+        "tempo_formatado": "1h 21min"
+      },
+      "variantes": [
+        "colônia (zona sul)"
+      ]
+    },
+    {
+      "bairro": "jd zilda",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 2,
+      "lat": -23.7732858,
+      "lng": -46.6958899,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 27.11,
+        "tempo_real_min": 69,
+        "tempo_formatado": "1h 9min"
+      },
+      "variantes": [
+        "jd zilda"
+      ]
+    },
+    {
+      "bairro": "parque alto rio",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1,
+      "lat": -23.7276134,
+      "lng": -46.6978861,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 21.61,
+        "tempo_real_min": 52,
+        "tempo_formatado": "52 min"
+      },
+      "variantes": [
+        "parque alto rio"
+      ]
+    },
+    {
+      "bairro": "jd tanay",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1,
+      "lat": -23.7649745,
+      "lng": -46.69298819999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 27.33,
+        "tempo_real_min": 69,
+        "tempo_formatado": "1h 9min"
+      },
+      "variantes": [
+        "jd tanay"
+      ]
+    },
+    {
+      "bairro": "chácara santo hubertus",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1,
+      "lat": -23.8651373,
+      "lng": -46.76024289999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 40.74,
+        "tempo_real_min": 89,
+        "tempo_formatado": "1h 29min"
+      },
+      "variantes": [
+        "chácara santo hubertus"
+      ]
+    },
+    {
+      "bairro": "jardim santa tereza",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1,
+      "lat": -23.7915522,
+      "lng": -46.6396609,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 41.93,
+        "tempo_real_min": 87,
+        "tempo_formatado": "1h 27min"
+      },
+      "variantes": [
+        "jardim santa tereza"
+      ]
+    },
+    {
+      "bairro": "vl sta catarina",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1,
+      "lat": -23.6483758,
+      "lng": -46.6623413,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 12.22,
+        "tempo_real_min": 22,
+        "tempo_formatado": "22 min"
+      },
+      "variantes": [
+        "vl sta catarina"
+      ]
+    },
+    {
+      "bairro": "jardim sabia",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1,
+      "lat": -23.7838276,
+      "lng": -46.6899466,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 28.36,
+        "tempo_real_min": 70,
+        "tempo_formatado": "1h 10min"
+      },
+      "variantes": [
+        "jardim sabia"
+      ]
+    },
+    {
+      "bairro": "balneário dom carlos",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1,
+      "lat": -23.7288365,
+      "lng": -46.7475928,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 29.99,
+        "tempo_real_min": 61,
+        "tempo_formatado": "1h 1min"
+      },
+      "variantes": [
+        "balneário dom carlos"
+      ]
+    },
+    {
+      "bairro": "jd noronha",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1,
+      "lat": -23.7717204,
+      "lng": -46.6759664,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 27.44,
+        "tempo_real_min": 70,
+        "tempo_formatado": "1h 10min"
+      },
+      "variantes": [
+        "jd noronha"
+      ]
+    },
+    {
+      "bairro": "jardim vaginha",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1,
+      "lat": -23.7833906,
+      "lng": -46.6838141,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 28.8,
+        "tempo_real_min": 73,
+        "tempo_formatado": "1h 13min"
+      },
+      "variantes": [
+        "jardim vaginha"
+      ]
+    },
+    {
+      "bairro": "chácara bandeirantes",
+      "cidade": "são paulo",
+      "zona": "Centro-Sul",
+      "beneficiarios": 1,
+      "lat": -23.7298387,
+      "lng": -46.7721859,
+      "hospital_mais_proximo": {
+        "nome": "Hospital Adventista",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 29.21,
+        "tempo_real_min": 62,
+        "tempo_formatado": "1h 2min"
+      },
+      "variantes": [
+        "chácara bandeirantes"
+      ]
+    }
+  ]
+}

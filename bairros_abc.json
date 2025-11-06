@@ -1,0 +1,3003 @@
+{
+  "metadata": {
+    "versao": "2.0",
+    "zona": "ABC",
+    "total_bairros": 166,
+    "metodo": "directions_api",
+    "data_correcao": "2025-11-06 14:57:07",
+    "data_normalizacao": "2025-11-06T15:35:43.450568",
+    "bairros_antes_normalizacao": 176,
+    "duplicatas_consolidadas": 10
+  },
+  "bairros": [
+    {
+      "bairro": "rudge ramos",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 2661,
+      "lat": -23.6577258,
+      "lng": -46.5683959,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 2.32,
+        "tempo_real_min": 7,
+        "tempo_formatado": "7 min"
+      },
+      "variantes": [
+        "rudge ramos"
+      ]
+    },
+    {
+      "bairro": "centro",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 1542,
+      "lat": -23.7015514,
+      "lng": -46.5529056,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 4.01,
+        "tempo_real_min": 9,
+        "tempo_formatado": "9 min"
+      },
+      "variantes": [
+        "centro"
+      ]
+    },
+    {
+      "bairro": "centro",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 1220,
+      "lat": -23.6574826,
+      "lng": -46.52509879999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 4.38,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "centro"
+      ]
+    },
+    {
+      "bairro": "centro",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 1152,
+      "lat": -23.6838273,
+      "lng": -46.6270967,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 9.44,
+        "tempo_real_min": 22,
+        "tempo_formatado": "22 min"
+      },
+      "variantes": [
+        "centro"
+      ]
+    },
+    {
+      "bairro": "osvaldo cruz",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 1078,
+      "lat": -23.6254667,
+      "lng": -46.5656954,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 6.01,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "osvaldo cruz"
+      ]
+    },
+    {
+      "bairro": "campestre",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 950,
+      "lat": -23.6366941,
+      "lng": -46.54463519999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 5.03,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "campestre"
+      ]
+    },
+    {
+      "bairro": "vila guiomar",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 919,
+      "lat": -23.6578426,
+      "lng": -46.5471511,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 1.81,
+        "tempo_real_min": 5,
+        "tempo_formatado": "5 min"
+      },
+      "variantes": [
+        "vila guiomar"
+      ]
+    },
+    {
+      "bairro": "santa maria",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 877,
+      "lat": -23.6332595,
+      "lng": -46.55358080000001,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 5.31,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "santa maria"
+      ]
+    },
+    {
+      "bairro": "baeta neves",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 839,
+      "lat": -23.7017028,
+      "lng": -46.5433455,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 4.96,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "baeta neves"
+      ]
+    },
+    {
+      "bairro": "taboão",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 810,
+      "lat": -23.6581504,
+      "lng": -46.5997557,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 6.19,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "taboão"
+      ]
+    },
+    {
+      "bairro": "santa paula",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 785,
+      "lat": -23.6176297,
+      "lng": -46.5668298,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 6.84,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "santa paula"
+      ]
+    },
+    {
+      "bairro": "santa terezinha",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 768,
+      "lat": -23.6374481,
+      "lng": -46.5337099,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 5.45,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "santa terezinha"
+      ]
+    },
+    {
+      "bairro": "vila príncipe de gales",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 768,
+      "lat": -23.661452,
+      "lng": -46.5528138,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 1.59,
+        "tempo_real_min": 4,
+        "tempo_formatado": "4 min"
+      },
+      "variantes": [
+        "vila príncipe de gales"
+      ]
+    },
+    {
+      "bairro": "santo antônio",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 730,
+      "lat": -23.6193695,
+      "lng": -46.5752628,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 7.18,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "santo antônio"
+      ]
+    },
+    {
+      "bairro": "paulicéia",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 716,
+      "lat": -23.6671936,
+      "lng": -46.5861072,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 4.77,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "paulicéia"
+      ]
+    },
+    {
+      "bairro": "nova petrópolis",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 716,
+      "lat": -23.7052102,
+      "lng": -46.5466961,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 5.13,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "nova petrópolis"
+      ]
+    },
+    {
+      "bairro": "são josé",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 713,
+      "lat": -23.6336564,
+      "lng": -46.5752628,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 5.49,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "são josé"
+      ]
+    },
+    {
+      "bairro": "assunção",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 669,
+      "lat": -23.7244028,
+      "lng": -46.5744781,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 9.23,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "assunção"
+      ]
+    },
+    {
+      "bairro": "paraíso",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 659,
+      "lat": -23.6738558,
+      "lng": -46.5322067,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 3.38,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "paraíso"
+      ]
+    },
+    {
+      "bairro": "jardim",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 636,
+      "lat": -23.6477324,
+      "lng": -46.5366917,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 4.79,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "jardim"
+      ]
+    },
+    {
+      "bairro": "vila alzira",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 609,
+      "lat": -23.6748181,
+      "lng": -46.5209689,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 4.37,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "vila alzira"
+      ]
+    },
+    {
+      "bairro": "boa vista",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 602,
+      "lat": -23.6420773,
+      "lng": -46.5583982,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 3.83,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "boa vista"
+      ]
+    },
+    {
+      "bairro": "conceição",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 549,
+      "lat": -23.6963112,
+      "lng": -46.6150375,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 8.9,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "conceição"
+      ]
+    },
+    {
+      "bairro": "vila alto de santo andré",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 544,
+      "lat": -23.6286678,
+      "lng": -46.5198723,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.83,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila alto de santo andré"
+      ]
+    },
+    {
+      "bairro": "vila bastos",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 543,
+      "lat": -23.6583841,
+      "lng": -46.53578,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 2.52,
+        "tempo_real_min": 7,
+        "tempo_formatado": "7 min"
+      },
+      "variantes": [
+        "vila bastos"
+      ]
+    },
+    {
+      "bairro": "demarchi",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 522,
+      "lat": -23.7404957,
+      "lng": -46.5549819,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 10.23,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "demarchi"
+      ]
+    },
+    {
+      "bairro": "anchieta",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 519,
+      "lat": -23.6766439,
+      "lng": -46.5624939,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 2.46,
+        "tempo_real_min": 7,
+        "tempo_formatado": "7 min"
+      },
+      "variantes": [
+        "anchieta"
+      ]
+    },
+    {
+      "bairro": "jardim do mar",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 513,
+      "lat": -23.6896915,
+      "lng": -46.5583982,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 2.87,
+        "tempo_real_min": 8,
+        "tempo_formatado": "8 min"
+      },
+      "variantes": [
+        "jardim do mar"
+      ]
+    },
+    {
+      "bairro": "planalto",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 471,
+      "lat": -23.699272,
+      "lng": -46.5701044,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 5.9,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "planalto"
+      ]
+    },
+    {
+      "bairro": "parque dos pássaros",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 462,
+      "lat": -23.7091514,
+      "lng": -46.5800822,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 8.64,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "parque dos pássaros"
+      ]
+    },
+    {
+      "bairro": "mauá",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 462,
+      "lat": -23.6431148,
+      "lng": -46.5716484,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 4.01,
+        "tempo_real_min": 9,
+        "tempo_formatado": "9 min"
+      },
+      "variantes": [
+        "mauá"
+      ]
+    },
+    {
+      "bairro": "alves dias",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 461,
+      "lat": -23.7186157,
+      "lng": -46.58264519999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 9.08,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "alves dias"
+      ]
+    },
+    {
+      "bairro": "vila pires",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 455,
+      "lat": -23.6762692,
+      "lng": -46.51108809999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 6.76,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "vila pires"
+      ]
+    },
+    {
+      "bairro": "ferrazópolis",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 441,
+      "lat": -23.7259751,
+      "lng": -46.5426252,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 8.97,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "ferrazópolis"
+      ]
+    },
+    {
+      "bairro": "jardim cristiane",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 423,
+      "lat": -23.688601,
+      "lng": -46.5305875,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 5.34,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "jardim cristiane"
+      ]
+    },
+    {
+      "bairro": "jardim ana maria",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 418,
+      "lat": -23.6261058,
+      "lng": -46.4921256,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 11.98,
+        "tempo_real_min": 22,
+        "tempo_formatado": "22 min"
+      },
+      "variantes": [
+        "jardim ana maria"
+      ]
+    },
+    {
+      "bairro": "jordanópolis",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 415,
+      "lat": -23.6833448,
+      "lng": -46.5737809,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 5.88,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "jordanópolis"
+      ]
+    },
+    {
+      "bairro": "prosperidade",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 404,
+      "lat": -23.610997,
+      "lng": -46.5511723,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 8.33,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "prosperidade"
+      ]
+    },
+    {
+      "bairro": "santa terezinha",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 390,
+      "lat": -23.7189641,
+      "lng": -46.5364246,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 10.53,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "santa terezinha"
+      ]
+    },
+    {
+      "bairro": "vila scarpelli",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 388,
+      "lat": -23.6796176,
+      "lng": -46.5456728,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 3.15,
+        "tempo_real_min": 6,
+        "tempo_formatado": "6 min"
+      },
+      "variantes": [
+        "vila scarpelli"
+      ]
+    },
+    {
+      "bairro": "utinga",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 358,
+      "lat": -23.6171026,
+      "lng": -46.5379276,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 8.17,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "utinga"
+      ]
+    },
+    {
+      "bairro": "barcelona",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 354,
+      "lat": -23.6221281,
+      "lng": -46.5523766,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 6.92,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "barcelona"
+      ]
+    },
+    {
+      "bairro": "campanário",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 342,
+      "lat": -23.6715327,
+      "lng": -46.6205712,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 8.93,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "campanário"
+      ]
+    },
+    {
+      "bairro": "bangú",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 339,
+      "lat": -23.6453309,
+      "lng": -46.5301141,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 4.72,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "bangú"
+      ]
+    },
+    {
+      "bairro": "parque jaçatuba",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 336,
+      "lat": -23.6500744,
+      "lng": -46.5159617,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 5.37,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "parque jaçatuba"
+      ]
+    },
+    {
+      "bairro": "jardim rina",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 312,
+      "lat": -23.6460728,
+      "lng": -46.49566009999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 8.74,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "jardim rina"
+      ]
+    },
+    {
+      "bairro": "vila curuçá",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 291,
+      "lat": -23.6446351,
+      "lng": -46.51896989999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 5.37,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "vila curuçá"
+      ]
+    },
+    {
+      "bairro": "silveira",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 291,
+      "lat": -23.6659466,
+      "lng": -46.5138656,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 5.81,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "silveira"
+      ]
+    },
+    {
+      "bairro": "vila euro",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 277,
+      "lat": -23.7183645,
+      "lng": -46.5638183,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 8.27,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "vila euro"
+      ]
+    },
+    {
+      "bairro": "eldorado",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 274,
+      "lat": -23.728256,
+      "lng": -46.62468459999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 14.37,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "eldorado"
+      ]
+    },
+    {
+      "bairro": "jardim santo antônio",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 274,
+      "lat": -23.6294867,
+      "lng": -46.5214061,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.52,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "jardim santo antônio"
+      ]
+    },
+    {
+      "bairro": "taboão",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 268,
+      "lat": -23.6715847,
+      "lng": -46.609009,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.37,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "taboão"
+      ]
+    },
+    {
+      "bairro": "vila humaitá",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 260,
+      "lat": -23.6750948,
+      "lng": -46.5027485,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.54,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "vila humaitá"
+      ]
+    },
+    {
+      "bairro": "vila vitória",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 226,
+      "lat": -23.6864444,
+      "lng": -46.5110017,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.56,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "vila vitória"
+      ]
+    },
+    {
+      "bairro": "parque são vicente",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 225,
+      "lat": -23.6666769,
+      "lng": -46.4753639,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 9.82,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "parque são vicente"
+      ]
+    },
+    {
+      "bairro": "vila eldízia",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 224,
+      "lat": -23.6811596,
+      "lng": -46.5270936,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 5.43,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "vila eldízia"
+      ]
+    },
+    {
+      "bairro": "cerâmica",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 222,
+      "lat": -23.626513,
+      "lng": -46.5752628,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.79,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "cerâmica"
+      ]
+    },
+    {
+      "bairro": "vila palmares",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 221,
+      "lat": -23.6501376,
+      "lng": -46.56023130000001,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 2.86,
+        "tempo_real_min": 7,
+        "tempo_formatado": "7 min"
+      },
+      "variantes": [
+        "vila palmares"
+      ]
+    },
+    {
+      "bairro": "cidade são jorge",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 210,
+      "lat": -23.6737909,
+      "lng": -46.4868238,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 9.24,
+        "tempo_real_min": 19,
+        "tempo_formatado": "19 min"
+      },
+      "variantes": [
+        "cidade são jorge"
+      ]
+    },
+    {
+      "bairro": "jardim das maravilhas",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 191,
+      "lat": -23.6207178,
+      "lng": -46.5152345,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 8.4,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "jardim das maravilhas"
+      ]
+    },
+    {
+      "bairro": "fundação",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 186,
+      "lat": -23.6042241,
+      "lng": -46.5715443,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 5.69,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "fundação"
+      ]
+    },
+    {
+      "bairro": "centro",
+      "cidade": "são caetano do sul",
+      "zona": "ABC",
+      "beneficiarios": 183,
+      "lat": -23.612226,
+      "lng": -46.5752628,
+      "hospital_mais_proximo": {
+        "nome": "São Camilo Ipiranga",
+        "zona": "Centro-Sul",
+        "distancia_real_km": 6.1,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "centro"
+      ]
+    },
+    {
+      "bairro": "jardim ocara",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 182,
+      "lat": -23.6808368,
+      "lng": -46.5517745,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 1.51,
+        "tempo_real_min": 4,
+        "tempo_formatado": "4 min"
+      },
+      "variantes": [
+        "jardim ocara"
+      ]
+    },
+    {
+      "bairro": "alvarenga",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 180,
+      "lat": -23.746019,
+      "lng": -46.5972046,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 14.4,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "alvarenga"
+      ]
+    },
+    {
+      "bairro": "vila nogueira",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 178,
+      "lat": -23.6896007,
+      "lng": -46.5957488,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.39,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "vila nogueira"
+      ]
+    },
+    {
+      "bairro": "canhema",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 164,
+      "lat": -23.6769874,
+      "lng": -46.6005703,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 6.58,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "canhema"
+      ]
+    },
+    {
+      "bairro": "vila suíça",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 159,
+      "lat": -23.6963839,
+      "lng": -46.4990447,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 10.54,
+        "tempo_real_min": 22,
+        "tempo_formatado": "22 min"
+      },
+      "variantes": [
+        "vila suíça"
+      ]
+    },
+    {
+      "bairro": "piraporinha",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 156,
+      "lat": -23.6814823,
+      "lng": -46.5861072,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 5.51,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "piraporinha"
+      ]
+    },
+    {
+      "bairro": "parque capuava",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 154,
+      "lat": -23.6408619,
+      "lng": -46.489938,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 9.25,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "parque capuava"
+      ]
+    },
+    {
+      "bairro": "casa grande",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 152,
+      "lat": -23.7038909,
+      "lng": -46.5957488,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 8.39,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "casa grande"
+      ]
+    },
+    {
+      "bairro": "jardim irene",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 147,
+      "lat": -23.7074317,
+      "lng": -46.5062046,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 9.48,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "jardim irene"
+      ]
+    },
+    {
+      "bairro": "jardim alvorada",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 145,
+      "lat": -23.6946102,
+      "lng": -46.5238628,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 6.16,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "jardim alvorada"
+      ]
+    },
+    {
+      "bairro": "vila francisco matarazzo",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 140,
+      "lat": -23.6325153,
+      "lng": -46.5159685,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 6.85,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "vila francisco matarazzo"
+      ]
+    },
+    {
+      "bairro": "independência",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 140,
+      "lat": -23.6957037,
+      "lng": -46.5818221,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 6.14,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "independência"
+      ]
+    },
+    {
+      "bairro": "vila assis brasil",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 139,
+      "lat": -23.6807345,
+      "lng": -46.4645436,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 13.37,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "vila assis brasil"
+      ]
+    },
+    {
+      "bairro": "jardim santo andré",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 139,
+      "lat": -23.7062159,
+      "lng": -46.5012924,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 11.23,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "jardim santo andré"
+      ]
+    },
+    {
+      "bairro": "vila junqueira",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 134,
+      "lat": -23.6898633,
+      "lng": -46.51068,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.83,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "vila junqueira"
+      ]
+    },
+    {
+      "bairro": "dos casa",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 132,
+      "lat": -23.7198603,
+      "lng": -46.6005703,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 10.25,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "dos casa"
+      ]
+    },
+    {
+      "bairro": "parque marajoara",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 130,
+      "lat": -23.6677384,
+      "lng": -46.49243449999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 8.24,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "parque marajoara"
+      ]
+    },
+    {
+      "bairro": "vila lusitânia",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 129,
+      "lat": -23.7091223,
+      "lng": -46.557796,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 6.91,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "vila lusitânia"
+      ]
+    },
+    {
+      "bairro": "centreville",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 125,
+      "lat": -23.6755823,
+      "lng": -46.4946642,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 8.8,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "centreville"
+      ]
+    },
+    {
+      "bairro": "jardim zaira",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 122,
+      "lat": -23.6484854,
+      "lng": -46.4369024,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 15.31,
+        "tempo_real_min": 29,
+        "tempo_formatado": "29 min"
+      },
+      "variantes": [
+        "jardim zaira"
+      ]
+    },
+    {
+      "bairro": "vila carlina",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 111,
+      "lat": -23.7033382,
+      "lng": -46.4849839,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 12.38,
+        "tempo_real_min": 26,
+        "tempo_formatado": "26 min"
+      },
+      "variantes": [
+        "vila carlina"
+      ]
+    },
+    {
+      "bairro": "jardim cipreste",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 106,
+      "lat": -23.7142605,
+      "lng": -46.5169624,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 8.29,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "jardim cipreste"
+      ]
+    },
+    {
+      "bairro": "vila euclides",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 108,
+      "lat": -23.6980584,
+      "lng": -46.5602049,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 3.71,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "vila euclides"
+      ]
+    },
+    {
+      "bairro": "vila bocaina",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 104,
+      "lat": -23.6709373,
+      "lng": -46.45012020000001,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 13.65,
+        "tempo_real_min": 29,
+        "tempo_formatado": "29 min"
+      },
+      "variantes": [
+        "vila bocaina"
+      ]
+    },
+    {
+      "bairro": "suíssa",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 104,
+      "lat": -23.721197,
+      "lng": -46.4272917,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 24.91,
+        "tempo_real_min": 43,
+        "tempo_formatado": "43 min"
+      },
+      "variantes": [
+        "suíssa"
+      ]
+    },
+    {
+      "bairro": "jardim oratório",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 103,
+      "lat": -23.6569525,
+      "lng": -46.4645436,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 12.6,
+        "tempo_real_min": 26,
+        "tempo_formatado": "26 min"
+      },
+      "variantes": [
+        "jardim oratório"
+      ]
+    },
+    {
+      "bairro": "jardim las vegas",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 102,
+      "lat": -23.69537,
+      "lng": -46.5312855,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 6.04,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "jardim las vegas"
+      ]
+    },
+    {
+      "bairro": "parque oratório",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 101,
+      "lat": -23.6309682,
+      "lng": -46.5072755,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.78,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "parque oratório"
+      ]
+    },
+    {
+      "bairro": "vila marina",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 98,
+      "lat": -23.6786064,
+      "lng": -46.5180671,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 4.95,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "vila marina"
+      ]
+    },
+    {
+      "bairro": "rio grande",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 83,
+      "lat": -23.7992359,
+      "lng": -46.5210757,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 36.29,
+        "tempo_real_min": 34,
+        "tempo_formatado": "34 min"
+      },
+      "variantes": [
+        "rio grande"
+      ]
+    },
+    {
+      "bairro": "parque das américas",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 79,
+      "lat": -23.6882785,
+      "lng": -46.4453133,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 16.41,
+        "tempo_real_min": 33,
+        "tempo_formatado": "33 min"
+      },
+      "variantes": [
+        "parque das américas"
+      ]
+    },
+    {
+      "bairro": "colônia",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 76,
+      "lat": -23.6998759,
+      "lng": -46.4114923,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 19.64,
+        "tempo_real_min": 40,
+        "tempo_formatado": "40 min"
+      },
+      "variantes": [
+        "colônia"
+      ]
+    },
+    {
+      "bairro": "montanhão",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 77,
+      "lat": -23.7397266,
+      "lng": -46.5258708,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 11.53,
+        "tempo_real_min": 18,
+        "tempo_formatado": "18 min"
+      },
+      "variantes": [
+        "montanhão"
+      ]
+    },
+    {
+      "bairro": "vila gonçalves",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 70,
+      "lat": -23.7132711,
+      "lng": -46.5568927,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.92,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "vila gonçalves"
+      ]
+    },
+    {
+      "bairro": "jardim itapark",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 64,
+      "lat": -23.6793203,
+      "lng": -46.4332982,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 16.61,
+        "tempo_real_min": 35,
+        "tempo_formatado": "35 min"
+      },
+      "variantes": [
+        "jardim itapark"
+      ]
+    },
+    {
+      "bairro": "vila figueiredo",
+      "cidade": "rio grande da serra",
+      "zona": "ABC",
+      "beneficiarios": 63,
+      "lat": -23.7475463,
+      "lng": -46.39907119999999,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 29.92,
+        "tempo_real_min": 51,
+        "tempo_formatado": "51 min"
+      },
+      "variantes": [
+        "vila figueiredo"
+      ]
+    },
+    {
+      "bairro": "santana",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 62,
+      "lat": -23.711095,
+      "lng": -46.3984709,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 26.47,
+        "tempo_real_min": 47,
+        "tempo_formatado": "47 min"
+      },
+      "variantes": [
+        "santana"
+      ]
+    },
+    {
+      "bairro": "jardim cruzeiro",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 61,
+      "lat": -23.6562796,
+      "lng": -46.4302949,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 16.64,
+        "tempo_real_min": 33,
+        "tempo_formatado": "33 min"
+      },
+      "variantes": [
+        "jardim cruzeiro"
+      ]
+    },
+    {
+      "bairro": "batistini",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 59,
+      "lat": -23.7751997,
+      "lng": -46.58851749999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 23.08,
+        "tempo_real_min": 27,
+        "tempo_formatado": "27 min"
+      },
+      "variantes": [
+        "batistini"
+      ]
+    },
+    {
+      "bairro": "centro",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 56,
+      "lat": -23.6655901,
+      "lng": -46.46033629999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 11.87,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "centro"
+      ]
+    },
+    {
+      "bairro": "vila morelli",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 56,
+      "lat": -23.6964083,
+      "lng": -46.4456137,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 15.52,
+        "tempo_real_min": 32,
+        "tempo_formatado": "32 min"
+      },
+      "variantes": [
+        "vila morelli"
+      ]
+    },
+    {
+      "bairro": "represa",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 48,
+      "lat": -23.6711006,
+      "lng": -46.3489315,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 31.02,
+        "tempo_real_min": 52,
+        "tempo_formatado": "52 min"
+      },
+      "variantes": [
+        "represa"
+      ]
+    },
+    {
+      "bairro": "jardim petroni",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 48,
+      "lat": -23.7057633,
+      "lng": -46.5276954,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 6.5,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "jardim petroni"
+      ]
+    },
+    {
+      "bairro": "dos finco",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 48,
+      "lat": -23.8376131,
+      "lng": -46.5355198,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 23.62,
+        "tempo_real_min": 31,
+        "tempo_formatado": "31 min"
+      },
+      "variantes": [
+        "dos finco"
+      ]
+    },
+    {
+      "bairro": "jardim bom recanto",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 42,
+      "lat": -23.6741093,
+      "lng": -46.4302949,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 16.53,
+        "tempo_real_min": 35,
+        "tempo_formatado": "35 min"
+      },
+      "variantes": [
+        "jardim bom recanto"
+      ]
+    },
+    {
+      "bairro": "ponte seca",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 41,
+      "lat": -23.7304071,
+      "lng": -46.4128792,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 27.84,
+        "tempo_real_min": 48,
+        "tempo_formatado": "48 min"
+      },
+      "variantes": [
+        "ponte seca"
+      ]
+    },
+    {
+      "bairro": "recreio da borda do campo",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 41,
+      "lat": -23.7303074,
+      "lng": -46.481272,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 15.03,
+        "tempo_real_min": 30,
+        "tempo_formatado": "30 min"
+      },
+      "variantes": [
+        "recreio da borda do campo"
+      ]
+    },
+    {
+      "bairro": "santa luzia",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 40,
+      "lat": -23.6932485,
+      "lng": -46.3927595,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 26.21,
+        "tempo_real_min": 47,
+        "tempo_formatado": "47 min"
+      },
+      "variantes": [
+        "santa luzia"
+      ]
+    },
+    {
+      "bairro": "serraria",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 39,
+      "lat": -23.704162,
+      "lng": -46.6102146,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 9.33,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "serraria"
+      ]
+    },
+    {
+      "bairro": "centro",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 39,
+      "lat": -23.7082481,
+      "lng": -46.4140801,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 19.18,
+        "tempo_real_min": 39,
+        "tempo_formatado": "39 min"
+      },
+      "variantes": [
+        "centro"
+      ]
+    },
+    {
+      "bairro": "jardim maria eneida",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 35,
+      "lat": -23.6668336,
+      "lng": -46.4230876,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 16.68,
+        "tempo_real_min": 35,
+        "tempo_formatado": "35 min"
+      },
+      "variantes": [
+        "jardim maria eneida"
+      ]
+    },
+    {
+      "bairro": "inamar",
+      "cidade": "diadema",
+      "zona": "ABC",
+      "beneficiarios": 34,
+      "lat": -23.7176832,
+      "lng": -46.6114203,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 12.58,
+        "tempo_real_min": 22,
+        "tempo_formatado": "22 min"
+      },
+      "variantes": [
+        "inamar"
+      ]
+    },
+    {
+      "bairro": "pouso alegre",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 31,
+      "lat": -23.688272,
+      "lng": -46.3672674,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 28.98,
+        "tempo_real_min": 51,
+        "tempo_formatado": "51 min"
+      },
+      "variantes": [
+        "pouso alegre"
+      ]
+    },
+    {
+      "bairro": "jardim club de campo",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 31,
+      "lat": -23.758197,
+      "lng": -46.472809,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 24.79,
+        "tempo_real_min": 29,
+        "tempo_formatado": "29 min"
+      },
+      "variantes": [
+        "jardim club de campo"
+      ]
+    },
+    {
+      "bairro": "jardim olavo bilac",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 32,
+      "lat": -23.7007553,
+      "lng": -46.5559895,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 4.54,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "jardim olavo bilac"
+      ]
+    },
+    {
+      "bairro": "vl lusitânia",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 27,
+      "lat": -23.7091223,
+      "lng": -46.557796,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 6.91,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "vl lusitânia"
+      ]
+    },
+    {
+      "bairro": "balneária",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 27,
+      "lat": -23.7727995,
+      "lng": -46.5475598,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 15.7,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "balneária"
+      ]
+    },
+    {
+      "bairro": "jardim maria adelaide",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 26,
+      "lat": -23.6940676,
+      "lng": -46.5590004,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 3.24,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "jardim maria adelaide"
+      ]
+    },
+    {
+      "bairro": "centro de ouro fino paulista",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 25,
+      "lat": -23.6852201,
+      "lng": -46.35585409999999,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 32.98,
+        "tempo_real_min": 56,
+        "tempo_formatado": "56 min"
+      },
+      "variantes": [
+        "centro de ouro fino paulista"
+      ]
+    },
+    {
+      "bairro": "parque miami",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 24,
+      "lat": -23.7394695,
+      "lng": -46.4962333,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 15.14,
+        "tempo_real_min": 30,
+        "tempo_formatado": "30 min"
+      },
+      "variantes": [
+        "parque miami"
+      ]
+    },
+    {
+      "bairro": "pilar velho",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 20,
+      "lat": -23.6856068,
+      "lng": -46.39666080000001,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 26.39,
+        "tempo_real_min": 47,
+        "tempo_formatado": "47 min"
+      },
+      "variantes": [
+        "pilar velho"
+      ]
+    },
+    {
+      "bairro": "vl euclides",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 17,
+      "lat": -23.6980584,
+      "lng": -46.5602049,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 3.71,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "vl euclides"
+      ]
+    },
+    {
+      "bairro": "bocaina",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 15,
+      "lat": -23.7086166,
+      "lng": -46.4320968,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 40.1,
+        "tempo_real_min": 42,
+        "tempo_formatado": "42 min"
+      },
+      "variantes": [
+        "bocaina"
+      ]
+    },
+    {
+      "bairro": "aliança",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 15,
+      "lat": -23.6952495,
+      "lng": -46.4205151,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 19.04,
+        "tempo_real_min": 37,
+        "tempo_formatado": "37 min"
+      },
+      "variantes": [
+        "aliança"
+      ]
+    },
+    {
+      "bairro": "vl gonçalves",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 18,
+      "lat": -23.7132711,
+      "lng": -46.5568927,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.92,
+        "tempo_real_min": 13,
+        "tempo_formatado": "13 min"
+      },
+      "variantes": [
+        "vl gonçalves",
+        "vl goncalves"
+      ]
+    },
+    {
+      "bairro": "parque botujuru",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 13,
+      "lat": -23.7483681,
+      "lng": -46.5559895,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 11.73,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "parque botujuru"
+      ]
+    },
+    {
+      "bairro": "são caetaninho",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 12,
+      "lat": -23.6956694,
+      "lng": -46.4188839,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 19.19,
+        "tempo_real_min": 37,
+        "tempo_formatado": "37 min"
+      },
+      "variantes": [
+        "são caetaninho"
+      ]
+    },
+    {
+      "bairro": "núcleo sampaio vidal",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 10,
+      "lat": -23.6585341,
+      "lng": -46.4784011,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 12.95,
+        "tempo_real_min": 25,
+        "tempo_formatado": "25 min"
+      },
+      "variantes": [
+        "núcleo sampaio vidal"
+      ]
+    },
+    {
+      "bairro": "barro branco",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 10,
+      "lat": -23.7044346,
+      "lng": -46.3828667,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 29.96,
+        "tempo_real_min": 50,
+        "tempo_formatado": "50 min"
+      },
+      "variantes": [
+        "barro branco"
+      ]
+    },
+    {
+      "bairro": "jardim santa lídia",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 9,
+      "lat": -23.6780708,
+      "lng": -46.45012020000001,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 14.1,
+        "tempo_real_min": 29,
+        "tempo_formatado": "29 min"
+      },
+      "variantes": [
+        "jardim santa lídia"
+      ]
+    },
+    {
+      "bairro": "tatetos",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 9,
+      "lat": -23.786826,
+      "lng": -46.5349179,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 16.79,
+        "tempo_real_min": 20,
+        "tempo_formatado": "20 min"
+      },
+      "variantes": [
+        "tatetos"
+      ]
+    },
+    {
+      "bairro": "jd olavo bilac",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 9,
+      "lat": -23.7007553,
+      "lng": -46.5559895,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 4.54,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "jd olavo bilac"
+      ]
+    },
+    {
+      "bairro": "chácara são lucido",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 7,
+      "lat": -23.6255434,
+      "lng": -46.3984709,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 17.9,
+        "tempo_real_min": 39,
+        "tempo_formatado": "39 min"
+      },
+      "variantes": [
+        "chácara são lucido"
+      ]
+    },
+    {
+      "bairro": "guapituba",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 7,
+      "lat": -23.7003179,
+      "lng": -46.4409649,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 16.05,
+        "tempo_real_min": 33,
+        "tempo_formatado": "33 min"
+      },
+      "variantes": [
+        "guapituba"
+      ]
+    },
+    {
+      "bairro": "jardim elizabeth",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 6,
+      "lat": -23.6659211,
+      "lng": -46.4170824,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 17.89,
+        "tempo_real_min": 39,
+        "tempo_formatado": "39 min"
+      },
+      "variantes": [
+        "jardim elizabeth"
+      ]
+    },
+    {
+      "bairro": "santa cruz",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 6,
+      "lat": -23.7183005,
+      "lng": -46.5239628,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.67,
+        "tempo_real_min": 19,
+        "tempo_formatado": "19 min"
+      },
+      "variantes": [
+        "santa cruz"
+      ]
+    },
+    {
+      "bairro": "vila real",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 5,
+      "lat": -23.6629434,
+      "lng": -46.40687519999999,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 18.45,
+        "tempo_real_min": 42,
+        "tempo_formatado": "42 min"
+      },
+      "variantes": [
+        "vila real"
+      ]
+    },
+    {
+      "bairro": "núcleo dr. carlos de campos",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 5,
+      "lat": -23.6702429,
+      "lng": -46.5066132,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 6.89,
+        "tempo_real_min": 15,
+        "tempo_formatado": "15 min"
+      },
+      "variantes": [
+        "núcleo dr. carlos de campos"
+      ]
+    },
+    {
+      "bairro": "itrapoá",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 5,
+      "lat": -23.6755527,
+      "lng": -46.3648679,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 29.71,
+        "tempo_real_min": 53,
+        "tempo_formatado": "53 min"
+      },
+      "variantes": [
+        "itrapoá"
+      ]
+    },
+    {
+      "bairro": "quarta divisão",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 5,
+      "lat": -23.6608305,
+      "lng": -46.37068650000001,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 21.31,
+        "tempo_real_min": 43,
+        "tempo_formatado": "43 min"
+      },
+      "variantes": [
+        "quarta divisão"
+      ]
+    },
+    {
+      "bairro": "jardim alzira franco",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 5,
+      "lat": -23.6518855,
+      "lng": -46.4990147,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 7.11,
+        "tempo_real_min": 16,
+        "tempo_formatado": "16 min"
+      },
+      "variantes": [
+        "jardim alzira franco"
+      ]
+    },
+    {
+      "bairro": "tamanduateí 8",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 5,
+      "lat": -23.650051,
+      "lng": -46.4930041,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 8.11,
+        "tempo_real_min": 17,
+        "tempo_formatado": "17 min"
+      },
+      "variantes": [
+        "tamanduateí 8"
+      ]
+    },
+    {
+      "bairro": "jd mar",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 5,
+      "lat": -23.6916526,
+      "lng": -46.5540551,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 3.0,
+        "tempo_real_min": 9,
+        "tempo_formatado": "9 min"
+      },
+      "variantes": [
+        "jd mar"
+      ]
+    },
+    {
+      "bairro": "zanzala",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 5,
+      "lat": -23.8007762,
+      "lng": -46.4538188,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 28.0,
+        "tempo_real_min": 36,
+        "tempo_formatado": "36 min"
+      },
+      "variantes": [
+        "zanzala"
+      ]
+    },
+    {
+      "bairro": "alto da boa vista",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 4,
+      "lat": -23.6506906,
+      "lng": -46.44831749999999,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 14.36,
+        "tempo_real_min": 26,
+        "tempo_formatado": "26 min"
+      },
+      "variantes": [
+        "alto da boa vista"
+      ]
+    },
+    {
+      "bairro": "tanque caio",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 4,
+      "lat": -23.6529939,
+      "lng": -46.360531,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 22.3,
+        "tempo_real_min": 44,
+        "tempo_formatado": "44 min"
+      },
+      "variantes": [
+        "tanque caio"
+      ]
+    },
+    {
+      "bairro": "condomínio maracanã",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 4,
+      "lat": -23.6935991,
+      "lng": -46.4953223,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 10.38,
+        "tempo_real_min": 21,
+        "tempo_formatado": "21 min"
+      },
+      "variantes": [
+        "condomínio maracanã"
+      ]
+    },
+    {
+      "bairro": "jardim canadá",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 3,
+      "lat": -23.6718996,
+      "lng": -46.4188839,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 17.21,
+        "tempo_real_min": 37,
+        "tempo_formatado": "37 min"
+      },
+      "variantes": [
+        "jardim canadá"
+      ]
+    },
+    {
+      "bairro": "roncon",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 3,
+      "lat": -23.7172321,
+      "lng": -46.3888677,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 27.76,
+        "tempo_real_min": 51,
+        "tempo_formatado": "51 min"
+      },
+      "variantes": [
+        "roncon"
+      ]
+    },
+    {
+      "bairro": "tecelão",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 3,
+      "lat": -23.6540856,
+      "lng": -46.3734177,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 21.43,
+        "tempo_real_min": 43,
+        "tempo_formatado": "43 min"
+      },
+      "variantes": [
+        "tecelão"
+      ]
+    },
+    {
+      "bairro": "km 4",
+      "cidade": "ribeirão pires",
+      "zona": "ABC",
+      "beneficiarios": 3,
+      "lat": -23.687822,
+      "lng": -46.3456765,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 32.44,
+        "tempo_real_min": 57,
+        "tempo_formatado": "57 min"
+      },
+      "variantes": [
+        "km 4"
+      ]
+    },
+    {
+      "bairro": "região de campo grande",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 3,
+      "lat": -23.7638904,
+      "lng": -46.3784211,
+      "hospital_mais_proximo": {
+        "nome": "Santa Marcelina",
+        "zona": "Leste",
+        "distancia_real_km": 33.42,
+        "tempo_real_min": 56,
+        "tempo_formatado": "56 min"
+      },
+      "variantes": [
+        "região de campo grande"
+      ]
+    },
+    {
+      "bairro": "cata preta",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 3,
+      "lat": -23.7173859,
+      "lng": -46.5101156,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 9.35,
+        "tempo_real_min": 23,
+        "tempo_formatado": "23 min"
+      },
+      "variantes": [
+        "cata preta"
+      ]
+    },
+    {
+      "bairro": "contry park",
+      "cidade": "mauá",
+      "zona": "ABC",
+      "beneficiarios": 2,
+      "lat": -23.670428,
+      "lng": -46.4444121,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 14.88,
+        "tempo_real_min": 31,
+        "tempo_formatado": "31 min"
+      },
+      "variantes": [
+        "contry park"
+      ]
+    },
+    {
+      "bairro": "vl paineiras",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 3,
+      "lat": -23.7612028,
+      "lng": -46.5982368,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 20.72,
+        "tempo_real_min": 22,
+        "tempo_formatado": "22 min"
+      },
+      "variantes": [
+        "vl paineiras"
+      ]
+    },
+    {
+      "bairro": "taquacetuba",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 2,
+      "lat": -23.8135933,
+      "lng": -46.60298119999999,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 42.36,
+        "tempo_real_min": 50,
+        "tempo_formatado": "50 min"
+      },
+      "variantes": [
+        "taquacetuba"
+      ]
+    },
+    {
+      "bairro": "capivari",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 2,
+      "lat": -23.81887,
+      "lng": -46.5499681,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 35.97,
+        "tempo_real_min": 38,
+        "tempo_formatado": "38 min"
+      },
+      "variantes": [
+        "capivari"
+      ]
+    },
+    {
+      "bairro": "vila das paineiras",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 2,
+      "lat": -23.7027554,
+      "lng": -46.5573339,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 4.55,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "vila das paineiras"
+      ]
+    },
+    {
+      "bairro": "parque das nações",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 1,
+      "lat": -23.636883,
+      "lng": -46.5223078,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 6.1,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "parque das nações"
+      ]
+    },
+    {
+      "bairro": "jd jamaica",
+      "cidade": "santo andré",
+      "zona": "ABC",
+      "beneficiarios": 1,
+      "lat": -23.6817146,
+      "lng": -46.5317234,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 4.66,
+        "tempo_real_min": 11,
+        "tempo_formatado": "11 min"
+      },
+      "variantes": [
+        "jd jamaica"
+      ]
+    },
+    {
+      "bairro": "jd maria adelaide",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 1,
+      "lat": -23.6940676,
+      "lng": -46.5590004,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 3.24,
+        "tempo_real_min": 10,
+        "tempo_formatado": "10 min"
+      },
+      "variantes": [
+        "jd maria adelaide"
+      ]
+    },
+    {
+      "bairro": "jd o bilac",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 1,
+      "lat": -23.7006552,
+      "lng": -46.5562874,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 4.53,
+        "tempo_real_min": 12,
+        "tempo_formatado": "12 min"
+      },
+      "variantes": [
+        "jd o bilac"
+      ]
+    },
+    {
+      "bairro": "jardim industrial",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 1,
+      "lat": -23.7464875,
+      "lng": -46.6141367,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 15.8,
+        "tempo_real_min": 29,
+        "tempo_formatado": "29 min"
+      },
+      "variantes": [
+        "jardim industrial"
+      ]
+    },
+    {
+      "bairro": "nova baeta",
+      "cidade": "são bernardo do campo",
+      "zona": "ABC",
+      "beneficiarios": 1,
+      "lat": -23.7042235,
+      "lng": -46.5301028,
+      "hospital_mais_proximo": {
+        "nome": "Neomater",
+        "zona": "ABC",
+        "distancia_real_km": 6.24,
+        "tempo_real_min": 14,
+        "tempo_formatado": "14 min"
+      },
+      "variantes": [
+        "nova baeta"
+      ]
+    }
+  ]
+}
